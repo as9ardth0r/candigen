@@ -197,22 +197,30 @@ function draw3D(sdf) {
     container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Bibliothèque 3Dmol.js non chargée (bloquée par un bloqueur de pub/VPN ?)</div>`;
     return;
   }
-  try {
-    const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
-    const model = viewer.addModel(sdf, "sdf");
-    const nAtoms = model.selectedAtoms({}).length;
-    if (nAtoms === 0) {
-      console.error("3Dmol a chargé 0 atome depuis ce bloc SDF/MOL :", sdf);
-      container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">0 atome chargé — format SDF invalide (voir la console)</div>`;
-      return;
+  // On attend la prochaine frame avant de créer le viewer : si la modale
+  // vient d'être affichée (ou si conformers.json était déjà en cache et
+  // que l'attente async n'a laissé aucun temps au navigateur), le conteneur
+  // peut ne pas avoir de taille définitive et 3Dmol créerait un canvas
+  // WebGL de 0×0 pixels — valide, sans erreur, mais invisible.
+  requestAnimationFrame(() => {
+    console.log("modal-3d taille au moment du rendu :", container.offsetWidth, "x", container.offsetHeight);
+    try {
+      const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
+      const model = viewer.addModel(sdf, "sdf");
+      const nAtoms = model.selectedAtoms({}).length;
+      if (nAtoms === 0) {
+        console.error("3Dmol a chargé 0 atome depuis ce bloc SDF :", sdf);
+        container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">0 atome chargé — format SDF invalide (voir la console)</div>`;
+        return;
+      }
+      viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
+      viewer.zoomTo();
+      viewer.render();
+    } catch (e) {
+      console.error("3Dmol render error:", e);
+      container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Erreur de rendu 3D — voir la console (F12)</div>`;
     }
-    viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
-    viewer.zoomTo();
-    viewer.render();
-  } catch (e) {
-    console.error("3Dmol render error:", e);
-    container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Erreur de rendu 3D — voir la console (F12)</div>`;
-  }
+  });
 }
 
 // --- conformers.json : chargé une seule fois, à la demande (lazy) ---

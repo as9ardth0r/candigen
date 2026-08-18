@@ -1,0 +1,7 @@
+# SMILES id — candidats inédits pour l'inhibition d'EGFR (domaine kinase)
+# Validés (parsing + descripteurs) avec RDKit 2026.03
+C#Cc1ccc(Nc2ncnc3cc(OC)c(OCCCN4CCN(C)CC4)cc23)c(F)c1 M1_EGFR-Rev-01
+C=CC(=O)Nc1cc(OC)c(Nc2nccc(-c3cn(C)c4ncccc34)n2)cc1N1CCN(C)CC1 M2_EGFR-Cov-02
+CS(=O)(=O)N1CCC(n2cc(C(=O)Nc3ccc(F)c(Cl)c3)c3c(N)ncnc32)CC1 M3_EGFR-Hng-03
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CCS(=O)(=O)CC1 M4_EGFR-Iso-04
+C#Cc1cccc(Nc2ncnc3cc(OCCN4CCN(CC5CN5)CC4)c(NC(=O)C=C)cc23)c1 M5_EGFR-Mac-05

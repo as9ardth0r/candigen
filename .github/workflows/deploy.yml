@@ -1,0 +1,83 @@
+name: Generate data & deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+  schedule:
+    # Boucle de découverte quotidienne (03:00 UTC). GitHub désactive
+    # automatiquement les schedules après 60 jours SANS AUCUN push sur le
+    # dépôt — comme ce workflow committe lui-même le hall of fame chaque
+    # jour (étape "Persistance..." ci-dessous), le dépôt reste actif.
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# N'autorise qu'un seul déploiement concurrent, sans annuler les runs en cours,
+# mais met en file d'attente les runs les plus récents après ceux déjà en cours.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configuration de Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Installation des dépendances
+        run: pip install -r requirements.txt
+
+      - name: Exécution du pipeline (génération + filtrage + export JSON/CSV)
+        run: python scripts/run_pipeline.py
+
+      - name: Persistance du hall of fame (commit des données mises à jour)
+        # [skip ci] dans le message empêche ce commit de redéclencher le
+        # workflow via le trigger `push` (sinon boucle infinie). Les triggers
+        # `schedule` et `workflow_dispatch` ne sont eux jamais affectés par
+        # ce mot-clé — seul le prochain push, humain, en profite.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv site/data/molecules.json site/data/conformers.json
+          git diff --staged --quiet || git commit -m "chore: mise a jour quotidienne du hall of fame [skip ci]"
+          git push
+
+      - name: Upload de data/ comme artefact de build (traçabilité)
+        uses: actions/upload-artifact@v4
+        with:
+          name: molgen-data
+          path: |
+            data/molecules.json
+            data/molecules.csv
+
+      - name: Configuration de GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload du site statique (dossier site/) pour Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déploiement sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

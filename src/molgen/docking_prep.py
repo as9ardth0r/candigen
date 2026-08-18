@@ -51,8 +51,19 @@ def export_sdf(mol: Chem.Mol, path: str | Path) -> None:
 
 
 def mol_to_sdf_block(mol: Chem.Mol) -> str:
-    """Retourne le bloc SDF en mémoire (utile pour l'embarquer dans le JSON du site)."""
-    return Chem.MolToMolBlock(mol)
+    """
+    Retourne un bloc SDF valide (utile pour l'embarquer dans le JSON du site).
+
+    IMPORTANT : `Chem.MolToMolBlock` retourne un bloc MOL (format molfile),
+    pas un enregistrement SDF complet — il lui manque le terminateur `$$$$`
+    requis par la spécification SDF. Sans lui, la plupart des parseurs SDF
+    (dont celui de 3Dmol.js) ne trouvent aucun atome à charger, souvent sans
+    lever d'erreur explicite (échec silencieux).
+    """
+    molblock = Chem.MolToMolBlock(mol)
+    if not molblock.endswith("\n"):
+        molblock += "\n"
+    return molblock + "$$$$\n"
 
 
 def export_pdb(mol: Chem.Mol, path: str | Path) -> None:

@@ -193,11 +193,20 @@ function draw3D(sdf) {
     container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs">Pas de conformère 3D</div>`;
     return;
   }
-  const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
-  viewer.addModel(sdf, "sdf");
-  viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
-  viewer.zoomTo();
-  viewer.render();
+  if (typeof $3Dmol === "undefined") {
+    container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Bibliothèque 3Dmol.js non chargée (bloquée par un bloqueur de pub/VPN ?)</div>`;
+    return;
+  }
+  try {
+    const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
+    viewer.addModel(sdf, "sdf");
+    viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
+    viewer.zoomTo();
+    viewer.render();
+  } catch (e) {
+    console.error("3Dmol render error:", e);
+    container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Erreur de rendu 3D — voir la console (F12)</div>`;
+  }
 }
 
 // --- conformers.json : chargé une seule fois, à la demande (lazy) ---

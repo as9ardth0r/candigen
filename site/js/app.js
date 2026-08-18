@@ -199,7 +199,13 @@ function draw3D(sdf) {
   }
   try {
     const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
-    viewer.addModel(sdf, "sdf");
+    const model = viewer.addModel(sdf, "sdf");
+    const nAtoms = model.selectedAtoms({}).length;
+    if (nAtoms === 0) {
+      console.error("3Dmol a chargé 0 atome depuis ce bloc SDF/MOL :", sdf);
+      container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">0 atome chargé — format SDF invalide (voir la console)</div>`;
+      return;
+    }
     viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
     viewer.zoomTo();
     viewer.render();

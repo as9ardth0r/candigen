@@ -75,7 +75,9 @@ jobs:
 
       - name: Téléchargement des données AiZynthFinder (si cache absent)
         if: steps.cache-aizynthfinder.outputs.cache-hit != 'true'
-        run: download_public_data ./aizynthfinder_data
+        run: |
+          mkdir -p aizynthfinder_data
+          download_public_data ./aizynthfinder_data
 
       - name: Rétrosynthèse (AiZynthFinder) sur le top TPP du jour
         # Même logique de priorisation que le docking (top-K par fitness,

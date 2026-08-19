@@ -5,7 +5,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pytest
 
-from candigen.retrosynthesis import build_finder, select_candidates
+from candigen.retrosynthesis import apply_summaries, build_finder, select_candidates, summarize_result
 
 
 def test_select_candidates_filters_and_sorts_by_fitness():
@@ -45,3 +45,26 @@ def test_build_finder_fails_gracefully_without_aizynthfinder():
             build_finder("nonexistent_config.yml")
     else:
         pytest.skip("aizynthfinder est installé — ce test ne vérifie que l'absence gracieuse")
+
+
+def test_summarize_result_route_found():
+    result = {"routes": [{"score": 0.9}, {"score": 0.7}]}
+    summary = summarize_result(result)
+    assert summary == {"retrosynthesis_route_found": True, "retrosynthesis_n_routes": 2}
+
+
+def test_summarize_result_no_route():
+    summary = summarize_result({"routes": []})
+    assert summary == {"retrosynthesis_route_found": False, "retrosynthesis_n_routes": 0}
+
+
+def test_apply_summaries_updates_matching_records_only():
+    records = [
+        {"id": "a", "fitness": 0.5},
+        {"id": "b", "fitness": 0.8},
+    ]
+    summaries = {"a": {"retrosynthesis_route_found": True, "retrosynthesis_n_routes": 3}}
+    updated = apply_summaries(records, summaries)
+    assert updated[0]["retrosynthesis_route_found"] is True
+    assert updated[0]["retrosynthesis_n_routes"] == 3
+    assert "retrosynthesis_route_found" not in updated[1]  # non traitée ce run — inchangée

@@ -56,6 +56,8 @@ class MoleculeRecord:
     is_novel: Optional[bool] = None  # None = pas vérifié ; True = confirmé absent de PubChem/ChEMBL ; False = déjà connue
     pubchem_cid: Optional[int] = None
     chembl_id: Optional[str] = None
+    retrosynthesis_route_found: Optional[bool] = None  # None = pas évaluée ; True/False = route trouvée ou non
+    retrosynthesis_n_routes: Optional[int] = None  # nombre de routes retournées par AiZynthFinder
 
     def to_dict(self) -> dict:
         return asdict(self)

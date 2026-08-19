@@ -108,6 +108,17 @@ function dockingBadge(score) {
   return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚓ ${score} kcal/mol</span>`;
 }
 
+function retrosynthesisBadge(m) {
+  if (m.retrosynthesis_route_found === true) {
+    const n = m.retrosynthesis_n_routes ?? "?";
+    return `<span title="${n} route(s) trouvée(s) — AiZynthFinder" class="text-[10px] px-1.5 py-0.5 rounded bg-violet-500/10 text-violet-400 border border-violet-500/30">🧪 route trouvée</span>`;
+  }
+  if (m.retrosynthesis_route_found === false) {
+    return `<span title="AiZynthFinder n'a trouvé aucune route vers des précurseurs achetables" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-700/50 text-slate-400 border border-slate-600">🧪 aucune route</span>`;
+  }
+  return ""; // pas encore évaluée — on n'affiche rien plutôt que d'induire en erreur
+}
+
 function noveltyBadge(m) {
   if (m.is_novel === true) {
     return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/30">✓ absente de PubChem/ChEMBL</span>`;
@@ -134,7 +145,7 @@ function moleculeCard(m) {
       <div>HBA <span class="text-slate-200 font-mono">${m.hba}</span></div>
       <div>SA <span class="text-slate-200 font-mono">${m.sa_score}</span></div>
     </dl>
-    <div class="mt-2 flex flex-wrap gap-1">${toxicityBadge(m.toxicity_alerts)}${dockingBadge(m.docking_score)}${noveltyBadge(m)}</div>
+    <div class="mt-2 flex flex-wrap gap-1">${toxicityBadge(m.toxicity_alerts)}${dockingBadge(m.docking_score)}${noveltyBadge(m)}${retrosynthesisBadge(m)}</div>
   </article>`;
 }
 
@@ -272,6 +283,7 @@ async function openModal(id) {
     ["HBA", m.hba], ["RotB", m.rotatable_bonds], ["SA score", m.sa_score], ["QED", m.qed],
     ["Fitness", m.fitness ?? "—"], ["Découverte le", m.first_seen ?? "—"],
     ["Docking (kcal/mol)", m.docking_score ?? "—"],
+    ["Rétrosynthèse", m.retrosynthesis_route_found === true ? `${m.retrosynthesis_n_routes} route(s)` : (m.retrosynthesis_route_found === false ? "aucune route" : "—")],
   ].map(([k, v]) => `<div class="bg-slate-800/60 rounded-lg px-2 py-1"><span class="text-slate-400">${k}:</span> <span class="font-mono">${v}</span></div>`).join("");
   const links = [];
   if (m.pubchem_cid) links.push(`<a href="https://pubchem.ncbi.nlm.nih.gov/compound/${m.pubchem_cid}" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">PubChem CID ${m.pubchem_cid}</a>`);

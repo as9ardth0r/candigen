@@ -85,3 +85,33 @@ def search_routes(finder, smiles: str) -> dict[str, Any]:
         # avec l'arbre de réactions complet dans "reaction_tree"
         "routes": finder.routes.dicts,
     }
+
+
+def summarize_result(result: dict[str, Any]) -> dict[str, Any]:
+    """
+    Résume un résultat de search_routes() pour l'injecter dans
+    data/molecules.json (badge du dashboard) — juste de quoi savoir si
+    une route a été trouvée, pas l'arbre complet (qui reste dans
+    data/retrosynthesis/<id>.json, bien plus volumineux).
+    """
+    n_routes = len(result.get("routes") or [])
+    return {
+        "retrosynthesis_route_found": n_routes > 0,
+        "retrosynthesis_n_routes": n_routes,
+    }
+
+
+def apply_summaries(
+    records: list[dict[str, Any]], summaries: dict[str, dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """
+    Fusionne les résumés (par id, cf. summarize_result) dans la liste de
+    records chargée depuis data/molecules.json — modifie et retourne la
+    même liste. Les molécules non traitées ce run (id absent de
+    `summaries`) gardent leur valeur précédente (ou None si jamais évaluées).
+    """
+    for r in records:
+        summary = summaries.get(r.get("id"))
+        if summary:
+            r.update(summary)
+    return records

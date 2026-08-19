@@ -234,8 +234,11 @@ quelques Mo), mais mis en **cache entre les runs** via `actions/cache`
 (clé `aizynthfinder-data-v1`) — premier run : téléchargement complet
 (~quelques minutes) ; runs suivants : cache restauré, téléchargement
 sauté. Chaque run quotidien traite les 10 molécules conformes au TPP avec
-la meilleure fitness (même logique que `MAX_DOCKING`) et écrit un JSON par
-molécule dans `data/retrosynthesis/`, committé avec le reste des données.
+la meilleure fitness (même logique que `MAX_DOCKING`), écrit un JSON
+détaillé par molécule dans `data/retrosynthesis/`, **et** met à jour un
+badge 🧪 dans le dashboard (`retrosynthesis_route_found` /
+`retrosynthesis_n_routes` dans `data/molecules.json`) — visible sur la
+carte de chaque molécule évaluée, et dans sa fiche détaillée.
 
 Pour le lancer en local (déboguer, ou traiter plus de molécules que le
 run automatique) :

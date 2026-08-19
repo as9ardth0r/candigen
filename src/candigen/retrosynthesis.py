@@ -70,8 +70,8 @@ def build_finder(configfile: str | Path, stock: str = "zinc", policy: str = "usp
 def search_routes(finder, smiles: str) -> dict[str, Any]:
     """
     Lance la recherche MCTS pour une molécule et retourne les routes
-    triées par score ainsi que les statistiques de recherche. Ne gère pas
-    les exceptions elle-même — laissé à l'appelant (scripts/run_retrosynthesis.py)
+    trouvées ainsi que les statistiques de recherche. Ne gère pas les
+    exceptions elle-même — laissé à l'appelant (scripts/run_retrosynthesis.py)
     pour ne pas interrompre un lot entier à cause d'une molécule.
     """
     finder.target_smiles = smiles
@@ -81,8 +81,14 @@ def search_routes(finder, smiles: str) -> dict[str, Any]:
     return {
         "smiles": smiles,
         "stats": stats,
-        # liste de dicts JSON-sérialisables, un par route, triée par score,
-        # avec l'arbre de réactions complet dans "reaction_tree"
+        # finder.routes.dicts : liste JSON-sérialisable, un dict par route.
+        # Chaque dict EST directement l'arbre de réactions (pas de clé
+        # séparée "reaction_tree" ni de score par route dans cette sortie
+        # brute) : noeuds "mol" (smiles, in_stock, au plus un enfant
+        # "reaction" = comment cette molécule a été fabriquée) en
+        # alternance avec des noeuds "reaction" (dont les enfants sont les
+        # réactifs de cette étape). Voir site/js/app.js (analyzeRoute /
+        # renderRetroNode) pour un exemple de parcours de cette structure.
         "routes": finder.routes.dicts,
     }
 

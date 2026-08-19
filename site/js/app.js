@@ -17,7 +17,7 @@ const TPP = {
   "Alertes PAINS": "0 tolérée",
 };
 
-let state = { molecules: [], filtered: [], rdkitReady: null, page: 0, conformers: null };
+let state = { molecules: [], filtered: [], rdkitReady: null, page: 0, conformers: null, retroCache: {} };
 const PAGE_SIZE = 24;
 
 function renderTPP() {
@@ -189,11 +189,11 @@ function getRDKit() {
   return state.rdkitReady;
 }
 
-async function drawThumbnail2D(el) {
+async function drawThumbnail2D(el, w = 200, h = 120) {
   try {
     const RDKit = await getRDKit();
     const mol = RDKit.get_mol(el.dataset.smiles);
-    el.innerHTML = mol.get_svg(200, 120);
+    el.innerHTML = mol.get_svg(w, h);
     mol.delete();
   } catch (e) {
     el.innerHTML = `<span class="text-slate-400 text-xs">rendu 2D indisponible</span>`;
@@ -274,6 +274,91 @@ async function getConformers() {
   return state.conformers;
 }
 
+// --- data/retrosynthesis/<id>.json : un fichier par molécule, chargé à la
+// demande (seulement si retrosynthesis_route_found=true, pour ne pas faire
+// un fetch 404 inutile sur les molécules jamais évaluées) et mis en cache. ---
+const RETRO_URL_BASE = "data/retrosynthesis/";
+
+async function getRetroResult(id) {
+  if (state.retroCache[id] !== undefined) return state.retroCache[id];
+  try {
+    const res = await fetch(`${RETRO_URL_BASE}${id}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    state.retroCache[id] = await res.json();
+  } catch (e) {
+    state.retroCache[id] = null;
+  }
+  return state.retroCache[id];
+}
+
+// Chaque route (result.routes[i]) est elle-même l'arbre de réactions, racine
+// = molécule cible (pas de champ "score" par route dans la sortie brute
+// d'AiZynthFinder — cf. candigen.retrosynthesis) : type "mol" (avec au plus
+// un enfant "reaction" = comment elle a été fabriquée) en alternance avec
+// type "reaction" (dont les enfants sont les réactifs de cette étape).
+function analyzeRoute(root) {
+  let steps = 0, precursors = 0, inStock = 0;
+  (function walk(node) {
+    if (node.type === "reaction") steps += 1;
+    if (node.type === "mol") {
+      const isLeaf = !(node.children || []).some((c) => c.type === "reaction");
+      if (isLeaf) {
+        precursors += 1;
+        if (node.in_stock) inStock += 1;
+      }
+    }
+    (node.children || []).forEach(walk);
+  })(root);
+  return { steps, precursors, inStock };
+}
+
+function renderRetroNode(node) {
+  if (node.type === "reaction") {
+    const reactants = (node.children || []).map(renderRetroNode).join("");
+    return `<div class="pl-4 ml-3 mt-1 border-l border-slate-700">
+      <p class="text-[10px] text-slate-500 mb-1">↓ réaction</p>
+      ${reactants}
+    </div>`;
+  }
+  // node.type === "mol"
+  const reactionChild = (node.children || []).find((c) => c.type === "reaction");
+  const stock = node.in_stock
+    ? `<span class="text-[9px] px-1 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 shrink-0">en stock</span>`
+    : `<span class="text-[9px] px-1 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30 shrink-0">à synthétiser</span>`;
+  return `<div class="flex items-center gap-2 mt-1">
+      <div class="retro-mol-thumb bg-white rounded h-14 w-20 shrink-0 flex items-center justify-center overflow-hidden" data-smiles="${node.smiles}"></div>
+      <div class="text-[10px] font-mono text-slate-400 break-all min-w-0">${node.smiles}</div>
+      ${stock}
+    </div>${reactionChild ? renderRetroNode(reactionChild) : ""}`;
+}
+
+function renderRetroSection(result) {
+  const select = document.getElementById("modal-retro-route-select");
+  const statsEl = document.getElementById("modal-retro-stats");
+  const treeEl = document.getElementById("modal-retro-tree");
+
+  if (!result || !result.routes || result.routes.length === 0) {
+    select.innerHTML = "";
+    statsEl.textContent = "";
+    treeEl.innerHTML = `<p class="text-xs text-slate-500">Détail de la route indisponible (data/retrosynthesis/ pas encore régénéré pour cette molécule).</p>`;
+    return;
+  }
+
+  const analyses = result.routes.map(analyzeRoute);
+  select.innerHTML = result.routes
+    .map((_, i) => `<option value="${i}">Route ${i + 1} — ${analyses[i].steps} étape(s)</option>`)
+    .join("");
+
+  const showRoute = (i) => {
+    const a = analyses[i];
+    statsEl.textContent = `${a.steps} étape(s) · ${a.inStock}/${a.precursors} précurseur(s) déjà en stock`;
+    treeEl.innerHTML = renderRetroNode(result.routes[i]);
+    treeEl.querySelectorAll(".retro-mol-thumb").forEach((el) => drawThumbnail2D(el, 90, 60));
+  };
+  select.onchange = () => showRoute(Number(select.value));
+  showRoute(0);
+}
+
 async function openModal(id) {
   const m = state.molecules.find((mol) => mol.id === id);
   if (!m) return;
@@ -300,6 +385,16 @@ async function openModal(id) {
   document.getElementById("modal-3d").innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs">Chargement du conformère…</div>`;
   const conformers = await getConformers();
   draw3D(conformers[m.id]);
+
+  const retroSection = document.getElementById("modal-retro");
+  if (m.retrosynthesis_route_found === true) {
+    retroSection.classList.remove("hidden");
+    document.getElementById("modal-retro-tree").innerHTML = `<p class="text-xs text-slate-500">Chargement…</p>`;
+    const result = await getRetroResult(m.id);
+    renderRetroSection(result);
+  } else {
+    retroSection.classList.add("hidden");
+  }
 }
 
 document.getElementById("modal-close").addEventListener("click", () => {

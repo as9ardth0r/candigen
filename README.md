@@ -18,17 +18,20 @@ molgen-egfr/
 │   ├── generator.py       # briques : scaffolds, R-groups, assemblage SMILES
 │   ├── evolve.py          # recettes + mutation atomique (algo génétique)
 │   ├── hall_of_fame.py    # persistance des meilleures molécules entre runs
-│   ├── docking_prep.py    # embedding 3D + export SDF/PDB + config Vina
+│   ├── docking_prep.py    # embedding 3D (ETKDGv3 + MMFF94) + export SDF
+│   ├── docking.py         # docking réel : SITE→centre poche, PDBQT, Vina
 │   └── export.py          # assemblage du JSON consommé par le site
 ├── scripts/
-│   ├── run_pipeline.py    # orchestration : bootstrap ou lot évolutif du jour
-│   └── fetch_vendor.sh    # (re)télécharge le SA-scorer officiel RDKit
+│   ├── run_pipeline.py     # orchestration : bootstrap ou lot évolutif du jour
+│   ├── prepare_receptor.py # prépare data/receptor/ (une fois)
+│   └── fetch_vendor.sh     # (re)télécharge le SA-scorer officiel RDKit
 ├── vendor/                 # sascorer.py + fpscores.pkl.gz (RDKit Contrib)
 ├── data/
 │   ├── seed_molecules.smi  # 5 candidats curés
 │   ├── hall_of_fame.json   # état persistant : meilleures molécules à ce jour
 │   ├── explored.json       # état persistant : SMILES déjà testés
 │   ├── last_run.json       # état persistant : date du dernier lot généré
+│   ├── receptor/            # structure PDB + PDBQT + centre de la poche
 │   ├── molecules.json      # sortie du pipeline (curés + hall of fame)
 │   └── molecules.csv
 ├── site/                   # site statique (GitHub Pages)
@@ -39,7 +42,8 @@ molgen-egfr/
 │       └── conformers.json # blocs SDF, top-K conformes (chargé à la demande)
 ├── tests/
 │   ├── test_properties.py
-│   └── test_evolve.py
+│   ├── test_evolve.py
+│   └── test_docking.py
 └── .github/workflows/deploy.yml
 ```
 
@@ -48,6 +52,7 @@ molgen-egfr/
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python scripts/prepare_receptor.py # optionnel : active le docking réel (une fois)
 python scripts/run_pipeline.py     # régénère data/*.json/csv + site/data/*.json
 python -m pytest tests/ -q         # tests unitaires
 python -m http.server 8000 -d site # prévisualiser le dashboard localement
@@ -146,24 +151,56 @@ conformes. **Toute** la bibliothèque (descripteurs 2D, sans SDF) reste
 néanmoins exportée et parcourable dans le dashboard, qui gère recherche,
 filtre par conformité/provenance, tri (fitness, date de découverte, SA
 score…), pagination ("Charger plus"), un badge "nouveau" sur les molécules
-découvertes le jour même, et un badge BRENK (nombre d'alertes) quand
-pertinent.
+découvertes le jour même, un badge BRENK (nombre d'alertes) quand
+pertinent, et un badge de score de docking (⚓) pour les molécules dockées
+— voir section suivante.
 
-## Docking (optionnel)
+## Docking réel (AutoDock Vina)
 
-`docking_prep.py` génère un conformère 3D (ETKDGv3 + MMFF94) et l'exporte en
-SDF/PDB. La conversion en `.pdbqt` pour AutoDock Vina nécessite un outil
-externe non inclus (licence/poids) :
+Contrairement au criblage 2D (TPP/SA/PAINS/BRENK, rapide et appliqué à
+toute la bibliothèque), le docking calcule un score d'affinité prédit
+(kcal/mol) à partir de la géométrie 3D réelle contre une structure
+cristallographique d'EGFR — un signal plus proche d'une vraie interaction
+protéine-ligand.
+
+- **Structure utilisée** : PDB **1M17** (EGFR, domaine kinase, avec
+  erlotinib — Stamos et al., *J. Biol. Chem.* 2002), choisie parce que
+  c'est la référence historique pour les inhibiteurs réversibles de Type I
+  à cœur quinazoline/aminopyrimidine, le chimiotype majoritaire de ce
+  projet. Pour cribler contre un mutant de résistance (T790M/L858R),
+  changer `PDB_ID` dans `scripts/prepare_receptor.py` (ex. `"4HJO"`) et
+  relancer le script.
+- **Préparation (une seule fois)** : `scripts/prepare_receptor.py`
+  télécharge le PDB, calcule le centre de la poche de liaison à partir des
+  résidus du record `SITE` (générique — fonctionne sur n'importe quelle
+  structure PDB avec un ligand co-cristallisé, pas codé en dur pour 1M17),
+  et convertit le récepteur en `.pdbqt` via Open Babel. Le résultat
+  (`data/receptor/`) est committé et réutilisé à chaque run — pas
+  retéléchargé/reconverti systématiquement.
+- **Automatique en CI** : le workflow prépare le récepteur tout seul au
+  premier run si `data/receptor/config.json` est absent (le runner GitHub
+  a un accès internet complet). Pour lancer ça en local : `python
+  scripts/prepare_receptor.py`.
+- **Dans le pipeline** : `scripts/run_pipeline.py` docke les
+  `MAX_DOCKING` (10 par défaut) meilleures molécules déjà embedées en 3D
+  à `exhaustiveness=4` — un compromis vitesse/qualité mesuré concrètement
+  sur ce projet (~30s/molécule sur un runner 2 cœurs ; ~55s à
+  exhaustiveness=8). Le score est stocké dans `record.docking_score` et
+  affiché dans le dashboard (badge ⚓, triable).
+- **Testé de bout en bout** (`tests/test_docking.py`) : parsing des
+  records `SITE`, conversion récepteur (Open Babel) et ligand (Meeko), et
+  un docking réel complet — pas seulement des mocks.
 
 ```bash
-pip install meeko              # ou: apt install openbabel
-mk_prepare_ligand.py -i ligand.sdf -o ligand.pdbqt
+python scripts/prepare_receptor.py   # une fois, télécharge + prépare data/receptor/
+python scripts/run_pipeline.py       # docke automatiquement le top-10 si le récepteur existe
 ```
 
-Les coordonnées du site actif (`center_x/y/z` dans `write_vina_config`)
-doivent être extraites d'une structure cristallographique de référence
-(ex. PDB 1M17, 4HJO, ou une structure portant la mutation étudiée) via
-PyMOL/ChimeraX — non codées en dur ici.
+> ⚠️ Les scores de docking sont des **prédictions rapides** (scoring
+> function empirique de Vina), pas des mesures. Ils permettent de classer
+> relativement des molécules entre elles, pas d'estimer une affinité
+> absolue fiable — pour ça, il faudrait des méthodes plus coûteuses
+> (MM-GBSA, FEP) hors du périmètre de ce pipeline.
 
 ## CI/CD
 
@@ -174,15 +211,18 @@ PyMOL/ChimeraX — non codées en dur ici.
 - manuellement, via l'onglet Actions → "Run workflow" (`workflow_dispatch`).
 
 À chaque run :
-1. installe les dépendances Python,
-2. relance `scripts/run_pipeline.py` (bootstrap ou lot évolutif du jour,
-   cf. section précédente),
-3. **committe** `data/hall_of_fame.json`, `data/explored.json`,
-   `data/last_run.json` et les fichiers `site/data/*.json` régénérés —
-   sinon tout serait reperdu au run suivant, les runners GitHub étant
-   éphémères. Le message de commit contient `[skip ci]` pour ne pas se
-   redéclencher lui-même en boucle.
-4. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
+1. installe Open Babel (`apt`, conversion PDB → PDBQT du récepteur) puis
+   les dépendances Python,
+2. prépare le récepteur EGFR (`data/receptor/`) s'il n'existe pas encore —
+   seulement au tout premier run, ensuite réutilisé,
+3. relance `scripts/run_pipeline.py` (bootstrap ou lot évolutif du jour,
+   criblage 2D, puis docking réel du top-10 si le récepteur est prêt),
+4. **committe** `data/hall_of_fame.json`, `data/explored.json`,
+   `data/last_run.json`, `data/receptor/` et les fichiers `site/data/*.json`
+   régénérés — sinon tout serait reperdu au run suivant, les runners
+   GitHub étant éphémères. Le message de commit contient `[skip ci]` pour
+   ne pas se redéclencher lui-même en boucle.
+5. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
 
 **Activation** (une fois, dans les paramètres du dépôt GitHub) :
 `Settings → Pages → Source → GitHub Actions`. Le workflow a besoin de la

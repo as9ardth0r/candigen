@@ -52,6 +52,7 @@ class MoleculeRecord:
     recipe: Optional[dict] = None  # {"scaffold":..., "aniline":..., "solubilizer":...} pour source="generated"
     first_seen: Optional[str] = None  # date ISO de première apparition dans le hall of fame
     fitness: Optional[float] = None  # score composite (voir molgen.evolve.fitness)
+    docking_score: Optional[float] = None  # kcal/mol (AutoDock Vina), None si pas encore docké
 
     def to_dict(self) -> dict:
         return asdict(self)

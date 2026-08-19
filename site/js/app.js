@@ -103,6 +103,11 @@ function toxicityBadge(alerts) {
   return `<span title="${alerts.join(', ')}" class="text-[10px] px-1.5 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/30">⚠ BRENK ×${alerts.length}</span>`;
 }
 
+function dockingBadge(score) {
+  if (score === null || score === undefined) return "";
+  return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚓ ${score} kcal/mol</span>`;
+}
+
 function moleculeCard(m) {
   return `<article data-id="${m.id}" class="mol-card cursor-pointer bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-xl p-4 transition">
     <div class="flex items-start justify-between gap-2">
@@ -118,7 +123,7 @@ function moleculeCard(m) {
       <div>HBA <span class="text-slate-200 font-mono">${m.hba}</span></div>
       <div>SA <span class="text-slate-200 font-mono">${m.sa_score}</span></div>
     </dl>
-    <div class="mt-2">${toxicityBadge(m.toxicity_alerts)}</div>
+    <div class="mt-2 flex flex-wrap gap-1">${toxicityBadge(m.toxicity_alerts)}${dockingBadge(m.docking_score)}</div>
   </article>`;
 }
 
@@ -186,39 +191,50 @@ async function drawModal2D(smiles) {
 }
 
 // --- 3Dmol.js : rendu du conformère 3D depuis le bloc SDF précalculé ---
+// Un seul viewer (donc un seul contexte WebGL) est créé pour toute la durée
+// de vie de la page, puis réutilisé (viewer.clear() + nouveau modèle) à
+// chaque molécule. Créer un $3Dmol.createViewer() à chaque ouverture de
+// modale, sans jamais le libérer, épuise la limite de contextes WebGL
+// simultanés du navigateur (souvent ~16) après quelques dizaines d'ouvertures
+// — silencieusement, sans erreur, ce qui explique un rendu qui s'arrête de
+// fonctionner après une longue session sans que rien ne semble cassé.
+let _viewer3d = null;
+
 function draw3D(sdf) {
   const container = document.getElementById("modal-3d");
-  container.innerHTML = "";
   if (!sdf) {
     container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs">Pas de conformère 3D</div>`;
+    _viewer3d = null; // le canvas précédent vient d'être effacé par innerHTML
     return;
   }
   if (typeof $3Dmol === "undefined") {
     container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Bibliothèque 3Dmol.js non chargée (bloquée par un bloqueur de pub/VPN ?)</div>`;
+    _viewer3d = null;
     return;
   }
-  // On attend la prochaine frame avant de créer le viewer : si la modale
-  // vient d'être affichée (ou si conformers.json était déjà en cache et
-  // que l'attente async n'a laissé aucun temps au navigateur), le conteneur
-  // peut ne pas avoir de taille définitive et 3Dmol créerait un canvas
-  // WebGL de 0×0 pixels — valide, sans erreur, mais invisible.
   requestAnimationFrame(() => {
-    console.log("modal-3d taille au moment du rendu :", container.offsetWidth, "x", container.offsetHeight);
     try {
-      const viewer = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
-      const model = viewer.addModel(sdf, "sdf");
+      if (!_viewer3d) {
+        container.innerHTML = "";
+        _viewer3d = $3Dmol.createViewer(container, { backgroundColor: "#020617" });
+      } else {
+        _viewer3d.clear();
+      }
+      const model = _viewer3d.addModel(sdf, "sdf");
       const nAtoms = model.selectedAtoms({}).length;
       if (nAtoms === 0) {
         console.error("3Dmol a chargé 0 atome depuis ce bloc SDF :", sdf);
         container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">0 atome chargé — format SDF invalide (voir la console)</div>`;
+        _viewer3d = null;
         return;
       }
-      viewer.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
-      viewer.zoomTo();
-      viewer.render();
+      _viewer3d.setStyle({}, { stick: { radius: 0.15 }, sphere: { scale: 0.25 } });
+      _viewer3d.zoomTo();
+      _viewer3d.render();
     } catch (e) {
       console.error("3Dmol render error:", e);
       container.innerHTML = `<div class="h-full flex items-center justify-center text-slate-500 text-xs text-center px-4">Erreur de rendu 3D — voir la console (F12)</div>`;
+      _viewer3d = null;
     }
   });
 }
@@ -244,6 +260,7 @@ async function openModal(id) {
     ["MW", m.mw], ["LogP", m.logp], ["TPSA", m.tpsa], ["HBD", m.hbd],
     ["HBA", m.hba], ["RotB", m.rotatable_bonds], ["SA score", m.sa_score], ["QED", m.qed],
     ["Fitness", m.fitness ?? "—"], ["Découverte le", m.first_seen ?? "—"],
+    ["Docking (kcal/mol)", m.docking_score ?? "—"],
   ].map(([k, v]) => `<div class="bg-slate-800/60 rounded-lg px-2 py-1"><span class="text-slate-400">${k}:</span> <span class="font-mono">${v}</span></div>`).join("");
   document.getElementById("modal-notes").textContent =
     `${m.formula} — ${m.notes}` +

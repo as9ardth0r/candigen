@@ -1,2 +1,5 @@
 rdkit>=2024.3.1
 pytest>=8.0
+vina>=1.2.5
+meeko>=0.7.0
+gemmi>=0.6.0

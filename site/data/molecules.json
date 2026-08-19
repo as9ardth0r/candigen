@@ -1,7 +1,7 @@
 {
   "target": "EGFR",
-  "generated_at": "2026-08-19T03:51:43.169700+00:00",
-  "count": 285,
+  "generated_at": "2026-08-19T10:10:07.163205+00:00",
+  "count": 260,
   "molecules": [
     {
       "id": "M3_EGFR-Hng-03",
@@ -26,7 +26,8 @@
       "source": "curated",
       "recipe": null,
       "first_seen": null,
-      "fitness": 0.4805
+      "fitness": 0.4805,
+      "docking_score": null
     },
     {
       "id": "M4_EGFR-Iso-04",
@@ -51,7 +52,8 @@
       "source": "curated",
       "recipe": null,
       "first_seen": null,
-      "fitness": 0.4215
+      "fitness": 0.4215,
+      "docking_score": null
     },
     {
       "id": "M1_EGFR-Rev-01",
@@ -79,7 +81,8 @@
       "source": "curated",
       "recipe": null,
       "first_seen": null,
-      "fitness": 0.2885
+      "fitness": 0.2885,
+      "docking_score": null
     },
     {
       "id": "M2_EGFR-Cov-02",
@@ -108,7 +111,8 @@
       "source": "curated",
       "recipe": null,
       "first_seen": null,
-      "fitness": 0.2295
+      "fitness": 0.2295,
+      "docking_score": null
     },
     {
       "id": "M5_EGFR-Mac-05",
@@ -137,7 +141,8 @@
       "source": "curated",
       "recipe": null,
       "first_seen": null,
-      "fitness": 0.0545
+      "fitness": 0.0545,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_tetrahydropyranyloxy",
@@ -165,8 +170,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.664
+      "first_seen": "2026-08-19",
+      "fitness": 0.664,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -194,8 +200,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.653
+      "first_seen": "2026-08-19",
+      "fitness": 0.653,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_oxetanylmethoxy",
@@ -223,8 +230,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.646
+      "first_seen": "2026-08-19",
+      "fitness": 0.646,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_tetrahydropyranyloxy",
@@ -252,8 +260,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.643
+      "first_seen": "2026-08-19",
+      "fitness": 0.643,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -281,8 +290,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6425
+      "first_seen": "2026-08-19",
+      "fitness": 0.6425,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_tetrahydropyranyloxy",
@@ -310,8 +320,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.64
+      "first_seen": "2026-08-19",
+      "fitness": 0.64,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_methoxyphenyl_tetrahydropyranyloxy",
@@ -339,8 +350,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6385
+      "first_seen": "2026-08-19",
+      "fitness": 0.6385,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_tetrahydropyranyloxy",
@@ -368,8 +380,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6385
+      "first_seen": "2026-08-19",
+      "fitness": 0.6385,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_oxetanylmethoxy",
@@ -397,8 +410,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6365
+      "first_seen": "2026-08-19",
+      "fitness": 0.6365,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -426,8 +440,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.636
+      "first_seen": "2026-08-19",
+      "fitness": 0.636,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_oxetanylmethoxy",
@@ -455,8 +470,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.634
+      "first_seen": "2026-08-19",
+      "fitness": 0.634,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_tetrahydropyranyloxy",
@@ -484,8 +500,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.633
+      "first_seen": "2026-08-19",
+      "fitness": 0.633,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminoethoxy",
@@ -513,37 +530,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.632
-    },
-    {
-      "id": "gen_quinazoline_methoxyphenyl_oxetanylmethoxy",
-      "smiles": "COc1ccc(Nc2ncnc3cccc(OCC4COC4)c23)cc1",
-      "canonical_smiles": "COc1ccc(Nc2ncnc3cccc(OCC4COC4)c23)cc1",
-      "mw": 337.38,
-      "logp": 3.41,
-      "tpsa": 65.5,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.744,
-      "formula": "C19H19N3O3",
-      "sa_score": 2.26,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "quinazoline",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "oxetanylmethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.631
+      "fitness": 0.632,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -571,8 +560,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.628
+      "first_seen": "2026-08-19",
+      "fitness": 0.628,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -600,8 +590,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.628
+      "first_seen": "2026-08-19",
+      "fitness": 0.628,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_dimethylaminoethoxy",
@@ -629,33 +620,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6275
-    },
-    {
-      "id": "mut_2026-08-19_0003",
-      "smiles": "CN(C)CCOn1ccc2c(Nc3ccc(F)cc3)ncnc21",
-      "canonical_smiles": "CN(C)CCOn1ccc2c(Nc3ccc(F)cc3)ncnc21",
-      "mw": 315.35,
-      "logp": 2.3,
-      "tpsa": 55.21,
-      "hbd": 1,
-      "hba": 5,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.756,
-      "formula": "C16H18FN5O",
-      "sa_score": 2.57,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.6275
+      "fitness": 0.6275,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_oxetanylmethoxy",
@@ -683,37 +650,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.627
-    },
-    {
-      "id": "gen_quinazoline_chlorophenyl_dimethylaminoethoxy",
-      "smiles": "CN(C)CCOc1cccc2ncnc(Nc3cccc(Cl)c3)c12",
-      "canonical_smiles": "CN(C)CCOc1cccc2ncnc(Nc3cccc(Cl)c3)c12",
-      "mw": 342.83,
-      "logp": 3.97,
-      "tpsa": 50.28,
-      "hbd": 1,
-      "hba": 5,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.734,
-      "formula": "C18H19ClN4O",
-      "sa_score": 2.16,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "quinazoline",
-        "aniline": "chlorophenyl",
-        "solubilizer": "dimethylaminoethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.626
+      "fitness": 0.627,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_oxetanylmethoxy",
@@ -741,8 +680,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6255
+      "first_seen": "2026-08-19",
+      "fitness": 0.6255,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -770,8 +710,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6255
+      "first_seen": "2026-08-19",
+      "fitness": 0.6255,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_cyanophenyl_azetidinylethoxy",
@@ -799,37 +740,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6255
-    },
-    {
-      "id": "gen_pyrrolopyrimidine_methylphenyl_pyrrolidinylethoxy",
-      "smiles": "Cc1cccc(Nc2ncnc3c2ccn3OCCN2CCCC2)c1",
-      "canonical_smiles": "Cc1cccc(Nc2ncnc3c2ccn3OCCN2CCCC2)c1",
-      "mw": 337.43,
-      "logp": 3.01,
-      "tpsa": 55.21,
-      "hbd": 1,
-      "hba": 5,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.749,
-      "formula": "C19H23N5O",
-      "sa_score": 2.55,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyrrolopyrimidine",
-        "aniline": "methylphenyl",
-        "solubilizer": "pyrrolidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.6215
+      "fitness": 0.6255,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_oxetanylmethoxy",
@@ -857,37 +770,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6205
-    },
-    {
-      "id": "gen_thienopyrimidine_fluorophenyl_azetidinylethoxy",
-      "smiles": "Fc1ccc(Nc2ncnc3scc(OCCN4CCC4)c23)cc1",
-      "canonical_smiles": "Fc1ccc(Nc2ncnc3scc(OCCN4CCC4)c23)cc1",
-      "mw": 344.42,
-      "logp": 3.66,
-      "tpsa": 50.28,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.739,
-      "formula": "C17H17FN4OS",
-      "sa_score": 2.37,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "thienopyrimidine",
-        "aniline": "fluorophenyl",
-        "solubilizer": "azetidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.6205
+      "fitness": 0.6205,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_tetrahydropyranyloxy",
@@ -915,8 +800,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.62
+      "first_seen": "2026-08-19",
+      "fitness": 0.62,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -944,83 +830,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.62
-    },
-    {
-      "id": "mut_2026-08-19_0001",
-      "smiles": "Cc1ccc(Nc2ncnc3c2nnn3OCC2COC2)cc1C",
-      "canonical_smiles": "Cc1ccc(Nc2ncnc3c2nnn3OCC2COC2)cc1C",
-      "mw": 326.36,
-      "logp": 1.66,
-      "tpsa": 86.98,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 5,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.763,
-      "formula": "C16H18N6O2",
-      "sa_score": 2.86,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.62
-    },
-    {
-      "id": "mut_2026-08-19_0007",
-      "smiles": "Cc1ccc2ncnc(Nc3ccc(F)c(F)c3)c2c1OCC1COC1",
-      "canonical_smiles": "Cc1ccc2ncnc(Nc3ccc(F)c(F)c3)c2c1OCC1COC1",
-      "mw": 357.36,
-      "logp": 3.99,
-      "tpsa": 56.27,
-      "hbd": 1,
-      "hba": 5,
-      "rotatable_bonds": 5,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.748,
-      "formula": "C19H17F2N3O2",
-      "sa_score": 2.56,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
-      "first_seen": "2026-08-19",
-      "fitness": 0.62
-    },
-    {
-      "id": "mut_2026-08-19_0009",
-      "smiles": "Cc1ccc(C)c(Nc2cnc3cccc(OCCN(C)C)n23)c1",
-      "canonical_smiles": "Cc1ccc(C)c(Nc2cnc3cccc(OCCN(C)C)n23)c1",
-      "mw": 324.43,
-      "logp": 3.64,
-      "tpsa": 41.8,
-      "hbd": 1,
-      "hba": 4,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.752,
-      "formula": "C19H24N4O",
-      "sa_score": 2.66,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
-      "first_seen": "2026-08-19",
-      "fitness": 0.619
+      "fitness": 0.62,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_dimethylaminoethoxy",
@@ -1048,8 +860,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6185
+      "first_seen": "2026-08-19",
+      "fitness": 0.6185,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -1077,8 +890,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6185
+      "first_seen": "2026-08-19",
+      "fitness": 0.6185,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_dimethylaminoethoxy",
@@ -1106,8 +920,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6175
+      "first_seen": "2026-08-19",
+      "fitness": 0.6175,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -1135,8 +950,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6175
+      "first_seen": "2026-08-19",
+      "fitness": 0.6175,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_pyrrolidinylethoxy",
@@ -1164,8 +980,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.617
+      "first_seen": "2026-08-19",
+      "fitness": 0.617,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -1193,37 +1010,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.617
-    },
-    {
-      "id": "gen_triazolopyrimidine_chlorophenyl_oxetanylmethoxy",
-      "smiles": "Clc1cccc(Nc2ncnc3c2nnn3OCC2COC2)c1",
-      "canonical_smiles": "Clc1cccc(Nc2ncnc3c2nnn3OCC2COC2)c1",
-      "mw": 332.75,
-      "logp": 1.69,
-      "tpsa": 86.98,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 5,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.76,
-      "formula": "C14H13ClN6O2",
-      "sa_score": 2.86,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "triazolopyrimidine",
-        "aniline": "chlorophenyl",
-        "solubilizer": "oxetanylmethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.617
+      "fitness": 0.617,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_azetidinylethoxy",
@@ -1251,8 +1040,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.616
+      "first_seen": "2026-08-19",
+      "fitness": 0.616,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_oxetanylmethoxy",
@@ -1280,37 +1070,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6155
-    },
-    {
-      "id": "gen_thienopyrimidine_methoxyphenyl_oxetanylmethoxy",
-      "smiles": "COc1ccc(Nc2ncnc3scc(OCC4COC4)c23)cc1",
-      "canonical_smiles": "COc1ccc(Nc2ncnc3scc(OCC4COC4)c23)cc1",
-      "mw": 343.41,
-      "logp": 3.47,
-      "tpsa": 65.5,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.739,
-      "formula": "C17H17N3O3S",
-      "sa_score": 2.53,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "thienopyrimidine",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "oxetanylmethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.6125
+      "fitness": 0.6155,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_azetidinylethoxy",
@@ -1338,8 +1100,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.612
+      "first_seen": "2026-08-19",
+      "fitness": 0.612,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_morpholinoethoxy",
@@ -1367,8 +1130,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.612
+      "first_seen": "2026-08-19",
+      "fitness": 0.612,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_tetrahydropyranyloxy",
@@ -1396,33 +1160,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.612
-    },
-    {
-      "id": "mut_2026-08-19_0002",
-      "smiles": "Cc1cc(Nc2ncnc3c2nnn3OCC2COC2)ccc1Cl",
-      "canonical_smiles": "Cc1cc(Nc2ncnc3c2nnn3OCC2COC2)ccc1Cl",
-      "mw": 346.78,
-      "logp": 2.0,
-      "tpsa": 86.98,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 5,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.756,
-      "formula": "C15H15ClN6O2",
-      "sa_score": 2.91,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.6105
+      "fitness": 0.612,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_azetidinylethoxy",
@@ -1450,8 +1190,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.607
+      "first_seen": "2026-08-19",
+      "fitness": 0.607,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_oxetanylmethoxy",
@@ -1479,8 +1220,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6065
+      "first_seen": "2026-08-19",
+      "fitness": 0.6065,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_chlorophenyl_dimethylaminoethoxy",
@@ -1508,33 +1250,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6055
-    },
-    {
-      "id": "mut_2026-08-19_0006",
-      "smiles": "CN(C)CCOc1cnc2ncnc(Nc3ccc(F)c(Cl)c3)c2c1",
-      "canonical_smiles": "CN(C)CCOc1cnc2ncnc(Nc3ccc(F)c(Cl)c3)c2c1",
-      "mw": 361.81,
-      "logp": 3.5,
-      "tpsa": 63.17,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.725,
-      "formula": "C17H17ClFN5O",
-      "sa_score": 2.42,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.604
+      "fitness": 0.6055,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_morpholinoethoxy",
@@ -1562,8 +1280,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6025
+      "first_seen": "2026-08-19",
+      "fitness": 0.6025,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -1591,8 +1310,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6015
+      "first_seen": "2026-08-19",
+      "fitness": 0.6015,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_pyrrolidinylethoxy",
@@ -1620,8 +1340,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.601
+      "first_seen": "2026-08-19",
+      "fitness": 0.601,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -1649,8 +1370,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.6
+      "first_seen": "2026-08-19",
+      "fitness": 0.6,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_methylpiperazinylethoxy",
@@ -1678,8 +1400,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5995
+      "first_seen": "2026-08-19",
+      "fitness": 0.5995,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -1707,8 +1430,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.598
+      "first_seen": "2026-08-19",
+      "fitness": 0.598,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_azetidinylethoxy",
@@ -1736,8 +1460,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.597
+      "first_seen": "2026-08-19",
+      "fitness": 0.597,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -1765,8 +1490,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5955
+      "first_seen": "2026-08-19",
+      "fitness": 0.5955,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_bromophenyl_oxetanylmethoxy",
@@ -1794,8 +1520,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.595
+      "first_seen": "2026-08-19",
+      "fitness": 0.595,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_azetidinylethoxy",
@@ -1823,8 +1550,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.595
+      "first_seen": "2026-08-19",
+      "fitness": 0.595,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorophenyl_pyrrolidinylethoxy",
@@ -1852,37 +1580,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.595
-    },
-    {
-      "id": "gen_pyridopyrimidine_methoxyphenyl_dimethylaminoethoxy",
-      "smiles": "COc1ccc(Nc2ncnc3ncc(OCCN(C)C)cc23)cc1",
-      "canonical_smiles": "COc1ccc(Nc2ncnc3ncc(OCCN(C)C)cc23)cc1",
-      "mw": 339.4,
-      "logp": 2.72,
-      "tpsa": 72.4,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 7,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.709,
-      "formula": "C18H21N5O2",
-      "sa_score": 2.28,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyridopyrimidine",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "dimethylaminoethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.595
+      "fitness": 0.595,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -1910,8 +1610,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.594
+      "first_seen": "2026-08-19",
+      "fitness": 0.594,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -1939,8 +1640,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5935
+      "first_seen": "2026-08-19",
+      "fitness": 0.5935,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_dimethylaminophenyl_oxetanylmethoxy",
@@ -1968,8 +1670,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.592
+      "first_seen": "2026-08-19",
+      "fitness": 0.592,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_azetidinylethoxy",
@@ -1997,8 +1700,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.592
+      "first_seen": "2026-08-19",
+      "fitness": 0.592,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methoxyphenyl_dimethylaminoethoxy",
@@ -2026,8 +1730,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5905
+      "first_seen": "2026-08-19",
+      "fitness": 0.5905,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_pyrrolidinylethoxy",
@@ -2055,8 +1760,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5895
+      "first_seen": "2026-08-19",
+      "fitness": 0.5895,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_chlorofluorophenyl_azetidinylethoxy",
@@ -2084,33 +1790,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5895
-    },
-    {
-      "id": "mut_2026-08-19_0005",
-      "smiles": "CN(C)CCOc1ccc(Cl)c2ncc(Nc3cccc(C#N)c3)n12",
-      "canonical_smiles": "CN(C)CCOc1ccc(Cl)c2ncc(Nc3cccc(C#N)c3)n12",
-      "mw": 355.83,
-      "logp": 3.54,
-      "tpsa": 65.59,
-      "hbd": 1,
-      "hba": 5,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.732,
-      "formula": "C18H18ClN5O",
-      "sa_score": 2.87,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.5885
+      "fitness": 0.5895,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_morpholinoethoxy",
@@ -2138,8 +1820,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5865
+      "first_seen": "2026-08-19",
+      "fitness": 0.5865,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_morpholinoethoxy",
@@ -2167,8 +1850,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.586
+      "first_seen": "2026-08-19",
+      "fitness": 0.586,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminoethoxy",
@@ -2196,8 +1880,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.585
+      "first_seen": "2026-08-19",
+      "fitness": 0.585,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -2225,8 +1910,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.583
+      "first_seen": "2026-08-19",
+      "fitness": 0.583,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_tetrahydropyranyloxy",
@@ -2254,8 +1940,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.583
+      "first_seen": "2026-08-19",
+      "fitness": 0.583,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -2283,8 +1970,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5825
+      "first_seen": "2026-08-19",
+      "fitness": 0.5825,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -2312,8 +2000,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.582
+      "first_seen": "2026-08-19",
+      "fitness": 0.582,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_methylpiperazinylethoxy",
@@ -2341,8 +2030,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.581
+      "first_seen": "2026-08-19",
+      "fitness": 0.581,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_dimethylaminoethoxy",
@@ -2372,8 +2062,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.581
+      "first_seen": "2026-08-19",
+      "fitness": 0.581,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -2403,8 +2094,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5805
+      "first_seen": "2026-08-19",
+      "fitness": 0.5805,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_oxetanylmethoxy",
@@ -2432,8 +2124,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.58
+      "first_seen": "2026-08-19",
+      "fitness": 0.58,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_azetidinylethoxy",
@@ -2461,8 +2154,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.579
+      "first_seen": "2026-08-19",
+      "fitness": 0.579,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_dimethylaminoethoxy",
@@ -2490,37 +2184,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5775
-    },
-    {
-      "id": "gen_pyridopyrimidine_dimethylaminophenyl_dimethylaminoethoxy",
-      "smiles": "CN(C)CCOc1cnc2ncnc(Nc3cccc(N(C)C)c3)c2c1",
-      "canonical_smiles": "CN(C)CCOc1cnc2ncnc(Nc3cccc(N(C)C)c3)c2c1",
-      "mw": 352.44,
-      "logp": 2.77,
-      "tpsa": 66.41,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 7,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.701,
-      "formula": "C19H24N6O",
-      "sa_score": 2.48,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyridopyrimidine",
-        "aniline": "dimethylaminophenyl",
-        "solubilizer": "dimethylaminoethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.577
+      "fitness": 0.5775,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -2548,8 +2214,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5765
+      "first_seen": "2026-08-19",
+      "fitness": 0.5765,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_methylpiperazinylethoxy",
@@ -2577,8 +2244,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5765
+      "first_seen": "2026-08-19",
+      "fitness": 0.5765,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -2606,8 +2274,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.575
+      "first_seen": "2026-08-19",
+      "fitness": 0.575,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -2635,8 +2304,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5745
+      "first_seen": "2026-08-19",
+      "fitness": 0.5745,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_azetidinylethoxy",
@@ -2664,8 +2334,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.573
+      "first_seen": "2026-08-19",
+      "fitness": 0.573,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_bromophenyl_azetidinylethoxy",
@@ -2693,8 +2364,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5725
+      "first_seen": "2026-08-19",
+      "fitness": 0.5725,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_fluoropiperidinylethoxy",
@@ -2722,8 +2394,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.572
+      "first_seen": "2026-08-19",
+      "fitness": 0.572,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_azetidinylethoxy",
@@ -2751,8 +2424,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.572
+      "first_seen": "2026-08-19",
+      "fitness": 0.572,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_methylpiperazinylethoxy",
@@ -2780,8 +2454,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5715
+      "first_seen": "2026-08-19",
+      "fitness": 0.5715,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_tetrahydropyranyloxy",
@@ -2811,8 +2486,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5705
+      "first_seen": "2026-08-19",
+      "fitness": 0.5705,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -2840,8 +2516,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5705
+      "first_seen": "2026-08-19",
+      "fitness": 0.5705,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_fluoropiperidinylethoxy",
@@ -2869,8 +2546,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5695
+      "first_seen": "2026-08-19",
+      "fitness": 0.5695,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -2898,37 +2576,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.569
-    },
-    {
-      "id": "gen_pyridopyrimidine_trifluoromethylphenyl_azetidinylethoxy",
-      "smiles": "FC(F)(F)c1cccc(Nc2ncnc3ncc(OCCN4CCC4)cc23)c1",
-      "canonical_smiles": "FC(F)(F)c1cccc(Nc2ncnc3ncc(OCCN4CCC4)cc23)c1",
-      "mw": 389.38,
-      "logp": 3.87,
-      "tpsa": 63.17,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.691,
-      "formula": "C19H18F3N5O",
-      "sa_score": 2.44,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyridopyrimidine",
-        "aniline": "trifluoromethylphenyl",
-        "solubilizer": "azetidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.569
+      "fitness": 0.569,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_methylpiperazinylethoxy",
@@ -2956,8 +2606,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5685
+      "first_seen": "2026-08-19",
+      "fitness": 0.5685,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -2985,8 +2636,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.568
+      "first_seen": "2026-08-19",
+      "fitness": 0.568,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_azetidinylethoxy",
@@ -3014,8 +2666,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5675
+      "first_seen": "2026-08-19",
+      "fitness": 0.5675,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_azetidinylethoxy",
@@ -3043,39 +2696,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5655
-    },
-    {
-      "id": "gen_imidazopyridine_ethynylphenyl_dimethylaminoethoxy",
-      "smiles": "C#Cc1cccc(Nc2cnc3cccc(OCCN(C)C)n23)c1",
-      "canonical_smiles": "C#Cc1cccc(Nc2cnc3cccc(OCCN(C)C)n23)c1",
-      "mw": 320.4,
-      "logp": 3.0,
-      "tpsa": 41.8,
-      "hbd": 1,
-      "hba": 4,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.709,
-      "formula": "C19H20N4O",
-      "sa_score": 2.87,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [
-        "triple_bond"
-      ],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "imidazopyridine",
-        "aniline": "ethynylphenyl",
-        "solubilizer": "dimethylaminoethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.5655
+      "fitness": 0.5655,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_azetidinylethoxy",
@@ -3103,8 +2726,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5645
+      "first_seen": "2026-08-19",
+      "fitness": 0.5645,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_morpholinoethoxy",
@@ -3132,8 +2756,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5645
+      "first_seen": "2026-08-19",
+      "fitness": 0.5645,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_fluoropiperidinylethoxy",
@@ -3161,8 +2786,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5635
+      "first_seen": "2026-08-19",
+      "fitness": 0.5635,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_fluoropiperidinylethoxy",
@@ -3190,8 +2816,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5635
+      "first_seen": "2026-08-19",
+      "fitness": 0.5635,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_pyrrolidinylethoxy",
@@ -3219,8 +2846,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.563
+      "first_seen": "2026-08-19",
+      "fitness": 0.563,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminoethoxy",
@@ -3250,8 +2878,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.562
+      "first_seen": "2026-08-19",
+      "fitness": 0.562,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_cyanophenyl_methylpiperazinylethoxy",
@@ -3279,8 +2908,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5615
+      "first_seen": "2026-08-19",
+      "fitness": 0.5615,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -3308,8 +2938,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.561
+      "first_seen": "2026-08-19",
+      "fitness": 0.561,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -3337,8 +2968,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.56
+      "first_seen": "2026-08-19",
+      "fitness": 0.56,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_dimethylaminophenyl_azetidinylethoxy",
@@ -3366,8 +2998,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.56
+      "first_seen": "2026-08-19",
+      "fitness": 0.56,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_pyrrolidinylethoxy",
@@ -3397,8 +3030,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5595
+      "first_seen": "2026-08-19",
+      "fitness": 0.5595,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -3426,33 +3060,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.559
-    },
-    {
-      "id": "mut_2026-08-19_0010",
-      "smiles": "CN(C)CCOc1csc2ncnc(Nc3ccc(Br)cc3)c12",
-      "canonical_smiles": "CN(C)CCOc1csc2ncnc(Nc3ccc(Br)cc3)c12",
-      "mw": 393.31,
-      "logp": 4.14,
-      "tpsa": 50.28,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 3,
-      "num_aromatic_rings": 3,
-      "qed": 0.682,
-      "formula": "C16H17BrN4OS",
-      "sa_score": 2.46,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.559
+      "fitness": 0.559,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -3480,8 +3090,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.557
+      "first_seen": "2026-08-19",
+      "fitness": 0.557,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorophenyl_morpholinoethoxy",
@@ -3509,8 +3120,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5555
+      "first_seen": "2026-08-19",
+      "fitness": 0.5555,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -3538,33 +3150,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.554
-    },
-    {
-      "id": "mut_2026-08-19_0004",
-      "smiles": "Fc1nc(Nc2ccc(F)c(F)c2)c2nnn(OC3CCOCC3)c2n1",
-      "canonical_smiles": "Fc1nc(Nc2ccc(F)c(F)c2)c2nnn(OC3CCOCC3)c2n1",
-      "mw": 366.3,
-      "logp": 1.99,
-      "tpsa": 86.98,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 4,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.707,
-      "formula": "C15H13F3N6O2",
-      "sa_score": 3.06,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": null,
       "first_seen": "2026-08-19",
-      "fitness": 0.554
+      "fitness": 0.554,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_chlorophenyl_methylpiperazinylethoxy",
@@ -3592,8 +3180,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.553
+      "first_seen": "2026-08-19",
+      "fitness": 0.553,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -3623,8 +3212,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5475
+      "first_seen": "2026-08-19",
+      "fitness": 0.5475,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -3652,8 +3242,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5475
+      "first_seen": "2026-08-19",
+      "fitness": 0.5475,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3681,8 +3272,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5475
+      "first_seen": "2026-08-19",
+      "fitness": 0.5475,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3710,8 +3302,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.547
+      "first_seen": "2026-08-19",
+      "fitness": 0.547,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_chlorofluorophenyl_morpholinoethoxy",
@@ -3739,8 +3332,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.546
+      "first_seen": "2026-08-19",
+      "fitness": 0.546,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3768,8 +3362,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5455
+      "first_seen": "2026-08-19",
+      "fitness": 0.5455,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_dimethylaminopropoxy",
@@ -3799,8 +3394,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5455
+      "first_seen": "2026-08-19",
+      "fitness": 0.5455,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinoethoxy",
@@ -3828,8 +3424,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.545
+      "first_seen": "2026-08-19",
+      "fitness": 0.545,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_tetrahydropyranyloxy",
@@ -3857,8 +3454,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.545
+      "first_seen": "2026-08-19",
+      "fitness": 0.545,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_cyanophenyl_dimethylaminopropoxy",
@@ -3888,8 +3486,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5435
+      "first_seen": "2026-08-19",
+      "fitness": 0.5435,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinoethoxy",
@@ -3917,8 +3516,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.542
+      "first_seen": "2026-08-19",
+      "fitness": 0.542,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -3946,8 +3546,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.539
+      "first_seen": "2026-08-19",
+      "fitness": 0.539,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinoethoxy",
@@ -3975,8 +3576,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.539
+      "first_seen": "2026-08-19",
+      "fitness": 0.539,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminopropoxy",
@@ -4006,8 +3608,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.537
+      "first_seen": "2026-08-19",
+      "fitness": 0.537,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_fluoropiperidinylethoxy",
@@ -4035,8 +3638,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5365
+      "first_seen": "2026-08-19",
+      "fitness": 0.5365,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -4064,8 +3668,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5355
+      "first_seen": "2026-08-19",
+      "fitness": 0.5355,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_fluorophenyl_cyclopropylaminoethoxy",
@@ -4095,8 +3700,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.535
+      "first_seen": "2026-08-19",
+      "fitness": 0.535,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_ethynylphenyl_methylpiperazinylethoxy",
@@ -4126,8 +3732,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.535
+      "first_seen": "2026-08-19",
+      "fitness": 0.535,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_methylpiperazinylethoxy",
@@ -4155,8 +3762,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5345
+      "first_seen": "2026-08-19",
+      "fitness": 0.5345,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_methylpiperazinylethoxy",
@@ -4186,8 +3794,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.534
+      "first_seen": "2026-08-19",
+      "fitness": 0.534,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -4215,8 +3824,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.534
+      "first_seen": "2026-08-19",
+      "fitness": 0.534,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_morpholinoethoxy",
@@ -4244,8 +3854,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.532
+      "first_seen": "2026-08-19",
+      "fitness": 0.532,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_fluoropiperidinylethoxy",
@@ -4273,8 +3884,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.531
+      "first_seen": "2026-08-19",
+      "fitness": 0.531,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_thiomethylphenyl_dimethylaminoethoxy",
@@ -4302,8 +3914,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5305
+      "first_seen": "2026-08-19",
+      "fitness": 0.5305,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -4331,8 +3944,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5305
+      "first_seen": "2026-08-19",
+      "fitness": 0.5305,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -4360,8 +3974,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.53
+      "first_seen": "2026-08-19",
+      "fitness": 0.53,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_methylpiperazinylethoxy",
@@ -4391,8 +4006,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.529
+      "first_seen": "2026-08-19",
+      "fitness": 0.529,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_oxetanylmethoxy",
@@ -4420,8 +4036,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5285
+      "first_seen": "2026-08-19",
+      "fitness": 0.5285,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -4449,8 +4066,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5285
+      "first_seen": "2026-08-19",
+      "fitness": 0.5285,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methoxyphenyl_fluoropiperidinylethoxy",
@@ -4478,8 +4096,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.528
+      "first_seen": "2026-08-19",
+      "fitness": 0.528,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -4507,8 +4126,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5265
+      "first_seen": "2026-08-19",
+      "fitness": 0.5265,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_sulfonylpiperidinylethoxy",
@@ -4536,8 +4156,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.525
+      "first_seen": "2026-08-19",
+      "fitness": 0.525,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -4567,8 +4188,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5235
+      "first_seen": "2026-08-19",
+      "fitness": 0.5235,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_cyclopropylaminoethoxy",
@@ -4598,8 +4220,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.523
+      "first_seen": "2026-08-19",
+      "fitness": 0.523,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_methylpiperazinylethoxy",
@@ -4629,8 +4252,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5215
+      "first_seen": "2026-08-19",
+      "fitness": 0.5215,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_cyclopropylaminoethoxy",
@@ -4660,8 +4284,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5215
+      "first_seen": "2026-08-19",
+      "fitness": 0.5215,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_methylpiperazinylethoxy",
@@ -4689,8 +4314,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5195
+      "first_seen": "2026-08-19",
+      "fitness": 0.5195,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -4718,8 +4344,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5175
+      "first_seen": "2026-08-19",
+      "fitness": 0.5175,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -4747,8 +4374,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5155
+      "first_seen": "2026-08-19",
+      "fitness": 0.5155,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -4778,8 +4406,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.515
+      "first_seen": "2026-08-19",
+      "fitness": 0.515,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_sulfonylpiperidinylethoxy",
@@ -4807,8 +4436,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.515
+      "first_seen": "2026-08-19",
+      "fitness": 0.515,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_cyclopropylaminoethoxy",
@@ -4838,8 +4468,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5125
+      "first_seen": "2026-08-19",
+      "fitness": 0.5125,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -4867,8 +4498,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.512
+      "first_seen": "2026-08-19",
+      "fitness": 0.512,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_fluoropiperidinylethoxy",
@@ -4898,8 +4530,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5115
+      "first_seen": "2026-08-19",
+      "fitness": 0.5115,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorophenyl_cyclopropylaminoethoxy",
@@ -4929,8 +4562,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.511
+      "first_seen": "2026-08-19",
+      "fitness": 0.511,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_cyclopropylaminoethoxy",
@@ -4960,8 +4594,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.511
+      "first_seen": "2026-08-19",
+      "fitness": 0.511,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -4991,8 +4626,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5105
+      "first_seen": "2026-08-19",
+      "fitness": 0.5105,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_fluoropiperidinylethoxy",
@@ -5022,8 +4658,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.51
+      "first_seen": "2026-08-19",
+      "fitness": 0.51,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_dimethylaminopropoxy",
@@ -5053,8 +4690,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5095
+      "first_seen": "2026-08-19",
+      "fitness": 0.5095,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_cyclopropylaminoethoxy",
@@ -5084,37 +4722,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5095
-    },
-    {
-      "id": "gen_thienopyrimidine_methoxyphenyl_fluoropiperidinylethoxy",
-      "smiles": "COc1ccc(Nc2ncnc3scc(OCCN4CCC(F)CC4)c23)cc1",
-      "canonical_smiles": "COc1ccc(Nc2ncnc3scc(OCCN4CCC(F)CC4)c23)cc1",
-      "mw": 402.5,
-      "logp": 4.26,
-      "tpsa": 59.51,
-      "hbd": 1,
-      "hba": 7,
-      "rotatable_bonds": 7,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.637,
-      "formula": "C20H23FN4O2S",
-      "sa_score": 2.57,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "thienopyrimidine",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "fluoropiperidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.5085
+      "fitness": 0.5095,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_bromophenyl_morpholinoethoxy",
@@ -5142,8 +4752,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.508
+      "first_seen": "2026-08-19",
+      "fitness": 0.508,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_cyclopropylaminoethoxy",
@@ -5173,8 +4784,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5075
+      "first_seen": "2026-08-19",
+      "fitness": 0.5075,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_cyclopropylaminoethoxy",
@@ -5204,8 +4816,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5045
+      "first_seen": "2026-08-19",
+      "fitness": 0.5045,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -5235,8 +4848,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5045
+      "first_seen": "2026-08-19",
+      "fitness": 0.5045,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_morpholinoethoxy",
@@ -5264,8 +4878,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5045
+      "first_seen": "2026-08-19",
+      "fitness": 0.5045,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_cyclopropylaminoethoxy",
@@ -5295,8 +4910,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.504
+      "first_seen": "2026-08-19",
+      "fitness": 0.504,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -5324,8 +4940,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5035
+      "first_seen": "2026-08-19",
+      "fitness": 0.5035,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_azetidinylethoxy",
@@ -5353,8 +4970,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "azetidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5025
+      "first_seen": "2026-08-19",
+      "fitness": 0.5025,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_morpholinopropoxy",
@@ -5384,8 +5002,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.5015
+      "first_seen": "2026-08-19",
+      "fitness": 0.5015,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -5413,8 +5032,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.501
+      "first_seen": "2026-08-19",
+      "fitness": 0.501,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_morpholinopropoxy",
@@ -5444,8 +5064,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.499
+      "first_seen": "2026-08-19",
+      "fitness": 0.499,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -5473,8 +5094,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4975
+      "first_seen": "2026-08-19",
+      "fitness": 0.4975,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_cyclopropylaminoethoxy",
@@ -5504,8 +5126,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4975
+      "first_seen": "2026-08-19",
+      "fitness": 0.4975,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -5533,8 +5156,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4955
+      "first_seen": "2026-08-19",
+      "fitness": 0.4955,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_pyrrolidinylethoxy",
@@ -5562,8 +5186,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "pyrrolidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4945
+      "first_seen": "2026-08-19",
+      "fitness": 0.4945,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_chlorophenyl_morpholinopropoxy",
@@ -5593,8 +5218,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4935
+      "first_seen": "2026-08-19",
+      "fitness": 0.4935,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_bromophenyl_methylpiperazinylethoxy",
@@ -5622,8 +5248,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.493
+      "first_seen": "2026-08-19",
+      "fitness": 0.493,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_cyclopropylaminoethoxy",
@@ -5653,8 +5280,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.493
+      "first_seen": "2026-08-19",
+      "fitness": 0.493,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -5682,8 +5310,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4915
+      "first_seen": "2026-08-19",
+      "fitness": 0.4915,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_morpholinopropoxy",
@@ -5713,8 +5342,9 @@
         "aniline": "chlorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4915
+      "first_seen": "2026-08-19",
+      "fitness": 0.4915,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -5744,8 +5374,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4905
+      "first_seen": "2026-08-19",
+      "fitness": 0.4905,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -5775,8 +5406,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4885
+      "first_seen": "2026-08-19",
+      "fitness": 0.4885,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -5804,8 +5436,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.488
+      "first_seen": "2026-08-19",
+      "fitness": 0.488,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -5833,8 +5466,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4875
+      "first_seen": "2026-08-19",
+      "fitness": 0.4875,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methoxyphenyl_cyclopropylaminoethoxy",
@@ -5864,8 +5498,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4875
+      "first_seen": "2026-08-19",
+      "fitness": 0.4875,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -5895,8 +5530,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4865
+      "first_seen": "2026-08-19",
+      "fitness": 0.4865,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_dimethylaminopropoxy",
@@ -5926,8 +5562,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4855
+      "first_seen": "2026-08-19",
+      "fitness": 0.4855,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_morpholinopropoxy",
@@ -5957,8 +5594,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.485
+      "first_seen": "2026-08-19",
+      "fitness": 0.485,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_morpholinopropoxy",
@@ -5988,8 +5626,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4845
+      "first_seen": "2026-08-19",
+      "fitness": 0.4845,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_dimethylaminopropoxy",
@@ -6019,8 +5658,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.483
+      "first_seen": "2026-08-19",
+      "fitness": 0.483,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -6048,8 +5688,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.482
+      "first_seen": "2026-08-19",
+      "fitness": 0.482,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -6077,8 +5718,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.481
+      "first_seen": "2026-08-19",
+      "fitness": 0.481,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -6106,8 +5748,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.48
+      "first_seen": "2026-08-19",
+      "fitness": 0.48,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -6135,8 +5778,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.477
+      "first_seen": "2026-08-19",
+      "fitness": 0.477,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_sulfonylpiperidinylethoxy",
@@ -6166,8 +5810,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4755
+      "first_seen": "2026-08-19",
+      "fitness": 0.4755,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -6197,8 +5842,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4745
+      "first_seen": "2026-08-19",
+      "fitness": 0.4745,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6226,8 +5872,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4745
+      "first_seen": "2026-08-19",
+      "fitness": 0.4745,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -6255,8 +5902,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4725
+      "first_seen": "2026-08-19",
+      "fitness": 0.4725,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinoethoxy",
@@ -6284,8 +5932,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.472
+      "first_seen": "2026-08-19",
+      "fitness": 0.472,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_sulfonylpiperidinylethoxy",
@@ -6313,8 +5962,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.469
+      "first_seen": "2026-08-19",
+      "fitness": 0.469,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_cyclopropylaminoethoxy",
@@ -6344,8 +5994,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.469
+      "first_seen": "2026-08-19",
+      "fitness": 0.469,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_sulfonylpiperidinylethoxy",
@@ -6373,8 +6024,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.468
+      "first_seen": "2026-08-19",
+      "fitness": 0.468,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_cyclopropylaminoethoxy",
@@ -6404,8 +6056,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4675
+      "first_seen": "2026-08-19",
+      "fitness": 0.4675,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -6433,8 +6086,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4675
+      "first_seen": "2026-08-19",
+      "fitness": 0.4675,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_cyclopropylaminoethoxy",
@@ -6464,8 +6118,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.467
+      "first_seen": "2026-08-19",
+      "fitness": 0.467,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_hydroxyethylpiperazinylethoxy",
@@ -6493,8 +6148,9 @@
         "aniline": "methylphenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4635
+      "first_seen": "2026-08-19",
+      "fitness": 0.4635,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -6522,8 +6178,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4625
+      "first_seen": "2026-08-19",
+      "fitness": 0.4625,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6551,8 +6208,9 @@
         "aniline": "fluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4595
+      "first_seen": "2026-08-19",
+      "fitness": 0.4595,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -6582,8 +6240,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.459
+      "first_seen": "2026-08-19",
+      "fitness": 0.459,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_bromophenyl_sulfonylpiperidinylethoxy",
@@ -6611,39 +6270,9 @@
         "aniline": "bromophenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4565
-    },
-    {
-      "id": "gen_triazolopyrimidine_methoxyphenyl_cyclopropylaminoethoxy",
-      "smiles": "COc1ccc(Nc2ncnc3c2nnn3OCCNC2CC2)cc1",
-      "canonical_smiles": "COc1ccc(Nc2ncnc3c2nnn3OCCNC2CC2)cc1",
-      "mw": 341.38,
-      "logp": 1.15,
-      "tpsa": 99.01,
-      "hbd": 2,
-      "hba": 8,
-      "rotatable_bonds": 8,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.589,
-      "formula": "C16H19N7O2",
-      "sa_score": 2.66,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [
-        "Aliphatic_long_chain"
-      ],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "triazolopyrimidine",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "cyclopropylaminoethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.456
+      "fitness": 0.4565,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinopropoxy",
@@ -6673,8 +6302,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.454
+      "first_seen": "2026-08-19",
+      "fitness": 0.454,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_fluoropiperidinylethoxy",
@@ -6702,8 +6332,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.454
+      "first_seen": "2026-08-19",
+      "fitness": 0.454,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_hydroxyethylpiperazinylethoxy",
@@ -6731,8 +6362,9 @@
         "aniline": "cyanophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4525
+      "first_seen": "2026-08-19",
+      "fitness": 0.4525,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6760,8 +6392,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4505
+      "first_seen": "2026-08-19",
+      "fitness": 0.4505,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinopropoxy",
@@ -6791,8 +6424,9 @@
         "aniline": "dimethylaminophenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.45
+      "first_seen": "2026-08-19",
+      "fitness": 0.45,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -6820,8 +6454,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.447
+      "first_seen": "2026-08-19",
+      "fitness": 0.447,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_oxetanylmethoxy",
@@ -6849,8 +6484,9 @@
         "aniline": "indazolyl",
         "solubilizer": "oxetanylmethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4465
+      "first_seen": "2026-08-19",
+      "fitness": 0.4465,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinopropoxy",
@@ -6880,8 +6516,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.445
+      "first_seen": "2026-08-19",
+      "fitness": 0.445,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -6911,37 +6548,9 @@
         "aniline": "methoxyphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.441
-    },
-    {
-      "id": "gen_quinolinepyrimidyl_methoxyphenyl_hydroxyethylpiperazinylethoxy",
-      "smiles": "COc1ccc(Nc2cc(OCCN3CCN(CCO)CC3)nc3ccccc23)cc1",
-      "canonical_smiles": "COc1ccc(Nc2cc(OCCN3CCN(CCO)CC3)nc3ccccc23)cc1",
-      "mw": 422.53,
-      "logp": 2.98,
-      "tpsa": 70.09,
-      "hbd": 2,
-      "hba": 7,
-      "rotatable_bonds": 9,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.549,
-      "formula": "C24H30N4O3",
-      "sa_score": 2.23,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "quinolinepyrimidyl",
-        "aniline": "methoxyphenyl",
-        "solubilizer": "hydroxyethylpiperazinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.4375
+      "fitness": 0.441,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_morpholinopropoxy",
@@ -6971,8 +6580,9 @@
         "aniline": "trifluoromethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.436
+      "first_seen": "2026-08-19",
+      "fitness": 0.436,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_dimethylaminoethoxy",
@@ -7000,8 +6610,9 @@
         "aniline": "indazolyl",
         "solubilizer": "dimethylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4345
+      "first_seen": "2026-08-19",
+      "fitness": 0.4345,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -7029,8 +6640,9 @@
         "aniline": "difluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.434
+      "first_seen": "2026-08-19",
+      "fitness": 0.434,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_tetrahydropyranyloxy",
@@ -7058,37 +6670,9 @@
         "aniline": "indazolyl",
         "solubilizer": "tetrahydropyranyloxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.428
-    },
-    {
-      "id": "gen_quinazoline_indazolyl_azetidinylethoxy",
-      "smiles": "c1cc(OCCN2CCC2)c2c(Nc3ccc4[nH]ncc4c3)ncnc2c1",
-      "canonical_smiles": "c1cc(OCCN2CCC2)c2c(Nc3ccc4[nH]ncc4c3)ncnc2c1",
-      "mw": 360.42,
-      "logp": 3.33,
-      "tpsa": 78.96,
-      "hbd": 2,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 5,
-      "num_aromatic_rings": 4,
-      "qed": 0.549,
-      "formula": "C20H20N6O",
-      "sa_score": 2.43,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "quinazoline",
-        "aniline": "indazolyl",
-        "solubilizer": "azetidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.4275
+      "fitness": 0.428,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -7116,8 +6700,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4255
+      "first_seen": "2026-08-19",
+      "fitness": 0.4255,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -7145,8 +6730,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4245
+      "first_seen": "2026-08-19",
+      "fitness": 0.4245,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -7176,8 +6762,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4215
+      "first_seen": "2026-08-19",
+      "fitness": 0.4215,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -7205,8 +6792,9 @@
         "aniline": "chlorofluorophenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4195
+      "first_seen": "2026-08-19",
+      "fitness": 0.4195,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -7234,8 +6822,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "sulfonylpiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4175
+      "first_seen": "2026-08-19",
+      "fitness": 0.4175,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_hydroxyethylpiperazinylethoxy",
@@ -7265,66 +6854,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4165
-    },
-    {
-      "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_fluoropiperidinylethoxy",
-      "smiles": "FC1CCN(CCOn2ccc3c(Nc4cccc(OC(F)(F)F)c4)ncnc32)CC1",
-      "canonical_smiles": "FC1CCN(CCOn2ccc3c(Nc4cccc(OC(F)(F)F)c4)ncnc32)CC1",
-      "mw": 439.41,
-      "logp": 3.94,
-      "tpsa": 64.44,
-      "hbd": 1,
-      "hba": 6,
-      "rotatable_bonds": 7,
-      "num_rings": 4,
-      "num_aromatic_rings": 3,
-      "qed": 0.563,
-      "formula": "C20H21F4N5O2",
-      "sa_score": 2.93,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyrrolopyrimidine",
-        "aniline": "trifluoromethoxyphenyl",
-        "solubilizer": "fluoropiperidinylethoxy"
-      },
       "first_seen": "2026-08-19",
-      "fitness": 0.4165
-    },
-    {
-      "id": "gen_pyrrolopyrimidine_indazolyl_dimethylaminoethoxy",
-      "smiles": "CN(C)CCOn1ccc2c(Nc3ccc4[nH]ncc4c3)ncnc21",
-      "canonical_smiles": "CN(C)CCOn1ccc2c(Nc3ccc4[nH]ncc4c3)ncnc21",
-      "mw": 337.39,
-      "logp": 2.04,
-      "tpsa": 83.89,
-      "hbd": 2,
-      "hba": 6,
-      "rotatable_bonds": 6,
-      "num_rings": 4,
-      "num_aromatic_rings": 4,
-      "qed": 0.56,
-      "formula": "C17H19N7O",
-      "sa_score": 2.88,
-      "lipinski_violations": 0,
-      "pains_alerts": [],
-      "toxicity_alerts": [],
-      "tpp_pass": true,
-      "notes": "Conforme au TPP",
-      "source": "generated",
-      "recipe": {
-        "scaffold": "pyrrolopyrimidine",
-        "aniline": "indazolyl",
-        "solubilizer": "dimethylaminoethoxy"
-      },
-      "first_seen": "2026-08-19",
-      "fitness": 0.416
+      "fitness": 0.4165,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -7354,8 +6886,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.415
+      "first_seen": "2026-08-19",
+      "fitness": 0.415,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_fluoropiperidinylethoxy",
@@ -7383,8 +6916,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.41
+      "first_seen": "2026-08-19",
+      "fitness": 0.41,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -7414,8 +6948,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.4045
+      "first_seen": "2026-08-19",
+      "fitness": 0.4045,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_dimethylaminopropoxy",
@@ -7446,8 +6981,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.401
+      "first_seen": "2026-08-19",
+      "fitness": 0.401,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -7477,8 +7013,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3975
+      "first_seen": "2026-08-19",
+      "fitness": 0.3975,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminopropoxy",
@@ -7509,8 +7046,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3895
+      "first_seen": "2026-08-19",
+      "fitness": 0.3895,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -7540,8 +7078,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.387
+      "first_seen": "2026-08-19",
+      "fitness": 0.387,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_indazolyl_methylpiperazinylethoxy",
@@ -7569,8 +7108,9 @@
         "aniline": "indazolyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3865
+      "first_seen": "2026-08-19",
+      "fitness": 0.3865,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_cyclopropylaminoethoxy",
@@ -7601,8 +7141,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3845
+      "first_seen": "2026-08-19",
+      "fitness": 0.3845,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_morpholinoethoxy",
@@ -7630,8 +7171,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.382
+      "first_seen": "2026-08-19",
+      "fitness": 0.382,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_methylpiperazinylethoxy",
@@ -7659,8 +7201,9 @@
         "aniline": "indazolyl",
         "solubilizer": "methylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.374
+      "first_seen": "2026-08-19",
+      "fitness": 0.374,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -7688,8 +7231,9 @@
         "aniline": "indazolyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3715
+      "first_seen": "2026-08-19",
+      "fitness": 0.3715,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_cyclopropylaminoethoxy",
@@ -7720,8 +7264,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.37
+      "first_seen": "2026-08-19",
+      "fitness": 0.37,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -7752,8 +7297,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3635
+      "first_seen": "2026-08-19",
+      "fitness": 0.3635,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_indazolyl_dimethylaminopropoxy",
@@ -7783,8 +7329,9 @@
         "aniline": "indazolyl",
         "solubilizer": "dimethylaminopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3565
+      "first_seen": "2026-08-19",
+      "fitness": 0.3565,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -7812,8 +7359,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3545
+      "first_seen": "2026-08-19",
+      "fitness": 0.3545,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -7841,8 +7389,9 @@
         "aniline": "indazolyl",
         "solubilizer": "fluoropiperidinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.352
+      "first_seen": "2026-08-19",
+      "fitness": 0.352,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -7870,8 +7419,9 @@
         "aniline": "trifluoromethoxyphenyl",
         "solubilizer": "hydroxyethylpiperazinylethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3445
+      "first_seen": "2026-08-19",
+      "fitness": 0.3445,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -7901,8 +7451,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3385
+      "first_seen": "2026-08-19",
+      "fitness": 0.3385,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -7933,8 +7484,9 @@
         "aniline": "ethynylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3375
+      "first_seen": "2026-08-19",
+      "fitness": 0.3375,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -7964,8 +7516,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3345
+      "first_seen": "2026-08-19",
+      "fitness": 0.3345,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_indazolyl_morpholinopropoxy",
@@ -7995,8 +7548,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3315
+      "first_seen": "2026-08-19",
+      "fitness": 0.3315,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_morpholinopropoxy",
@@ -8026,8 +7580,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3315
+      "first_seen": "2026-08-19",
+      "fitness": 0.3315,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_indazolyl_morpholinopropoxy",
@@ -8057,8 +7612,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.328
+      "first_seen": "2026-08-19",
+      "fitness": 0.328,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -8088,8 +7644,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.323
+      "first_seen": "2026-08-19",
+      "fitness": 0.323,
+      "docking_score": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_morpholinopropoxy",
@@ -8119,8 +7676,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.323
+      "first_seen": "2026-08-19",
+      "fitness": 0.323,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_morpholinopropoxy",
@@ -8150,8 +7708,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.322
+      "first_seen": "2026-08-19",
+      "fitness": 0.322,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_thiomethylphenyl_morpholinopropoxy",
@@ -8181,8 +7740,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.322
+      "first_seen": "2026-08-19",
+      "fitness": 0.322,
+      "docking_score": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -8212,8 +7772,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3185
+      "first_seen": "2026-08-19",
+      "fitness": 0.3185,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_morpholinopropoxy",
@@ -8243,8 +7804,9 @@
         "aniline": "indazolyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3145
+      "first_seen": "2026-08-19",
+      "fitness": 0.3145,
+      "docking_score": null
     },
     {
       "id": "gen_quinazoline_indazolyl_cyclopropylaminoethoxy",
@@ -8274,8 +7836,9 @@
         "aniline": "indazolyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3125
+      "first_seen": "2026-08-19",
+      "fitness": 0.3125,
+      "docking_score": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_cyclopropylaminoethoxy",
@@ -8305,8 +7868,9 @@
         "aniline": "indazolyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.312
+      "first_seen": "2026-08-19",
+      "fitness": 0.312,
+      "docking_score": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -8336,8 +7900,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.308
+      "first_seen": "2026-08-19",
+      "fitness": 0.308,
+      "docking_score": null
     },
     {
       "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -8367,8 +7932,9 @@
         "aniline": "thiomethylphenyl",
         "solubilizer": "morpholinopropoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.305
+      "first_seen": "2026-08-19",
+      "fitness": 0.305,
+      "docking_score": null
     },
     {
       "id": "gen_imidazopyridine_indazolyl_cyclopropylaminoethoxy",
@@ -8398,8 +7964,9 @@
         "aniline": "indazolyl",
         "solubilizer": "cyclopropylaminoethoxy"
       },
-      "first_seen": "2026-08-18",
-      "fitness": 0.3015
+      "first_seen": "2026-08-19",
+      "fitness": 0.3015,
+      "docking_score": null
     }
   ]
 }

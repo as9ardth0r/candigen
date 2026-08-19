@@ -35,10 +35,27 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
-      - name: Installation des dépendances
+      - name: Installation d'Open Babel (conversion PDB -> PDBQT du récepteur)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends openbabel
+
+      - name: Installation des dépendances Python
         run: pip install -r requirements.txt
 
-      - name: Exécution du pipeline (génération + filtrage + export JSON/CSV)
+      - name: Préparation du récepteur EGFR (une seule fois, si absent)
+        # Télécharge la structure PDB 1M17 depuis RCSB et prépare le PDBQT
+        # — le runner GitHub a un accès internet complet (contrairement à
+        # certains environnements de développement restreints), donc ce
+        # téléchargement fonctionne directement ici. Une fois committé par
+        # l'étape de persistance ci-dessous, les runs suivants sautent
+        # cette étape.
+        run: |
+          if [ ! -f data/receptor/config.json ]; then
+            python scripts/prepare_receptor.py
+          else
+            echo "Récepteur déjà préparé (data/receptor/config.json présent) — skip."
+          fi
+
+      - name: Exécution du pipeline (génération + filtrage + export JSON/CSV + docking)
         run: python scripts/run_pipeline.py
 
       - name: Persistance du hall of fame (commit des données mises à jour)
@@ -49,7 +66,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv site/data/molecules.json site/data/conformers.json
+          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv data/receptor/ site/data/molecules.json site/data/conformers.json
           git diff --staged --quiet || git commit -m "chore: mise a jour quotidienne du hall of fame [skip ci]"
           git push
 

@@ -45,6 +45,7 @@ from molgen.hall_of_fame import (
     elite_records, merge_into_hall_of_fame, HALL_OF_FAME_MAX,
 )
 from molgen.docking_prep import embed_3d, mol_to_sdf_block
+from molgen.docking import dock as run_docking, prepare_ligand_pdbqt
 from molgen.export import build_site_payload, build_conformers_payload, write_json
 from rdkit import Chem
 
@@ -64,9 +65,18 @@ BOOTSTRAP_SAMPLE_SIZE = 300
 # (coûteux, et inutile pour les molécules hors du hall of fame).
 MAX_3D_EMBEDDINGS = 150
 
+# Le docking réel (AutoDock Vina) est réservé à un top-K plus restreint —
+# mesuré sur ce projet : ~30s/molécule à exhaustiveness=4 (2 cœurs). Avec
+# MAX_DOCKING=10, ça reste sous les ~5 min pour cette étape. Augmenter si
+# votre budget CI le permet — le coût croît environ linéairement avec les
+# deux paramètres.
+MAX_DOCKING = 10
+DOCKING_EXHAUSTIVENESS = 4
+
 HALL_OF_FAME_PATH = ROOT / "data" / "hall_of_fame.json"
 EXPLORED_PATH = ROOT / "data" / "explored.json"
 LAST_RUN_PATH = ROOT / "data" / "last_run.json"
+RECEPTOR_CONFIG_PATH = ROOT / "data" / "receptor" / "config.json"
 
 
 def main() -> None:
@@ -78,13 +88,13 @@ def main() -> None:
     curated_records = compute_batch(load_smiles(seed_path))
     for r in curated_records:
         r.source = "curated"
-    print(f"[1/7] {len(curated_records)} candidats curés chargés")
+    print(f"[1/9] {len(curated_records)} candidats curés chargés")
 
     # 2) État persistant (vide au tout premier run)
     hall = load_hall_of_fame(HALL_OF_FAME_PATH)
     explored = load_explored(EXPLORED_PATH)
     is_bootstrap = not hall and not explored
-    print(f"[2/7] État chargé : {len(hall)} molécules dans le hall of fame, "
+    print(f"[2/9] État chargé : {len(hall)} molécules dans le hall of fame, "
           f"{len(explored)} SMILES déjà explorés"
           f"{' — BOOTSTRAP (premier run)' if is_bootstrap else ''}")
 
@@ -104,14 +114,14 @@ def main() -> None:
 
     if already_ran_today:
         candidates = []
-        print(f"[3/7] Déjà exécuté aujourd'hui ({today}) — aucun nouveau candidat, "
+        print(f"[3/9] Déjà exécuté aujourd'hui ({today}) — aucun nouveau candidat, "
               f"le prochain lot sera généré au run suivant")
     elif is_bootstrap:
         rng = random.Random("bootstrap")
         recipes = rng.sample(full_library(), BOOTSTRAP_SAMPLE_SIZE)
         candidates = [(r.mol_id(), build_smiles(r), r.to_dict()) for r in recipes]
         candidates = [(i, s, r) for i, s, r in candidates if s is not None and s not in explored]
-        print(f"[3/7] {len(candidates)} nouveaux candidats à tester aujourd'hui (bootstrap)")
+        print(f"[3/9] {len(candidates)} nouveaux candidats à tester aujourd'hui (bootstrap)")
     else:
         # Les curés + le hall of fame peuvent tous deux servir de parents
         # aux mutations atomiques (pas seulement les molécules générées).
@@ -124,7 +134,7 @@ def main() -> None:
             n_atom_mutants=N_ATOM_MUTANTS_PER_RUN,
             seed=today,
         )
-        print(f"[3/7] {len(candidates)} nouveaux candidats à tester aujourd'hui")
+        print(f"[3/9] {len(candidates)} nouveaux candidats à tester aujourd'hui")
 
     # 4) Calcul des descripteurs pour le lot du jour
     batch_records = []
@@ -141,17 +151,17 @@ def main() -> None:
         r.source = "generated"
         r.recipe = recipe
         batch_records.append(r)
-    print(f"[4/7] {len(batch_records)} candidats valides générés et décrits")
+    print(f"[4/9] {len(batch_records)} candidats valides générés et décrits")
 
     # 5) Criblage TPP + SA score + PAINS + BRENK sur le lot du jour
     batch_records = enrich_and_filter(batch_records, profile)
     n_pass_today = sum(r.tpp_pass for r in batch_records)
-    print(f"[5/7] Filtre TPP appliqué au lot du jour : {n_pass_today}/{len(batch_records)} conformes")
+    print(f"[5/9] Filtre TPP appliqué au lot du jour : {n_pass_today}/{len(batch_records)} conformes")
 
     # 6) Fusion dans le hall of fame (déduplication, fitness, plafond)
     new_passing = [r for r in batch_records if r.tpp_pass]
     hall = merge_into_hall_of_fame(hall, new_passing, today=today)
-    print(f"[6/7] Hall of fame mis à jour : {len(hall)} molécules (plafond {HALL_OF_FAME_MAX})")
+    print(f"[6/9] Hall of fame mis à jour : {len(hall)} molécules (plafond {HALL_OF_FAME_MAX})")
 
     save_hall_of_fame(hall, HALL_OF_FAME_PATH)
     save_explored(explored, EXPLORED_PATH)
@@ -163,10 +173,39 @@ def main() -> None:
 
     passing_for_3d = [r for r in records if r.tpp_pass][:MAX_3D_EMBEDDINGS]
     sdf_blocks = {}
+    mols_3d = {}
     for r in passing_for_3d:
         mol3d = embed_3d(r.canonical_smiles, mol_id=r.id)
         if mol3d is not None:
             sdf_blocks[r.id] = mol_to_sdf_block(mol3d)
+            mols_3d[r.id] = mol3d
+    print(f"[7/9] Conformères 3D générés pour {len(sdf_blocks)}/{len(passing_for_3d)} molécules")
+
+    # 8) Docking réel (AutoDock Vina) — seulement si un récepteur a été
+    #    préparé (scripts/prepare_receptor.py) et seulement pour le top-K
+    #    des molécules déjà embedées en 3D à l'étape précédente.
+    n_docked = 0
+    if RECEPTOR_CONFIG_PATH.exists():
+        receptor_config = json.loads(RECEPTOR_CONFIG_PATH.read_text())
+        receptor_pdbqt = ROOT / receptor_config["receptor_pdbqt"]
+        center = tuple(receptor_config["center"])
+        box_size = tuple(receptor_config.get("box_size", (24.0, 20.0, 24.0)))
+        for r in passing_for_3d[:MAX_DOCKING]:
+            mol3d = mols_3d.get(r.id)
+            if mol3d is None:
+                continue
+            ligand_pdbqt = prepare_ligand_pdbqt(mol3d)
+            if ligand_pdbqt is None:
+                continue
+            score = run_docking(receptor_pdbqt, ligand_pdbqt, center, box_size, exhaustiveness=DOCKING_EXHAUSTIVENESS)
+            if score is not None:
+                r.docking_score = score
+                n_docked += 1
+        print(f"[8/9] Docking (AutoDock Vina, {receptor_config['pdb_id']}) : "
+              f"{n_docked}/{min(len(passing_for_3d), MAX_DOCKING)} molécules dockées")
+    else:
+        print("[8/9] Pas de récepteur préparé (data/receptor/config.json absent) — "
+              "docking ignoré. Lancer scripts/prepare_receptor.py pour l'activer.")
 
     export_json(records, ROOT / "data" / "molecules.json")
     export_csv(records, ROOT / "data" / "molecules.csv")
@@ -177,7 +216,7 @@ def main() -> None:
     conformers_payload = build_conformers_payload(sdf_blocks)
     write_json(conformers_payload, ROOT / "site" / "data" / "conformers.json")
 
-    print(f"[7/7] Export -> {len(records)} molécules au total "
+    print(f"[9/9] Export -> {len(records)} molécules au total "
           f"({len(curated_records)} curées + {len(hall)} dans le hall of fame), "
           f"{len(sdf_blocks)} conformères 3D")
 

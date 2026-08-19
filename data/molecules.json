@@ -26,9 +26,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 360252,
-    "chembl_id": "CHEMBL403031",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL403031"
   },
   {
     "id": "66142-81-2",
@@ -54,12 +52,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.799,
-    "docking_score": -5.3,
+    "docking_score": -5.24,
     "is_novel": false,
     "pubchem_cid": 98527,
-    "chembl_id": "CHEMBL292821",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 13
+    "chembl_id": "CHEMBL292821"
   },
   {
     "id": "467-60-7",
@@ -88,9 +84,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 10083,
-    "chembl_id": "CHEMBL2110938",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL2110938"
   },
   {
     "id": "1019-45-0",
@@ -119,9 +113,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 1832,
-    "chembl_id": "CHEMBL7257",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL7257"
   },
   {
     "id": "69587-11-7",
@@ -149,12 +141,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.752,
-    "docking_score": -5.08,
+    "docking_score": -5.14,
     "is_novel": false,
     "pubchem_cid": 10267191,
-    "chembl_id": "CHEMBL338297",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 6
+    "chembl_id": "CHEMBL338297"
   },
   {
     "id": "328-89-2",
@@ -183,9 +173,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 67605,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "519-74-4",
@@ -214,9 +202,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 160506,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "79787-43-2",
@@ -245,9 +231,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 133277,
-    "chembl_id": "CHEMBL123708",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL123708"
   },
   {
     "id": "65527-62-0",
@@ -276,9 +260,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 54098032,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "63065-90-7",
@@ -307,9 +289,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 24802096,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "2426-63-3",
@@ -338,9 +318,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 24802109,
-    "chembl_id": "CHEMBL2357882",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL2357882"
   },
   {
     "id": "2894-67-9",
@@ -366,12 +344,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.743,
-    "docking_score": -6.22,
+    "docking_score": -6.19,
     "is_novel": false,
     "pubchem_cid": 17925,
-    "chembl_id": "CHEMBL268254",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 6
+    "chembl_id": "CHEMBL268254"
   },
   {
     "id": "14780-24-6",
@@ -400,9 +376,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 26903,
-    "chembl_id": "CHEMBL4303330",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4303330"
   },
   {
     "id": "178557-21-6",
@@ -428,12 +402,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.739,
-    "docking_score": -5.98,
+    "docking_score": -6.17,
     "is_novel": false,
     "pubchem_cid": 10265873,
-    "chembl_id": "CHEMBL101189",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 7
+    "chembl_id": "CHEMBL101189"
   },
   {
     "id": "88441-14-9",
@@ -462,9 +434,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 29979100,
-    "chembl_id": "CHEMBL124733",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL124733"
   },
   {
     "id": "1239943-76-0",
@@ -493,9 +463,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 52911279,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "64584-32-3",
@@ -526,9 +494,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 45108169,
-    "chembl_id": null,
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 7
+    "chembl_id": null
   },
   {
     "id": "77872-43-6",
@@ -557,9 +523,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 10082683,
-    "chembl_id": "CHEMBL171419",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL171419"
   },
   {
     "id": "84163-13-3",
@@ -588,9 +552,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 11334359,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "61-51-8",
@@ -619,9 +581,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 6090,
-    "chembl_id": "CHEMBL142936",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL142936"
   },
   {
     "id": "51753-57-2",
@@ -647,12 +607,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.718,
-    "docking_score": -5.98,
+    "docking_score": -5.97,
     "is_novel": false,
     "pubchem_cid": 40113,
-    "chembl_id": "CHEMBL1709464",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 5
+    "chembl_id": "CHEMBL1709464"
   },
   {
     "id": "22204-89-3",
@@ -681,9 +639,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9991554,
-    "chembl_id": "CHEMBL143202",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL143202"
   },
   {
     "id": "77872-42-5",
@@ -712,9 +668,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 21786584,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "2666932-45-0",
@@ -743,9 +697,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 157010705,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "5599-69-9",
@@ -774,9 +726,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 824845,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "77872-41-4",
@@ -805,9 +755,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 21786582,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "22004-32-6",
@@ -836,9 +784,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 27402,
-    "chembl_id": "CHEMBL8224",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL8224"
   },
   {
     "id": "1350821-24-7",
@@ -867,9 +813,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 17756669,
-    "chembl_id": "CHEMBL3302434",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3302434"
   },
   {
     "id": "39201-82-6",
@@ -898,9 +842,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 38240,
-    "chembl_id": "CHEMBL319415",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL319415"
   },
   {
     "id": "73986-53-5",
@@ -929,9 +871,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 130829,
-    "chembl_id": "CHEMBL4650315",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4650315"
   },
   {
     "id": "15588-95-1",
@@ -960,9 +900,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 85875,
-    "chembl_id": "CHEMBL8600",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL8600"
   },
   {
     "id": "42203-78-1",
@@ -993,9 +931,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 170617,
-    "chembl_id": "CHEMBL1255748",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 6
+    "chembl_id": "CHEMBL1255748"
   },
   {
     "id": "1445751-39-2",
@@ -1024,9 +960,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 165361471,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1185887-21-1",
@@ -1052,12 +986,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.697,
-    "docking_score": -7.56,
+    "docking_score": -7.77,
     "is_novel": false,
     "pubchem_cid": 70969900,
-    "chembl_id": null,
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 8
+    "chembl_id": null
   },
   {
     "id": "127529-46-8",
@@ -1086,9 +1018,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 67833251,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "82801-81-8",
@@ -1117,9 +1047,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 105039,
-    "chembl_id": "CHEMBL126279",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL126279"
   },
   {
     "id": "39201-78-0",
@@ -1148,9 +1076,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 15102790,
-    "chembl_id": "CHEMBL340765",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL340765"
   },
   {
     "id": "475-81-0",
@@ -1176,12 +1102,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.6935,
-    "docking_score": -5.77,
+    "docking_score": -5.87,
     "is_novel": false,
     "pubchem_cid": 10145,
-    "chembl_id": "CHEMBL36536",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 8
+    "chembl_id": "CHEMBL36536"
   },
   {
     "id": "286834-80-8",
@@ -1210,9 +1134,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9837231,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "103818-46-8",
@@ -1241,9 +1163,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 124844,
-    "chembl_id": "CHEMBL268689",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL268689"
   },
   {
     "id": "1607439-32-6",
@@ -1272,9 +1192,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 90645589,
-    "chembl_id": "CHEMBL3298873",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3298873"
   },
   {
     "id": "2201-15-2",
@@ -1303,9 +1221,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 16622,
-    "chembl_id": "CHEMBL279924",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL279924"
   },
   {
     "id": "57413-43-1",
@@ -1334,9 +1250,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 3080846,
-    "chembl_id": "CHEMBL1187932",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL1187932"
   },
   {
     "id": "36794-52-2",
@@ -1365,9 +1279,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 206666,
-    "chembl_id": "CHEMBL4303426",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4303426"
   },
   {
     "id": "1137-04-8",
@@ -1396,9 +1308,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 36906,
-    "chembl_id": "CHEMBL31115",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL31115"
   },
   {
     "id": "91164-58-8",
@@ -1427,9 +1337,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 129318255,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "63065-88-3",
@@ -1458,9 +1366,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 21854223,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "111982-50-4",
@@ -1489,9 +1395,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 13771618,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "207740-25-8",
@@ -1517,12 +1421,10 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.673,
-    "docking_score": -5.39,
+    "docking_score": -5.46,
     "is_novel": false,
     "pubchem_cid": 44350070,
-    "chembl_id": "CHEMBL338259",
-    "retrosynthesis_route_found": true,
-    "retrosynthesis_n_routes": 6
+    "chembl_id": "CHEMBL338259"
   },
   {
     "id": "841205-47-8",
@@ -1551,9 +1453,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 11552833,
-    "chembl_id": "CHEMBL3185021",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3185021"
   },
   {
     "id": "1165910-22-4",
@@ -1582,9 +1482,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 74832745,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1364933-82-3",
@@ -1613,9 +1511,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 112500536,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1189726-22-4",
@@ -1644,9 +1540,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 46782120,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "39201-76-8",
@@ -1677,9 +1571,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 71669102,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "207740-24-7",
@@ -1708,9 +1600,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 12074193,
-    "chembl_id": "CHEMBL339223",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL339223"
   },
   {
     "id": "802855-66-9",
@@ -1739,9 +1629,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 57360686,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1112937-64-0",
@@ -1770,9 +1658,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 57252245,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "18268-16-1",
@@ -1801,9 +1687,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 205592,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "65527-61-9",
@@ -1834,9 +1718,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 1872,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1227608-02-7",
@@ -1867,9 +1749,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 46856354,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "802575-11-7",
@@ -1898,9 +1778,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 56843046,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "207740-41-8",
@@ -1931,9 +1809,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 44350127,
-    "chembl_id": "CHEMBL126803",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL126803"
   },
   {
     "id": "2759-28-6",
@@ -1962,9 +1838,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 75994,
-    "chembl_id": "CHEMBL113600",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL113600"
   },
   {
     "id": "2235-90-7",
@@ -1993,9 +1867,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 8367,
-    "chembl_id": "CHEMBL1619758",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL1619758"
   },
   {
     "id": "1716-59-2",
@@ -2024,9 +1896,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 54594211,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "64-13-1",
@@ -2055,9 +1925,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 31721,
-    "chembl_id": "CHEMBL278663",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL278663"
   },
   {
     "id": "1225843-86-6",
@@ -2086,9 +1954,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 82100418,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "687603-66-3",
@@ -2117,9 +1983,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 20111961,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "18410-62-3",
@@ -2148,9 +2012,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 137699916,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1169-70-6",
@@ -2179,9 +2041,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 621174,
-    "chembl_id": "CHEMBL4759342",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4759342"
   },
   {
     "id": "2349358-81-0",
@@ -2210,9 +2070,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 162478085,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "2349358-81-0",
@@ -2241,9 +2099,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 162478085,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1225617-18-4",
@@ -2272,9 +2128,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 52988259,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "286834-85-3",
@@ -2303,9 +2157,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9794343,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "928822-98-4",
@@ -2336,9 +2188,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 50878551,
-    "chembl_id": "CHEMBL2391541",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL2391541"
   },
   {
     "id": "1078-21-3",
@@ -2367,9 +2217,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 14113,
-    "chembl_id": "CHEMBL315818",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL315818"
   },
   {
     "id": "1026511-90-9",
@@ -2400,9 +2248,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9977044,
-    "chembl_id": "CHEMBL3590188",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3590188"
   },
   {
     "id": "14530-33-7",
@@ -2431,9 +2277,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 11148955,
-    "chembl_id": "CHEMBL205082",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL205082"
   },
   {
     "id": "299-26-3",
@@ -2462,9 +2306,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9287,
-    "chembl_id": "CHEMBL30713",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL30713"
   },
   {
     "id": "37115-32-5",
@@ -2493,9 +2335,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 37632,
-    "chembl_id": "CHEMBL328250",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL328250"
   },
   {
     "id": "61-54-1",
@@ -2524,9 +2364,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 1150,
-    "chembl_id": "CHEMBL6640",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL6640"
   },
   {
     "id": "408332-79-6",
@@ -2555,9 +2393,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 53249194,
-    "chembl_id": "CHEMBL3298875",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3298875"
   },
   {
     "id": "1246816-62-5",
@@ -2586,9 +2422,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 71741532,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "459-02-9",
@@ -2617,9 +2451,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 9986,
-    "chembl_id": "CHEMBL2009392",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL2009392"
   },
   {
     "id": "64-11-9",
@@ -2648,9 +2480,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 199116,
-    "chembl_id": "CHEMBL166183",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL166183"
   },
   {
     "id": "1626-71-7",
@@ -2679,9 +2509,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 121501,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1185282-01-2",
@@ -2710,9 +2538,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 86567357,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1246816-60-3",
@@ -2741,9 +2567,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 71314223,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1445569-01-6",
@@ -2772,9 +2596,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 20741615,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "40054-69-1",
@@ -2803,9 +2625,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 3307,
-    "chembl_id": "CHEMBL1289779",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL1289779"
   },
   {
     "id": "1345973-53-6",
@@ -2836,9 +2656,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 57404063,
-    "chembl_id": "CHEMBL4575047",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4575047"
   },
   {
     "id": "4315-88-2",
@@ -2869,9 +2687,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 165210,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "92292-84-7",
@@ -2902,9 +2718,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 15429212,
-    "chembl_id": "CHEMBL6143661",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL6143661"
   },
   {
     "id": "71368-80-4",
@@ -2933,9 +2747,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 12562546,
-    "chembl_id": "CHEMBL3246832",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3246832"
   },
   {
     "id": "39243-02-2",
@@ -2964,9 +2776,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 12562545,
-    "chembl_id": "CHEMBL3246831",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL3246831"
   },
   {
     "id": "846-48-0",
@@ -2995,9 +2805,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 578953,
-    "chembl_id": "CHEMBL55633",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL55633"
   },
   {
     "id": "77086-22-7",
@@ -3028,9 +2836,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 53580,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "10418-03-8",
@@ -3059,9 +2865,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 5277,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "72-63-9",
@@ -3090,9 +2894,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 522463,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "23116-22-5",
@@ -3123,9 +2925,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 20726845,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "102625-70-7",
@@ -3154,9 +2954,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 4679,
-    "chembl_id": "CHEMBL1502",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL1502"
   },
   {
     "id": "58-19-5",
@@ -3185,9 +2983,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 3167,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "10161-33-8",
@@ -3216,9 +3012,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 4092426,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1400742-13-3",
@@ -3249,9 +3043,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 71711119,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "920512-88-5",
@@ -3280,9 +3072,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 78068834,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "2446-23-3",
@@ -3313,9 +3103,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 3722940,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "53-39-4",
@@ -3344,9 +3132,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 249098,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "18641-70-8",
@@ -3375,9 +3161,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 86770,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1715016-75-3",
@@ -3408,9 +3192,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 101895417,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "919797-19-6",
@@ -3442,9 +3224,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 10251906,
-    "chembl_id": "CHEMBL1908863",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL1908863"
   },
   {
     "id": "1715016-74-2",
@@ -3475,9 +3255,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 102333975,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "6823-83-2",
@@ -3508,9 +3286,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 118799019,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "33887-02-4",
@@ -3542,9 +3318,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 12317881,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "1199943-44-6",
@@ -3575,9 +3349,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 44626619,
-    "chembl_id": "CHEMBL571773",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL571773"
   },
   {
     "id": "110-63-4",
@@ -3608,9 +3380,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 8064,
-    "chembl_id": "CHEMBL171623",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL171623"
   },
   {
     "id": "1364933-54-9",
@@ -3641,9 +3411,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 57501498,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "2504100-70-1",
@@ -3675,9 +3443,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 155882955,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "13122-91-3",
@@ -3706,9 +3472,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 352089,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "14680-51-4",
@@ -3740,9 +3504,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 53316366,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "401900-40-1",
@@ -3774,9 +3536,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 10343227,
-    "chembl_id": "CHEMBL2136499",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL2136499"
   },
   {
     "id": "434-07-1",
@@ -3810,9 +3570,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 4638,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "96-48-0",
@@ -3841,9 +3599,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 7302,
-    "chembl_id": "CHEMBL95681",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL95681"
   },
   {
     "id": "911-65-9",
@@ -3875,9 +3631,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 13493,
-    "chembl_id": "CHEMBL312040",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL312040"
   },
   {
     "id": "3398-69-4",
@@ -3909,9 +3663,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 18835,
-    "chembl_id": "CHEMBL349361",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL349361"
   },
   {
     "id": "14188-81-9",
@@ -3943,9 +3695,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 145721979,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "6640-22-8",
@@ -3974,9 +3724,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 81147,
-    "chembl_id": "CHEMBL4784835",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": "CHEMBL4784835"
   },
   {
     "id": "1400742-17-7",
@@ -4008,9 +3756,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 71604304,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "170851-70-4",
@@ -4041,9 +3787,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 22573923,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "121062-08-6",
@@ -4076,9 +3820,7 @@
     "docking_score": null,
     "is_novel": false,
     "pubchem_cid": 14560360,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_methylphenyl_tetrahydropyranyloxy",
@@ -4111,9 +3853,7 @@
     "docking_score": -8.08,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -4146,9 +3886,7 @@
     "docking_score": -7.79,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_oxetanylmethoxy",
@@ -4181,9 +3919,7 @@
     "docking_score": -7.5,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_fluorophenyl_tetrahydropyranyloxy",
@@ -4216,9 +3952,7 @@
     "docking_score": -6.58,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -4251,9 +3985,7 @@
     "docking_score": -7.26,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_cyanophenyl_tetrahydropyranyloxy",
@@ -4286,9 +4018,7 @@
     "docking_score": -8.15,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_methoxyphenyl_tetrahydropyranyloxy",
@@ -4321,9 +4051,7 @@
     "docking_score": -6.61,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_tetrahydropyranyloxy",
@@ -4356,9 +4084,7 @@
     "docking_score": -7.05,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_difluorophenyl_oxetanylmethoxy",
@@ -4391,9 +4117,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -4426,9 +4150,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_difluorophenyl_oxetanylmethoxy",
@@ -4461,9 +4183,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_cyanophenyl_tetrahydropyranyloxy",
@@ -4496,9 +4216,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminoethoxy",
@@ -4531,9 +4249,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -4566,9 +4282,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -4601,9 +4315,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methylphenyl_dimethylaminoethoxy",
@@ -4636,9 +4348,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_methoxyphenyl_oxetanylmethoxy",
@@ -4671,9 +4381,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_difluorophenyl_oxetanylmethoxy",
@@ -4706,9 +4414,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -4741,9 +4447,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_cyanophenyl_azetidinylethoxy",
@@ -4776,9 +4480,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methoxyphenyl_oxetanylmethoxy",
@@ -4811,9 +4513,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_tetrahydropyranyloxy",
@@ -4846,9 +4546,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -4881,9 +4579,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_cyanophenyl_dimethylaminoethoxy",
@@ -4916,9 +4612,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -4951,9 +4645,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_difluorophenyl_dimethylaminoethoxy",
@@ -4986,9 +4678,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -5021,9 +4711,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_fluorophenyl_pyrrolidinylethoxy",
@@ -5056,9 +4744,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -5091,9 +4777,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorophenyl_azetidinylethoxy",
@@ -5126,9 +4810,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_fluorophenyl_oxetanylmethoxy",
@@ -5161,9 +4843,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_difluorophenyl_azetidinylethoxy",
@@ -5196,9 +4876,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_methylphenyl_morpholinoethoxy",
@@ -5231,9 +4909,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorofluorophenyl_tetrahydropyranyloxy",
@@ -5266,9 +4942,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_cyanophenyl_azetidinylethoxy",
@@ -5301,9 +4975,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_oxetanylmethoxy",
@@ -5336,9 +5008,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_chlorophenyl_dimethylaminoethoxy",
@@ -5371,9 +5041,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_methylphenyl_morpholinoethoxy",
@@ -5406,9 +5074,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -5441,9 +5107,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methylphenyl_pyrrolidinylethoxy",
@@ -5476,9 +5140,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -5511,9 +5173,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_methylphenyl_methylpiperazinylethoxy",
@@ -5546,9 +5206,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -5581,9 +5239,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_fluorophenyl_azetidinylethoxy",
@@ -5616,9 +5272,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -5651,9 +5305,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_bromophenyl_oxetanylmethoxy",
@@ -5686,9 +5338,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_methoxyphenyl_azetidinylethoxy",
@@ -5721,9 +5371,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorophenyl_pyrrolidinylethoxy",
@@ -5756,9 +5404,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -5791,9 +5437,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -5826,9 +5470,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_dimethylaminophenyl_oxetanylmethoxy",
@@ -5861,9 +5503,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methoxyphenyl_azetidinylethoxy",
@@ -5896,9 +5536,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_methoxyphenyl_dimethylaminoethoxy",
@@ -5931,9 +5569,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_cyanophenyl_pyrrolidinylethoxy",
@@ -5966,9 +5602,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_chlorofluorophenyl_azetidinylethoxy",
@@ -6001,9 +5635,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorophenyl_morpholinoethoxy",
@@ -6036,9 +5668,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_morpholinoethoxy",
@@ -6071,9 +5701,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminoethoxy",
@@ -6106,9 +5734,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -6141,9 +5767,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_bromophenyl_tetrahydropyranyloxy",
@@ -6176,9 +5800,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -6211,9 +5833,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -6246,9 +5866,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methylphenyl_methylpiperazinylethoxy",
@@ -6281,9 +5899,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_dimethylaminoethoxy",
@@ -6318,9 +5934,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -6355,9 +5969,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_bromophenyl_oxetanylmethoxy",
@@ -6390,9 +6002,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorofluorophenyl_azetidinylethoxy",
@@ -6425,9 +6035,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_bromophenyl_dimethylaminoethoxy",
@@ -6460,9 +6068,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -6495,9 +6101,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_cyanophenyl_methylpiperazinylethoxy",
@@ -6530,9 +6134,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -6565,9 +6167,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -6600,9 +6200,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_dimethylaminophenyl_azetidinylethoxy",
@@ -6635,9 +6233,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_bromophenyl_azetidinylethoxy",
@@ -6670,9 +6266,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methylphenyl_fluoropiperidinylethoxy",
@@ -6705,9 +6299,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_azetidinylethoxy",
@@ -6740,9 +6332,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_methylpiperazinylethoxy",
@@ -6775,9 +6365,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_ethynylphenyl_tetrahydropyranyloxy",
@@ -6812,9 +6400,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -6847,9 +6433,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methylphenyl_fluoropiperidinylethoxy",
@@ -6882,9 +6466,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -6917,9 +6499,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_difluorophenyl_methylpiperazinylethoxy",
@@ -6952,9 +6532,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -6987,9 +6565,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethylphenyl_azetidinylethoxy",
@@ -7022,9 +6598,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethylphenyl_azetidinylethoxy",
@@ -7057,9 +6631,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_bromophenyl_azetidinylethoxy",
@@ -7092,9 +6664,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methoxyphenyl_morpholinoethoxy",
@@ -7127,9 +6697,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_fluorophenyl_fluoropiperidinylethoxy",
@@ -7162,9 +6730,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_methylphenyl_fluoropiperidinylethoxy",
@@ -7197,9 +6763,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methoxyphenyl_pyrrolidinylethoxy",
@@ -7232,9 +6796,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminoethoxy",
@@ -7269,9 +6831,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_cyanophenyl_methylpiperazinylethoxy",
@@ -7304,9 +6864,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -7339,9 +6897,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -7374,9 +6930,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_dimethylaminophenyl_azetidinylethoxy",
@@ -7409,9 +6963,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_pyrrolidinylethoxy",
@@ -7446,9 +6998,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -7481,9 +7031,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -7516,9 +7064,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorophenyl_morpholinoethoxy",
@@ -7551,9 +7097,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -7586,9 +7130,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_chlorophenyl_methylpiperazinylethoxy",
@@ -7621,9 +7163,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -7658,9 +7198,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -7693,9 +7231,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -7728,9 +7264,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -7763,9 +7297,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_chlorofluorophenyl_morpholinoethoxy",
@@ -7798,9 +7330,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -7833,9 +7363,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_fluorophenyl_dimethylaminopropoxy",
@@ -7870,9 +7398,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinoethoxy",
@@ -7905,9 +7431,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_thiomethylphenyl_tetrahydropyranyloxy",
@@ -7940,9 +7464,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_cyanophenyl_dimethylaminopropoxy",
@@ -7977,9 +7499,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinoethoxy",
@@ -8012,9 +7532,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -8047,9 +7565,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinoethoxy",
@@ -8082,9 +7598,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminopropoxy",
@@ -8119,9 +7633,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_fluoropiperidinylethoxy",
@@ -8154,9 +7666,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -8189,9 +7699,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_fluorophenyl_cyclopropylaminoethoxy",
@@ -8226,9 +7734,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_ethynylphenyl_methylpiperazinylethoxy",
@@ -8263,9 +7769,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methoxyphenyl_methylpiperazinylethoxy",
@@ -8298,9 +7802,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_methylpiperazinylethoxy",
@@ -8335,9 +7837,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -8370,9 +7870,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethylphenyl_morpholinoethoxy",
@@ -8405,9 +7903,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_fluoropiperidinylethoxy",
@@ -8440,9 +7936,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_thiomethylphenyl_dimethylaminoethoxy",
@@ -8475,9 +7969,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -8510,9 +8002,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -8545,9 +8035,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_ethynylphenyl_methylpiperazinylethoxy",
@@ -8582,9 +8070,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_oxetanylmethoxy",
@@ -8617,9 +8103,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -8652,9 +8136,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methoxyphenyl_fluoropiperidinylethoxy",
@@ -8687,9 +8169,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -8722,9 +8202,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methylphenyl_sulfonylpiperidinylethoxy",
@@ -8757,9 +8235,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -8794,9 +8270,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_fluorophenyl_cyclopropylaminoethoxy",
@@ -8831,9 +8305,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_ethynylphenyl_methylpiperazinylethoxy",
@@ -8868,9 +8340,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_methylphenyl_cyclopropylaminoethoxy",
@@ -8905,9 +8375,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_methylpiperazinylethoxy",
@@ -8940,9 +8408,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -8975,9 +8441,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -9010,9 +8474,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -9047,9 +8509,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorophenyl_sulfonylpiperidinylethoxy",
@@ -9082,9 +8542,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorophenyl_cyclopropylaminoethoxy",
@@ -9119,9 +8577,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -9154,9 +8610,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_ethynylphenyl_fluoropiperidinylethoxy",
@@ -9191,9 +8645,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorophenyl_cyclopropylaminoethoxy",
@@ -9228,9 +8680,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_cyanophenyl_cyclopropylaminoethoxy",
@@ -9265,9 +8715,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -9302,9 +8750,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_fluoropiperidinylethoxy",
@@ -9339,9 +8785,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_methoxyphenyl_dimethylaminopropoxy",
@@ -9376,9 +8820,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_difluorophenyl_cyclopropylaminoethoxy",
@@ -9413,9 +8855,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_bromophenyl_morpholinoethoxy",
@@ -9448,9 +8888,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_difluorophenyl_cyclopropylaminoethoxy",
@@ -9485,9 +8923,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_difluorophenyl_cyclopropylaminoethoxy",
@@ -9522,9 +8958,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -9559,9 +8993,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_bromophenyl_morpholinoethoxy",
@@ -9594,9 +9026,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_cyanophenyl_cyclopropylaminoethoxy",
@@ -9631,9 +9061,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -9666,9 +9094,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_thiomethylphenyl_azetidinylethoxy",
@@ -9701,9 +9127,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_cyanophenyl_morpholinopropoxy",
@@ -9738,9 +9162,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -9773,9 +9195,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorophenyl_morpholinopropoxy",
@@ -9810,9 +9230,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -9845,9 +9263,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_cyclopropylaminoethoxy",
@@ -9882,9 +9298,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -9917,9 +9331,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_thiomethylphenyl_pyrrolidinylethoxy",
@@ -9952,9 +9364,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_chlorophenyl_morpholinopropoxy",
@@ -9989,9 +9399,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_bromophenyl_methylpiperazinylethoxy",
@@ -10024,9 +9432,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_methoxyphenyl_cyclopropylaminoethoxy",
@@ -10061,9 +9467,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -10096,9 +9500,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorophenyl_morpholinopropoxy",
@@ -10133,9 +9535,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -10170,9 +9570,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -10207,9 +9605,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -10242,9 +9638,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -10277,9 +9671,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methoxyphenyl_cyclopropylaminoethoxy",
@@ -10314,9 +9706,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -10351,9 +9741,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_bromophenyl_dimethylaminopropoxy",
@@ -10388,9 +9776,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_difluorophenyl_morpholinopropoxy",
@@ -10425,9 +9811,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_cyanophenyl_morpholinopropoxy",
@@ -10462,9 +9846,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methoxyphenyl_dimethylaminopropoxy",
@@ -10499,9 +9881,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -10534,9 +9914,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -10569,9 +9947,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -10604,9 +9980,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -10639,9 +10013,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_sulfonylpiperidinylethoxy",
@@ -10676,9 +10048,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -10713,9 +10083,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -10748,9 +10116,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -10783,9 +10149,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinoethoxy",
@@ -10818,9 +10182,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethylphenyl_sulfonylpiperidinylethoxy",
@@ -10853,9 +10215,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_cyclopropylaminoethoxy",
@@ -10890,9 +10250,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_dimethylaminophenyl_sulfonylpiperidinylethoxy",
@@ -10925,9 +10283,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_bromophenyl_cyclopropylaminoethoxy",
@@ -10962,9 +10318,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -10997,9 +10351,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_bromophenyl_cyclopropylaminoethoxy",
@@ -11034,9 +10386,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_methylphenyl_hydroxyethylpiperazinylethoxy",
@@ -11069,9 +10419,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -11104,9 +10452,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -11139,9 +10485,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -11176,9 +10520,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_bromophenyl_sulfonylpiperidinylethoxy",
@@ -11211,9 +10553,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinopropoxy",
@@ -11248,9 +10588,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_thiomethylphenyl_fluoropiperidinylethoxy",
@@ -11283,9 +10621,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_cyanophenyl_hydroxyethylpiperazinylethoxy",
@@ -11318,9 +10654,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -11353,9 +10687,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinopropoxy",
@@ -11390,9 +10722,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -11425,9 +10755,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_indazolyl_oxetanylmethoxy",
@@ -11460,9 +10788,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinopropoxy",
@@ -11497,9 +10823,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -11534,9 +10858,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethylphenyl_morpholinopropoxy",
@@ -11571,9 +10893,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_indazolyl_dimethylaminoethoxy",
@@ -11606,9 +10926,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -11641,9 +10959,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_indazolyl_tetrahydropyranyloxy",
@@ -11676,9 +10992,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -11711,9 +11025,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -11746,9 +11058,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -11783,9 +11093,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -11818,9 +11126,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -11853,9 +11159,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_ethynylphenyl_hydroxyethylpiperazinylethoxy",
@@ -11890,9 +11194,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -11927,9 +11229,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_fluoropiperidinylethoxy",
@@ -11962,9 +11262,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -11999,9 +11297,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_dimethylaminopropoxy",
@@ -12037,9 +11333,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -12074,9 +11368,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminopropoxy",
@@ -12112,9 +11404,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -12149,9 +11439,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_indazolyl_methylpiperazinylethoxy",
@@ -12184,9 +11472,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_ethynylphenyl_cyclopropylaminoethoxy",
@@ -12222,9 +11508,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_indazolyl_morpholinoethoxy",
@@ -12257,9 +11541,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_indazolyl_methylpiperazinylethoxy",
@@ -12292,9 +11574,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -12327,9 +11607,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_ethynylphenyl_cyclopropylaminoethoxy",
@@ -12365,9 +11643,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -12403,9 +11679,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_indazolyl_dimethylaminopropoxy",
@@ -12440,9 +11714,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -12475,9 +11747,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -12510,9 +11780,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -12545,9 +11813,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -12582,9 +11848,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -12620,9 +11884,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -12657,9 +11919,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_indazolyl_morpholinopropoxy",
@@ -12694,9 +11954,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_indazolyl_morpholinopropoxy",
@@ -12731,9 +11989,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_indazolyl_morpholinopropoxy",
@@ -12768,9 +12024,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -12805,9 +12059,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyrrolopyrimidine_indazolyl_morpholinopropoxy",
@@ -12842,9 +12094,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_thiomethylphenyl_morpholinopropoxy",
@@ -12879,9 +12129,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_thiomethylphenyl_morpholinopropoxy",
@@ -12916,9 +12164,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_pyridopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -12953,9 +12199,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_indazolyl_morpholinopropoxy",
@@ -12990,9 +12234,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinazoline_indazolyl_cyclopropylaminoethoxy",
@@ -13027,9 +12269,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_quinolinepyrimidyl_indazolyl_cyclopropylaminoethoxy",
@@ -13064,9 +12304,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_triazolopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -13101,9 +12339,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -13138,9 +12374,7 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   },
   {
     "id": "gen_imidazopyridine_indazolyl_cyclopropylaminoethoxy",
@@ -13175,8 +12409,6 @@
     "docking_score": null,
     "is_novel": null,
     "pubchem_cid": null,
-    "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "chembl_id": null
   }
 ]

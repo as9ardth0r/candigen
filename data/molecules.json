@@ -52,7 +52,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.799,
-    "docking_score": -5.24,
+    "docking_score": -5.25,
     "is_novel": false,
     "pubchem_cid": 98527,
     "chembl_id": "CHEMBL292821"
@@ -141,7 +141,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.752,
-    "docking_score": -5.14,
+    "docking_score": -5.12,
     "is_novel": false,
     "pubchem_cid": 10267191,
     "chembl_id": "CHEMBL338297"
@@ -344,7 +344,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.743,
-    "docking_score": -6.19,
+    "docking_score": -6.25,
     "is_novel": false,
     "pubchem_cid": 17925,
     "chembl_id": "CHEMBL268254"
@@ -402,7 +402,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.739,
-    "docking_score": -6.17,
+    "docking_score": -6.11,
     "is_novel": false,
     "pubchem_cid": 10265873,
     "chembl_id": "CHEMBL101189"
@@ -607,7 +607,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.718,
-    "docking_score": -5.97,
+    "docking_score": -6.04,
     "is_novel": false,
     "pubchem_cid": 40113,
     "chembl_id": "CHEMBL1709464"
@@ -986,7 +986,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.697,
-    "docking_score": -7.77,
+    "docking_score": -8.03,
     "is_novel": false,
     "pubchem_cid": 70969900,
     "chembl_id": null
@@ -1102,7 +1102,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.6935,
-    "docking_score": -5.87,
+    "docking_score": -5.91,
     "is_novel": false,
     "pubchem_cid": 10145,
     "chembl_id": "CHEMBL36536"
@@ -1421,7 +1421,7 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.673,
-    "docking_score": -5.46,
+    "docking_score": -5.37,
     "is_novel": false,
     "pubchem_cid": 44350070,
     "chembl_id": "CHEMBL338259"

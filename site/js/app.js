@@ -108,6 +108,17 @@ function dockingBadge(score) {
   return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚓ ${score} kcal/mol</span>`;
 }
 
+function noveltyBadge(m) {
+  if (m.is_novel === true) {
+    return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/30">✓ absente de PubChem/ChEMBL</span>`;
+  }
+  if (m.is_novel === false) {
+    const label = m.pubchem_cid ? `PubChem CID ${m.pubchem_cid}` : (m.chembl_id || "connue");
+    return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30" title="Déjà répertoriée">⚠ déjà connue (${label})</span>`;
+  }
+  return ""; // is_novel === null : pas encore vérifié, on n'affiche rien plutôt que d'induire en erreur
+}
+
 function moleculeCard(m) {
   return `<article data-id="${m.id}" class="mol-card cursor-pointer bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-xl p-4 transition">
     <div class="flex items-start justify-between gap-2">
@@ -123,7 +134,7 @@ function moleculeCard(m) {
       <div>HBA <span class="text-slate-200 font-mono">${m.hba}</span></div>
       <div>SA <span class="text-slate-200 font-mono">${m.sa_score}</span></div>
     </dl>
-    <div class="mt-2 flex flex-wrap gap-1">${toxicityBadge(m.toxicity_alerts)}${dockingBadge(m.docking_score)}</div>
+    <div class="mt-2 flex flex-wrap gap-1">${toxicityBadge(m.toxicity_alerts)}${dockingBadge(m.docking_score)}${noveltyBadge(m)}</div>
   </article>`;
 }
 
@@ -262,9 +273,14 @@ async function openModal(id) {
     ["Fitness", m.fitness ?? "—"], ["Découverte le", m.first_seen ?? "—"],
     ["Docking (kcal/mol)", m.docking_score ?? "—"],
   ].map(([k, v]) => `<div class="bg-slate-800/60 rounded-lg px-2 py-1"><span class="text-slate-400">${k}:</span> <span class="font-mono">${v}</span></div>`).join("");
-  document.getElementById("modal-notes").textContent =
+  const links = [];
+  if (m.pubchem_cid) links.push(`<a href="https://pubchem.ncbi.nlm.nih.gov/compound/${m.pubchem_cid}" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">PubChem CID ${m.pubchem_cid}</a>`);
+  if (m.chembl_id) links.push(`<a href="https://www.ebi.ac.uk/chembl/compound_report_card/${m.chembl_id}/" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">${m.chembl_id}</a>`);
+  document.getElementById("modal-notes").innerHTML =
     `${m.formula} — ${m.notes}` +
-    (m.toxicity_alerts && m.toxicity_alerts.length ? ` | Alertes BRENK : ${m.toxicity_alerts.join(", ")}` : "");
+    (m.toxicity_alerts && m.toxicity_alerts.length ? ` | Alertes BRENK : ${m.toxicity_alerts.join(", ")}` : "") +
+    (links.length ? ` | Déjà répertoriée : ${links.join(", ")}` : "") +
+    (m.is_novel === true ? ` | Absente de PubChem/ChEMBL (vérifié)` : "");
   document.getElementById("modal").classList.remove("hidden");
   document.getElementById("modal").classList.add("flex");
 

@@ -20,6 +20,7 @@ molgen-egfr/
 │   ├── hall_of_fame.py    # persistance des meilleures molécules entre runs
 │   ├── docking_prep.py    # embedding 3D (ETKDGv3 + MMFF94) + export SDF
 │   ├── docking.py         # docking réel : SITE→centre poche, PDBQT, Vina
+│   ├── novelty.py         # vérification PubChem/ChEMBL (InChIKey exact)
 │   └── export.py          # assemblage du JSON consommé par le site
 ├── scripts/
 │   ├── run_pipeline.py     # orchestration : bootstrap ou lot évolutif du jour
@@ -43,7 +44,8 @@ molgen-egfr/
 ├── tests/
 │   ├── test_properties.py
 │   ├── test_evolve.py
-│   └── test_docking.py
+│   ├── test_docking.py
+│   └── test_novelty.py
 └── .github/workflows/deploy.yml
 ```
 
@@ -201,6 +203,43 @@ python scripts/run_pipeline.py       # docke automatiquement le top-10 si le ré
 > relativement des molécules entre elles, pas d'estimer une affinité
 > absolue fiable — pour ça, il faudrait des méthodes plus coûteuses
 > (MM-GBSA, FEP) hors du périmètre de ce pipeline.
+
+## Vérification de nouveauté (PubChem / ChEMBL)
+
+Une molécule "générée" n'est pas forcément une molécule "nouvelle" — elle
+a pu être fabriquée/publiée par quelqu'un d'autre sans qu'on le sache.
+`molgen/novelty.py` compare chaque molécule conforme au TPP aux deux
+grandes bases publiques de chimie, **par correspondance exacte
+d'InChIKey** (pas de similarité floue — on répond juste "cette structure
+exacte existe-t-elle déjà ?") :
+
+- **PubChem** (PUG-REST) et **ChEMBL** (REST API), tous deux interrogés.
+- Trois états possibles, distingués explicitement (`record.is_novel`) :
+  `True` = confirmé absente des deux bases, `False` = déjà répertoriée
+  (`record.pubchem_cid` et/ou `record.chembl_id` renseignés), `None` =
+  pas vérifiée (une des deux bases injoignable — **jamais interprété
+  comme "nouvelle"**, un bug réel rencontré et corrigé pendant le
+  développement : un réseau indisponible se traduisait à tort par
+  `is_novel=True` avant que `_fetch_json` distingue "404 confirmé" de
+  "requête qui a échoué"). Voir `tests/test_novelty.py`, en particulier
+  `test_check_novelty_unreachable_is_indeterminate_not_true`.
+- Délai de 0,25s entre appels PubChem (limite de débit recommandée : 5
+  req/s), et plafonné à `MAX_NOVELTY_CHECKS` (50 par défaut) molécules
+  par run, priorité aux meilleures (fitness) — sinon le bootstrap (jusqu'à
+  300 candidats conformes d'un coup) dépasserait largement la minute rien
+  qu'en délais de limite de débit.
+- Affiché dans le dashboard : badge rose "absente de PubChem/ChEMBL" si
+  confirmée nouvelle, badge orange "déjà connue" avec lien direct vers la
+  fiche PubChem/ChEMBL sinon — rien si pas encore vérifiée.
+
+> ℹ️ Comme pour le téléchargement du PDB (docking), ces appels réseau ne
+> peuvent être vérifiés qu'en environnement avec accès internet complet
+> (CI) — les API PUG-REST/ChEMBL ne sont pas indexées par les moteurs de
+> recherche, donc invérifiables depuis un environnement de développement
+> à accès réseau restreint. Le format des requêtes est documenté de façon
+> cohérente par plusieurs sources indépendantes ; toute la logique de
+> parsing et de gestion d'erreur est testée localement avec des réponses
+> construites selon ce format.
 
 ## CI/CD
 

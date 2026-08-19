@@ -1,6 +1,6 @@
 {
   "target": "EGFR",
-  "generated_at": "2026-08-19T10:36:59.672128+00:00",
+  "generated_at": "2026-08-19T10:52:07.902291+00:00",
   "count": 260,
   "molecules": [
     {
@@ -27,7 +27,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.4805,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "M4_EGFR-Iso-04",
@@ -53,7 +56,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.4215,
-      "docking_score": -7.59
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "M1_EGFR-Rev-01",
@@ -82,7 +88,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.2885,
-      "docking_score": -7.04
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "M2_EGFR-Cov-02",
@@ -112,7 +121,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.2295,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "M5_EGFR-Mac-05",
@@ -142,7 +154,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.0545,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_tetrahydropyranyloxy",
@@ -172,7 +187,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.664,
-      "docking_score": -7.99
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -202,7 +220,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.653,
-      "docking_score": -7.85
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_oxetanylmethoxy",
@@ -232,7 +253,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.646,
-      "docking_score": -7.54
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_tetrahydropyranyloxy",
@@ -262,7 +286,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.643,
-      "docking_score": -6.56
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -292,7 +319,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6425,
-      "docking_score": -7.24
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_tetrahydropyranyloxy",
@@ -322,7 +352,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.64,
-      "docking_score": -8.13
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_methoxyphenyl_tetrahydropyranyloxy",
@@ -352,7 +385,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6385,
-      "docking_score": -7.1
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_tetrahydropyranyloxy",
@@ -382,7 +418,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6385,
-      "docking_score": -7.09
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_oxetanylmethoxy",
@@ -412,7 +451,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6365,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -442,7 +484,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.636,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_oxetanylmethoxy",
@@ -472,7 +517,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.634,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_tetrahydropyranyloxy",
@@ -502,7 +550,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.633,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminoethoxy",
@@ -532,7 +583,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.632,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -562,7 +616,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.628,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -592,7 +649,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.628,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_dimethylaminoethoxy",
@@ -622,7 +682,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6275,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_oxetanylmethoxy",
@@ -652,7 +715,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.627,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_oxetanylmethoxy",
@@ -682,7 +748,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6255,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -712,7 +781,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6255,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_cyanophenyl_azetidinylethoxy",
@@ -742,7 +814,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6255,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_oxetanylmethoxy",
@@ -772,7 +847,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6205,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_tetrahydropyranyloxy",
@@ -802,7 +880,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.62,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -832,7 +913,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.62,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_dimethylaminoethoxy",
@@ -862,7 +946,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6185,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -892,7 +979,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6185,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_dimethylaminoethoxy",
@@ -922,7 +1012,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6175,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_tetrahydropyranyloxy",
@@ -952,7 +1045,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6175,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_pyrrolidinylethoxy",
@@ -982,7 +1078,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.617,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_dimethylaminoethoxy",
@@ -1012,7 +1111,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.617,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_azetidinylethoxy",
@@ -1042,7 +1144,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.616,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_oxetanylmethoxy",
@@ -1072,7 +1177,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6155,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_azetidinylethoxy",
@@ -1102,7 +1210,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.612,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_morpholinoethoxy",
@@ -1132,7 +1243,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.612,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_tetrahydropyranyloxy",
@@ -1162,7 +1276,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.612,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_azetidinylethoxy",
@@ -1192,7 +1309,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.607,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_oxetanylmethoxy",
@@ -1222,7 +1342,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6065,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_chlorophenyl_dimethylaminoethoxy",
@@ -1252,7 +1375,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6055,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_morpholinoethoxy",
@@ -1282,7 +1408,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6025,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -1312,7 +1441,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6015,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_pyrrolidinylethoxy",
@@ -1342,7 +1474,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.601,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -1372,7 +1507,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_methylpiperazinylethoxy",
@@ -1402,7 +1540,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5995,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methylphenyl_dimethylaminoethoxy",
@@ -1432,7 +1573,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.598,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_azetidinylethoxy",
@@ -1462,7 +1606,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.597,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_dimethylaminoethoxy",
@@ -1492,7 +1639,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5955,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_bromophenyl_oxetanylmethoxy",
@@ -1522,7 +1672,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.595,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_azetidinylethoxy",
@@ -1552,7 +1705,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.595,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorophenyl_pyrrolidinylethoxy",
@@ -1582,7 +1738,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.595,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -1612,7 +1771,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.594,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_morpholinoethoxy",
@@ -1642,7 +1804,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5935,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_dimethylaminophenyl_oxetanylmethoxy",
@@ -1672,7 +1837,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.592,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_azetidinylethoxy",
@@ -1702,7 +1870,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.592,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methoxyphenyl_dimethylaminoethoxy",
@@ -1732,7 +1903,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5905,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_pyrrolidinylethoxy",
@@ -1762,7 +1936,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5895,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_chlorofluorophenyl_azetidinylethoxy",
@@ -1792,7 +1969,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5895,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_morpholinoethoxy",
@@ -1822,7 +2002,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5865,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_morpholinoethoxy",
@@ -1852,7 +2035,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.586,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminoethoxy",
@@ -1882,7 +2068,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.585,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -1912,7 +2101,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.583,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_tetrahydropyranyloxy",
@@ -1942,7 +2134,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.583,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -1972,7 +2167,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5825,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -2002,7 +2200,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.582,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_methylpiperazinylethoxy",
@@ -2032,7 +2233,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.581,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_dimethylaminoethoxy",
@@ -2064,7 +2268,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.581,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -2096,7 +2303,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5805,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_oxetanylmethoxy",
@@ -2126,7 +2336,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.58,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_azetidinylethoxy",
@@ -2156,7 +2369,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.579,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_dimethylaminoethoxy",
@@ -2186,7 +2402,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5775,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -2216,7 +2435,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5765,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_methylpiperazinylethoxy",
@@ -2246,7 +2468,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5765,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_pyrrolidinylethoxy",
@@ -2276,7 +2501,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.575,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_cyanophenyl_morpholinoethoxy",
@@ -2306,7 +2534,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5745,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_azetidinylethoxy",
@@ -2336,7 +2567,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.573,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_bromophenyl_azetidinylethoxy",
@@ -2366,7 +2600,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5725,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_fluoropiperidinylethoxy",
@@ -2396,7 +2633,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.572,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_azetidinylethoxy",
@@ -2426,7 +2666,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.572,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_methylpiperazinylethoxy",
@@ -2456,7 +2699,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5715,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_tetrahydropyranyloxy",
@@ -2488,7 +2734,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5705,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_oxetanylmethoxy",
@@ -2518,7 +2767,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5705,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_fluoropiperidinylethoxy",
@@ -2548,7 +2800,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5695,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -2578,7 +2833,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.569,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_methylpiperazinylethoxy",
@@ -2608,7 +2866,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5685,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_pyrrolidinylethoxy",
@@ -2638,7 +2899,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.568,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_azetidinylethoxy",
@@ -2668,7 +2932,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5675,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_azetidinylethoxy",
@@ -2698,7 +2965,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5655,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_azetidinylethoxy",
@@ -2728,7 +2998,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5645,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methoxyphenyl_morpholinoethoxy",
@@ -2758,7 +3031,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5645,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_fluorophenyl_fluoropiperidinylethoxy",
@@ -2788,7 +3064,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5635,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_methylphenyl_fluoropiperidinylethoxy",
@@ -2818,7 +3097,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5635,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_pyrrolidinylethoxy",
@@ -2848,7 +3130,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.563,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminoethoxy",
@@ -2880,7 +3165,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.562,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_cyanophenyl_methylpiperazinylethoxy",
@@ -2910,7 +3198,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5615,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_dimethylaminoethoxy",
@@ -2940,7 +3231,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.561,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -2970,7 +3264,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.56,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_dimethylaminophenyl_azetidinylethoxy",
@@ -3000,7 +3297,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.56,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_pyrrolidinylethoxy",
@@ -3032,7 +3332,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5595,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_pyrrolidinylethoxy",
@@ -3062,7 +3365,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.559,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -3092,7 +3398,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.557,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorophenyl_morpholinoethoxy",
@@ -3122,7 +3431,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5555,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_azetidinylethoxy",
@@ -3152,7 +3464,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.554,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_chlorophenyl_methylpiperazinylethoxy",
@@ -3182,7 +3497,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.553,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_oxetanylmethoxy",
@@ -3214,7 +3532,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5475,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorophenyl_fluoropiperidinylethoxy",
@@ -3244,7 +3565,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5475,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3274,7 +3598,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5475,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3304,7 +3631,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.547,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_chlorofluorophenyl_morpholinoethoxy",
@@ -3334,7 +3664,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.546,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorofluorophenyl_methylpiperazinylethoxy",
@@ -3364,7 +3697,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5455,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_dimethylaminopropoxy",
@@ -3396,7 +3732,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5455,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinoethoxy",
@@ -3426,7 +3765,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.545,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_tetrahydropyranyloxy",
@@ -3456,7 +3798,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.545,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_cyanophenyl_dimethylaminopropoxy",
@@ -3488,7 +3833,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5435,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinoethoxy",
@@ -3518,7 +3866,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.542,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -3548,7 +3899,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.539,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinoethoxy",
@@ -3578,7 +3932,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.539,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_dimethylaminopropoxy",
@@ -3610,7 +3967,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.537,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_fluoropiperidinylethoxy",
@@ -3640,7 +4000,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5365,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_morpholinoethoxy",
@@ -3670,7 +4033,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5355,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_fluorophenyl_cyclopropylaminoethoxy",
@@ -3702,7 +4068,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.535,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_ethynylphenyl_methylpiperazinylethoxy",
@@ -3734,7 +4103,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.535,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_methylpiperazinylethoxy",
@@ -3764,7 +4136,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5345,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_methylpiperazinylethoxy",
@@ -3796,7 +4171,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.534,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -3826,7 +4204,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.534,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_morpholinoethoxy",
@@ -3856,7 +4237,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.532,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_fluoropiperidinylethoxy",
@@ -3886,7 +4270,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.531,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_thiomethylphenyl_dimethylaminoethoxy",
@@ -3916,7 +4303,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5305,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -3946,7 +4336,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5305,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethoxyphenyl_dimethylaminoethoxy",
@@ -3976,7 +4369,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.53,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_methylpiperazinylethoxy",
@@ -4008,7 +4404,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.529,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_oxetanylmethoxy",
@@ -4038,7 +4437,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5285,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -4068,7 +4470,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5285,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methoxyphenyl_fluoropiperidinylethoxy",
@@ -4098,7 +4503,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.528,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_dimethylaminoethoxy",
@@ -4128,7 +4536,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5265,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_sulfonylpiperidinylethoxy",
@@ -4158,7 +4569,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.525,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -4190,7 +4604,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5235,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_cyclopropylaminoethoxy",
@@ -4222,7 +4639,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.523,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_methylpiperazinylethoxy",
@@ -4254,7 +4674,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5215,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_methylphenyl_cyclopropylaminoethoxy",
@@ -4286,7 +4709,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5215,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_methylpiperazinylethoxy",
@@ -4316,7 +4742,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5195,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -4346,7 +4775,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5175,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -4376,7 +4808,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5155,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_cyclopropylaminoethoxy",
@@ -4408,7 +4843,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.515,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_sulfonylpiperidinylethoxy",
@@ -4438,7 +4876,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.515,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_cyclopropylaminoethoxy",
@@ -4470,7 +4911,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5125,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_morpholinoethoxy",
@@ -4500,7 +4944,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.512,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_fluoropiperidinylethoxy",
@@ -4532,7 +4979,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5115,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorophenyl_cyclopropylaminoethoxy",
@@ -4564,7 +5014,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.511,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_cyclopropylaminoethoxy",
@@ -4596,7 +5049,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.511,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -4628,7 +5084,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5105,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_fluoropiperidinylethoxy",
@@ -4660,7 +5119,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.51,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_dimethylaminopropoxy",
@@ -4692,7 +5154,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5095,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_cyclopropylaminoethoxy",
@@ -4724,7 +5189,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5095,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_bromophenyl_morpholinoethoxy",
@@ -4754,7 +5222,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.508,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_cyclopropylaminoethoxy",
@@ -4786,7 +5257,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5075,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_cyclopropylaminoethoxy",
@@ -4818,7 +5292,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5045,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_chlorofluorophenyl_dimethylaminopropoxy",
@@ -4850,7 +5327,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5045,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_bromophenyl_morpholinoethoxy",
@@ -4880,7 +5360,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5045,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_cyclopropylaminoethoxy",
@@ -4912,7 +5395,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.504,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -4942,7 +5428,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5035,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_azetidinylethoxy",
@@ -4972,7 +5461,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5025,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_morpholinopropoxy",
@@ -5004,7 +5496,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.5015,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -5034,7 +5529,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.501,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorophenyl_morpholinopropoxy",
@@ -5066,7 +5564,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.499,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethylphenyl_methylpiperazinylethoxy",
@@ -5096,7 +5597,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4975,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_cyclopropylaminoethoxy",
@@ -5128,7 +5632,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4975,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_dimethylaminophenyl_fluoropiperidinylethoxy",
@@ -5158,7 +5665,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4955,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_pyrrolidinylethoxy",
@@ -5188,7 +5698,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4945,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_chlorophenyl_morpholinopropoxy",
@@ -5220,7 +5733,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4935,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_bromophenyl_methylpiperazinylethoxy",
@@ -5250,7 +5766,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.493,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_methoxyphenyl_cyclopropylaminoethoxy",
@@ -5282,7 +5801,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.493,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -5312,7 +5834,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4915,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorophenyl_morpholinopropoxy",
@@ -5344,7 +5869,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4915,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -5376,7 +5904,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4905,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_trifluoromethylphenyl_dimethylaminopropoxy",
@@ -5408,7 +5939,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4885,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -5438,7 +5972,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.488,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -5468,7 +6005,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4875,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methoxyphenyl_cyclopropylaminoethoxy",
@@ -5500,7 +6040,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4875,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -5532,7 +6075,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4865,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_dimethylaminopropoxy",
@@ -5564,7 +6110,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4855,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_difluorophenyl_morpholinopropoxy",
@@ -5596,7 +6145,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.485,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_cyanophenyl_morpholinopropoxy",
@@ -5628,7 +6180,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4845,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_dimethylaminopropoxy",
@@ -5660,7 +6215,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.483,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_sulfonylpiperidinylethoxy",
@@ -5690,7 +6248,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.482,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -5720,7 +6281,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.481,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -5750,7 +6314,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.48,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_methylpiperazinylethoxy",
@@ -5780,7 +6347,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.477,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_sulfonylpiperidinylethoxy",
@@ -5812,7 +6382,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4755,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_morpholinopropoxy",
@@ -5844,7 +6417,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4745,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -5874,7 +6450,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4745,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_sulfonylpiperidinylethoxy",
@@ -5904,7 +6483,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4725,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinoethoxy",
@@ -5934,7 +6516,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.472,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_sulfonylpiperidinylethoxy",
@@ -5964,7 +6549,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.469,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_dimethylaminophenyl_cyclopropylaminoethoxy",
@@ -5996,7 +6584,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.469,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_sulfonylpiperidinylethoxy",
@@ -6026,7 +6617,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.468,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_bromophenyl_cyclopropylaminoethoxy",
@@ -6058,7 +6652,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4675,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -6088,7 +6685,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4675,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_bromophenyl_cyclopropylaminoethoxy",
@@ -6120,7 +6720,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.467,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_hydroxyethylpiperazinylethoxy",
@@ -6150,7 +6753,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4635,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_morpholinoethoxy",
@@ -6180,7 +6786,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4625,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_fluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6210,7 +6819,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4595,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -6242,7 +6854,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.459,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_bromophenyl_sulfonylpiperidinylethoxy",
@@ -6272,7 +6887,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4565,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_dimethylaminophenyl_morpholinopropoxy",
@@ -6304,7 +6922,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.454,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_fluoropiperidinylethoxy",
@@ -6334,7 +6955,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.454,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_cyanophenyl_hydroxyethylpiperazinylethoxy",
@@ -6364,7 +6988,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4525,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6394,7 +7021,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4505,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_dimethylaminophenyl_morpholinopropoxy",
@@ -6426,7 +7056,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.45,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_methylpiperazinylethoxy",
@@ -6456,7 +7089,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.447,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_oxetanylmethoxy",
@@ -6486,7 +7122,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4465,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethylphenyl_morpholinopropoxy",
@@ -6518,7 +7157,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.445,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_methoxyphenyl_morpholinopropoxy",
@@ -6550,7 +7192,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.441,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethylphenyl_morpholinopropoxy",
@@ -6582,7 +7227,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.436,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_dimethylaminoethoxy",
@@ -6612,7 +7260,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4345,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_difluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6642,7 +7293,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.434,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_tetrahydropyranyloxy",
@@ -6672,7 +7326,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.428,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -6702,7 +7359,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4255,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6732,7 +7392,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4245,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -6764,7 +7427,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4215,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_chlorofluorophenyl_hydroxyethylpiperazinylethoxy",
@@ -6794,7 +7460,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4195,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_thiomethylphenyl_sulfonylpiperidinylethoxy",
@@ -6824,7 +7493,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4175,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_hydroxyethylpiperazinylethoxy",
@@ -6856,7 +7528,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4165,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_cyclopropylaminoethoxy",
@@ -6888,7 +7563,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.415,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_fluoropiperidinylethoxy",
@@ -6918,7 +7596,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.41,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -6950,7 +7631,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.4045,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_dimethylaminopropoxy",
@@ -6983,7 +7667,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.401,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -7015,7 +7702,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3975,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_dimethylaminopropoxy",
@@ -7048,7 +7738,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3895,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_trifluoromethoxyphenyl_morpholinopropoxy",
@@ -7080,7 +7773,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.387,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_indazolyl_methylpiperazinylethoxy",
@@ -7110,7 +7806,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3865,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_ethynylphenyl_cyclopropylaminoethoxy",
@@ -7143,7 +7842,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3845,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_morpholinoethoxy",
@@ -7173,7 +7875,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.382,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_methylpiperazinylethoxy",
@@ -7203,7 +7908,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.374,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -7233,7 +7941,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3715,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_ethynylphenyl_cyclopropylaminoethoxy",
@@ -7266,7 +7977,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.37,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -7299,7 +8013,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3635,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_indazolyl_dimethylaminopropoxy",
@@ -7331,7 +8048,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3565,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -7361,7 +8081,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3545,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_fluoropiperidinylethoxy",
@@ -7391,7 +8114,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.352,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_trifluoromethoxyphenyl_hydroxyethylpiperazinylethoxy",
@@ -7421,7 +8147,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3445,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -7453,7 +8182,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3385,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_ethynylphenyl_morpholinopropoxy",
@@ -7486,7 +8218,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3375,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -7518,7 +8253,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3345,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_indazolyl_morpholinopropoxy",
@@ -7550,7 +8288,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3315,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_morpholinopropoxy",
@@ -7582,7 +8323,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3315,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_indazolyl_morpholinopropoxy",
@@ -7614,7 +8358,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.328,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_cyclopropylaminoethoxy",
@@ -7646,7 +8393,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.323,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyrrolopyrimidine_indazolyl_morpholinopropoxy",
@@ -7678,7 +8428,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.323,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_thiomethylphenyl_morpholinopropoxy",
@@ -7710,7 +8463,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.322,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_thiomethylphenyl_morpholinopropoxy",
@@ -7742,7 +8498,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.322,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_pyridopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -7774,7 +8533,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3185,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_indazolyl_morpholinopropoxy",
@@ -7806,7 +8568,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3145,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinazoline_indazolyl_cyclopropylaminoethoxy",
@@ -7838,7 +8603,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3125,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_quinolinepyrimidyl_indazolyl_cyclopropylaminoethoxy",
@@ -7870,7 +8638,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.312,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_triazolopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -7902,7 +8673,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.308,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_thienopyrimidine_thiomethylphenyl_morpholinopropoxy",
@@ -7934,7 +8708,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.305,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     },
     {
       "id": "gen_imidazopyridine_indazolyl_cyclopropylaminoethoxy",
@@ -7966,7 +8743,10 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.3015,
-      "docking_score": null
+      "docking_score": null,
+      "is_novel": null,
+      "pubchem_cid": null,
+      "chembl_id": null
     }
   ]
 }

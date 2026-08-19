@@ -46,6 +46,7 @@ from molgen.hall_of_fame import (
 )
 from molgen.docking_prep import embed_3d, mol_to_sdf_block
 from molgen.docking import dock as run_docking, prepare_ligand_pdbqt
+from molgen.novelty import check_novelty
 from molgen.export import build_site_payload, build_conformers_payload, write_json
 from rdkit import Chem
 
@@ -73,6 +74,16 @@ MAX_3D_EMBEDDINGS = 150
 MAX_DOCKING = 10
 DOCKING_EXHAUSTIVENESS = 4
 
+# Délai entre deux appels PubChem, pour respecter leur limite de débit
+# recommandée (5 req/s max — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest).
+NOVELTY_CHECK_DELAY = 0.25
+
+# Plafond du nombre de molécules vérifiées par run (au bootstrap, jusqu'à
+# 300 candidats peuvent être conformes d'un coup — sans plafond, les
+# délais de limite de débit à eux seuls dépasseraient largement la minute).
+# Les runs quotidiens normaux (~30 candidats) restent toujours sous ce plafond.
+MAX_NOVELTY_CHECKS = 50
+
 HALL_OF_FAME_PATH = ROOT / "data" / "hall_of_fame.json"
 EXPLORED_PATH = ROOT / "data" / "explored.json"
 LAST_RUN_PATH = ROOT / "data" / "last_run.json"
@@ -88,13 +99,13 @@ def main() -> None:
     curated_records = compute_batch(load_smiles(seed_path))
     for r in curated_records:
         r.source = "curated"
-    print(f"[1/9] {len(curated_records)} candidats curés chargés")
+    print(f"[1/10] {len(curated_records)} candidats curés chargés")
 
     # 2) État persistant (vide au tout premier run)
     hall = load_hall_of_fame(HALL_OF_FAME_PATH)
     explored = load_explored(EXPLORED_PATH)
     is_bootstrap = not hall and not explored
-    print(f"[2/9] État chargé : {len(hall)} molécules dans le hall of fame, "
+    print(f"[2/10] État chargé : {len(hall)} molécules dans le hall of fame, "
           f"{len(explored)} SMILES déjà explorés"
           f"{' — BOOTSTRAP (premier run)' if is_bootstrap else ''}")
 
@@ -114,14 +125,14 @@ def main() -> None:
 
     if already_ran_today:
         candidates = []
-        print(f"[3/9] Déjà exécuté aujourd'hui ({today}) — aucun nouveau candidat, "
+        print(f"[3/10] Déjà exécuté aujourd'hui ({today}) — aucun nouveau candidat, "
               f"le prochain lot sera généré au run suivant")
     elif is_bootstrap:
         rng = random.Random("bootstrap")
         recipes = rng.sample(full_library(), BOOTSTRAP_SAMPLE_SIZE)
         candidates = [(r.mol_id(), build_smiles(r), r.to_dict()) for r in recipes]
         candidates = [(i, s, r) for i, s, r in candidates if s is not None and s not in explored]
-        print(f"[3/9] {len(candidates)} nouveaux candidats à tester aujourd'hui (bootstrap)")
+        print(f"[3/10] {len(candidates)} nouveaux candidats à tester aujourd'hui (bootstrap)")
     else:
         # Les curés + le hall of fame peuvent tous deux servir de parents
         # aux mutations atomiques (pas seulement les molécules générées).
@@ -134,7 +145,7 @@ def main() -> None:
             n_atom_mutants=N_ATOM_MUTANTS_PER_RUN,
             seed=today,
         )
-        print(f"[3/9] {len(candidates)} nouveaux candidats à tester aujourd'hui")
+        print(f"[3/10] {len(candidates)} nouveaux candidats à tester aujourd'hui")
 
     # 4) Calcul des descripteurs pour le lot du jour
     batch_records = []
@@ -151,23 +162,46 @@ def main() -> None:
         r.source = "generated"
         r.recipe = recipe
         batch_records.append(r)
-    print(f"[4/9] {len(batch_records)} candidats valides générés et décrits")
+    print(f"[4/10] {len(batch_records)} candidats valides générés et décrits")
 
     # 5) Criblage TPP + SA score + PAINS + BRENK sur le lot du jour
     batch_records = enrich_and_filter(batch_records, profile)
     n_pass_today = sum(r.tpp_pass for r in batch_records)
-    print(f"[5/9] Filtre TPP appliqué au lot du jour : {n_pass_today}/{len(batch_records)} conformes")
+    print(f"[5/10] Filtre TPP appliqué au lot du jour : {n_pass_today}/{len(batch_records)} conformes")
 
-    # 6) Fusion dans le hall of fame (déduplication, fitness, plafond)
+    # 6) Vérification de nouveauté (PubChem/ChEMBL, correspondance exacte
+    #    par InChIKey) — sur les curés (une fois par run, coût négligeable)
+    #    et les nouveaux conformes du jour (ceux qui vont rejoindre le hall
+    #    of fame). Ne bloque jamais le pipeline si le réseau est indisponible
+    #    (is_novel reste à None = indéterminé, pas interprété comme "nouveau").
     new_passing = [r for r in batch_records if r.tpp_pass]
+    n_checked, n_known = 0, 0
+    # priorité aux meilleures (fitness) si le lot dépasse le plafond
+    to_check = curated_records + sorted(new_passing, key=lambda r: r.fitness or -99, reverse=True)[:MAX_NOVELTY_CHECKS]
+    for r in to_check:
+        result = check_novelty(r.canonical_smiles, delay=NOVELTY_CHECK_DELAY)
+        r.is_novel = result["is_novel"]
+        if result["pubchem"]:
+            r.pubchem_cid = result["pubchem"]["cid"]
+        if result["chembl"]:
+            r.chembl_id = result["chembl"]["chembl_id"]
+        if result["is_novel"] is not None:
+            n_checked += 1
+        if result["is_novel"] is False:
+            n_known += 1
+    print(f"[6/10] Nouveauté vérifiée (PubChem/ChEMBL) : {n_checked}/{len(to_check)} "
+          f"jointes, {n_known} déjà connues" if n_checked else
+          "[6/10] PubChem/ChEMBL injoignables — nouveauté non vérifiée ce run (indéterminé, pas bloquant)")
+
+    # 7) Fusion dans le hall of fame (déduplication, fitness, plafond)
     hall = merge_into_hall_of_fame(hall, new_passing, today=today)
-    print(f"[6/9] Hall of fame mis à jour : {len(hall)} molécules (plafond {HALL_OF_FAME_MAX})")
+    print(f"[7/10] Hall of fame mis à jour : {len(hall)} molécules (plafond {HALL_OF_FAME_MAX})")
 
     save_hall_of_fame(hall, HALL_OF_FAME_PATH)
     save_explored(explored, EXPLORED_PATH)
     LAST_RUN_PATH.write_text(json.dumps({"date": today}), encoding="utf-8")
 
-    # 7) Export final : curés + hall of fame accumulé
+    # 8) Export final : curés + hall of fame accumulé
     records = curated_records + hall
     records.sort(key=lambda r: (r.source != "curated", -(r.fitness or -99)))
 
@@ -179,9 +213,9 @@ def main() -> None:
         if mol3d is not None:
             sdf_blocks[r.id] = mol_to_sdf_block(mol3d)
             mols_3d[r.id] = mol3d
-    print(f"[7/9] Conformères 3D générés pour {len(sdf_blocks)}/{len(passing_for_3d)} molécules")
+    print(f"[8/10] Conformères 3D générés pour {len(sdf_blocks)}/{len(passing_for_3d)} molécules")
 
-    # 8) Docking réel (AutoDock Vina) — seulement si un récepteur a été
+    # 9) Docking réel (AutoDock Vina) — seulement si un récepteur a été
     #    préparé (scripts/prepare_receptor.py) et seulement pour le top-K
     #    des molécules déjà embedées en 3D à l'étape précédente.
     n_docked = 0
@@ -201,10 +235,10 @@ def main() -> None:
             if score is not None:
                 r.docking_score = score
                 n_docked += 1
-        print(f"[8/9] Docking (AutoDock Vina, {receptor_config['pdb_id']}) : "
+        print(f"[9/10] Docking (AutoDock Vina, {receptor_config['pdb_id']}) : "
               f"{n_docked}/{min(len(passing_for_3d), MAX_DOCKING)} molécules dockées")
     else:
-        print("[8/9] Pas de récepteur préparé (data/receptor/config.json absent) — "
+        print("[9/10] Pas de récepteur préparé (data/receptor/config.json absent) — "
               "docking ignoré. Lancer scripts/prepare_receptor.py pour l'activer.")
 
     export_json(records, ROOT / "data" / "molecules.json")
@@ -216,7 +250,7 @@ def main() -> None:
     conformers_payload = build_conformers_payload(sdf_blocks)
     write_json(conformers_payload, ROOT / "site" / "data" / "conformers.json")
 
-    print(f"[9/9] Export -> {len(records)} molécules au total "
+    print(f"[10/10] Export -> {len(records)} molécules au total "
           f"({len(curated_records)} curées + {len(hall)} dans le hall of fame), "
           f"{len(sdf_blocks)} conformères 3D")
 

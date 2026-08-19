@@ -53,6 +53,9 @@ class MoleculeRecord:
     first_seen: Optional[str] = None  # date ISO de première apparition dans le hall of fame
     fitness: Optional[float] = None  # score composite (voir molgen.evolve.fitness)
     docking_score: Optional[float] = None  # kcal/mol (AutoDock Vina), None si pas encore docké
+    is_novel: Optional[bool] = None  # None = pas vérifié ; True = confirmé absent de PubChem/ChEMBL ; False = déjà connue
+    pubchem_cid: Optional[int] = None
+    chembl_id: Optional[str] = None
 
     def to_dict(self) -> dict:
         return asdict(self)

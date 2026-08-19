@@ -54,12 +54,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.799,
-    "docking_score": -5.23,
+    "docking_score": -5.3,
     "is_novel": false,
     "pubchem_cid": 98527,
     "chembl_id": "CHEMBL292821",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 13
   },
   {
     "id": "467-60-7",
@@ -149,12 +149,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.752,
-    "docking_score": -5.2,
+    "docking_score": -5.08,
     "is_novel": false,
     "pubchem_cid": 10267191,
     "chembl_id": "CHEMBL338297",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 6
   },
   {
     "id": "328-89-2",
@@ -366,12 +366,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.743,
-    "docking_score": -6.21,
+    "docking_score": -6.22,
     "is_novel": false,
     "pubchem_cid": 17925,
     "chembl_id": "CHEMBL268254",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 6
   },
   {
     "id": "14780-24-6",
@@ -428,12 +428,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.739,
-    "docking_score": -5.94,
+    "docking_score": -5.98,
     "is_novel": false,
     "pubchem_cid": 10265873,
     "chembl_id": "CHEMBL101189",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 7
   },
   {
     "id": "88441-14-9",
@@ -527,8 +527,8 @@
     "is_novel": false,
     "pubchem_cid": 45108169,
     "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 7
   },
   {
     "id": "77872-43-6",
@@ -647,12 +647,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.718,
-    "docking_score": -6.0,
+    "docking_score": -5.98,
     "is_novel": false,
     "pubchem_cid": 40113,
     "chembl_id": "CHEMBL1709464",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 5
   },
   {
     "id": "22204-89-3",
@@ -994,8 +994,8 @@
     "is_novel": false,
     "pubchem_cid": 170617,
     "chembl_id": "CHEMBL1255748",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 6
   },
   {
     "id": "1445751-39-2",
@@ -1052,12 +1052,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.697,
-    "docking_score": -8.01,
+    "docking_score": -7.56,
     "is_novel": false,
     "pubchem_cid": 70969900,
     "chembl_id": null,
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 8
   },
   {
     "id": "127529-46-8",
@@ -1176,12 +1176,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.6935,
-    "docking_score": -5.51,
+    "docking_score": -5.77,
     "is_novel": false,
     "pubchem_cid": 10145,
     "chembl_id": "CHEMBL36536",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 8
   },
   {
     "id": "286834-80-8",
@@ -1517,12 +1517,12 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.673,
-    "docking_score": -5.43,
+    "docking_score": -5.39,
     "is_novel": false,
     "pubchem_cid": 44350070,
     "chembl_id": "CHEMBL338259",
-    "retrosynthesis_route_found": null,
-    "retrosynthesis_n_routes": null
+    "retrosynthesis_route_found": true,
+    "retrosynthesis_n_routes": 6
   },
   {
     "id": "841205-47-8",

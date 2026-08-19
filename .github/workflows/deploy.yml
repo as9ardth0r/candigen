@@ -58,6 +58,31 @@ jobs:
       - name: Exécution du pipeline (génération + filtrage + export JSON/CSV + docking)
         run: python scripts/run_pipeline.py
 
+      - name: Installation des dépendances de rétrosynthèse
+        run: pip install -r requirements-retrosynthesis.txt
+
+      - name: Cache des données AiZynthFinder (modèle USPTO + stock ZINC)
+        # Contrairement à data/receptor/ (committé), ce modèle (plusieurs
+        # centaines de Mo) n'est PAS committé dans le dépôt — mis en cache
+        # entre les runs via actions/cache à la place. Premier run : cache
+        # absent, téléchargement complet (~quelques minutes). Runs suivants :
+        # cache restauré, téléchargement sauté entièrement.
+        id: cache-aizynthfinder
+        uses: actions/cache@v4
+        with:
+          path: aizynthfinder_data
+          key: aizynthfinder-data-v1
+
+      - name: Téléchargement des données AiZynthFinder (si cache absent)
+        if: steps.cache-aizynthfinder.outputs.cache-hit != 'true'
+        run: download_public_data ./aizynthfinder_data
+
+      - name: Rétrosynthèse (AiZynthFinder) sur le top TPP du jour
+        # Même logique de priorisation que le docking (top-K par fitness,
+        # cf. MAX_DOCKING) — voir scripts/run_retrosynthesis.py. Écrit un
+        # JSON par molécule dans data/retrosynthesis/.
+        run: python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml
+
       - name: Persistance du hall of fame (commit des données mises à jour)
         # [skip ci] dans le message empêche ce commit de redéclencher le
         # workflow via le trigger `push` (sinon boucle infinie). Les triggers
@@ -66,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv data/receptor/ site/data/molecules.json site/data/conformers.json
+          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv data/receptor/ data/retrosynthesis/ site/data/molecules.json site/data/conformers.json
           git diff --staged --quiet || git commit -m "chore: mise a jour quotidienne du hall of fame [skip ci]"
           git push
 

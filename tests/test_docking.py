@@ -5,8 +5,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pytest
 
-from molgen.docking import parse_site_residues, binding_site_center, prepare_receptor_pdbqt, prepare_ligand_pdbqt
-from molgen.docking_prep import embed_3d
+from candigen.docking import parse_site_residues, binding_site_center, prepare_receptor_pdbqt, prepare_ligand_pdbqt
+from candigen.docking_prep import embed_3d
 
 REFERENCE_PDB = Path(__file__).resolve().parents[1] / "data" / "receptor" / "1M17.pdb"
 
@@ -58,7 +58,7 @@ def test_dock_end_to_end():
     """Test d'intégration complet : parsing + préparation + docking réel,
     sur la vraie structure 1M17 si elle a été préparée localement."""
     _skip_if_no_receptor()
-    from molgen.docking import dock
+    from candigen.docking import dock
 
     receptor_pdbqt = Path("/tmp/test_receptor_dock.pdbqt")
     ok = prepare_receptor_pdbqt(REFERENCE_PDB, receptor_pdbqt)

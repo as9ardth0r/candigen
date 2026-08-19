@@ -26,7 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from molgen.docking import binding_site_center, prepare_receptor_pdbqt
+from candigen.docking import binding_site_center, prepare_receptor_pdbqt
 
 PDB_ID = "1M17"
 RECEPTOR_DIR = ROOT / "data" / "receptor"

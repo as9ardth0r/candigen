@@ -1,4 +1,4 @@
-# MolGen-EGFR
+# CandiGen
 
 Pipeline open source de génération et de criblage de candidats-médicaments
 ciblant le domaine kinase d'**EGFR** (Epidermal Growth Factor Receptor),
@@ -11,8 +11,8 @@ avec un dashboard de suivi statique déployé automatiquement sur GitHub Pages.
 ## Structure du dépôt
 
 ```
-molgen-egfr/
-├── src/molgen/            # cœur de calcul (package Python)
+candigen/
+├── src/candigen/            # cœur de calcul (package Python)
 │   ├── properties.py      # chargement SMILES + calcul MW/LogP/TPSA/HBD/HBA
 │   ├── filters.py         # TPP, Lipinski, SA score, alertes PAINS + BRENK
 │   ├── generator.py       # briques : scaffolds, R-groups, assemblage SMILES
@@ -21,18 +21,23 @@ molgen-egfr/
 │   ├── docking_prep.py    # embedding 3D (ETKDGv3 + MMFF94) + export SDF
 │   ├── docking.py         # docking réel : SITE→centre poche, PDBQT, Vina
 │   ├── novelty.py         # vérification PubChem/ChEMBL (InChIKey exact)
-│   └── export.py          # assemblage du JSON consommé par le site
+│   ├── export.py          # assemblage du JSON consommé par le site
+│   └── retrosynthesis.py  # rétrosynthèse CASP (AiZynthFinder) — optionnel, cf. section dédiée
 ├── scripts/
-│   ├── run_pipeline.py     # orchestration : bootstrap ou lot évolutif du jour
-│   ├── prepare_receptor.py # prépare data/receptor/ (une fois)
-│   └── fetch_vendor.sh     # (re)télécharge le SA-scorer officiel RDKit
+│   ├── run_pipeline.py       # orchestration : bootstrap ou lot évolutif du jour
+│   ├── prepare_receptor.py   # prépare data/receptor/ (une fois)
+│   ├── run_retrosynthesis.py # rétrosynthèse sur le top TPP — manuel, optionnel
+│   └── fetch_vendor.sh       # (re)télécharge le SA-scorer officiel RDKit
 ├── vendor/                 # sascorer.py + fpscores.pkl.gz (RDKit Contrib)
+├── requirements.txt
+├── requirements-retrosynthesis.txt  # dépendance optionnelle et lourde (AiZynthFinder)
 ├── data/
 │   ├── seed_molecules.smi  # 5 candidats curés
 │   ├── hall_of_fame.json   # état persistant : meilleures molécules à ce jour
 │   ├── explored.json       # état persistant : SMILES déjà testés
 │   ├── last_run.json       # état persistant : date du dernier lot généré
 │   ├── receptor/            # structure PDB + PDBQT + centre de la poche
+│   ├── retrosynthesis/      # sorties de run_retrosynthesis.py, une par molécule (optionnel)
 │   ├── molecules.json      # sortie du pipeline (curés + hall of fame)
 │   └── molecules.csv
 ├── site/                   # site statique (GitHub Pages)
@@ -45,7 +50,8 @@ molgen-egfr/
 │   ├── test_properties.py
 │   ├── test_evolve.py
 │   ├── test_docking.py
-│   └── test_novelty.py
+│   ├── test_novelty.py
+│   └── test_retrosynthesis.py
 └── .github/workflows/deploy.yml
 ```
 
@@ -62,7 +68,7 @@ python -m http.server 8000 -d site # prévisualiser le dashboard localement
 
 ## Target Product Profile (TPP) — EGFR
 
-Bornes utilisées par `TPPProfile` (`src/molgen/filters.py`), calibrées pour
+Bornes utilisées par `TPPProfile` (`src/candigen/filters.py`), calibrées pour
 un inhibiteur ATP-compétitif administré per os :
 
 | Critère              | Cible        | Justification |
@@ -106,7 +112,7 @@ par le workflow) :
   et testées — volontairement une *partie* seulement du catalogue, pas la
   totalité, pour laisser de la marge aux jours suivants.
 - **Runs suivants** (déclenchés par le cron quotidien, cf. CI/CD ci-dessous),
-  `molgen.evolve` combine 3 mécanismes, 10 candidats chacun :
+  `candigen.evolve` combine 3 mécanismes, 10 candidats chacun :
   1. **Exploration par recette** : combinaisons scaffold/aniline/solubilisant
      jamais testées, tirées au hasard dans le catalogue restant.
   2. **Mutation de recette** : on part des meilleures molécules connues et
@@ -125,7 +131,7 @@ par le workflow) :
   garde la trace de tous les **SMILES canoniques** déjà testés (peu importe
   leur origine), pour ne jamais retester deux fois la même molécule.
 - **Fitness** = `QED - 0.05 × SA_score` (favorise drug-likeness élevé et
-  synthèse facile — heuristique simple, ajustable dans `molgen/evolve.py`).
+  synthèse facile — heuristique simple, ajustable dans `candigen/evolve.py`).
 - Les molécules conformes au TPP sont fusionnées dans le hall of fame
   (déduplication par SMILES canonique, tri par fitness, plafonné à
   `HALL_OF_FAME_MAX` = 300 — les moins bonnes sont éliminées si de
@@ -141,7 +147,7 @@ par le workflow) :
 Pour aller plus loin que la mutation atomique locale (ex. changer un cycle,
 fusionner deux fragments), deux leviers : curer plus de fragments dans
 `ANILINE_HINGE_SUBSTITUENTS`/`SOLUBILIZING_ARMS`/`SCAFFOLD_LIBRARY`
-(`src/molgen/generator.py`), ou les extraire automatiquement par
+(`src/candigen/generator.py`), ou les extraire automatiquement par
 décomposition **BRICS** d'une base existante (ZINC, ChEMBL) — RDKit fournit
 `Chem.BRICS` pour ça, non branché ici mais compatible avec `generator.py`.
 
@@ -204,11 +210,47 @@ python scripts/run_pipeline.py       # docke automatiquement le top-10 si le ré
 > absolue fiable — pour ça, il faudrait des méthodes plus coûteuses
 > (MM-GBSA, FEP) hors du périmètre de ce pipeline.
 
+## Rétrosynthèse (AiZynthFinder) — optionnel
+
+En complément du criblage 2D et du docking, `candigen.retrosynthesis` peut
+générer une **route de rétrosynthèse** (CASP — computer-aided synthesis
+planning) pour les meilleures molécules conformes au TPP, via
+[AiZynthFinder](https://github.com/MolecularAI/aizynthfinder) (AstraZeneca,
+licence MIT) : recherche arborescente Monte Carlo guidée par un réseau de
+neurones, qui décompose récursivement une molécule jusqu'à des précurseurs
+réputés achetables.
+
+> ⚠️ Ce que ça sort : une **séquence de réactions** (quelle liaison casser,
+> quels précurseurs), pas un protocole expérimental complet (réactifs
+> exacts, solvants, températures, rendements) — la prédiction fiable des
+> conditions réactionnelles reste un sous-problème de recherche ouvert.
+> Comme pour le docking, ce sont des candidats de route à revoir, pas des
+> protocoles validés pour la paillasse.
+
+**Pourquoi ce n'est PAS dans le workflow CI automatique**, contrairement au
+docking : la structure receptrice (`data/receptor/`, quelques Mo) se
+committe sans problème dans le dépôt, mais un modèle AiZynthFinder (policy
++ stock de précurseurs, plusieurs centaines de Mo) ne le peut pas
+raisonnablement. C'est donc un outil à lancer manuellement, en local, à la
+demande :
+
+```bash
+pip install -r requirements-retrosynthesis.txt
+download_public_data ./aizynthfinder_data   # une fois — télécharge modèle + stock ZINC
+python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml
+```
+
+Par défaut, traite les 10 molécules conformes au TPP avec la meilleure
+fitness (`--max` pour ajuster) et écrit un fichier JSON par molécule dans
+`data/retrosynthesis/` (routes triées par score + statistiques de
+recherche). Le dossier `aizynthfinder_data/` téléchargé localement n'est
+pas committé (voir `.gitignore`).
+
 ## Vérification de nouveauté (PubChem / ChEMBL)
 
 Une molécule "générée" n'est pas forcément une molécule "nouvelle" — elle
 a pu être fabriquée/publiée par quelqu'un d'autre sans qu'on le sache.
-`molgen/novelty.py` compare chaque molécule conforme au TPP aux deux
+`candigen/novelty.py` compare chaque molécule conforme au TPP aux deux
 grandes bases publiques de chimie, **par correspondance exacte
 d'InChIKey** (pas de similarité floue — on répond juste "cette structure
 exacte existe-t-elle déjà ?") :

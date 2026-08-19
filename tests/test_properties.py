@@ -4,8 +4,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pytest
-from molgen.properties import compute_descriptors, InvalidSMILESError
-from molgen.filters import TPPProfile, lipinski_violations, sa_score
+from candigen.properties import compute_descriptors, InvalidSMILESError
+from candigen.filters import TPPProfile, lipinski_violations, sa_score
 from rdkit import Chem
 
 
@@ -44,7 +44,7 @@ def test_tpp_profile_evaluates():
 
 
 def test_generator_produces_valid_analogs():
-    from molgen.generator import enumerate_analogs, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
+    from candigen.generator import enumerate_analogs, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
 
     scaffold = "c1ccc2ncnc(N[*:1])c2c1[*:2]"
     analogs = enumerate_analogs(scaffold, {1: ANILINE_HINGE_SUBSTITUENTS, 2: SOLUBILIZING_ARMS})
@@ -54,7 +54,7 @@ def test_generator_produces_valid_analogs():
 
 
 def test_full_library_is_large_and_valid():
-    from molgen.generator import enumerate_library, SCAFFOLD_LIBRARY, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
+    from candigen.generator import enumerate_library, SCAFFOLD_LIBRARY, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
 
     library = enumerate_library(SCAFFOLD_LIBRARY, {1: ANILINE_HINGE_SUBSTITUENTS, 2: SOLUBILIZING_ARMS})
     expected = len(SCAFFOLD_LIBRARY) * len(ANILINE_HINGE_SUBSTITUENTS.fragments) * len(SOLUBILIZING_ARMS.fragments)

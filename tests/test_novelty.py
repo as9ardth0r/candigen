@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from molgen import novelty
+from candigen import novelty
 
 
 def test_compute_inchikey_matches_known_value():

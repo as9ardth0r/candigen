@@ -6,13 +6,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from rdkit import Chem
 
-from molgen.evolve import (
+from candigen.evolve import (
     Recipe, build_smiles, random_recipe, mutate_atoms, full_library,
     generate_daily_batch, fitness,
 )
-from molgen.properties import compute_descriptors
-from molgen.filters import TPPProfile, enrich_and_filter
-from molgen.hall_of_fame import merge_into_hall_of_fame, elite_records, HALL_OF_FAME_MAX
+from candigen.properties import compute_descriptors
+from candigen.filters import TPPProfile, enrich_and_filter
+from candigen.hall_of_fame import merge_into_hall_of_fame, elite_records, HALL_OF_FAME_MAX
 
 
 def _record_from_recipe(recipe: Recipe) -> "compute_descriptors":
@@ -32,7 +32,7 @@ def test_random_recipe_builds_valid_smiles():
 
 
 def test_full_library_matches_expected_size():
-    from molgen.generator import SCAFFOLD_LIBRARY, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
+    from candigen.generator import SCAFFOLD_LIBRARY, ANILINE_HINGE_SUBSTITUENTS, SOLUBILIZING_ARMS
 
     lib = full_library()
     expected = len(SCAFFOLD_LIBRARY) * len(ANILINE_HINGE_SUBSTITUENTS.fragments) * len(SOLUBILIZING_ARMS.fragments)

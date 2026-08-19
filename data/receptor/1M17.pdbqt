@@ -1,4 +1,4 @@
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   GLY A 672      55.000   8.448  68.519  0.00  0.00    +0.000 NA
@@ -611,14 +611,14 @@ ATOM    607  CB  VAL A 750      29.939   3.823  64.645  0.00  0.00    +0.000 C
 ATOM    608  CG1 VAL A 750      30.804   3.742  63.421  0.00  0.00    +0.000 C 
 ATOM    609  CG2 VAL A 750      30.017   5.244  65.201  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   VAL A 750      28.358   2.176  63.567  0.00  0.00    +0.000 C 
 ATOM      2  O   VAL A 750      28.265   1.117  64.201  0.00  0.00    +0.000 OA
 ATOM      3  N   CYS A 751      28.282   2.243  62.246  0.00  0.00    +0.000 NA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   CYS A 751      28.271   2.223  62.244  0.00  0.00    +0.000 NA
@@ -627,29 +627,29 @@ ATOM      3  CB  CYS A 751      27.653   1.255  60.060  0.00  0.00    +0.000 C
 ATOM      4  SG  CYS A 751      25.899   1.515  60.033  0.00  0.00    +0.000 S 
 ATOM      5  SG  CYS A 751      27.776   0.394  58.620  0.00  0.00    +0.000 S 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  CA  CYS A 751      28.168   0.990  61.469  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   CYS A 751      29.518   0.324  61.402  0.00  0.00    +0.000 C 
 ATOM      2  O   CYS A 751      30.528   0.968  61.135  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   CYS A 751      29.496   0.320  61.313  0.00  0.00    +0.000 C 
 ATOM      2  O   CYS A 751      30.500   0.925  60.946  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  CB  CYS A 751      27.681   1.539  60.003  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   ARG A 752      29.530  -0.967  61.673  0.00  0.00    +0.000 NA
@@ -1290,7 +1290,7 @@ ATOM    635  CB  THR A 830      26.857   4.149  57.520  0.00  0.00    +0.000 C
 ATOM    636  OG1 THR A 830      27.557   3.072  56.887  0.00  0.00    +0.000 OA
 ATOM    637  CG2 THR A 830      25.974   4.851  56.529  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   THR A 830      28.557   5.994  57.099  0.00  0.00    +0.000 C 
@@ -1298,33 +1298,33 @@ ATOM      2  O   THR A 830      28.742   7.210  57.293  0.00  0.00    +0.000 OA
 ATOM      3  N   ASP A 831      28.946   5.352  55.998  0.00  0.00    +0.000 NA
 ATOM      4  CA  ASP A 831      29.643   5.954  54.868  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   ASP A 831      28.952   5.339  56.003  0.00  0.00    +0.000 NA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  CA  ASP A 831      29.642   5.987  54.876  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   ASP A 831      30.901   6.726  55.228  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C   ASP A 831      30.902   6.732  55.268  0.00  0.00    +0.000 C 
 ATOM      2  O   ASP A 831      30.893   7.946  55.282  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   ASP A 831      30.895   7.948  55.395  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  CB  ASP A 831      28.683   6.812  54.040  0.00  0.00    +0.000 C 
@@ -1336,7 +1336,7 @@ ATOM      6  OD1 ASP A 831      29.092   6.606  51.755  0.00  0.00    +0.000 OA
 ATOM      7  OD2 ASP A 831      26.827   5.510  53.247  0.00  0.00    +0.000 OA
 ATOM      8  OD2 ASP A 831      30.096   8.321  52.675  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   PHE A 832      31.996   5.996  55.411  0.00  0.00    +0.000 NA
@@ -2420,7 +2420,7 @@ ATOM   1078  CD2 HIS A 964      -6.032   4.572  62.699  0.00  0.00    +0.000 A
 ATOM   1079  CE1 HIS A 964      -5.457   2.788  63.840  0.00  0.00    +0.000 A 
 ATOM   1080  NE2 HIS A 964      -5.850   3.209  62.651  0.00  0.00    +0.000 NA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  N   LEU A 977     -11.036   6.578  61.901  0.00  0.00    +0.000 NA
@@ -2577,7 +2577,7 @@ ATOM    151  CB  PRO A 995     -33.814  16.651  65.275  0.00  0.00    +0.000 C
 ATOM    152  CG  PRO A 995     -34.154  15.455  64.454  0.00  0.00    +0.000 C 
 ATOM    153  CD  PRO A 995     -33.927  14.315  65.439  0.00  0.00    +0.000 C 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  C1  AQ4 A 999      29.552  -1.989  53.496  0.00  0.00    +0.000 C 
@@ -2610,102 +2610,102 @@ ATOM     27  C20 AQ4 A 999      26.234   2.292  53.236  0.00  0.00    +0.000 A
 ATOM     28  C21 AQ4 A 999      27.625   2.509  53.279  0.00  0.00    +0.000 A 
 ATOM     29  C22 AQ4 A 999      28.508   1.410  53.344  0.00  0.00    +0.000 A 
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   1      32.732  20.638  57.020  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   2      32.882   9.700  55.317  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   3      27.504  -1.066  65.946  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   4      25.698  20.050  48.908  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   5      23.562  36.184  60.778  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   6      33.892  18.248  58.731  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   7      10.334  25.073  74.952  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   8      27.903  24.827  53.992  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A   9      18.941  -2.491  68.885  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  10      25.979  -0.494  56.755  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  11      28.366  -5.361  64.274  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  12      22.492  -8.282  61.348  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  13      13.333  18.933  80.447  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  14      25.457  24.140  55.088  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  15      18.280  33.231  57.782  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  16      30.582  -0.221  65.350  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  17      32.987  24.038  72.100  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  18       9.251  21.560  60.778  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  19     -21.187   4.756  70.193  0.00  0.00    +0.000 OA
 TER 
-REMARK  Name = /home/runner/work/molgen-egfr/molgen-egfr/data/receptor/1M17.pdb
+REMARK  Name = /home/runner/work/candigen/candigen/data/receptor/1M17.pdb
 REMARK                            x       y       z     vdW  Elec       q    Type
 REMARK                         _______ _______ _______ _____ _____    ______ ____
 ATOM      1  O   HOH A  20      18.877  25.444  74.214  0.00  0.00    +0.000 OA

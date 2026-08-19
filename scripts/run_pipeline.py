@@ -9,7 +9,7 @@ auparavant, et fait persister les meilleurs d'un run à l'autre :
     échantillon de la bibliothèque combinatoire (scaffolds × anilines ×
     solubilisants) est testé pour amorcer un hall of fame solide, SANS
     épuiser tout le catalogue d'un coup (il en faut pour les jours suivants).
-  - Runs suivants (cron quotidien) : molgen.evolve combine
+  - Runs suivants (cron quotidien) : candigen.evolve combine
       1) de l'exploration dans le catalogue de recettes restant,
       2) des recettes voisines des meilleures molécules connues,
       3) des MUTATIONS ATOMIQUES (ajout/retrait/permutation d'un halogène
@@ -17,8 +17,8 @@ auparavant, et fait persister les meilleurs d'un run à l'autre :
          fini qui reste productif même après épuisement complet du
          catalogue de recettes (1274 combinaisons au total).
 
-Tous les candidats passent par le même criblage 2D (molgen.properties +
-molgen.filters : TPP, SA score, PAINS, BRENK). Ceux qui sont conformes au
+Tous les candidats passent par le même criblage 2D (candigen.properties +
+candigen.filters : TPP, SA score, PAINS, BRENK). Ceux qui sont conformes au
 TPP sont fusionnés dans data/hall_of_fame.json (plafonné, classé par
 fitness). Le site consomme : les 5 candidats curés + le hall of fame.
 
@@ -37,22 +37,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from molgen.properties import load_smiles, compute_batch, compute_descriptors, export_json, export_csv, InvalidSMILESError
-from molgen.filters import TPPProfile, enrich_and_filter
-from molgen.evolve import full_library, generate_daily_batch, build_smiles, fitness as compute_fitness
-from molgen.hall_of_fame import (
+from candigen.properties import load_smiles, compute_batch, compute_descriptors, export_json, export_csv, InvalidSMILESError
+from candigen.filters import TPPProfile, enrich_and_filter
+from candigen.evolve import full_library, generate_daily_batch, build_smiles, fitness as compute_fitness
+from candigen.hall_of_fame import (
     load_hall_of_fame, save_hall_of_fame, load_explored, save_explored,
     elite_records, merge_into_hall_of_fame, HALL_OF_FAME_MAX,
 )
-from molgen.docking_prep import embed_3d, mol_to_sdf_block
-from molgen.docking import dock as run_docking, prepare_ligand_pdbqt
-from molgen.novelty import check_novelty
-from molgen.export import build_site_payload, build_conformers_payload, write_json
+from candigen.docking_prep import embed_3d, mol_to_sdf_block
+from candigen.docking import dock as run_docking, prepare_ligand_pdbqt
+from candigen.novelty import check_novelty
+from candigen.export import build_site_payload, build_conformers_payload, write_json
 from rdkit import Chem
 
 # Lot quotidien (runs après le bootstrap) : n_fresh recettes jamais testées
 # + n_recipe_mutants recettes voisines des meilleures connues + n_atom_mutants
-# mutations atomiques (espace non fini — cf. molgen/evolve.py).
+# mutations atomiques (espace non fini — cf. candigen/evolve.py).
 N_FRESH_PER_RUN = 10
 N_RECIPE_MUTANTS_PER_RUN = 10
 N_ATOM_MUTANTS_PER_RUN = 10

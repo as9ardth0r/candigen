@@ -1,0 +1,4 @@
+# Dépendance optionnelle pour scripts/run_retrosynthesis.py — séparée de
+# requirements.txt car lourde (modèle + stock de précurseurs à télécharger
+# à part via `download_public_data`, non requis pour le pipeline principal).
+aizynthfinder>=4.4

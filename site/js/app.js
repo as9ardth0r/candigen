@@ -1,4 +1,4 @@
-// MolGen-EGFR — logique du dashboard statique
+// CandiGen — logique du dashboard statique
 // Aucune étape de build requise : ce fichier tourne tel quel sur GitHub Pages.
 
 const DATA_URL = "data/molecules.json";

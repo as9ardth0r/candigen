@@ -2,7 +2,9 @@
 """
 Rétrosynthèse (AiZynthFinder) sur les meilleures molécules conformes au TPP
 issues de data/molecules.json. Écrit un JSON détaillé par molécule dans
-data/retrosynthesis/, ET met à jour le badge "route trouvée" dans
+site/data/retrosynthesis/ (comme site/data/conformers.json : le dashboard
+GitHub Pages ne sert QUE le contenu de site/, pas data/ à la racine du
+dépôt), ET met à jour le badge "route trouvée" dans
 data/molecules.json, data/molecules.csv et site/data/molecules.json
 (désactivable avec --no-dashboard-update).
 
@@ -40,13 +42,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", required=True, help="config.yml d'AiZynthFinder (voir download_public_data)")
     parser.add_argument("--input", default=str(ROOT / "data" / "molecules.json"), help="fichier JSON source")
-    parser.add_argument("--output", default=str(ROOT / "data" / "retrosynthesis"), help="dossier de sortie")
+    parser.add_argument("--output", default=str(ROOT / "site" / "data" / "retrosynthesis"), help="dossier de sortie")
     parser.add_argument("--max", type=int, default=10, help="nombre max de molécules traitées (top fitness)")
     parser.add_argument("--stock", default="zinc", help="nom du stock défini dans config.yml")
     parser.add_argument("--policy", default="uspto", help="nom de la policy définie dans config.yml")
     parser.add_argument(
         "--no-dashboard-update", action="store_true",
-        help="ne pas ré-exporter data/molecules.json + site/data/molecules.json (juste écrire data/retrosynthesis/)",
+        help="ne pas ré-exporter data/molecules.json + site/data/molecules.json (juste écrire site/data/retrosynthesis/)",
     )
     args = parser.parse_args()
 

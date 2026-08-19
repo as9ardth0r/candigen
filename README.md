@@ -37,7 +37,6 @@ candigen/
 │   ├── explored.json       # état persistant : SMILES déjà testés
 │   ├── last_run.json       # état persistant : date du dernier lot généré
 │   ├── receptor/            # structure PDB + PDBQT + centre de la poche
-│   ├── retrosynthesis/      # sorties de run_retrosynthesis.py, une par molécule (générées en CI)
 │   ├── molecules.json      # sortie du pipeline (curés + hall of fame)
 │   └── molecules.csv
 ├── site/                   # site statique (GitHub Pages)
@@ -45,6 +44,7 @@ candigen/
 │   ├── js/app.js
 │   └── data/
 │       ├── molecules.json  # index léger (généré à chaque run CI)
+│       ├── retrosynthesis/ # un JSON par molécule évaluée (généré en CI, cf. section dédiée)
 │       └── conformers.json # blocs SDF, top-K conformes (chargé à la demande)
 ├── tests/
 │   ├── test_properties.py
@@ -235,10 +235,13 @@ quelques Mo), mais mis en **cache entre les runs** via `actions/cache`
 (~quelques minutes) ; runs suivants : cache restauré, téléchargement
 sauté. Chaque run quotidien traite les 10 molécules conformes au TPP avec
 la meilleure fitness (même logique que `MAX_DOCKING`), écrit un JSON
-détaillé par molécule dans `data/retrosynthesis/`, **et** met à jour un
-badge 🧪 dans le dashboard (`retrosynthesis_route_found` /
-`retrosynthesis_n_routes` dans `data/molecules.json`) — visible sur la
-carte de chaque molécule évaluée, et dans sa fiche détaillée.
+détaillé par molécule dans `site/data/retrosynthesis/` (comme
+`site/data/conformers.json` : GitHub Pages ne sert que `site/`, pas
+`data/` à la racine du dépôt), **et** met à jour un badge 🧪 dans le
+dashboard (`retrosynthesis_route_found` / `retrosynthesis_n_routes` dans
+`data/molecules.json`) — visible sur la carte de chaque molécule évaluée,
+et dans sa fiche détaillée (arbre de routes interactif, avec structures
+2D).
 
 Pour le lancer en local (déboguer, ou traiter plus de molécules que le
 run automatique) :
@@ -250,8 +253,8 @@ python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml --ma
 ```
 
 Le dossier `aizynthfinder_data/` téléchargé localement n'est pas committé
-(voir `.gitignore`) — c'est uniquement le résultat (`data/retrosynthesis/`)
-qui l'est.
+(voir `.gitignore`) — c'est uniquement le résultat
+(`site/data/retrosynthesis/`) qui l'est.
 
 ## Vérification de nouveauté (PubChem / ChEMBL)
 
@@ -309,10 +312,11 @@ exacte existe-t-elle déjà ?") :
    cache `actions/cache`, puis lance `scripts/run_retrosynthesis.py` sur
    le top-10 TPP du jour,
 5. **committe** `data/hall_of_fame.json`, `data/explored.json`,
-   `data/last_run.json`, `data/receptor/`, `data/retrosynthesis/` et les
-   fichiers `site/data/*.json` régénérés — sinon tout serait reperdu au
-   run suivant, les runners GitHub étant éphémères. Le message de commit
-   contient `[skip ci]` pour ne pas se redéclencher lui-même en boucle.
+   `data/last_run.json`, `data/receptor/` et les fichiers `site/data/*.json`
+   régénérés (dont `site/data/retrosynthesis/`) — sinon tout serait
+   reperdu au run suivant, les runners GitHub étant éphémères. Le message
+   de commit contient `[skip ci]` pour ne pas se redéclencher lui-même en
+   boucle.
 6. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
 
 **Activation** (une fois, dans les paramètres du dépôt GitHub) :

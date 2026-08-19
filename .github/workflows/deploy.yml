@@ -82,7 +82,9 @@ jobs:
       - name: Rétrosynthèse (AiZynthFinder) sur le top TPP du jour
         # Même logique de priorisation que le docking (top-K par fitness,
         # cf. MAX_DOCKING) — voir scripts/run_retrosynthesis.py. Écrit un
-        # JSON par molécule dans data/retrosynthesis/.
+        # JSON par molécule dans site/data/retrosynthesis/ (comme
+        # site/data/conformers.json : Pages ne sert que site/, pas data/
+        # à la racine du dépôt).
         run: python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml
 
       - name: Persistance du hall of fame (commit des données mises à jour)
@@ -93,7 +95,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv data/receptor/ data/retrosynthesis/ site/data/molecules.json site/data/conformers.json
+          git add data/hall_of_fame.json data/explored.json data/last_run.json data/molecules.json data/molecules.csv data/receptor/ site/data/molecules.json site/data/conformers.json site/data/retrosynthesis/
           git diff --staged --quiet || git commit -m "chore: mise a jour quotidienne du hall of fame [skip ci]"
           git push
 

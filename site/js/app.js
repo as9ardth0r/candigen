@@ -274,9 +274,11 @@ async function getConformers() {
   return state.conformers;
 }
 
-// --- data/retrosynthesis/<id>.json : un fichier par molécule, chargé à la
-// demande (seulement si retrosynthesis_route_found=true, pour ne pas faire
-// un fetch 404 inutile sur les molécules jamais évaluées) et mis en cache. ---
+// --- site/data/retrosynthesis/<id>.json : un fichier par molécule, chargé
+// à la demande (seulement si retrosynthesis_route_found=true, pour ne pas
+// faire un fetch 404 inutile sur les molécules jamais évaluées) et mis en
+// cache. Chemin relatif à site/index.html — résout vers site/data/retrosynthesis/
+// une fois déployé sur Pages (qui ne sert que le contenu de site/).
 const RETRO_URL_BASE = "data/retrosynthesis/";
 
 async function getRetroResult(id) {
@@ -340,7 +342,7 @@ function renderRetroSection(result) {
   if (!result || !result.routes || result.routes.length === 0) {
     select.innerHTML = "";
     statsEl.textContent = "";
-    treeEl.innerHTML = `<p class="text-xs text-slate-500">Détail de la route indisponible (data/retrosynthesis/ pas encore régénéré pour cette molécule).</p>`;
+    treeEl.innerHTML = `<p class="text-xs text-slate-500">Détail de la route indisponible (site/data/retrosynthesis/ pas encore régénéré pour cette molécule).</p>`;
     return;
   }
 

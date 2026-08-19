@@ -98,7 +98,7 @@ def summarize_result(result: dict[str, Any]) -> dict[str, Any]:
     Résume un résultat de search_routes() pour l'injecter dans
     data/molecules.json (badge du dashboard) — juste de quoi savoir si
     une route a été trouvée, pas l'arbre complet (qui reste dans
-    data/retrosynthesis/<id>.json, bien plus volumineux).
+    site/data/retrosynthesis/<id>.json, bien plus volumineux).
     """
     n_routes = len(result.get("routes") or [])
     return {

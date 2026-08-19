@@ -22,11 +22,11 @@ candigen/
 │   ├── docking.py         # docking réel : SITE→centre poche, PDBQT, Vina
 │   ├── novelty.py         # vérification PubChem/ChEMBL (InChIKey exact)
 │   ├── export.py          # assemblage du JSON consommé par le site
-│   └── retrosynthesis.py  # rétrosynthèse CASP (AiZynthFinder) — optionnel, cf. section dédiée
+│   └── retrosynthesis.py  # rétrosynthèse CASP (AiZynthFinder) — cf. section dédiée
 ├── scripts/
 │   ├── run_pipeline.py       # orchestration : bootstrap ou lot évolutif du jour
 │   ├── prepare_receptor.py   # prépare data/receptor/ (une fois)
-│   ├── run_retrosynthesis.py # rétrosynthèse sur le top TPP — manuel, optionnel
+│   ├── run_retrosynthesis.py # rétrosynthèse sur le top TPP — auto en CI (cache), lançable en local aussi
 │   └── fetch_vendor.sh       # (re)télécharge le SA-scorer officiel RDKit
 ├── vendor/                 # sascorer.py + fpscores.pkl.gz (RDKit Contrib)
 ├── requirements.txt
@@ -37,7 +37,7 @@ candigen/
 │   ├── explored.json       # état persistant : SMILES déjà testés
 │   ├── last_run.json       # état persistant : date du dernier lot généré
 │   ├── receptor/            # structure PDB + PDBQT + centre de la poche
-│   ├── retrosynthesis/      # sorties de run_retrosynthesis.py, une par molécule (optionnel)
+│   ├── retrosynthesis/      # sorties de run_retrosynthesis.py, une par molécule (générées en CI)
 │   ├── molecules.json      # sortie du pipeline (curés + hall of fame)
 │   └── molecules.csv
 ├── site/                   # site statique (GitHub Pages)
@@ -210,10 +210,10 @@ python scripts/run_pipeline.py       # docke automatiquement le top-10 si le ré
 > absolue fiable — pour ça, il faudrait des méthodes plus coûteuses
 > (MM-GBSA, FEP) hors du périmètre de ce pipeline.
 
-## Rétrosynthèse (AiZynthFinder) — optionnel
+## Rétrosynthèse (AiZynthFinder)
 
-En complément du criblage 2D et du docking, `candigen.retrosynthesis` peut
-générer une **route de rétrosynthèse** (CASP — computer-aided synthesis
+En complément du criblage 2D et du docking, `candigen.retrosynthesis`
+génère une **route de rétrosynthèse** (CASP — computer-aided synthesis
 planning) pour les meilleures molécules conformes au TPP, via
 [AiZynthFinder](https://github.com/MolecularAI/aizynthfinder) (AstraZeneca,
 licence MIT) : recherche arborescente Monte Carlo guidée par un réseau de
@@ -227,24 +227,28 @@ réputés achetables.
 > Comme pour le docking, ce sont des candidats de route à revoir, pas des
 > protocoles validés pour la paillasse.
 
-**Pourquoi ce n'est PAS dans le workflow CI automatique**, contrairement au
-docking : la structure receptrice (`data/receptor/`, quelques Mo) se
-committe sans problème dans le dépôt, mais un modèle AiZynthFinder (policy
-+ stock de précurseurs, plusieurs centaines de Mo) ne le peut pas
-raisonnablement. C'est donc un outil à lancer manuellement, en local, à la
-demande :
+**Automatisé dans le workflow CI**, comme le docking : le modèle
+AiZynthFinder (policy + stock de précurseurs ZINC, plusieurs centaines de
+Mo) n'est pas committé dans le dépôt (contrairement à `data/receptor/`,
+quelques Mo), mais mis en **cache entre les runs** via `actions/cache`
+(clé `aizynthfinder-data-v1`) — premier run : téléchargement complet
+(~quelques minutes) ; runs suivants : cache restauré, téléchargement
+sauté. Chaque run quotidien traite les 10 molécules conformes au TPP avec
+la meilleure fitness (même logique que `MAX_DOCKING`) et écrit un JSON par
+molécule dans `data/retrosynthesis/`, committé avec le reste des données.
+
+Pour le lancer en local (déboguer, ou traiter plus de molécules que le
+run automatique) :
 
 ```bash
 pip install -r requirements-retrosynthesis.txt
 download_public_data ./aizynthfinder_data   # une fois — télécharge modèle + stock ZINC
-python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml
+python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml --max 20
 ```
 
-Par défaut, traite les 10 molécules conformes au TPP avec la meilleure
-fitness (`--max` pour ajuster) et écrit un fichier JSON par molécule dans
-`data/retrosynthesis/` (routes triées par score + statistiques de
-recherche). Le dossier `aizynthfinder_data/` téléchargé localement n'est
-pas committé (voir `.gitignore`).
+Le dossier `aizynthfinder_data/` téléchargé localement n'est pas committé
+(voir `.gitignore`) — c'est uniquement le résultat (`data/retrosynthesis/`)
+qui l'est.
 
 ## Vérification de nouveauté (PubChem / ChEMBL)
 
@@ -298,12 +302,15 @@ exacte existe-t-elle déjà ?") :
    seulement au tout premier run, ensuite réutilisé,
 3. relance `scripts/run_pipeline.py` (bootstrap ou lot évolutif du jour,
    criblage 2D, puis docking réel du top-10 si le récepteur est prêt),
-4. **committe** `data/hall_of_fame.json`, `data/explored.json`,
-   `data/last_run.json`, `data/receptor/` et les fichiers `site/data/*.json`
-   régénérés — sinon tout serait reperdu au run suivant, les runners
-   GitHub étant éphémères. Le message de commit contient `[skip ci]` pour
-   ne pas se redéclencher lui-même en boucle.
-5. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
+4. restaure (ou télécharge si absent) le modèle AiZynthFinder depuis le
+   cache `actions/cache`, puis lance `scripts/run_retrosynthesis.py` sur
+   le top-10 TPP du jour,
+5. **committe** `data/hall_of_fame.json`, `data/explored.json`,
+   `data/last_run.json`, `data/receptor/`, `data/retrosynthesis/` et les
+   fichiers `site/data/*.json` régénérés — sinon tout serait reperdu au
+   run suivant, les runners GitHub étant éphémères. Le message de commit
+   contient `[skip ci]` pour ne pas se redéclencher lui-même en boucle.
+6. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
 
 **Activation** (une fois, dans les paramètres du dépôt GitHub) :
 `Settings → Pages → Source → GitHub Actions`. Le workflow a besoin de la

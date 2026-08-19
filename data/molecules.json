@@ -25,7 +25,7 @@
     "fitness": 0.801,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 360252,
     "chembl_id": "CHEMBL403031"
   },
   {
@@ -52,9 +52,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.799,
-    "docking_score": -3.55,
+    "docking_score": -5.24,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 98527,
     "chembl_id": "CHEMBL292821"
   },
   {
@@ -83,7 +83,7 @@
     "fitness": 0.7665,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10083,
     "chembl_id": "CHEMBL2110938"
   },
   {
@@ -112,7 +112,7 @@
     "fitness": 0.7545,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 1832,
     "chembl_id": "CHEMBL7257"
   },
   {
@@ -141,9 +141,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.752,
-    "docking_score": -5.15,
+    "docking_score": -5.14,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10267191,
     "chembl_id": "CHEMBL338297"
   },
   {
@@ -171,8 +171,8 @@
     "first_seen": null,
     "fitness": 0.751,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 67605,
     "chembl_id": null
   },
   {
@@ -200,8 +200,8 @@
     "first_seen": null,
     "fitness": 0.7495,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 160506,
     "chembl_id": null
   },
   {
@@ -230,7 +230,7 @@
     "fitness": 0.749,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 133277,
     "chembl_id": "CHEMBL123708"
   },
   {
@@ -258,8 +258,8 @@
     "first_seen": null,
     "fitness": 0.7475,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 54098032,
     "chembl_id": null
   },
   {
@@ -287,8 +287,8 @@
     "first_seen": null,
     "fitness": 0.7475,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 24802096,
     "chembl_id": null
   },
   {
@@ -317,7 +317,7 @@
     "fitness": 0.747,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 24802109,
     "chembl_id": "CHEMBL2357882"
   },
   {
@@ -344,9 +344,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.743,
-    "docking_score": -6.25,
+    "docking_score": -6.19,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 17925,
     "chembl_id": "CHEMBL268254"
   },
   {
@@ -375,7 +375,7 @@
     "fitness": 0.7415,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 26903,
     "chembl_id": "CHEMBL4303330"
   },
   {
@@ -402,9 +402,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.739,
-    "docking_score": -6.04,
+    "docking_score": -6.17,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10265873,
     "chembl_id": "CHEMBL101189"
   },
   {
@@ -433,7 +433,7 @@
     "fitness": 0.738,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 29979100,
     "chembl_id": "CHEMBL124733"
   },
   {
@@ -461,8 +461,8 @@
     "first_seen": null,
     "fitness": 0.7365,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 52911279,
     "chembl_id": null
   },
   {
@@ -492,8 +492,8 @@
     "first_seen": null,
     "fitness": 0.735,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 45108169,
     "chembl_id": null
   },
   {
@@ -522,7 +522,7 @@
     "fitness": 0.729,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10082683,
     "chembl_id": "CHEMBL171419"
   },
   {
@@ -550,8 +550,8 @@
     "first_seen": null,
     "fitness": 0.7255,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 11334359,
     "chembl_id": null
   },
   {
@@ -580,7 +580,7 @@
     "fitness": 0.719,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 6090,
     "chembl_id": "CHEMBL142936"
   },
   {
@@ -607,9 +607,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.718,
-    "docking_score": -6.0,
+    "docking_score": -5.97,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 40113,
     "chembl_id": "CHEMBL1709464"
   },
   {
@@ -638,7 +638,7 @@
     "fitness": 0.7165,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 9991554,
     "chembl_id": "CHEMBL143202"
   },
   {
@@ -666,8 +666,8 @@
     "first_seen": null,
     "fitness": 0.7135,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 21786584,
     "chembl_id": null
   },
   {
@@ -695,8 +695,8 @@
     "first_seen": null,
     "fitness": 0.71,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 157010705,
     "chembl_id": null
   },
   {
@@ -724,8 +724,8 @@
     "first_seen": null,
     "fitness": 0.7095,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 824845,
     "chembl_id": null
   },
   {
@@ -753,8 +753,8 @@
     "first_seen": null,
     "fitness": 0.708,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 21786582,
     "chembl_id": null
   },
   {
@@ -783,7 +783,7 @@
     "fitness": 0.708,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 27402,
     "chembl_id": "CHEMBL8224"
   },
   {
@@ -812,7 +812,7 @@
     "fitness": 0.7065,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 17756669,
     "chembl_id": "CHEMBL3302434"
   },
   {
@@ -841,7 +841,7 @@
     "fitness": 0.7055,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 38240,
     "chembl_id": "CHEMBL319415"
   },
   {
@@ -870,7 +870,7 @@
     "fitness": 0.7055,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 130829,
     "chembl_id": "CHEMBL4650315"
   },
   {
@@ -899,7 +899,7 @@
     "fitness": 0.703,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 85875,
     "chembl_id": "CHEMBL8600"
   },
   {
@@ -930,7 +930,7 @@
     "fitness": 0.7015,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 170617,
     "chembl_id": "CHEMBL1255748"
   },
   {
@@ -958,8 +958,8 @@
     "first_seen": null,
     "fitness": 0.6985,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 165361471,
     "chembl_id": null
   },
   {
@@ -986,9 +986,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.697,
-    "docking_score": -7.55,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "docking_score": -7.77,
+    "is_novel": false,
+    "pubchem_cid": 70969900,
     "chembl_id": null
   },
   {
@@ -1016,8 +1016,8 @@
     "first_seen": null,
     "fitness": 0.6955,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 67833251,
     "chembl_id": null
   },
   {
@@ -1046,7 +1046,7 @@
     "fitness": 0.6955,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 105039,
     "chembl_id": "CHEMBL126279"
   },
   {
@@ -1075,7 +1075,7 @@
     "fitness": 0.694,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 15102790,
     "chembl_id": "CHEMBL340765"
   },
   {
@@ -1102,9 +1102,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.6935,
-    "docking_score": -5.81,
+    "docking_score": -5.87,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10145,
     "chembl_id": "CHEMBL36536"
   },
   {
@@ -1132,8 +1132,8 @@
     "first_seen": null,
     "fitness": 0.6925,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 9837231,
     "chembl_id": null
   },
   {
@@ -1162,7 +1162,7 @@
     "fitness": 0.691,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 124844,
     "chembl_id": "CHEMBL268689"
   },
   {
@@ -1191,7 +1191,7 @@
     "fitness": 0.688,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 90645589,
     "chembl_id": "CHEMBL3298873"
   },
   {
@@ -1220,7 +1220,7 @@
     "fitness": 0.687,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 16622,
     "chembl_id": "CHEMBL279924"
   },
   {
@@ -1249,7 +1249,7 @@
     "fitness": 0.6865,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 3080846,
     "chembl_id": "CHEMBL1187932"
   },
   {
@@ -1278,7 +1278,7 @@
     "fitness": 0.6845,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 206666,
     "chembl_id": "CHEMBL4303426"
   },
   {
@@ -1307,7 +1307,7 @@
     "fitness": 0.684,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 36906,
     "chembl_id": "CHEMBL31115"
   },
   {
@@ -1335,8 +1335,8 @@
     "first_seen": null,
     "fitness": 0.6815,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 129318255,
     "chembl_id": null
   },
   {
@@ -1364,8 +1364,8 @@
     "first_seen": null,
     "fitness": 0.68,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 21854223,
     "chembl_id": null
   },
   {
@@ -1393,8 +1393,8 @@
     "first_seen": null,
     "fitness": 0.6795,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 13771618,
     "chembl_id": null
   },
   {
@@ -1421,9 +1421,9 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.673,
-    "docking_score": -5.42,
+    "docking_score": -5.46,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 44350070,
     "chembl_id": "CHEMBL338259"
   },
   {
@@ -1452,7 +1452,7 @@
     "fitness": 0.67,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 11552833,
     "chembl_id": "CHEMBL3185021"
   },
   {
@@ -1480,8 +1480,8 @@
     "first_seen": null,
     "fitness": 0.6635,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 74832745,
     "chembl_id": null
   },
   {
@@ -1509,8 +1509,8 @@
     "first_seen": null,
     "fitness": 0.6625,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 112500536,
     "chembl_id": null
   },
   {
@@ -1538,8 +1538,8 @@
     "first_seen": null,
     "fitness": 0.6625,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 46782120,
     "chembl_id": null
   },
   {
@@ -1569,8 +1569,8 @@
     "first_seen": null,
     "fitness": 0.662,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 71669102,
     "chembl_id": null
   },
   {
@@ -1599,7 +1599,7 @@
     "fitness": 0.6605,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 12074193,
     "chembl_id": "CHEMBL339223"
   },
   {
@@ -1627,8 +1627,8 @@
     "first_seen": null,
     "fitness": 0.659,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 57360686,
     "chembl_id": null
   },
   {
@@ -1656,8 +1656,8 @@
     "first_seen": null,
     "fitness": 0.6535,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 57252245,
     "chembl_id": null
   },
   {
@@ -1685,8 +1685,8 @@
     "first_seen": null,
     "fitness": 0.6525,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 205592,
     "chembl_id": null
   },
   {
@@ -1716,8 +1716,8 @@
     "first_seen": null,
     "fitness": 0.652,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 1872,
     "chembl_id": null
   },
   {
@@ -1747,8 +1747,8 @@
     "first_seen": null,
     "fitness": 0.6515,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 46856354,
     "chembl_id": null
   },
   {
@@ -1776,8 +1776,8 @@
     "first_seen": null,
     "fitness": 0.651,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 56843046,
     "chembl_id": null
   },
   {
@@ -1808,7 +1808,7 @@
     "fitness": 0.646,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 44350127,
     "chembl_id": "CHEMBL126803"
   },
   {
@@ -1837,7 +1837,7 @@
     "fitness": 0.646,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 75994,
     "chembl_id": "CHEMBL113600"
   },
   {
@@ -1866,7 +1866,7 @@
     "fitness": 0.6455,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 8367,
     "chembl_id": "CHEMBL1619758"
   },
   {
@@ -1894,8 +1894,8 @@
     "first_seen": null,
     "fitness": 0.643,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 54594211,
     "chembl_id": null
   },
   {
@@ -1924,7 +1924,7 @@
     "fitness": 0.6415,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 31721,
     "chembl_id": "CHEMBL278663"
   },
   {
@@ -1952,8 +1952,8 @@
     "first_seen": null,
     "fitness": 0.641,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 82100418,
     "chembl_id": null
   },
   {
@@ -1981,8 +1981,8 @@
     "first_seen": null,
     "fitness": 0.6405,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 20111961,
     "chembl_id": null
   },
   {
@@ -2010,8 +2010,8 @@
     "first_seen": null,
     "fitness": 0.634,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 137699916,
     "chembl_id": null
   },
   {
@@ -2040,7 +2040,7 @@
     "fitness": 0.631,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 621174,
     "chembl_id": "CHEMBL4759342"
   },
   {
@@ -2068,8 +2068,8 @@
     "first_seen": null,
     "fitness": 0.6275,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 162478085,
     "chembl_id": null
   },
   {
@@ -2097,8 +2097,8 @@
     "first_seen": null,
     "fitness": 0.6275,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 162478085,
     "chembl_id": null
   },
   {
@@ -2126,8 +2126,8 @@
     "first_seen": null,
     "fitness": 0.626,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 52988259,
     "chembl_id": null
   },
   {
@@ -2155,8 +2155,8 @@
     "first_seen": null,
     "fitness": 0.6255,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 9794343,
     "chembl_id": null
   },
   {
@@ -2187,7 +2187,7 @@
     "fitness": 0.622,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 50878551,
     "chembl_id": "CHEMBL2391541"
   },
   {
@@ -2216,7 +2216,7 @@
     "fitness": 0.616,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 14113,
     "chembl_id": "CHEMBL315818"
   },
   {
@@ -2247,7 +2247,7 @@
     "fitness": 0.608,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 9977044,
     "chembl_id": "CHEMBL3590188"
   },
   {
@@ -2276,7 +2276,7 @@
     "fitness": 0.6075,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 11148955,
     "chembl_id": "CHEMBL205082"
   },
   {
@@ -2305,7 +2305,7 @@
     "fitness": 0.6055,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 9287,
     "chembl_id": "CHEMBL30713"
   },
   {
@@ -2334,7 +2334,7 @@
     "fitness": 0.6025,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 37632,
     "chembl_id": "CHEMBL328250"
   },
   {
@@ -2363,7 +2363,7 @@
     "fitness": 0.5995,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 1150,
     "chembl_id": "CHEMBL6640"
   },
   {
@@ -2392,7 +2392,7 @@
     "fitness": 0.597,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 53249194,
     "chembl_id": "CHEMBL3298875"
   },
   {
@@ -2420,8 +2420,8 @@
     "first_seen": null,
     "fitness": 0.596,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 71741532,
     "chembl_id": null
   },
   {
@@ -2450,7 +2450,7 @@
     "fitness": 0.5875,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 9986,
     "chembl_id": "CHEMBL2009392"
   },
   {
@@ -2479,7 +2479,7 @@
     "fitness": 0.5845,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 199116,
     "chembl_id": "CHEMBL166183"
   },
   {
@@ -2507,8 +2507,8 @@
     "first_seen": null,
     "fitness": 0.5805,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 121501,
     "chembl_id": null
   },
   {
@@ -2536,8 +2536,8 @@
     "first_seen": null,
     "fitness": 0.572,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 86567357,
     "chembl_id": null
   },
   {
@@ -2565,8 +2565,8 @@
     "first_seen": null,
     "fitness": 0.571,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 71314223,
     "chembl_id": null
   },
   {
@@ -2594,8 +2594,8 @@
     "first_seen": null,
     "fitness": 0.5645,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 20741615,
     "chembl_id": null
   },
   {
@@ -2624,7 +2624,7 @@
     "fitness": 0.5625,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 3307,
     "chembl_id": "CHEMBL1289779"
   },
   {
@@ -2655,7 +2655,7 @@
     "fitness": 0.56,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 57404063,
     "chembl_id": "CHEMBL4575047"
   },
   {
@@ -2685,8 +2685,8 @@
     "first_seen": null,
     "fitness": 0.5545,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 165210,
     "chembl_id": null
   },
   {
@@ -2717,7 +2717,7 @@
     "fitness": 0.55,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 15429212,
     "chembl_id": "CHEMBL6143661"
   },
   {
@@ -2746,7 +2746,7 @@
     "fitness": 0.55,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 12562546,
     "chembl_id": "CHEMBL3246832"
   },
   {
@@ -2775,7 +2775,7 @@
     "fitness": 0.5445,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 12562545,
     "chembl_id": "CHEMBL3246831"
   },
   {
@@ -2804,7 +2804,7 @@
     "fitness": 0.5355,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 578953,
     "chembl_id": "CHEMBL55633"
   },
   {
@@ -2834,8 +2834,8 @@
     "first_seen": null,
     "fitness": 0.535,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 53580,
     "chembl_id": null
   },
   {
@@ -2863,8 +2863,8 @@
     "first_seen": null,
     "fitness": 0.528,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 5277,
     "chembl_id": null
   },
   {
@@ -2892,8 +2892,8 @@
     "first_seen": null,
     "fitness": 0.525,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 522463,
     "chembl_id": null
   },
   {
@@ -2923,8 +2923,8 @@
     "first_seen": null,
     "fitness": 0.5205,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 20726845,
     "chembl_id": null
   },
   {
@@ -2953,7 +2953,7 @@
     "fitness": 0.5165,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 4679,
     "chembl_id": "CHEMBL1502"
   },
   {
@@ -2981,8 +2981,8 @@
     "first_seen": null,
     "fitness": 0.5165,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 3167,
     "chembl_id": null
   },
   {
@@ -3010,8 +3010,8 @@
     "first_seen": null,
     "fitness": 0.516,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 4092426,
     "chembl_id": null
   },
   {
@@ -3041,8 +3041,8 @@
     "first_seen": null,
     "fitness": 0.506,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 71711119,
     "chembl_id": null
   },
   {
@@ -3070,8 +3070,8 @@
     "first_seen": null,
     "fitness": 0.505,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 78068834,
     "chembl_id": null
   },
   {
@@ -3101,8 +3101,8 @@
     "first_seen": null,
     "fitness": 0.482,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 3722940,
     "chembl_id": null
   },
   {
@@ -3130,8 +3130,8 @@
     "first_seen": null,
     "fitness": 0.4795,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 249098,
     "chembl_id": null
   },
   {
@@ -3159,8 +3159,8 @@
     "first_seen": null,
     "fitness": 0.4305,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 86770,
     "chembl_id": null
   },
   {
@@ -3190,8 +3190,8 @@
     "first_seen": null,
     "fitness": 0.4155,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 101895417,
     "chembl_id": null
   },
   {
@@ -3223,7 +3223,7 @@
     "fitness": 0.4115,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10251906,
     "chembl_id": "CHEMBL1908863"
   },
   {
@@ -3253,8 +3253,8 @@
     "first_seen": null,
     "fitness": 0.4085,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 102333975,
     "chembl_id": null
   },
   {
@@ -3284,8 +3284,8 @@
     "first_seen": null,
     "fitness": 0.3945,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 118799019,
     "chembl_id": null
   },
   {
@@ -3316,8 +3316,8 @@
     "first_seen": null,
     "fitness": 0.394,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 12317881,
     "chembl_id": null
   },
   {
@@ -3348,7 +3348,7 @@
     "fitness": 0.376,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 44626619,
     "chembl_id": "CHEMBL571773"
   },
   {
@@ -3379,7 +3379,7 @@
     "fitness": 0.373,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 8064,
     "chembl_id": "CHEMBL171623"
   },
   {
@@ -3409,8 +3409,8 @@
     "first_seen": null,
     "fitness": 0.345,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 57501498,
     "chembl_id": null
   },
   {
@@ -3441,8 +3441,8 @@
     "first_seen": null,
     "fitness": 0.3205,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 155882955,
     "chembl_id": null
   },
   {
@@ -3470,8 +3470,8 @@
     "first_seen": null,
     "fitness": 0.314,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 352089,
     "chembl_id": null
   },
   {
@@ -3502,8 +3502,8 @@
     "first_seen": null,
     "fitness": 0.3025,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 53316366,
     "chembl_id": null
   },
   {
@@ -3535,7 +3535,7 @@
     "fitness": 0.3025,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 10343227,
     "chembl_id": "CHEMBL2136499"
   },
   {
@@ -3568,8 +3568,8 @@
     "first_seen": null,
     "fitness": 0.287,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 4638,
     "chembl_id": null
   },
   {
@@ -3598,7 +3598,7 @@
     "fitness": 0.2735,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 7302,
     "chembl_id": "CHEMBL95681"
   },
   {
@@ -3630,7 +3630,7 @@
     "fitness": 0.2635,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 13493,
     "chembl_id": "CHEMBL312040"
   },
   {
@@ -3662,7 +3662,7 @@
     "fitness": 0.2525,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 18835,
     "chembl_id": "CHEMBL349361"
   },
   {
@@ -3693,8 +3693,8 @@
     "first_seen": null,
     "fitness": 0.2405,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 145721979,
     "chembl_id": null
   },
   {
@@ -3723,7 +3723,7 @@
     "fitness": 0.175,
     "docking_score": null,
     "is_novel": false,
-    "pubchem_cid": null,
+    "pubchem_cid": 81147,
     "chembl_id": "CHEMBL4784835"
   },
   {
@@ -3754,8 +3754,8 @@
     "first_seen": null,
     "fitness": 0.1485,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 71604304,
     "chembl_id": null
   },
   {
@@ -3785,8 +3785,8 @@
     "first_seen": null,
     "fitness": -0.1355,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 22573923,
     "chembl_id": null
   },
   {
@@ -3818,8 +3818,8 @@
     "first_seen": null,
     "fitness": -0.2615,
     "docking_score": null,
-    "is_novel": null,
-    "pubchem_cid": null,
+    "is_novel": false,
+    "pubchem_cid": 14560360,
     "chembl_id": null
   },
   {

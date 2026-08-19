@@ -1,4 +1,5 @@
-# Dépendance optionnelle pour scripts/run_retrosynthesis.py — séparée de
-# requirements.txt car lourde (modèle + stock de précurseurs à télécharger
-# à part via `download_public_data`, non requis pour le pipeline principal).
+# Dépendance de scripts/run_retrosynthesis.py — séparée de requirements.txt
+# car lourde (modèle + stock de précurseurs téléchargés à part via
+# `download_public_data`, mis en cache entre les runs CI via actions/cache,
+# jamais committés dans le dépôt).
 aizynthfinder>=4.4

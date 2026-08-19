@@ -2,7 +2,7 @@
   "smiles": "CC(C)C(NC(=O)c1nn(CC2CCCCC2)c2ccccc12)C(N)=O",
   "stats": {
     "target": "CC(C)C(NC(=O)c1nn(CC2CCCCC2)c2ccccc12)C(N)=O",
-    "search_time": 12.08642029762268,
+    "search_time": 10.949040412902832,
     "first_solution_time": 0,
     "first_solution_iteration": 0,
     "number_of_nodes": 637,

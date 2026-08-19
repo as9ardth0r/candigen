@@ -1,6 +1,6 @@
 {
   "target": "EGFR",
-  "generated_at": "2026-08-19T10:10:07.163205+00:00",
+  "generated_at": "2026-08-19T10:36:59.672128+00:00",
   "count": 260,
   "molecules": [
     {
@@ -53,7 +53,7 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.4215,
-      "docking_score": null
+      "docking_score": -7.59
     },
     {
       "id": "M1_EGFR-Rev-01",
@@ -82,7 +82,7 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.2885,
-      "docking_score": null
+      "docking_score": -7.04
     },
     {
       "id": "M2_EGFR-Cov-02",
@@ -172,7 +172,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.664,
-      "docking_score": null
+      "docking_score": -7.99
     },
     {
       "id": "gen_pyridopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -202,7 +202,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.653,
-      "docking_score": null
+      "docking_score": -7.85
     },
     {
       "id": "gen_quinazoline_difluorophenyl_oxetanylmethoxy",
@@ -232,7 +232,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.646,
-      "docking_score": null
+      "docking_score": -7.54
     },
     {
       "id": "gen_thienopyrimidine_fluorophenyl_tetrahydropyranyloxy",
@@ -262,7 +262,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.643,
-      "docking_score": null
+      "docking_score": -6.56
     },
     {
       "id": "gen_thienopyrimidine_methylphenyl_oxetanylmethoxy",
@@ -292,7 +292,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6425,
-      "docking_score": null
+      "docking_score": -7.24
     },
     {
       "id": "gen_quinolinepyrimidyl_cyanophenyl_tetrahydropyranyloxy",
@@ -322,7 +322,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.64,
-      "docking_score": null
+      "docking_score": -8.13
     },
     {
       "id": "gen_quinazoline_methoxyphenyl_tetrahydropyranyloxy",
@@ -352,7 +352,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6385,
-      "docking_score": null
+      "docking_score": -7.1
     },
     {
       "id": "gen_quinazoline_difluorophenyl_tetrahydropyranyloxy",
@@ -382,7 +382,7 @@
       },
       "first_seen": "2026-08-19",
       "fitness": 0.6385,
-      "docking_score": null
+      "docking_score": -7.09
     },
     {
       "id": "gen_imidazopyridine_difluorophenyl_oxetanylmethoxy",

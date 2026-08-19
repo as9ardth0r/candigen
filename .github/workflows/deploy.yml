@@ -73,7 +73,7 @@ jobs:
       - name: Upload de data/ comme artefact de build (traçabilité)
         uses: actions/upload-artifact@v4
         with:
-          name: molgen-data
+          name: candigen-data
           path: |
             data/molecules.json
             data/molecules.csv

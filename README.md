@@ -175,9 +175,15 @@ protéine-ligand.
   erlotinib — Stamos et al., *J. Biol. Chem.* 2002), choisie parce que
   c'est la référence historique pour les inhibiteurs réversibles de Type I
   à cœur quinazoline/aminopyrimidine, le chimiotype majoritaire de ce
-  projet. Pour cribler contre un mutant de résistance (T790M/L858R),
-  changer `PDB_ID` dans `scripts/prepare_receptor.py` (ex. `"4HJO"`) et
-  relancer le script.
+  projet. **Changer de cible** (mutant de résistance T790M/L858R, ou une
+  kinase différente) : modifier `PDB_ID` **et** `TARGET_NAME` en haut de
+  `scripts/prepare_receptor.py` (ex. `"4HJO"` / `"EGFR T790M/L858R"`) et
+  relancer le script — `TARGET_NAME` est la seule source de vérité pour le
+  nom affiché dans le dashboard (titre, badge), lue automatiquement via
+  `candigen.export.read_target_name` par `run_pipeline.py` et
+  `run_retrosynthesis.py`. Aucune autre modification de code nécessaire :
+  le calcul du centre de poche (ci-dessous) et le `TPPProfile`
+  (`src/candigen/filters.py`) sont déjà génériques.
 - **Préparation (une seule fois)** : `scripts/prepare_receptor.py`
   télécharge le PDB, calcule le centre de la poche de liaison à partir des
   résidus du record `SITE` (générique — fonctionne sur n'importe quelle
@@ -234,14 +240,30 @@ quelques Mo), mais mis en **cache entre les runs** via `actions/cache`
 (clé `aizynthfinder-data-v1`) — premier run : téléchargement complet
 (~quelques minutes) ; runs suivants : cache restauré, téléchargement
 sauté. Chaque run quotidien traite les 10 molécules conformes au TPP avec
-la meilleure fitness (même logique que `MAX_DOCKING`), écrit un JSON
-détaillé par molécule dans `site/data/retrosynthesis/` (comme
+la meilleure fitness (même logique que `MAX_DOCKING`). **Une molécule déjà
+traitée n'est PAS recalculée** (son fichier de sortie sert directement de
+cache) — le top-10 changeant peu d'un jour à l'autre, ça évite de relancer
+une recherche MCTS coûteuse pour un résultat identique (`--force` pour
+forcer le recalcul malgré le cache). Écrit un JSON détaillé par molécule
+dans `site/data/retrosynthesis/` (comme
 `site/data/conformers.json` : GitHub Pages ne sert que `site/`, pas
 `data/` à la racine du dépôt), **et** met à jour un badge 🧪 dans le
 dashboard (`retrosynthesis_route_found` / `retrosynthesis_n_routes` dans
 `data/molecules.json`) — visible sur la carte de chaque molécule évaluée,
 et dans sa fiche détaillée (arbre de routes interactif, avec structures
-2D).
+2D, sélecteur de route et route ⭐ recommandée pré-sélectionnée — la plus
+grande part de précurseurs déjà en stock, à égalité la moins d'étapes ;
+purement indicatif, pas un jugement de faisabilité chimique).
+
+**Noms des précurseurs** : chaque nœud de l'arbre (cible, intermédiaires,
+précurseurs) est annoté avec un nom PubChem si trouvé
+(`candigen.retrosynthesis.annotate_route_names`, même mécanisme que le nom
+affiché sur les molécules elles-mêmes) — affiché à la place du SMILES brut
+dans le dashboard, SMILES toujours consultable en survol. Les SMILES sont
+dédupliqués avant les requêtes réseau : un même précurseur apparaît
+souvent dans plusieurs routes, une seule requête par SMILES unique (sur un
+exemple réel : 96 nœuds mais 26 SMILES uniques sur 8 routes → 26 requêtes,
+pas 96). `--skip-names` pour désactiver.
 
 Pour le lancer en local (déboguer, ou traiter plus de molécules que le
 run automatique) :
@@ -283,6 +305,18 @@ exacte existe-t-elle déjà ?") :
 - Affiché dans le dashboard : badge rose "absente de PubChem/ChEMBL" si
   confirmée nouvelle, badge orange "déjà connue" avec lien direct vers la
   fiche PubChem/ChEMBL sinon — rien si pas encore vérifiée.
+- **Nom affiché** : quand un CID PubChem est trouvé, une requête
+  supplémentaire récupère le nom IUPAC calculé
+  (`record.chemical_name`) — c'est ce nom qui s'affiche en titre des
+  cartes et de la fiche détaillée du dashboard (l'`id`, souvent un numéro
+  CAS pour les molécules curées, reste visible en second, plus petit).
+  **Cette requête n'est jamais déclenchée sur une molécule absente de
+  PubChem** — donc en pratique, les molécules *générées* (id du type
+  `gen_<scaffold>_<aniline>_<solubilisant>`, typiquement absentes de
+  PubChem puisque nouvelles) n'auront jamais de nom : il n'existe tout
+  simplement aucune nomenclature IUPAC calculée disponible gratuitement
+  pour une structure qui n'est dans aucune base — seul leur id composite
+  reste affiché pour elles.
 
 > ℹ️ Comme pour le téléchargement du PDB (docking), ces appels réseau ne
 > peuvent être vérifiés qu'en environnement avec accès internet complet

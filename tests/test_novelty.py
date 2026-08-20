@@ -27,6 +27,17 @@ def test_parse_pubchem_response_empty():
     assert novelty._parse_pubchem_response({}) is None
 
 
+def test_parse_pubchem_name_response_found():
+    data = {"PropertyTable": {"Properties": [{"CID": 123631, "IUPACName": "N-(3-chloro-4-fluorophenyl)-7-methoxy-6-(3-morpholin-4-ylpropoxy)quinazolin-4-amine"}]}}
+    assert novelty._parse_pubchem_name_response(data) == "N-(3-chloro-4-fluorophenyl)-7-methoxy-6-(3-morpholin-4-ylpropoxy)quinazolin-4-amine"
+
+
+def test_parse_pubchem_name_response_empty():
+    assert novelty._parse_pubchem_name_response(None) is None
+    assert novelty._parse_pubchem_name_response({}) is None
+    assert novelty._parse_pubchem_name_response({"PropertyTable": {"Properties": []}}) is None
+
+
 def test_parse_chembl_response_found():
     r = novelty._parse_chembl_response({"molecule_chembl_id": "CHEMBL939"})
     assert r["chembl_id"] == "CHEMBL939"
@@ -39,12 +50,25 @@ def test_parse_chembl_response_empty():
 
 
 def test_check_novelty_known_compound():
-    """Trouvée dans PubChem -> is_novel doit être False."""
+    """Trouvée dans PubChem -> is_novel doit être False, et le nom IUPAC doit être joint."""
     with patch.object(novelty, "check_pubchem", return_value={"cid": 123631, "url": "x"}), \
+         patch.object(novelty, "fetch_pubchem_name", return_value="Gefitinib"), \
          patch.object(novelty, "check_chembl", return_value=None):
         result = novelty.check_novelty("COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1", delay=0)
     assert result["is_novel"] is False
     assert result["pubchem"]["cid"] == 123631
+    assert result["pubchem"]["name"] == "Gefitinib"
+
+
+def test_check_novelty_name_fetch_never_called_when_absent_from_pubchem():
+    """Pas de CID trouvé -> fetch_pubchem_name ne doit JAMAIS être appelé
+    (pas d'appel réseau superflu sur les molécules absentes de PubChem)."""
+    with patch.object(novelty, "check_pubchem", return_value=None), \
+         patch.object(novelty, "fetch_pubchem_name") as mock_fetch_name, \
+         patch.object(novelty, "check_chembl", return_value=None):
+        result = novelty.check_novelty("C#CC1=CC=CC=C1", delay=0)
+    mock_fetch_name.assert_not_called()
+    assert result["pubchem"] is None
 
 
 def test_check_novelty_confirmed_absent():

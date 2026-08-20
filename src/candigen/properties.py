@@ -56,6 +56,7 @@ class MoleculeRecord:
     is_novel: Optional[bool] = None  # None = pas vérifié ; True = confirmé absent de PubChem/ChEMBL ; False = déjà connue
     pubchem_cid: Optional[int] = None
     chembl_id: Optional[str] = None
+    chemical_name: Optional[str] = None  # nom IUPAC calculé par PubChem, si trouvé (cf. candigen.novelty) — None pour une molécule absente de PubChem (typiquement les molécules générées)
     retrosynthesis_route_found: Optional[bool] = None  # None = pas évaluée ; True/False = route trouvée ou non
     retrosynthesis_n_routes: Optional[int] = None  # nombre de routes retournées par AiZynthFinder
 

@@ -4,7 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CandiGen — Suivi du pipeline de génération de molécules</title>
-<meta name="description" content="Dashboard de suivi d'un pipeline CADD open source pour la génération et le criblage d'inhibiteurs d'EGFR" />
+<meta name="description" content="Dashboard de suivi d'un pipeline CADD open source pour la génération et le criblage de candidats-médicaments" />
+
+<!-- IBM Plex : famille pensée pour l'identité technique/scientifique d'IBM —
+     Mono pour les titres et les données chiffrées (lecture "instrument"),
+     Sans pour le corps de texte. Paire délibérée, pas Inter par défaut. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- Tailwind CSS (CDN, sans étape de build — compatible GitHub Pages statique) -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -19,22 +26,121 @@
 <script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js"></script>
 
 <style>
-  body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
-  .mol-canvas svg { width: 100%; height: 100%; }
+  :root {
+    --void: #0A0B10;
+    --panel: #14151C;
+    --panel-2: #1B1E29;
+    --line: #262A38;
+    --line-bright: #383D52;
+    --ink: #EDEEF3;
+    --ink-dim: #82869C;
+    --verdant: #4ADE80;
+    --amber: #FFB020;
+    --cyan: #4FD1E8;
+    --violet: #B18CFF;
+    --rose: #FF6B6B;
+  }
+
+  * { scrollbar-color: var(--line-bright) var(--void); }
+
+  body {
+    background: var(--void);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    /* Treillis hexagonal en arrière-plan, très discret — un clin d'œil au
+       réseau cristallin plutôt qu'une texture purement décorative. */
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(79,209,232,0.07) 1px, transparent 0);
+    background-size: 28px 28px;
+    background-attachment: fixed;
+  }
+
+  .font-display, h1, h2, h3, .mono-data, .eyebrow, #generated-at, #result-count,
+  input, select, .font-mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+  .eyebrow {
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-dim); font-weight: 500;
+  }
+
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  .panel-2 { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; }
+
+  .tabular { font-variant-numeric: tabular-nums; }
+
+  /* --- Bandeau supérieur : liseré de scan lent, très discret --- */
+  header { position: sticky; top: 0; z-index: 20; background: rgba(10,11,16,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  header::after {
+    content: ""; display: block; height: 1px; width: 100%;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    opacity: 0.5; animation: scan 7s linear infinite;
+  }
+  @keyframes scan { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+
+  /* --- Statut "en direct" : point qui respire, comme une LED d'instrument --- */
+  .live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); margin-right: 6px; animation: breathe 2.4s ease-in-out infinite; }
+  @keyframes breathe { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+  /* --- Cartes de synthèse (readouts) --- */
+  .readout { position: relative; padding: 16px; overflow: hidden; }
+  .readout::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--accent, var(--cyan)); opacity: 0.7; }
+  .readout .value { font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+
+  /* --- Cartes molécule : réticule de verrouillage au survol (clin d'œil au docking) --- */
+  .mol-card { position: relative; }
+  .mol-card::before {
+    content: ""; position: absolute; inset: -1px; pointer-events: none;
+    opacity: 0; transition: opacity .2s ease, inset .2s ease;
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(var(--cyan), var(--cyan)), linear-gradient(var(--cyan), var(--cyan)),
+      linear-gradient(var(--cyan), var(--cyan)), linear-gradient(var(--cyan), var(--cyan)),
+      linear-gradient(var(--cyan), var(--cyan)), linear-gradient(var(--cyan), var(--cyan)),
+      linear-gradient(var(--cyan), var(--cyan)), linear-gradient(var(--cyan), var(--cyan));
+    background-size: 14px 2px, 2px 14px, 14px 2px, 2px 14px, 14px 2px, 2px 14px, 14px 2px, 2px 14px;
+    background-position: 0 0, 0 0, 100% 0, 100% 0, 0 100%, 0 100%, 100% 100%, 100% 100%;
+  }
+  .mol-card:hover::before, .mol-card:focus-within::before { opacity: 1; inset: -6px; }
+  .mol-card:hover, .mol-card:focus-within { border-color: var(--line-bright); }
+  @media (prefers-reduced-motion: reduce) {
+    .mol-card::before { transition: opacity .2s ease; }
+    header::after, .live-dot { animation: none; }
+  }
+
+  /* --- Badges : étiquettes de données, pas des pilules marketing --- */
+  .tag { font-size: 10px; letter-spacing: 0.03em; padding: 2px 6px; border-radius: 3px; border-width: 1px; white-space: nowrap; }
+  .tag--verdant { color: var(--verdant); border-color: color-mix(in srgb, var(--verdant) 35%, transparent); background: color-mix(in srgb, var(--verdant) 10%, transparent); }
+  .tag--amber { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 35%, transparent); background: color-mix(in srgb, var(--amber) 10%, transparent); }
+  .tag--cyan { color: var(--cyan); border-color: color-mix(in srgb, var(--cyan) 35%, transparent); background: color-mix(in srgb, var(--cyan) 10%, transparent); }
+  .tag--violet { color: var(--violet); border-color: color-mix(in srgb, var(--violet) 35%, transparent); background: color-mix(in srgb, var(--violet) 10%, transparent); }
+  .tag--rose { color: var(--rose); border-color: color-mix(in srgb, var(--rose) 35%, transparent); background: color-mix(in srgb, var(--rose) 10%, transparent); }
+  .tag--neutral { color: var(--ink-dim); border-color: var(--line-bright); background: var(--panel-2); }
+
+  .mol-canvas svg, .mol-thumb svg, .retro-mol-thumb svg { width: 100%; height: 100%; }
+  .mol-thumb, .mol-canvas, .retro-mol-thumb { background: #F5F5F0; border-radius: 4px; }
+
+  input:focus, select:focus, button:focus-visible {
+    outline: none; border-color: var(--cyan) !important;
+    box-shadow: 0 0 0 3px rgba(79,209,232,0.15);
+  }
+
+  /* --- Arbre de rétrosynthèse : registre schéma/circuit --- */
+  .retro-branch { border-left: 1px dashed var(--line-bright); }
 </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen">
+<body class="min-h-screen">
 
-<header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-20">
+<header>
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-3">
     <div>
-      <h1 class="text-xl font-semibold tracking-tight">CandiGen <span class="text-emerald-400">Dashboard</span></h1>
-      <p class="text-sm text-slate-400">Pipeline CADD open source — génération &amp; criblage d'inhibiteurs d'EGFR</p>
+      <h1 class="text-xl font-semibold tracking-tight">CandiGen <span style="color:var(--cyan)">Dashboard</span></h1>
+      <p id="page-subtitle" class="text-sm mt-0.5" style="color:var(--ink-dim)">Pipeline CADD open source — génération &amp; criblage de candidats-médicaments</p>
     </div>
-    <div class="flex items-center gap-2 text-xs text-slate-400">
-      <span id="generated-at" class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">—</span>
+    <div class="flex items-center gap-2 text-xs" style="color:var(--ink-dim)">
+      <span id="generated-at" class="tabular px-2.5 py-1.5 rounded panel-2"><span class="live-dot"></span>—</span>
       <a href="https://github.com/" target="_blank" rel="noopener"
-         class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition">
+         class="px-3 py-1.5 rounded border transition"
+         style="border-color: color-mix(in srgb, var(--cyan) 40%, transparent); color: var(--cyan); background: color-mix(in srgb, var(--cyan) 8%, transparent);">
         Voir sur GitHub
       </a>
     </div>
@@ -48,31 +154,31 @@
 
   <!-- Graphique + TPP -->
   <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-4">
-      <h2 class="font-medium mb-2">LogP vs TPSA (fenêtre TPP en surbrillance)</h2>
+    <div class="lg:col-span-2 panel p-4">
+      <h2 class="eyebrow mb-3">LogP vs TPSA — fenêtre TPP en surbrillance</h2>
       <canvas id="scatter-chart" height="220"></canvas>
     </div>
-    <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-      <h2 class="font-medium mb-2">Target Product Profile (TPP)</h2>
-      <ul id="tpp-list" class="text-sm text-slate-300 space-y-1"></ul>
+    <div class="panel p-4">
+      <h2 class="eyebrow mb-3">Target Product Profile</h2>
+      <ul id="tpp-list" class="text-sm space-y-1"></ul>
     </div>
   </section>
 
   <!-- Filtres -->
   <section class="flex flex-wrap items-center gap-3 text-sm">
-    <input id="search-input" type="text" placeholder="Rechercher un ID ou un SMILES…"
-           class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 w-64 focus:outline-none focus:border-emerald-500" />
-    <select id="filter-pass" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2">
+    <input id="search-input" type="text" placeholder="Rechercher un nom, un ID ou un SMILES…"
+           class="panel-2 rounded px-3 py-2 w-64 border" style="border-color:var(--line)" />
+    <select id="filter-pass" class="panel-2 rounded px-3 py-2 border" style="border-color:var(--line)">
       <option value="all">Toutes les molécules</option>
       <option value="pass" selected>Conformes au TPP</option>
       <option value="fail">Non conformes</option>
     </select>
-    <select id="filter-source" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2">
+    <select id="filter-source" class="panel-2 rounded px-3 py-2 border" style="border-color:var(--line)">
       <option value="all">Curées + générées</option>
       <option value="curated">Curées uniquement</option>
       <option value="generated">Générées uniquement</option>
     </select>
-    <select id="sort-by" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2">
+    <select id="sort-by" class="panel-2 rounded px-3 py-2 border" style="border-color:var(--line)">
       <option value="fitness" selected>Trier par fitness</option>
       <option value="docking_score">Trier par score de docking</option>
       <option value="first_seen">Trier par date de découverte</option>
@@ -82,14 +188,14 @@
       <option value="mw">Trier par MW</option>
       <option value="logp">Trier par LogP</option>
     </select>
-    <span id="result-count" class="text-slate-400 text-xs ml-auto"></span>
+    <span id="result-count" class="tabular text-xs ml-auto" style="color:var(--ink-dim)"></span>
   </section>
 
   <!-- Grille de cartes molécules -->
   <section id="molecule-grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"></section>
 
   <div class="flex justify-center pb-6">
-    <button id="load-more" class="hidden px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-emerald-500/50 text-sm transition">
+    <button id="load-more" class="hidden px-4 py-2 rounded panel-2 border text-sm transition hover:border-[var(--cyan)]" style="border-color:var(--line)">
       Charger plus de molécules
     </button>
   </div>
@@ -97,30 +203,30 @@
 </main>
 
 <!-- Modal détail molécule (2D + 3D) -->
-<div id="modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-30 p-4">
-  <div class="bg-slate-900 border border-slate-700 rounded-xl max-w-3xl w-full p-5 relative">
-    <button id="modal-close" class="absolute top-3 right-4 text-slate-400 hover:text-white text-xl">&times;</button>
-    <h3 id="modal-title" class="text-lg font-semibold mb-3"></h3>
+<div id="modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-30 p-4">
+  <div class="panel max-w-3xl w-full p-5 relative" style="background:var(--panel); max-height: 90vh; overflow-y: auto;">
+    <button id="modal-close" class="absolute top-3 right-4 text-xl" style="color:var(--ink-dim)">&times;</button>
+    <h3 id="modal-title" class="text-lg font-semibold mb-3 tabular"></h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
-        <p class="text-xs text-slate-400 mb-1">Structure 2D (RDKit.js)</p>
-        <div id="modal-2d" class="mol-canvas bg-white rounded-lg h-64 flex items-center justify-center"></div>
+        <p class="eyebrow mb-1">Structure 2D — RDKit.js</p>
+        <div id="modal-2d" class="mol-canvas rounded h-64 flex items-center justify-center"></div>
       </div>
       <div>
-        <p class="text-xs text-slate-400 mb-1">Conformère 3D (3Dmol.js)</p>
-        <div id="modal-3d" class="relative rounded-lg h-64 bg-slate-950 border border-slate-800"></div>
+        <p class="eyebrow mb-1">Conformère 3D — 3Dmol.js</p>
+        <div id="modal-3d" class="relative rounded h-64 border" style="background:var(--void); border-color:var(--line)"></div>
       </div>
     </div>
-    <div id="modal-props" class="mt-4 text-sm text-slate-300 grid grid-cols-2 md:grid-cols-4 gap-2"></div>
-    <div id="modal-notes" class="mt-3 text-xs text-slate-400"></div>
-    <div id="modal-retro" class="mt-4 hidden border-t border-slate-800 pt-3">
-      <div class="flex items-center justify-between mb-2">
-        <p class="text-xs text-slate-400">🧪 Rétrosynthèse (AiZynthFinder)</p>
-        <select id="modal-retro-route-select" class="bg-slate-800 border border-slate-700 rounded text-xs px-2 py-1 text-slate-200"></select>
+    <div id="modal-props" class="mt-4 text-sm grid grid-cols-2 md:grid-cols-4 gap-2"></div>
+    <div id="modal-notes" class="mt-3 text-xs" style="color:var(--ink-dim)"></div>
+    <div id="modal-retro" class="mt-4 hidden border-t pt-3" style="border-color:var(--line)">
+      <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+        <p class="text-xs" style="color:var(--ink-dim)">🧪 Rétrosynthèse — AiZynthFinder</p>
+        <select id="modal-retro-route-select" class="panel-2 border rounded text-xs px-2 py-1" style="border-color:var(--line)"></select>
       </div>
-      <p id="modal-retro-stats" class="text-xs text-slate-400 mb-2"></p>
+      <p id="modal-retro-stats" class="text-xs mb-2 tabular" style="color:var(--ink-dim)"></p>
       <div id="modal-retro-tree" class="overflow-x-auto pb-1"></div>
-      <p class="text-[10px] text-slate-600 mt-2">Route générée automatiquement — une piste à explorer, pas un protocole de synthèse validé.</p>
+      <p class="text-[10px] mt-2" style="color:var(--ink-dim)">Route générée automatiquement — une piste à explorer, pas un protocole de synthèse validé.</p>
     </div>
   </div>
 </div>

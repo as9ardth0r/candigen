@@ -47,7 +47,7 @@ from candigen.hall_of_fame import (
 from candigen.docking_prep import embed_3d, mol_to_sdf_block
 from candigen.docking import dock as run_docking, prepare_ligand_pdbqt
 from candigen.novelty import check_novelty
-from candigen.export import build_site_payload, build_conformers_payload, write_json
+from candigen.export import build_site_payload, build_conformers_payload, read_target_name, write_json
 from rdkit import Chem
 
 # Lot quotidien (runs après le bootstrap) : n_fresh recettes jamais testées
@@ -183,6 +183,8 @@ def main() -> None:
         r.is_novel = result["is_novel"]
         if result["pubchem"]:
             r.pubchem_cid = result["pubchem"]["cid"]
+            if result["pubchem"].get("name"):
+                r.chemical_name = result["pubchem"]["name"]
         if result["chembl"]:
             r.chembl_id = result["chembl"]["chembl_id"]
         if result["is_novel"] is not None:
@@ -244,7 +246,7 @@ def main() -> None:
     export_json(records, ROOT / "data" / "molecules.json")
     export_csv(records, ROOT / "data" / "molecules.csv")
 
-    index_payload = build_site_payload(records, target="EGFR")
+    index_payload = build_site_payload(records, target=read_target_name(ROOT))
     write_json(index_payload, ROOT / "site" / "data" / "molecules.json")
 
     conformers_payload = build_conformers_payload(sdf_blocks)

@@ -25,6 +25,7 @@ import urllib.request
 from rdkit import Chem
 
 PUBCHEM_URL = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/{inchikey}/cids/JSON"
+PUBCHEM_NAME_URL = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/property/IUPACName/JSON"
 CHEMBL_URL = "https://www.ebi.ac.uk/chembl/api/data/molecule/{inchikey}.json"
 
 
@@ -76,6 +77,20 @@ def _parse_pubchem_response(data: dict | None) -> dict | None:
     return {"cid": cid, "url": f"https://pubchem.ncbi.nlm.nih.gov/compound/{cid}"}
 
 
+def _parse_pubchem_name_response(data: dict | None) -> str | None:
+    """Extrait le nom IUPAC calculé par PubChem d'une réponse PUG-REST
+    property/IUPACName — séparé du fetch réseau pour rester testable sans
+    internet. C'est un nom SYSTÉMATIQUE calculé (pas forcément le nom usuel
+    du composé), mais nettement plus lisible qu'un numéro CAS ou un id
+    interne généré."""
+    if not data:
+        return None
+    props = (data.get("PropertyTable") or {}).get("Properties") or []
+    if not props:
+        return None
+    return props[0].get("IUPACName")
+
+
 def _parse_chembl_response(data: dict | None) -> dict | None:
     """Extrait {'chembl_id', 'url'} d'une réponse ChEMBL JSON — séparé du fetch réseau pour rester testable sans internet."""
     if not data:
@@ -94,6 +109,17 @@ def check_pubchem(inchikey: str) -> dict | None | str:
     """Retourne {'cid', 'url'} si trouvé, None si confirmé absent (404), UNREACHABLE si le réseau/l'API n'a pas répondu."""
     try:
         return _parse_pubchem_response(_fetch_json(PUBCHEM_URL.format(inchikey=inchikey)))
+    except _Unreachable:
+        return UNREACHABLE
+
+
+def fetch_pubchem_name(cid: int) -> str | None | str:
+    """Retourne le nom IUPAC calculé par PubChem pour un CID connu, None si
+    absent, UNREACHABLE si le réseau/l'API n'a pas répondu. Appelé
+    uniquement quand check_pubchem a déjà trouvé un CID — pas d'appel
+    réseau supplémentaire sur les molécules absentes de PubChem."""
+    try:
+        return _parse_pubchem_name_response(_fetch_json(PUBCHEM_NAME_URL.format(cid=cid)))
     except _Unreachable:
         return UNREACHABLE
 
@@ -117,6 +143,11 @@ def check_novelty(smiles: str, delay: float = 0.25) -> dict:
       - True   si les DEUX bases ont répondu et confirment l'absence,
       - None   si l'une des deux bases n'a pas pu être contactée
                (indéterminé — ne pas interpréter comme "nouvelle").
+
+    Si un CID PubChem est trouvé, une requête supplémentaire récupère le nom
+    IUPAC calculé (result["pubchem"]["name"]) — un appel de plus, jamais
+    déclenché sur une molécule absente de PubChem (donc pas de coût
+    supplémentaire sur les molécules générées, généralement introuvables).
     """
     inchikey = compute_inchikey(smiles)
     if inchikey is None:
@@ -124,6 +155,11 @@ def check_novelty(smiles: str, delay: float = 0.25) -> dict:
 
     pubchem = check_pubchem(inchikey)
     time.sleep(delay)
+    if isinstance(pubchem, dict):
+        name = fetch_pubchem_name(pubchem["cid"])
+        time.sleep(delay)
+        if isinstance(name, str) and name != UNREACHABLE:
+            pubchem["name"] = name
     chembl = check_chembl(inchikey)
 
     unreachable = pubchem == UNREACHABLE or chembl == UNREACHABLE

@@ -6,13 +6,13 @@ au TPP, via AiZynthFinder (AstraZeneca, licence MIT, recherche arborescente
 Monte Carlo guidée par un réseau de neurones —
 https://github.com/MolecularAI/aizynthfinder).
 
-Dépendance OPTIONNELLE et lourde (modèle + stock de précurseurs, plusieurs
-centaines de Mo) — volontairement PAS dans requirements.txt ni dans le
-workflow CI automatique. Contrairement à data/receptor/ (quelques Mo,
-committables), un modèle AiZynthFinder ne se committe pas raisonnablement
-dans le dépôt : à utiliser en local, à la demande.
+Dépendance lourde (modèle + stock de précurseurs, plusieurs centaines de
+Mo) — volontairement PAS dans requirements.txt (fichier séparé,
+requirements-retrosynthesis.txt). Automatisée dans le workflow CI (le
+modèle est mis en cache entre les runs via actions/cache, jamais committé
+dans le dépôt) — voir la section dédiée du README pour le détail.
 
-Installation et usage :
+Installation et usage en local :
     pip install -r requirements-retrosynthesis.txt
     download_public_data ./aizynthfinder_data   # fourni par le paquet aizynthfinder
     python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml
@@ -27,6 +27,7 @@ de recherche ouvert, hors du périmètre de ce module.
 from __future__ import annotations
 
 import json
+import time
 from pathlib import Path
 from typing import Any
 
@@ -91,6 +92,59 @@ def search_routes(finder, smiles: str) -> dict[str, Any]:
         # renderRetroNode) pour un exemple de parcours de cette structure.
         "routes": finder.routes.dicts,
     }
+
+
+def _walk_mol_nodes(node: dict[str, Any]):
+    """Générateur interne : parcourt récursivement tous les nœuds de type
+    "mol" d'un arbre de route (cible, intermédiaires, précurseurs confondus)."""
+    if node.get("type") == "mol" and node.get("smiles"):
+        yield node
+    for child in node.get("children") or []:
+        yield from _walk_mol_nodes(child)
+
+
+def annotate_route_names(result: dict[str, Any], delay: float = 0.25) -> None:
+    """
+    Enrichit chaque nœud "mol" des routes d'un résultat de search_routes()
+    avec un nom IUPAC PubChem (node["name"]) — pour afficher un nom plutôt
+    qu'un SMILES brut dans le dashboard (cible, intermédiaires ET
+    précurseurs). Modifie `result` EN PLACE.
+
+    Déduplique les SMILES avant d'interroger le réseau : un même
+    précurseur (ex. un réactif commun) apparaît souvent dans plusieurs
+    routes du même résultat — une seule requête par SMILES unique, pas une
+    par occurrence.
+
+    Ne lève jamais d'exception réseau : un échec de lookup laisse
+    simplement node["name"] absent — le dashboard retombe alors sur le
+    SMILES (comportement inchangé par rapport à avant cette fonction).
+    """
+    from .novelty import check_pubchem, compute_inchikey, fetch_pubchem_name, UNREACHABLE
+
+    routes = result.get("routes") or []
+
+    unique_smiles: set[str] = set()
+    for route in routes:
+        for mol_node in _walk_mol_nodes(route):
+            unique_smiles.add(mol_node["smiles"])
+
+    names: dict[str, str] = {}
+    for smiles in unique_smiles:
+        inchikey = compute_inchikey(smiles)
+        if inchikey is None:
+            continue
+        pubchem = check_pubchem(inchikey)
+        time.sleep(delay)
+        if isinstance(pubchem, dict):
+            name = fetch_pubchem_name(pubchem["cid"])
+            time.sleep(delay)
+            if isinstance(name, str) and name != UNREACHABLE:
+                names[smiles] = name
+
+    for route in routes:
+        for mol_node in _walk_mol_nodes(route):
+            if mol_node["smiles"] in names:
+                mol_node["name"] = names[mol_node["smiles"]]
 
 
 def summarize_result(result: dict[str, Any]) -> dict[str, Any]:

@@ -4,8 +4,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pytest
+from unittest.mock import patch
 
-from candigen.retrosynthesis import apply_summaries, build_finder, select_candidates, summarize_result
+from candigen import novelty
+from candigen.retrosynthesis import annotate_route_names, apply_summaries, build_finder, select_candidates, summarize_result
 
 
 def test_select_candidates_filters_and_sorts_by_fitness():
@@ -68,3 +70,51 @@ def test_apply_summaries_updates_matching_records_only():
     assert updated[0]["retrosynthesis_route_found"] is True
     assert updated[0]["retrosynthesis_n_routes"] == 3
     assert "retrosynthesis_route_found" not in updated[1]  # non traitée ce run — inchangée
+
+
+def _fake_route():
+    """Cible -> réaction -> [CCO (doublon volontaire x2), CCN]."""
+    return {
+        "type": "mol", "smiles": "TARGET", "in_stock": False,
+        "children": [{
+            "type": "reaction", "children": [
+                {"type": "mol", "smiles": "CCO", "in_stock": True, "children": []},
+                {"type": "mol", "smiles": "CCO", "in_stock": True, "children": []},
+                {"type": "mol", "smiles": "CCN", "in_stock": True, "children": []},
+            ],
+        }],
+    }
+
+
+def test_annotate_route_names_deduplicates_smiles_before_querying():
+    """3 nœuds mol mais seulement 2 SMILES distincts (CCO en double) + la
+    cible -> 3 requêtes PubChem au total, pas 4."""
+    result = {"routes": [_fake_route()]}
+    with patch.object(novelty, "compute_inchikey", side_effect=lambda s: f"KEY-{s}"), \
+         patch.object(novelty, "check_pubchem", return_value={"cid": 1, "url": "x"}) as mock_check, \
+         patch.object(novelty, "fetch_pubchem_name", return_value="Un nom"):
+        annotate_route_names(result, delay=0)
+    assert mock_check.call_count == 3  # TARGET, CCO (une fois), CCN
+
+
+def test_annotate_route_names_annotates_all_matching_nodes():
+    """Les DEUX occurrences de CCO reçoivent le nom, pas seulement la première."""
+    result = {"routes": [_fake_route()]}
+    with patch.object(novelty, "compute_inchikey", side_effect=lambda s: f"KEY-{s}"), \
+         patch.object(novelty, "check_pubchem", return_value={"cid": 1, "url": "x"}), \
+         patch.object(novelty, "fetch_pubchem_name", side_effect=lambda cid: "Éthanol"):
+        annotate_route_names(result, delay=0)
+    reaction_children = result["routes"][0]["children"][0]["children"]
+    cco_nodes = [n for n in reaction_children if n["smiles"] == "CCO"]
+    assert len(cco_nodes) == 2
+    assert all(n["name"] == "Éthanol" for n in cco_nodes)
+
+
+def test_annotate_route_names_leaves_name_absent_on_lookup_failure():
+    """Pas de CID trouvé -> pas de clé 'name' du tout (le dashboard retombe sur le SMILES)."""
+    result = {"routes": [_fake_route()]}
+    with patch.object(novelty, "compute_inchikey", side_effect=lambda s: f"KEY-{s}"), \
+         patch.object(novelty, "check_pubchem", return_value=None):
+        annotate_route_names(result, delay=0)
+    reaction_children = result["routes"][0]["children"][0]["children"]
+    assert all("name" not in n for n in reaction_children)

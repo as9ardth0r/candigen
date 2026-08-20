@@ -4,12 +4,18 @@ Prépare la structure receptrice pour le docking — À LANCER UNE SEULE FOIS
 (le résultat est committé dans data/receptor/ et réutilisé à chaque run du
 pipeline, pas retéléchargé/reconverti systématiquement).
 
-Structure utilisée : PDB 1M17 (EGFR, domaine kinase, avec erlotinib —
-Stamos et al., J. Biol. Chem. 2002). Choisie parce que c'est la structure
-de référence historique pour les inhibiteurs réversibles de Type I à cœur
-quinazoline/aminopyrimidine — le chimiotype majoritaire de ce projet.
-Pour cribler contre un mutant (T790M/L858R, résistance), remplacer
-PDB_ID par "4HJO" ou une structure équivalente et relancer ce script.
+Structure utilisée par défaut : PDB 1M17 (EGFR, domaine kinase, avec
+erlotinib — Stamos et al., J. Biol. Chem. 2002). Choisie parce que c'est
+la structure de référence historique pour les inhibiteurs réversibles de
+Type I à cœur quinazoline/aminopyrimidine — le chimiotype majoritaire de
+ce projet.
+
+Pour cribler contre une AUTRE cible (mutant de résistance T790M/L858R,
+ou une kinase différente), changez PDB_ID et TARGET_NAME ci-dessous, puis
+relancez ce script — c'est la SEULE source de vérité pour le nom de
+cible affiché dans le dashboard (cf. candigen.export.read_target_name) :
+aucune autre modification de code n'est nécessaire (le calcul du centre
+de la poche, à partir des records SITE du PDB, est déjà générique).
 
 Usage :
     python scripts/prepare_receptor.py
@@ -29,6 +35,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from candigen.docking import binding_site_center, prepare_receptor_pdbqt
 
 PDB_ID = "1M17"
+TARGET_NAME = "EGFR"
 RECEPTOR_DIR = ROOT / "data" / "receptor"
 
 
@@ -60,6 +67,7 @@ def main() -> None:
     print("[4/4] Sauvegarde de la configuration...")
     config = {
         "pdb_id": PDB_ID,
+        "target_name": TARGET_NAME,
         "center": list(center),
         "box_size": [24.0, 20.0, 24.0],
         "receptor_pdbqt": str(receptor_pdbqt.relative_to(ROOT)),

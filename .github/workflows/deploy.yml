@@ -41,19 +41,13 @@ jobs:
       - name: Installation des dépendances Python
         run: pip install -r requirements.txt
 
-      - name: Préparation du récepteur EGFR (une seule fois, si absent)
-        # Télécharge la structure PDB 1M17 depuis RCSB et prépare le PDBQT
-        # — le runner GitHub a un accès internet complet (contrairement à
-        # certains environnements de développement restreints), donc ce
-        # téléchargement fonctionne directement ici. Une fois committé par
-        # l'étape de persistance ci-dessous, les runs suivants sautent
-        # cette étape.
-        run: |
-          if [ ! -f data/receptor/config.json ]; then
-            python scripts/prepare_receptor.py
-          else
-            echo "Récepteur déjà préparé (data/receptor/config.json présent) — skip."
-          fi
+      - name: Préparation des récepteurs (une seule fois par cible, si absente)
+        # Idempotent par cible (cf. docstring de scripts/prepare_receptor.py) —
+        # pas de test conditionnel ici, le script saute lui-même les cibles
+        # déjà préparées et committées. Le runner GitHub a un accès internet
+        # complet (contrairement à certains environnements de développement
+        # restreints), donc ce téléchargement fonctionne directement ici.
+        run: python scripts/prepare_receptor.py
 
       - name: Exécution du pipeline (génération + filtrage + export JSON/CSV + docking)
         run: python scripts/run_pipeline.py

@@ -87,7 +87,16 @@ MAX_NOVELTY_CHECKS = 50
 HALL_OF_FAME_PATH = ROOT / "data" / "hall_of_fame.json"
 EXPLORED_PATH = ROOT / "data" / "explored.json"
 LAST_RUN_PATH = ROOT / "data" / "last_run.json"
-RECEPTOR_CONFIG_PATH = ROOT / "data" / "receptor" / "config.json"
+RECEPTOR_ROOT = ROOT / "data" / "receptor"  # une cible par sous-dossier : data/receptor/<pdb_id>/config.json
+
+
+def discover_receptor_configs(receptor_root: Path) -> list[dict]:
+    """Charge la config de chaque cible préparée (scripts/prepare_receptor.py) — 0, 1 ou plusieurs."""
+    configs = []
+    if receptor_root.is_dir():
+        for config_path in sorted(receptor_root.glob("*/config.json")):
+            configs.append(json.loads(config_path.read_text()))
+    return configs
 
 
 def main() -> None:
@@ -217,15 +226,13 @@ def main() -> None:
             mols_3d[r.id] = mol3d
     print(f"[8/10] Conformères 3D générés pour {len(sdf_blocks)}/{len(passing_for_3d)} molécules")
 
-    # 9) Docking réel (AutoDock Vina) — seulement si un récepteur a été
-    #    préparé (scripts/prepare_receptor.py) et seulement pour le top-K
-    #    des molécules déjà embedées en 3D à l'étape précédente.
+    # 9) Docking réel (AutoDock Vina) — contre CHAQUE cible préparée
+    #    (scripts/prepare_receptor.py), pour le top-K des molécules déjà
+    #    embedées en 3D à l'étape précédente. Le temps de cette étape est
+    #    ~proportionnel au nombre de cibles configurées.
+    receptor_configs = discover_receptor_configs(RECEPTOR_ROOT)
     n_docked = 0
-    if RECEPTOR_CONFIG_PATH.exists():
-        receptor_config = json.loads(RECEPTOR_CONFIG_PATH.read_text())
-        receptor_pdbqt = ROOT / receptor_config["receptor_pdbqt"]
-        center = tuple(receptor_config["center"])
-        box_size = tuple(receptor_config.get("box_size", (24.0, 20.0, 24.0)))
+    if receptor_configs:
         for r in passing_for_3d[:MAX_DOCKING]:
             mol3d = mols_3d.get(r.id)
             if mol3d is None:
@@ -233,14 +240,23 @@ def main() -> None:
             ligand_pdbqt = prepare_ligand_pdbqt(mol3d)
             if ligand_pdbqt is None:
                 continue
-            score = run_docking(receptor_pdbqt, ligand_pdbqt, center, box_size, exhaustiveness=DOCKING_EXHAUSTIVENESS)
-            if score is not None:
-                r.docking_score = score
+            scores: dict[str, float] = {}
+            for cfg in receptor_configs:
+                receptor_pdbqt = ROOT / cfg["receptor_pdbqt"]
+                center = tuple(cfg["center"])
+                box_size = tuple(cfg.get("box_size", (24.0, 20.0, 24.0)))
+                score = run_docking(receptor_pdbqt, ligand_pdbqt, center, box_size, exhaustiveness=DOCKING_EXHAUSTIVENESS)
+                if score is not None:
+                    scores[cfg["target_name"]] = score
+            if scores:
+                r.docking_scores = scores
+                r.docking_score = min(scores.values())  # le meilleur (le plus négatif) — conservé pour le tri existant du dashboard
                 n_docked += 1
-        print(f"[9/10] Docking (AutoDock Vina, {receptor_config['pdb_id']}) : "
-              f"{n_docked}/{min(len(passing_for_3d), MAX_DOCKING)} molécules dockées")
+        target_list = ", ".join(cfg["pdb_id"] for cfg in receptor_configs)
+        print(f"[9/10] Docking (AutoDock Vina, {target_list}) : "
+              f"{n_docked}/{min(len(passing_for_3d), MAX_DOCKING)} molécules dockées contre {len(receptor_configs)} cible(s)")
     else:
-        print("[9/10] Pas de récepteur préparé (data/receptor/config.json absent) — "
+        print("[9/10] Aucune cible préparée (data/receptor/*/config.json absent) — "
               "docking ignoré. Lancer scripts/prepare_receptor.py pour l'activer.")
 
     export_json(records, ROOT / "data" / "molecules.json")

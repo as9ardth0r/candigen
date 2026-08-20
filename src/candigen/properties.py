@@ -52,7 +52,8 @@ class MoleculeRecord:
     recipe: Optional[dict] = None  # {"scaffold":..., "aniline":..., "solubilizer":...} pour source="generated"
     first_seen: Optional[str] = None  # date ISO de première apparition dans le hall of fame
     fitness: Optional[float] = None  # score composite (voir candigen.evolve.fitness)
-    docking_score: Optional[float] = None  # kcal/mol (AutoDock Vina), None si pas encore docké
+    docking_score: Optional[float] = None  # meilleur (le plus négatif) score parmi docking_scores — conservé pour le tri du dashboard (option "docking_score" déjà existante), calculé automatiquement
+    docking_scores: Optional[dict] = None  # {target_name: score} — une entrée par structure receptrice configurée (candigen.export.read_target_names)  # kcal/mol (AutoDock Vina), None si pas encore docké
     is_novel: Optional[bool] = None  # None = pas vérifié ; True = confirmé absent de PubChem/ChEMBL ; False = déjà connue
     pubchem_cid: Optional[int] = None
     chembl_id: Optional[str] = None
@@ -157,4 +158,8 @@ def export_csv(records: list[MoleculeRecord], path: str | Path) -> None:
             row = r.to_dict()
             row["pains_alerts"] = ";".join(row["pains_alerts"])
             row["toxicity_alerts"] = ";".join(row["toxicity_alerts"])
+            # dict {target_name: score} -> "EGFR=-7.4;EGFR T790M/L858R=-6.1"
+            # (une seule colonne CSV plutôt qu'une colonne par cible, pour
+            # rester valide même quand la liste de cibles change d'un run à l'autre)
+            row["docking_scores"] = ";".join(f"{k}={v}" for k, v in (row["docking_scores"] or {}).items())
             writer.writerow(row)

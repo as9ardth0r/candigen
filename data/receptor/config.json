@@ -1,0 +1,15 @@
+{
+  "pdb_id": "6BQG",
+  "target_name": "5-HT2C",
+  "center": [
+    20.044069306930695,
+    33.96414851485149,
+    55.856752475247525
+  ],
+  "box_size": [
+    24.0,
+    20.0,
+    24.0
+  ],
+  "receptor_pdbqt": "data/receptor/6BQG.pdbqt"
+}

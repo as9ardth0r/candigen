@@ -36,7 +36,7 @@ TARGETS = [
         # Référence historique pour les inhibiteurs Type I quinazoline/aminopyrimidine.
     },
     {
-        "pdb_id": "8EF6",
+        "pdb_id": "4DKL",
         "target_name": "mu-opioid",
         # Mutant de résistance double (gatekeeper + activateur) — utile pour
         # repérer les candidats actifs spécifiquement sur la forme résistante.

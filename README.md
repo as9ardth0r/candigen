@@ -1,369 +1,59 @@
 # CandiGen
 
-Pipeline open source de génération et de criblage de candidats-médicaments
-ciblant le domaine kinase d'**EGFR** (Epidermal Growth Factor Receptor),
-avec un dashboard de suivi statique déployé automatiquement sur GitHub Pages.
+> **Plateforme de toxicologie prédictive, de veille anti-trafic et de cartographie rétrosynthétique des Nouvelles Substances Psychoactives (NPS)**
 
-> ⚠️ Usage : recherche & pédagogie en chimie numérique (CADD). Les molécules
-> générées sont des hypothèses *in silico* non synthétisées ni testées ;
-> aucune ne doit être considérée comme un candidat-médicament validé.
+Pipeline open source de génération *in silico*, d'analyse structurale et de prédiction de voies de synthèse appliqué à la veille toxicologique et à la lutte contre le trafic de substances psychoactives.
+
+> ⚠️ **Avertissement légal & éthique** : Ce projet est développé à des fins exclusives de **recherche académique en toxicologie**, de **sécurité publique** et de **veille sanitaire**. Les profils d'élucidation, mécanismes de dérivation et routes rétrosynthétiques générés *in silico* sont destinés aux laboratoires d'analyse médico-légale et aux autorités de contrôle afin de faciliter l'identification de marqueurs d'usage, d'anticiper les dérivés clandestins et d'appuyer les stratégies anti-trafic.
+
+---
+
+## Objectifs du projet
+
+1. **Cartographie des dérivés et analogues (SARA)** : Modéliser l'espace chimique des analogues structuraux (fentanyloïdes, cathinones de synthèse, cannabinoïdes de synthèse, nitazènes, etc.) pour anticiper les molécules émergentes.
+2. **Identification toxicologique prédictive** : Calculer les propriétés physico-chimiques, la lipophilie, l'affinité réceptorielle théorique et les profils d'alerte toxicologique.
+3. **Caractérisation des voies de fabrication** : Appliquer la rétrosynthèse Assistée par Ordinateur (CASP) pour identifier les précurseurs clés, les réactifs de synthèse clandestine et appuyer la traçabilité de la chaîne d'approvisionnement.
+4. **Diffusion de la veille** : Générer un dashboard statique interactif déployable sur GitHub Pages pour la consultation par les équipes de recherche ou d'expertise judiciaire.
+
+---
 
 ## Structure du dépôt
 
-```
+```text
 candigen/
-├── src/candigen/            # cœur de calcul (package Python)
-│   ├── properties.py      # chargement SMILES + calcul MW/LogP/TPSA/HBD/HBA
-│   ├── filters.py         # TPP, Lipinski, SA score, alertes PAINS + BRENK
-│   ├── generator.py       # briques : scaffolds, R-groups, assemblage SMILES
-│   ├── evolve.py          # recettes + mutation atomique (algo génétique)
-│   ├── hall_of_fame.py    # persistance des meilleures molécules entre runs
-│   ├── docking_prep.py    # embedding 3D (ETKDGv3 + MMFF94) + export SDF
-│   ├── docking.py         # docking réel : SITE→centre poche, PDBQT, Vina
-│   ├── novelty.py         # vérification PubChem/ChEMBL (InChIKey exact)
-│   ├── export.py          # assemblage du JSON consommé par le site
-│   └── retrosynthesis.py  # rétrosynthèse CASP (AiZynthFinder) — cf. section dédiée
+├── src/candigen/            # Cœur d'analyse et de modélisation (package Python)
+│   ├── properties.py      # Chargement SMILES + calcul MW/LogP/TPSA/HBD/HBA
+│   ├── filters.py         # Profils toxicologiques, alerte d'amorce, PAINS & BRENK
+│   ├── generator.py       # Génération d'analogues (squelettes, substituants, R-groups)
+│   ├── evolve.py          # Exploration génétique de l'espace structural (SARA)
+│   ├── hall_of_fame.py    # Persistance des structures émergentes identifiées
+│   ├── docking_prep.py    # Conformateurs 3D (ETKDGv3 + MMFF94) & export SDF
+│   ├── docking.py         # Docking prédictif récepteur/cible (PDBQT, AutoDock Vina)
+│   ├── novelty.py         # Vérification bases officielles (PubChem/ChEMBL/UNODC)
+│   ├── export.py          # Génération des schémas de données du dashboard
+│   └── retrosynthesis.py  # Rétrosynthèse prédictive des voies d'accès (AiZynthFinder)
 ├── scripts/
-│   ├── run_pipeline.py       # orchestration : bootstrap ou lot évolutif du jour
-│   ├── prepare_receptor.py   # prépare data/receptor/ (une fois)
-│   ├── run_retrosynthesis.py # rétrosynthèse sur le top TPP — auto en CI (cache), lançable en local aussi
-│   └── fetch_vendor.sh       # (re)télécharge le SA-scorer officiel RDKit
-├── vendor/                 # sascorer.py + fpscores.pkl.gz (RDKit Contrib)
+│   ├── run_pipeline.py       # Orchestration globale du batch de veille quotidien
+│   ├── prepare_receptor.py   # Préparation de la cible réceptorielle (ex. mu-opioïde, CB1/CB2)
+│   ├── run_retrosynthesis.py # Analyse rétrosynthétique automatisée des cibles d'intérêt
+│   └── fetch_vendor.sh       # Récupération des dépendances RDKit Contrib
+├── vendor/                 # Modules d'évaluation de la facilité synthétique (SA score)
 ├── requirements.txt
-├── requirements-retrosynthesis.txt  # dépendance optionnelle et lourde (AiZynthFinder)
+├── requirements-retrosynthesis.txt  # Dépendances de planification rétrosynthétique (AiZynthFinder)
 ├── data/
-│   ├── seed_molecules.smi  # 5 candidats curés
-│   ├── hall_of_fame.json   # état persistant : meilleures molécules à ce jour
-│   ├── explored.json       # état persistant : SMILES déjà testés
-│   ├── last_run.json       # état persistant : date du dernier lot généré
-│   ├── receptor/            # structure PDB + PDBQT + centre de la poche
-│   ├── molecules.json      # sortie du pipeline (curés + hall of fame)
+│   ├── seed_molecules.smi  # Substances de référence (molécules mères surveillées)
+│   ├── hall_of_fame.json   # Registre persistant des analogues d'intérêt toxicologique
+│   ├── explored.json       # Registre des structures analysées
+│   ├── last_run.json       # Horodatage du dernier cycle de veille
+│   ├── receptor/            # Structure PDB / PDBQT du récepteur cible
+│   ├── molecules.json      # Données globales générées pour la veille
 │   └── molecules.csv
-├── site/                   # site statique (GitHub Pages)
+├── site/                   # Dashboard de veille stratégique (GitHub Pages)
 │   ├── index.html
 │   ├── js/app.js
 │   └── data/
-│       ├── molecules.json  # index léger (généré à chaque run CI)
-│       ├── retrosynthesis/ # un JSON par molécule évaluée (généré en CI, cf. section dédiée)
-│       └── conformers.json # blocs SDF, top-K conformes (chargé à la demande)
-├── tests/
-│   ├── test_properties.py
-│   ├── test_evolve.py
-│   ├── test_docking.py
-│   ├── test_novelty.py
-│   └── test_retrosynthesis.py
+│       ├── molecules.json  # Index d'analyse
+│       ├── retrosynthesis/ # Arbres de décomposition rétrosynthétique
+│       └── conformers.json # Coordonnées 3D / Conformateurs des analogues
+├── tests/                  # Validation et tests unitaires du pipeline
 └── .github/workflows/deploy.yml
-```
-
-## Démarrage local
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python scripts/prepare_receptor.py # optionnel : active le docking réel (une fois)
-python scripts/run_pipeline.py     # régénère data/*.json/csv + site/data/*.json
-python -m pytest tests/ -q         # tests unitaires
-python -m http.server 8000 -d site # prévisualiser le dashboard localement
-```
-
-## Target Product Profile (TPP) — EGFR
-
-Bornes utilisées par `TPPProfile` (`src/candigen/filters.py`), calibrées pour
-un inhibiteur ATP-compétitif administré per os :
-
-| Critère              | Cible        | Justification |
-|-----------------------|-------------|----------------|
-| MW                     | 250–500 Da  | Ro5 ; poche ATP kinase de taille moyenne |
-| LogP                   | 1.0–4.5     | Perméabilité cellulaire sans excès de liaison protéique |
-| TPSA                   | 40–100 Å²   | Compromis perméabilité passive / solubilité |
-| HBD                    | ≤ 3         | Ro5, limite l'efflux (P-gp) |
-| HBA                    | ≤ 9         | Ro5 |
-| Liaisons rotables      | ≤ 10        | Flexibilité conformationnelle limitée (Veber) |
-| SA score (Ertl)        | ≤ 4.0       | Voie de synthèse raisonnable (échelle 1–10) |
-| Violations Lipinski    | ≤ 1         | Ro5 |
-| QED                    | ≥ 0.3       | Drug-likeness global |
-| Alertes PAINS          | 0           | Écarte les faux positifs de criblage connus |
-| Alertes BRENK          | informatif  | Groupes réactifs/toxicophores connus (Brenk et al. 2008) — calculé et affiché, pas de rejet automatique par défaut (cf. note ci-dessous) |
-
-Le pipeline calcule chaque critère avec RDKit (`Descriptors`, `Crippen`,
-`rdMolDescriptors`, `QED`, `FilterCatalog`) et le SA score officiel RDKit
-Contrib (Ertl & Schuffenhauer, *J. Cheminform.* 2009).
-
-> **Sur BRENK** : le filtre est calculé pour chaque molécule
-> (`record.toxicity_alerts`) et affiché dans le dashboard, mais ne fait PAS
-> échouer le TPP par défaut (`TPPProfile.forbid_toxicity_alerts = False`).
-> Raison testée concrètement : BRENK signale aussi des choix de conception
-> légitimes et courants — le warhead acrylamide de M2 (inhibiteur covalent,
-> même chimie que l'osimertinib, un médicament approuvé) et l'alcyne
-> terminal de M1 (présent dans l'erlotinib) déclenchent tous deux une
-> alerte. Un rejet automatique aurait donc été scientifiquement faux ici ;
-> l'info reste disponible pour une revue au cas par cas. Passez le champ à
-> `True` dans `TPPProfile` pour un criblage automatique plus strict.
-
-## Boucle de découverte évolutive
-
-Le pipeline ne se contente pas de regénérer la même bibliothèque à chaque
-run — il **découvre de nouvelles molécules à chaque exécution** et fait
-persister les meilleures dans le temps (`data/hall_of_fame.json`, committé
-par le workflow) :
-
-- **Premier run ("bootstrap")** : 300 combinaisons scaffold × aniline ×
-  solubilisant sont tirées au sort (sur les 7 × 14 × 13 = **1274** possibles)
-  et testées — volontairement une *partie* seulement du catalogue, pas la
-  totalité, pour laisser de la marge aux jours suivants.
-- **Runs suivants** (déclenchés par le cron quotidien, cf. CI/CD ci-dessous),
-  `candigen.evolve` combine 3 mécanismes, 10 candidats chacun :
-  1. **Exploration par recette** : combinaisons scaffold/aniline/solubilisant
-     jamais testées, tirées au hasard dans le catalogue restant.
-  2. **Mutation de recette** : on part des meilleures molécules connues et
-     on change un seul de leurs 3 composants — voisinage dans le catalogue.
-  3. **Mutation atomique** : un seul changement chimique local (ajouter un
-     halogène/méthyle sur un cycle aromatique disponible, en retirer un, ou
-     permuter un halogène) appliqué à une molécule connue (curée ou du hall
-     of fame). **C'est le mécanisme qui garantit qu'il y a toujours du
-     nouveau à découvrir** : contrairement à (1) et (2), cet espace n'est
-     pas un catalogue fini de 1274 combinaisons — la chimie "drug-like" est
-     estimée à ~10⁶⁰ molécules. Testé concrètement : même après épuisement
-     total et simulé des 1274 recettes, la mutation atomique continue de
-     produire des molécules inédites, jour après jour, sans jamais retomber
-     à zéro (voir `tests/test_evolve.py`).
-- Les 3 mécanismes partagent un seul critère de nouveauté — `data/explored.json`
-  garde la trace de tous les **SMILES canoniques** déjà testés (peu importe
-  leur origine), pour ne jamais retester deux fois la même molécule.
-- **Fitness** = `QED - 0.05 × SA_score` (favorise drug-likeness élevé et
-  synthèse facile — heuristique simple, ajustable dans `candigen/evolve.py`).
-- Les molécules conformes au TPP sont fusionnées dans le hall of fame
-  (déduplication par SMILES canonique, tri par fitness, plafonné à
-  `HALL_OF_FAME_MAX` = 300 — les moins bonnes sont éliminées si de
-  meilleures sont découvertes). Les **5 candidats curés** restent toujours
-  affichés à part, jamais soumis à ce plafond, et peuvent eux aussi servir
-  de parents à la mutation atomique.
-- **Un seul lot par jour civil** (`data/last_run.json`) : relancer le
-  pipeline plusieurs fois le même jour (ex. `workflow_dispatch` manuel) ne
-  génère rien de plus après le premier run — testé concrètement, sinon la
-  mutation atomique (jamais à court d'idées) ajouterait des molécules à
-  chaque appel au lieu d'être neutre.
-
-Pour aller plus loin que la mutation atomique locale (ex. changer un cycle,
-fusionner deux fragments), deux leviers : curer plus de fragments dans
-`ANILINE_HINGE_SUBSTITUENTS`/`SOLUBILIZING_ARMS`/`SCAFFOLD_LIBRARY`
-(`src/candigen/generator.py`), ou les extraire automatiquement par
-décomposition **BRICS** d'une base existante (ZINC, ChEMBL) — RDKit fournit
-`Chem.BRICS` pour ça, non branché ici mais compatible avec `generator.py`.
-
-Pour que le pipeline reste rapide et que le site déployé reste léger même
-avec un hall of fame de centaines de molécules, l'embedding 3D (le plus
-coûteux) et l'export du bloc SDF dans `site/data/conformers.json` sont
-réservés aux `MAX_3D_EMBEDDINGS` (150 par défaut) meilleurs candidats
-conformes. **Toute** la bibliothèque (descripteurs 2D, sans SDF) reste
-néanmoins exportée et parcourable dans le dashboard, qui gère recherche,
-filtre par conformité/provenance, tri (fitness, date de découverte, SA
-score…), pagination ("Charger plus"), un badge "nouveau" sur les molécules
-découvertes le jour même, un badge BRENK (nombre d'alertes) quand
-pertinent, et un badge de score de docking (⚓) pour les molécules dockées
-— voir section suivante.
-
-## Docking réel (AutoDock Vina)
-
-Contrairement au criblage 2D (TPP/SA/PAINS/BRENK, rapide et appliqué à
-toute la bibliothèque), le docking calcule un score d'affinité prédit
-(kcal/mol) à partir de la géométrie 3D réelle contre une structure
-cristallographique d'EGFR — un signal plus proche d'une vraie interaction
-protéine-ligand.
-
-- **Structure utilisée** : PDB **1M17** (EGFR, domaine kinase, avec
-  erlotinib — Stamos et al., *J. Biol. Chem.* 2002), choisie parce que
-  c'est la référence historique pour les inhibiteurs réversibles de Type I
-  à cœur quinazoline/aminopyrimidine, le chimiotype majoritaire de ce
-  projet. **Changer de cible** (mutant de résistance T790M/L858R, ou une
-  kinase différente) : modifier `PDB_ID` **et** `TARGET_NAME` en haut de
-  `scripts/prepare_receptor.py` (ex. `"4HJO"` / `"EGFR T790M/L858R"`) et
-  relancer le script — `TARGET_NAME` est la seule source de vérité pour le
-  nom affiché dans le dashboard (titre, badge), lue automatiquement via
-  `candigen.export.read_target_name` par `run_pipeline.py` et
-  `run_retrosynthesis.py`. Aucune autre modification de code nécessaire :
-  le calcul du centre de poche (ci-dessous) et le `TPPProfile`
-  (`src/candigen/filters.py`) sont déjà génériques.
-- **Préparation (une seule fois)** : `scripts/prepare_receptor.py`
-  télécharge le PDB, calcule le centre de la poche de liaison à partir des
-  résidus du record `SITE` (générique — fonctionne sur n'importe quelle
-  structure PDB avec un ligand co-cristallisé, pas codé en dur pour 1M17),
-  et convertit le récepteur en `.pdbqt` via Open Babel. Le résultat
-  (`data/receptor/`) est committé et réutilisé à chaque run — pas
-  retéléchargé/reconverti systématiquement.
-- **Automatique en CI** : le workflow prépare le récepteur tout seul au
-  premier run si `data/receptor/config.json` est absent (le runner GitHub
-  a un accès internet complet). Pour lancer ça en local : `python
-  scripts/prepare_receptor.py`.
-- **Dans le pipeline** : `scripts/run_pipeline.py` docke les
-  `MAX_DOCKING` (10 par défaut) meilleures molécules déjà embedées en 3D
-  à `exhaustiveness=4` — un compromis vitesse/qualité mesuré concrètement
-  sur ce projet (~30s/molécule sur un runner 2 cœurs ; ~55s à
-  exhaustiveness=8). Le score est stocké dans `record.docking_score` et
-  affiché dans le dashboard (badge ⚓, triable).
-- **Testé de bout en bout** (`tests/test_docking.py`) : parsing des
-  records `SITE`, conversion récepteur (Open Babel) et ligand (Meeko), et
-  un docking réel complet — pas seulement des mocks.
-
-```bash
-python scripts/prepare_receptor.py   # une fois, télécharge + prépare data/receptor/
-python scripts/run_pipeline.py       # docke automatiquement le top-10 si le récepteur existe
-```
-
-> ⚠️ Les scores de docking sont des **prédictions rapides** (scoring
-> function empirique de Vina), pas des mesures. Ils permettent de classer
-> relativement des molécules entre elles, pas d'estimer une affinité
-> absolue fiable — pour ça, il faudrait des méthodes plus coûteuses
-> (MM-GBSA, FEP) hors du périmètre de ce pipeline.
-
-## Rétrosynthèse (AiZynthFinder)
-
-En complément du criblage 2D et du docking, `candigen.retrosynthesis`
-génère une **route de rétrosynthèse** (CASP — computer-aided synthesis
-planning) pour les meilleures molécules conformes au TPP, via
-[AiZynthFinder](https://github.com/MolecularAI/aizynthfinder) (AstraZeneca,
-licence MIT) : recherche arborescente Monte Carlo guidée par un réseau de
-neurones, qui décompose récursivement une molécule jusqu'à des précurseurs
-réputés achetables.
-
-> ⚠️ Ce que ça sort : une **séquence de réactions** (quelle liaison casser,
-> quels précurseurs), pas un protocole expérimental complet (réactifs
-> exacts, solvants, températures, rendements) — la prédiction fiable des
-> conditions réactionnelles reste un sous-problème de recherche ouvert.
-> Comme pour le docking, ce sont des candidats de route à revoir, pas des
-> protocoles validés pour la paillasse.
-
-**Automatisé dans le workflow CI**, comme le docking : le modèle
-AiZynthFinder (policy + stock de précurseurs ZINC, plusieurs centaines de
-Mo) n'est pas committé dans le dépôt (contrairement à `data/receptor/`,
-quelques Mo), mais mis en **cache entre les runs** via `actions/cache`
-(clé `aizynthfinder-data-v1`) — premier run : téléchargement complet
-(~quelques minutes) ; runs suivants : cache restauré, téléchargement
-sauté. Chaque run quotidien traite les 10 molécules conformes au TPP avec
-la meilleure fitness (même logique que `MAX_DOCKING`). **Une molécule déjà
-traitée n'est PAS recalculée** (son fichier de sortie sert directement de
-cache) — le top-10 changeant peu d'un jour à l'autre, ça évite de relancer
-une recherche MCTS coûteuse pour un résultat identique (`--force` pour
-forcer le recalcul malgré le cache). Écrit un JSON détaillé par molécule
-dans `site/data/retrosynthesis/` (comme
-`site/data/conformers.json` : GitHub Pages ne sert que `site/`, pas
-`data/` à la racine du dépôt), **et** met à jour un badge 🧪 dans le
-dashboard (`retrosynthesis_route_found` / `retrosynthesis_n_routes` dans
-`data/molecules.json`) — visible sur la carte de chaque molécule évaluée,
-et dans sa fiche détaillée (arbre de routes interactif, avec structures
-2D, sélecteur de route et route ⭐ recommandée pré-sélectionnée — la plus
-grande part de précurseurs déjà en stock, à égalité la moins d'étapes ;
-purement indicatif, pas un jugement de faisabilité chimique).
-
-**Noms des précurseurs** : chaque nœud de l'arbre (cible, intermédiaires,
-précurseurs) est annoté avec un nom PubChem si trouvé
-(`candigen.retrosynthesis.annotate_route_names`, même mécanisme que le nom
-affiché sur les molécules elles-mêmes) — affiché à la place du SMILES brut
-dans le dashboard, SMILES toujours consultable en survol. Les SMILES sont
-dédupliqués avant les requêtes réseau : un même précurseur apparaît
-souvent dans plusieurs routes, une seule requête par SMILES unique (sur un
-exemple réel : 96 nœuds mais 26 SMILES uniques sur 8 routes → 26 requêtes,
-pas 96). `--skip-names` pour désactiver.
-
-Pour le lancer en local (déboguer, ou traiter plus de molécules que le
-run automatique) :
-
-```bash
-pip install -r requirements-retrosynthesis.txt
-download_public_data ./aizynthfinder_data   # une fois — télécharge modèle + stock ZINC
-python scripts/run_retrosynthesis.py --config aizynthfinder_data/config.yml --max 20
-```
-
-Le dossier `aizynthfinder_data/` téléchargé localement n'est pas committé
-(voir `.gitignore`) — c'est uniquement le résultat
-(`site/data/retrosynthesis/`) qui l'est.
-
-## Vérification de nouveauté (PubChem / ChEMBL)
-
-Une molécule "générée" n'est pas forcément une molécule "nouvelle" — elle
-a pu être fabriquée/publiée par quelqu'un d'autre sans qu'on le sache.
-`candigen/novelty.py` compare chaque molécule conforme au TPP aux deux
-grandes bases publiques de chimie, **par correspondance exacte
-d'InChIKey** (pas de similarité floue — on répond juste "cette structure
-exacte existe-t-elle déjà ?") :
-
-- **PubChem** (PUG-REST) et **ChEMBL** (REST API), tous deux interrogés.
-- Trois états possibles, distingués explicitement (`record.is_novel`) :
-  `True` = confirmé absente des deux bases, `False` = déjà répertoriée
-  (`record.pubchem_cid` et/ou `record.chembl_id` renseignés), `None` =
-  pas vérifiée (une des deux bases injoignable — **jamais interprété
-  comme "nouvelle"**, un bug réel rencontré et corrigé pendant le
-  développement : un réseau indisponible se traduisait à tort par
-  `is_novel=True` avant que `_fetch_json` distingue "404 confirmé" de
-  "requête qui a échoué"). Voir `tests/test_novelty.py`, en particulier
-  `test_check_novelty_unreachable_is_indeterminate_not_true`.
-- Délai de 0,25s entre appels PubChem (limite de débit recommandée : 5
-  req/s), et plafonné à `MAX_NOVELTY_CHECKS` (50 par défaut) molécules
-  par run, priorité aux meilleures (fitness) — sinon le bootstrap (jusqu'à
-  300 candidats conformes d'un coup) dépasserait largement la minute rien
-  qu'en délais de limite de débit.
-- Affiché dans le dashboard : badge rose "absente de PubChem/ChEMBL" si
-  confirmée nouvelle, badge orange "déjà connue" avec lien direct vers la
-  fiche PubChem/ChEMBL sinon — rien si pas encore vérifiée.
-- **Nom affiché** : quand un CID PubChem est trouvé, une requête
-  supplémentaire récupère le nom IUPAC calculé
-  (`record.chemical_name`) — c'est ce nom qui s'affiche en titre des
-  cartes et de la fiche détaillée du dashboard (l'`id`, souvent un numéro
-  CAS pour les molécules curées, reste visible en second, plus petit).
-  **Cette requête n'est jamais déclenchée sur une molécule absente de
-  PubChem** — donc en pratique, les molécules *générées* (id du type
-  `gen_<scaffold>_<aniline>_<solubilisant>`, typiquement absentes de
-  PubChem puisque nouvelles) n'auront jamais de nom : il n'existe tout
-  simplement aucune nomenclature IUPAC calculée disponible gratuitement
-  pour une structure qui n'est dans aucune base — seul leur id composite
-  reste affiché pour elles.
-
-> ℹ️ Comme pour le téléchargement du PDB (docking), ces appels réseau ne
-> peuvent être vérifiés qu'en environnement avec accès internet complet
-> (CI) — les API PUG-REST/ChEMBL ne sont pas indexées par les moteurs de
-> recherche, donc invérifiables depuis un environnement de développement
-> à accès réseau restreint. Le format des requêtes est documenté de façon
-> cohérente par plusieurs sources indépendantes ; toute la logique de
-> parsing et de gestion d'erreur est testée localement avec des réponses
-> construites selon ce format.
-
-## CI/CD
-
-`.github/workflows/deploy.yml` s'exécute :
-- à chaque push sur `main` (changement de code) ;
-- **tous les jours à 03:00 UTC** (`schedule: cron`) — c'est ce qui fait
-  tourner la boucle de découverte quotidienne sans intervention ;
-- manuellement, via l'onglet Actions → "Run workflow" (`workflow_dispatch`).
-
-À chaque run :
-1. installe Open Babel (`apt`, conversion PDB → PDBQT du récepteur) puis
-   les dépendances Python,
-2. prépare le récepteur EGFR (`data/receptor/`) s'il n'existe pas encore —
-   seulement au tout premier run, ensuite réutilisé,
-3. relance `scripts/run_pipeline.py` (bootstrap ou lot évolutif du jour,
-   criblage 2D, puis docking réel du top-10 si le récepteur est prêt),
-4. restaure (ou télécharge si absent) le modèle AiZynthFinder depuis le
-   cache `actions/cache`, puis lance `scripts/run_retrosynthesis.py` sur
-   le top-10 TPP du jour,
-5. **committe** `data/hall_of_fame.json`, `data/explored.json`,
-   `data/last_run.json`, `data/receptor/` et les fichiers `site/data/*.json`
-   régénérés (dont `site/data/retrosynthesis/`) — sinon tout serait
-   reperdu au run suivant, les runners GitHub étant éphémères. Le message
-   de commit contient `[skip ci]` pour ne pas se redéclencher lui-même en
-   boucle.
-6. déploie `site/` sur GitHub Pages via `actions/deploy-pages`.
-
-**Activation** (une fois, dans les paramètres du dépôt GitHub) :
-`Settings → Pages → Source → GitHub Actions`. Le workflow a besoin de la
-permission `contents: write` (déjà réglée dans `deploy.yml`) pour committer
-en retour.
-
-> ℹ️ GitHub désactive automatiquement les workflows `schedule` après 60
-> jours sans **aucun push** sur le dépôt. Comme ce workflow committe
-> lui-même chaque jour, le dépôt reste actif — mais si le cron s'arrête un
-> jour sans raison apparente, un `workflow_dispatch` manuel suffit à le
-> relancer.
-
-## Licence
-
-MIT — voir `LICENSE`.

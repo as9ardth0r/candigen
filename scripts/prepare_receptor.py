@@ -34,8 +34,8 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from candigen.docking import binding_site_center, prepare_receptor_pdbqt
 
-PDB_ID = "1M17"
-TARGET_NAME = "EGFR"
+PDB_ID = "6BQG"
+TARGET_NAME = "5-HT2C"
 RECEPTOR_DIR = ROOT / "data" / "receptor"
 
 

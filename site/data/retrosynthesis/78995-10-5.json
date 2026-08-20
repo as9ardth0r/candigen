@@ -1,0 +1,677 @@
+{
+  "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+  "stats": {
+    "target": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+    "search_time": 8.181073188781738,
+    "first_solution_time": 0.03521585464477539,
+    "first_solution_iteration": 1,
+    "number_of_nodes": 454,
+    "max_transforms": 6,
+    "max_children": 33,
+    "number_of_routes": 127,
+    "number_of_solved_routes": 46,
+    "top_score": 0.994039853898894,
+    "is_solved": true,
+    "number_of_steps": 2,
+    "number_of_precursors": 2,
+    "number_of_precursors_in_stock": 2,
+    "precursors_in_stock": "O=C(CBr)c1ccccc1, CCC(=O)N(c1ccccc1)C1CCNCC1",
+    "precursors_not_in_stock": "",
+    "precursors_availability": "zinc;zinc",
+    "policy_used_counts": {
+      "uspto": 453
+    },
+    "profiling": {
+      "expansion_calls": 342,
+      "reactants_generations": 1599,
+      "iterations": 100
+    }
+  },
+  "routes": [
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[CH3:1][C:2]([O:3])[cH3:4]>>[CH3:1][C:2](=[O:3])[cH3:4]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "b5e0d751a308713ec9a5de3c7aed5add4059bbf3a7685d1bdeed35ccfa6f4eea",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 3639,
+            "policy_probability": 0.45089998841285706,
+            "policy_probability_rank": 0,
+            "policy_name": "uspto",
+            "template_code": 30357,
+            "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][C:17](=[O:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(=O)c2ccccc2)CC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[C:1]([CH:2]=[O:3])[N:5]([CH3:4])[CH3:6]>>Br[C:1][CH:2]=[O:3].[CH3:4][N:5][CH3:6]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "1a1a687e771740c1b8814b564f5e1655290553a363e9cb2330cdbe386a4a63ae",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 398,
+                    "policy_probability": 0.8345999717712402,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 4388,
+                    "template": "[C:4]-[N;H0;D3;+0:5](-[C:6])-[CH2;D2;+0:1]-[C:2]=[O;D1;H0:3]>>Br-[CH2;D2;+0:1]-[C:2]=[O;D1;H0:3].[C:4]-[NH;D2;+0:5]-[C:6]",
+                    "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][C:17](=[O:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CBr)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-bromo-1-phenylethanone"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+                    }
+                  ]
+                }
+              ],
+              "name": "N-(1-phenacylpiperidin-4-yl)-N-phenylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[CH3:1][C:2]([O:3])[cH3:4]>>[CH3:1][C:2](=[O:3])[cH3:4]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "b5e0d751a308713ec9a5de3c7aed5add4059bbf3a7685d1bdeed35ccfa6f4eea",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 3639,
+            "policy_probability": 0.45089998841285706,
+            "policy_probability_rank": 0,
+            "policy_name": "uspto",
+            "template_code": 30357,
+            "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][C:17](=[O:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(=O)c2ccccc2)CC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[C:1]([CH:2]=[O:3])[N:5]([CH3:4])[CH3:6]>>Cl[C:1][CH:2]=[O:3].[CH3:4][N:5][CH3:6]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "1ecf676a48b2c241d1bfd4759b56bbfd6a8ae02b941b356b6ef27c0f6543b5b6",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 211,
+                    "policy_probability": 0.10989999771118164,
+                    "policy_probability_rank": 1,
+                    "policy_name": "uspto",
+                    "template_code": 5192,
+                    "template": "[C:4]-[N;H0;D3;+0:5](-[C:6])-[CH2;D2;+0:1]-[C:2]=[O;D1;H0:3]>>Cl-[CH2;D2;+0:1]-[C:2]=[O;D1;H0:3].[C:4]-[NH;D2;+0:5]-[C:6]",
+                    "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][C:17](=[O:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CCl)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-chloro-1-phenylethanone"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+                    }
+                  ]
+                }
+              ],
+              "name": "N-(1-phenacylpiperidin-4-yl)-N-phenylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[CH3:1][N:2]([CH3:3])[C:5][CH2:4][O:6]>>[CH2:4]1[C:5][O:6]1.[CH3:1][N:2][CH3:3]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "99c38eca166168e9808a647f2ae17b9a7acce151253d2b8aa7a146b3a60d6701",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 1306,
+            "policy_probability": 0.1647000014781952,
+            "policy_probability_rank": 1,
+            "policy_name": "uspto",
+            "template_code": 25623,
+            "template": "[C:1]-[N;H0;D3;+0:2](-[C:3])-[CH2;D2;+0:5]-[C:4]-[OH;D1;+0:6]>>[C:1]-[NH;D2;+0:2]-[C:3].[C:4]1-[CH2;D2;+0:5]-[O;H0;D2;+0:6]-1",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]1[CH:17]([c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[O:18]1.[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "c1ccc(C2CO2)cc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[C:1]1[C:2][O:3]1>>CS(=O)[C:1].[C:2]=[O:3]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "b9c1317737aad3ae1937b728d49a40845d055e0a799ca2aab00144ec0bd379bd",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 45,
+                    "policy_probability": 0.09149999916553497,
+                    "policy_probability_rank": 3,
+                    "policy_name": "uspto",
+                    "template_code": 30976,
+                    "template": "[CH2;D2;+0:1]1-[CH;D3;+0:2]-[O;H0;D2;+0:3]-1>>C-S(=O)-[CH3;D1;+0:1].[CH;D2;+0:2]=[O;H0;D1;+0:3]",
+                    "mapped_reaction_smiles": "[CH2:16]1[CH:17]([c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[O:18]1>>[CH3:16][S:25]([CH3:26])=[O:27].[CH:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CS(C)=O",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "methylsulfinylmethane"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=Cc1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "benzaldehyde"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-phenyloxirane"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+              "is_chemical": true,
+              "in_stock": true,
+              "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[CH3:1][N:2]([CH3:3])[C:5][CH2:4][O:6]>>[CH2:4]1[C:5][O:6]1.[CH3:1][N:2][CH3:3]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "99c38eca166168e9808a647f2ae17b9a7acce151253d2b8aa7a146b3a60d6701",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 1306,
+            "policy_probability": 0.1647000014781952,
+            "policy_probability_rank": 1,
+            "policy_name": "uspto",
+            "template_code": 25623,
+            "template": "[C:1]-[N;H0;D3;+0:2](-[C:3])-[CH2;D2;+0:5]-[C:4]-[OH;D1;+0:6]>>[C:1]-[NH;D2;+0:2]-[C:3].[C:4]1-[CH2;D2;+0:5]-[O;H0;D2;+0:6]-1",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]1[CH:17]([c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[O:18]1.[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "c1ccc(C2CO2)cc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[C:1]1[C:2][O:3]1>>Br[C:1][CH:2]=[O:3]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "9972a2beade0290031369a26139a4f6f2fdd65f4f47052bc97eaf7b5e62c6bc5",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 52,
+                    "policy_probability": 0.0729999989271164,
+                    "policy_probability_rank": 4,
+                    "policy_name": "uspto",
+                    "template_code": 25564,
+                    "template": "[CH2;D2;+0:1]1-[CH;D3;+0:2]-[O;H0;D2;+0:3]-1>>Br-[CH2;D2;+0:1]-[C;H0;D3;+0:2]=[O;H0;D1;+0:3]",
+                    "mapped_reaction_smiles": "[CH2:16]1[CH:17]([c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[O:18]1>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:25]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CBr)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-bromo-1-phenylethanone"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-phenyloxirane"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+              "is_chemical": true,
+              "in_stock": true,
+              "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[C:1]([CH3:2])[N:4]([CH3:3])[CH3:5]>>Cl[C:1][CH3:2].[CH3:3][N:4][CH3:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "afa33c1ecaf9bc583bf82f11c0be777f8f00f59aac8c5f18952f4b616ad6c840",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 7055,
+            "policy_probability": 0.026499999687075615,
+            "policy_probability_rank": 5,
+            "policy_name": "uspto",
+            "template_code": 29327,
+            "template": "[C:2]-[CH2;D2;+0:1]-[N;H0;D3;+0:4](-[C:3])-[C:5]>>Cl-[CH2;D2;+0:1]-[C:2].[C:3]-[NH;D2;+0:4]-[C:5]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "OC(CCl)c1ccccc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][C:2]([O:3])[cH3:4]>>[CH3:1][C:2](=[O:3])[cH3:4]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "b5e0d751a308713ec9a5de3c7aed5add4059bbf3a7685d1bdeed35ccfa6f4eea",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 3639,
+                    "policy_probability": 0.35670000314712524,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 30357,
+                    "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+                    "mapped_reaction_smiles": "[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27]>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CCl)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-chloro-1-phenylethanone"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-chloro-1-phenylethanol"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+              "is_chemical": true,
+              "in_stock": true,
+              "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[C:1]([CH3:2])[N:4]([CH3:3])[CH3:5]>>Cl[C:1][CH3:2].[CH3:3][N:4][CH3:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "afa33c1ecaf9bc583bf82f11c0be777f8f00f59aac8c5f18952f4b616ad6c840",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 7055,
+            "policy_probability": 0.026499999687075615,
+            "policy_probability_rank": 5,
+            "policy_name": "uspto",
+            "template_code": 29327,
+            "template": "[C:2]-[CH2;D2;+0:1]-[N;H0;D3;+0:4](-[C:3])-[C:5]>>Cl-[CH2;D2;+0:1]-[C:2].[C:3]-[NH;D2;+0:4]-[C:5]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "OC(CCl)c1ccccc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][C:2]([O:3])[c:5]([cH2:4])[cH2:6]>>[CH3:1][C:2]=[O:3].[cH2:4][c:5][cH2:6]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "eec954ca6f962e43766deecb3685b8ec5ad4f3dc8dbacfb8039b191fb55ceed6",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 79,
+                    "policy_probability": 0.002400000113993883,
+                    "policy_probability_rank": 10,
+                    "policy_name": "uspto",
+                    "template_code": 39673,
+                    "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c;H0;D3;+0:5](:[c:4]):[c:6]>>[C:1]-[CH;D2;+0:2]=[O;H0;D1;+0:3].[c:4]:[cH;D2;+0:5]:[c:6]",
+                    "mapped_reaction_smiles": "[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Cl:27]>>[CH2:16]([CH:17]=[O:18])[Cl:27].[cH:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=CCCl",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-chloroacetaldehyde"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "benzene"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-chloro-1-phenylethanol"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+              "is_chemical": true,
+              "in_stock": true,
+              "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[C:1]([CH3:2])[N:4]([CH3:3])[CH3:5]>>Br[C:1][CH3:2].[CH3:3][N:4][CH3:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "452650270591e8303734d4f0857dad97b3b23a4b2712ddcc3dac7d88ff99117c",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 7905,
+            "policy_probability": 0.038600001484155655,
+            "policy_probability_rank": 4,
+            "policy_name": "uspto",
+            "template_code": 11595,
+            "template": "[C:2]-[CH2;D2;+0:1]-[N;H0;D3;+0:4](-[C:3])-[C:5]>>Br-[CH2;D2;+0:1]-[C:2].[C:3]-[NH;D2;+0:4]-[C:5]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "OC(CBr)c1ccccc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][C:2]([O:3])[cH3:4]>>[CH3:1][C:2](=[O:3])[cH3:4]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "b5e0d751a308713ec9a5de3c7aed5add4059bbf3a7685d1bdeed35ccfa6f4eea",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 3639,
+                    "policy_probability": 0.34549999237060547,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 30357,
+                    "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+                    "mapped_reaction_smiles": "[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27]>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CBr)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-bromo-1-phenylethanone"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-bromo-1-phenylethanol"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+              "is_chemical": true,
+              "in_stock": true,
+              "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CC(O)c2ccccc2)CC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[C:1]([CH3:2])[N:3]([CH3:4])[CH3:5]>>Br[C:1][CH3:2].CC(C)(C)OC(=O)[N:3]([CH3:4])[CH3:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "6d7b68ca4cc31022b4362f8917878effb4a3b78dc2c45b5a9d569d6f8108691a",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 88,
+            "policy_probability": 0.007899999618530273,
+            "policy_probability_rank": 10,
+            "policy_name": "uspto",
+            "template_code": 18270,
+            "template": "[C:4]-[N;H0;D3;+0:3](-[C:5])-[CH2;D2;+0:1]-[C:2]>>Br-[CH2;D2;+0:1]-[C:2].C-C(-C)(-C)-O-C(=O)-[N;H0;D3;+0:3](-[C:4])-[C:5]",
+            "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([CH2:16][CH:17]([OH:18])[c:19]2[cH:20][cH:21][cH:22][cH:23][cH:24]2)[CH2:25][CH2:26]1>>[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([C:28]([O:29][C:30]([CH3:31])([CH3:32])[CH3:33])=[O:34])[CH2:25][CH2:26]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "OC(CBr)c1ccccc1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][C:2]([O:3])[cH3:4]>>[CH3:1][C:2](=[O:3])[cH3:4]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "b5e0d751a308713ec9a5de3c7aed5add4059bbf3a7685d1bdeed35ccfa6f4eea",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 3639,
+                    "policy_probability": 0.34549999237060547,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 30357,
+                    "template": "[C:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+                    "mapped_reaction_smiles": "[CH2:16]([CH:17]([OH:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27]>>[CH2:16]([C:17](=[O:18])[c:19]1[cH:20][cH:21][cH:22][cH:23][cH:24]1)[Br:27]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=C(CBr)c1ccccc1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "2-bromo-1-phenylethanone"
+                    }
+                  ]
+                }
+              ],
+              "name": "2-bromo-1-phenylethanol"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CCC(=O)N(c1ccccc1)C1CCN(C(=O)OC(C)(C)C)CC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[C:1](=[O:2])([O:3][C:4]([CH3:5])([CH3:6])[CH3:7])[N:9]([CH3:8])[CH3:10]>>CC(C)(C)OC(=O)O[C:1](=[O:2])[O:3][C:4]([CH3:5])([CH3:6])[CH3:7].[CH3:8][N:9][CH3:10]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "8d0b725623f9beace082e1f055fef76175441048dcc7fe4643610b6a2b402b07",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 4871,
+                    "policy_probability": 0.014499999582767487,
+                    "policy_probability_rank": 3,
+                    "policy_name": "uspto",
+                    "template_code": 23451,
+                    "template": "[C:8]-[N;H0;D3;+0:9](-[C:10])-[C;H0;D3;+0:1](=[O;D1;H0:2])-[#8:3]-[C:4](-[C;D1;H3:5])(-[C;D1;H3:6])-[C;D1;H3:7]>>C-C(-C)(-C)-O-C(=O)-O-[C;H0;D3;+0:1](=[O;D1;H0:2])-[#8:3]-[C:4](-[C;D1;H3:5])(-[C;D1;H3:6])-[C;D1;H3:7].[C:8]-[NH;D2;+0:9]-[C:10]",
+                    "mapped_reaction_smiles": "[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][N:15]([C:28]([O:29][C:30]([CH3:31])([CH3:32])[CH3:33])=[O:34])[CH2:25][CH2:26]1>>[C:28]([O:29][C:30]([CH3:31])([CH3:32])[CH3:33])(=[O:34])[O:35][C:36]([O:37][C:38]([CH3:39])([CH3:40])[CH3:41])=[O:42].[CH3:1][CH2:2][C:3](=[O:4])[N:5]([c:6]1[cH:7][cH:8][cH:9][cH:10][cH:11]1)[CH:12]1[CH2:13][CH2:14][NH:15][CH2:25][CH2:26]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CC(C)(C)OC(=O)OC(=O)OC(C)(C)C",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "tert-butyl (2-methylpropan-2-yl)oxycarbonyl carbonate"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CCC(=O)N(c1ccccc1)C1CCNCC1",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "N-phenyl-N-piperidin-4-ylpropanamide"
+                    }
+                  ]
+                }
+              ],
+              "name": "tert-butyl 4-(N-propanoylanilino)piperidine-1-carboxylate"
+            }
+          ]
+        }
+      ],
+      "name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide"
+    }
+  ]
+}

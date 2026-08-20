@@ -27,6 +27,7 @@
     "is_novel": false,
     "pubchem_cid": 360252,
     "chembl_id": "CHEMBL403031",
+    "chemical_name": "2-(5-bromo-1H-indol-3-yl)-N,N-dimethylethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -58,6 +59,7 @@
     "is_novel": false,
     "pubchem_cid": 98527,
     "chembl_id": "CHEMBL292821",
+    "chemical_name": "2-(4-bromo-2,5-dimethoxyphenyl)ethanamine",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 13
   },
@@ -89,6 +91,7 @@
     "is_novel": false,
     "pubchem_cid": 10083,
     "chembl_id": "CHEMBL2110938",
+    "chemical_name": "diphenyl(piperidin-2-yl)methanol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -120,6 +123,7 @@
     "is_novel": false,
     "pubchem_cid": 1832,
     "chembl_id": "CHEMBL7257",
+    "chemical_name": "2-(5-methoxy-1H-indol-3-yl)-N,N-dimethylethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -149,10 +153,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.752,
-    "docking_score": -5.18,
+    "docking_score": -5.11,
     "is_novel": false,
     "pubchem_cid": 10267191,
     "chembl_id": "CHEMBL338297",
+    "chemical_name": "2-(4-iodo-2,5-dimethoxyphenyl)ethanamine",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 6
   },
@@ -184,6 +189,7 @@
     "is_novel": false,
     "pubchem_cid": 67605,
     "chembl_id": null,
+    "chemical_name": "2-bromo-4-(trifluoromethyl)benzoic acid",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -215,6 +221,7 @@
     "is_novel": false,
     "pubchem_cid": 160506,
     "chembl_id": null,
+    "chemical_name": "2-benzhydrylpiperidine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -246,6 +253,7 @@
     "is_novel": false,
     "pubchem_cid": 133277,
     "chembl_id": "CHEMBL123708",
+    "chemical_name": "3-(1-piperidin-1-ylcyclohexyl)phenol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -277,6 +285,7 @@
     "is_novel": false,
     "pubchem_cid": 54098032,
     "chembl_id": null,
+    "chemical_name": "N,N,7-triethyl-6,6a,8,9-tetrahydro-4H-indolo[4,3-fg]quinoline-9-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -308,6 +317,7 @@
     "is_novel": false,
     "pubchem_cid": 24802096,
     "chembl_id": null,
+    "chemical_name": "3-[2-[di(propan-2-yl)amino]ethyl]-1H-indol-4-ol;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -339,6 +349,7 @@
     "is_novel": false,
     "pubchem_cid": 24802109,
     "chembl_id": "CHEMBL2357882",
+    "chemical_name": "N-[2-(5-methoxy-1H-indol-3-yl)ethyl]-N-propan-2-ylpropan-2-amine;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -366,10 +377,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.743,
-    "docking_score": -6.21,
+    "docking_score": -6.23,
     "is_novel": false,
     "pubchem_cid": 17925,
     "chembl_id": "CHEMBL268254",
+    "chemical_name": "7-chloro-5-(2-chlorophenyl)-1,3-dihydro-1,4-benzodiazepin-2-one",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 5
   },
@@ -401,6 +413,7 @@
     "is_novel": false,
     "pubchem_cid": 26903,
     "chembl_id": "CHEMBL4303330",
+    "chemical_name": "N-[2-(1H-indol-3-yl)ethyl]-N-propan-2-ylpropan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -428,10 +441,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.739,
-    "docking_score": -5.98,
+    "docking_score": -5.97,
     "is_novel": false,
     "pubchem_cid": 10265873,
     "chembl_id": "CHEMBL101189",
+    "chemical_name": "2-(4-bromo-2,3,6,7-tetrahydrofuro[2,3-f][1]benzofuran-8-yl)ethanamine",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 7
   },
@@ -463,6 +477,7 @@
     "is_novel": false,
     "pubchem_cid": 29979100,
     "chembl_id": "CHEMBL124733",
+    "chemical_name": "2-(4-chloro-2,5-dimethoxyphenyl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -494,6 +509,7 @@
     "is_novel": false,
     "pubchem_cid": 52911279,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-2-(3-methoxyphenyl)cyclohexan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -527,6 +543,7 @@
     "is_novel": false,
     "pubchem_cid": 45108169,
     "chembl_id": null,
+    "chemical_name": "2-(4-iodo-2,5-dimethoxyphenyl)ethanamine;hydrochloride",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 7
   },
@@ -558,6 +575,7 @@
     "is_novel": false,
     "pubchem_cid": 10082683,
     "chembl_id": "CHEMBL171419",
+    "chemical_name": "3-[2-[methyl(propan-2-yl)amino]ethyl]-1H-indol-4-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -589,6 +607,7 @@
     "is_novel": false,
     "pubchem_cid": 11334359,
     "chembl_id": null,
+    "chemical_name": "6-fluoro-3-piperidin-4-yl-1,2-benzoxazole;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -620,6 +639,7 @@
     "is_novel": false,
     "pubchem_cid": 6090,
     "chembl_id": "CHEMBL142936",
+    "chemical_name": "N,N-diethyl-2-(1H-indol-3-yl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -647,10 +667,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.718,
-    "docking_score": -6.06,
+    "docking_score": -6.03,
     "is_novel": false,
     "pubchem_cid": 40113,
     "chembl_id": "CHEMBL1709464",
+    "chemical_name": "7-bromo-5-(2-chlorophenyl)-1,3-dihydro-1,4-benzodiazepin-2-one",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 5
   },
@@ -682,6 +703,7 @@
     "is_novel": false,
     "pubchem_cid": 9991554,
     "chembl_id": "CHEMBL143202",
+    "chemical_name": "3-[2-(diethylamino)ethyl]-1H-indol-4-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -713,6 +735,7 @@
     "is_novel": false,
     "pubchem_cid": 21786584,
     "chembl_id": null,
+    "chemical_name": "3-[2-[methyl(propyl)amino]ethyl]-1H-indol-4-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -744,6 +767,7 @@
     "is_novel": false,
     "pubchem_cid": 157010705,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-2-(3-methylphenyl)cyclohexan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -775,6 +799,7 @@
     "is_novel": false,
     "pubchem_cid": 824845,
     "chembl_id": null,
+    "chemical_name": "N-ethyl-2-(1H-indol-3-yl)-N-methylethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -806,6 +831,7 @@
     "is_novel": false,
     "pubchem_cid": 21786582,
     "chembl_id": null,
+    "chemical_name": "3-[2-[ethyl(methyl)amino]ethyl]-1H-indol-4-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -837,6 +863,7 @@
     "is_novel": false,
     "pubchem_cid": 27402,
     "chembl_id": "CHEMBL8224",
+    "chemical_name": "1-(4-ethyl-2,5-dimethoxyphenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -868,6 +895,7 @@
     "is_novel": false,
     "pubchem_cid": 17756669,
     "chembl_id": "CHEMBL3302434",
+    "chemical_name": "2-(1,3-benzodioxol-5-yl)-1-cyclopropyl-N-methylethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -899,6 +927,7 @@
     "is_novel": false,
     "pubchem_cid": 38240,
     "chembl_id": "CHEMBL319415",
+    "chemical_name": "2-(4-ethoxy-3,5-dimethoxyphenyl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -930,6 +959,7 @@
     "is_novel": false,
     "pubchem_cid": 130829,
     "chembl_id": "CHEMBL4650315",
+    "chemical_name": "3-[2-[(dimethylamino)methyl]-1-hydroxycyclohexyl]phenol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -961,6 +991,7 @@
     "is_novel": false,
     "pubchem_cid": 85875,
     "chembl_id": "CHEMBL8600",
+    "chemical_name": "1-(2,5-dimethoxy-4-methylphenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -994,6 +1025,7 @@
     "is_novel": false,
     "pubchem_cid": 170617,
     "chembl_id": "CHEMBL1255748",
+    "chemical_name": "1-(4-iodo-2,5-dimethoxyphenyl)propan-2-amine;hydrochloride",
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 6
   },
@@ -1025,6 +1057,7 @@
     "is_novel": false,
     "pubchem_cid": 165361471,
     "chembl_id": null,
+    "chemical_name": "2-(benzylamino)-1-(4-methylphenyl)butan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1052,10 +1085,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.697,
-    "docking_score": -7.89,
+    "docking_score": -7.98,
     "is_novel": false,
     "pubchem_cid": 70969900,
     "chembl_id": null,
+    "chemical_name": "N-(1-amino-3-methyl-1-oxobutan-2-yl)-1-(cyclohexylmethyl)indazole-3-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1087,6 +1121,7 @@
     "is_novel": false,
     "pubchem_cid": 67833251,
     "chembl_id": null,
+    "chemical_name": "1-[1-(2-methoxyphenyl)-2-phenylethyl]piperidine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1118,6 +1153,7 @@
     "is_novel": false,
     "pubchem_cid": 105039,
     "chembl_id": "CHEMBL126279",
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-N-ethylpropan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1149,6 +1185,7 @@
     "is_novel": false,
     "pubchem_cid": 15102790,
     "chembl_id": "CHEMBL340765",
+    "chemical_name": "2-(3,5-dimethoxy-4-propoxyphenyl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1176,10 +1213,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.6935,
-    "docking_score": -4.28,
+    "docking_score": -5.87,
     "is_novel": false,
     "pubchem_cid": 10145,
     "chembl_id": "CHEMBL36536",
+    "chemical_name": "1,2,9,10-tetramethoxy-6-methyl-5,6,6a,7-tetrahydro-4H-dibenzo[de,g]quinoline",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1211,6 +1249,7 @@
     "is_novel": false,
     "pubchem_cid": 9837231,
     "chembl_id": null,
+    "chemical_name": "1-(1-benzofuran-5-yl)propan-2-amine;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1242,6 +1281,7 @@
     "is_novel": false,
     "pubchem_cid": 124844,
     "chembl_id": "CHEMBL268689",
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-N-methylbutan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1273,6 +1313,7 @@
     "is_novel": false,
     "pubchem_cid": 90645589,
     "chembl_id": "CHEMBL3298873",
+    "chemical_name": "1-(3-chlorophenyl)-2-(methylamino)propan-1-one;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1304,6 +1345,7 @@
     "is_novel": false,
     "pubchem_cid": 16622,
     "chembl_id": "CHEMBL279924",
+    "chemical_name": "N-ethyl-1-phenylcyclohexan-1-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1335,6 +1377,7 @@
     "is_novel": false,
     "pubchem_cid": 3080846,
     "chembl_id": "CHEMBL1187932",
+    "chemical_name": "ethyl 2-phenyl-2-piperidin-2-ylacetate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1366,6 +1409,7 @@
     "is_novel": false,
     "pubchem_cid": 206666,
     "chembl_id": "CHEMBL4303426",
+    "chemical_name": "1-(1,2-diphenylethyl)piperidine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1397,6 +1441,7 @@
     "is_novel": false,
     "pubchem_cid": 36906,
     "chembl_id": "CHEMBL31115",
+    "chemical_name": "1-(5-methoxy-1H-indol-3-yl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1428,6 +1473,7 @@
     "is_novel": false,
     "pubchem_cid": 129318255,
     "chembl_id": null,
+    "chemical_name": "1-[1-(3-methoxyphenyl)cyclohexyl]piperidine;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1459,6 +1505,7 @@
     "is_novel": false,
     "pubchem_cid": 21854223,
     "chembl_id": null,
+    "chemical_name": "3-[2-(dipropylamino)ethyl]-1H-indol-4-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1490,6 +1537,7 @@
     "is_novel": false,
     "pubchem_cid": 13771618,
     "chembl_id": null,
+    "chemical_name": "2-(2-fluorophenyl)-2-(methylamino)cyclohexan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1517,10 +1565,11 @@
     "recipe": null,
     "first_seen": null,
     "fitness": 0.673,
-    "docking_score": -5.45,
+    "docking_score": -5.42,
     "is_novel": false,
     "pubchem_cid": 44350070,
     "chembl_id": "CHEMBL338259",
+    "chemical_name": "2-(2,5-dimethoxy-4-propan-2-ylsulfanylphenyl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1552,6 +1601,7 @@
     "is_novel": false,
     "pubchem_cid": 11552833,
     "chembl_id": "CHEMBL3185021",
+    "chemical_name": "3-(4-cyanophenoxy)-N-[4-cyano-3-(trifluoromethyl)phenyl]-2-hydroxy-2-methylpropanamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1583,6 +1633,7 @@
     "is_novel": false,
     "pubchem_cid": 74832745,
     "chembl_id": null,
+    "chemical_name": "4-[2-(2,2,2-trifluoro-1-hydroxyethyl)pyrrolidin-1-yl]-2-(trifluoromethyl)benzonitrile",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1614,6 +1665,7 @@
     "is_novel": false,
     "pubchem_cid": 112500536,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-1-(7-methyl-1,3-benzodioxol-5-yl)propan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1645,6 +1697,7 @@
     "is_novel": false,
     "pubchem_cid": 46782120,
     "chembl_id": null,
+    "chemical_name": "2-(methylamino)-1-(4-methylphenyl)propan-1-one;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1678,6 +1731,7 @@
     "is_novel": false,
     "pubchem_cid": 71669102,
     "chembl_id": null,
+    "chemical_name": "2-(3,5-dimethoxy-4-prop-2-enoxyphenyl)ethanamine;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1709,6 +1763,7 @@
     "is_novel": false,
     "pubchem_cid": 12074193,
     "chembl_id": "CHEMBL339223",
+    "chemical_name": "2-(4-ethylsulfanyl-2,5-dimethoxyphenyl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1740,6 +1795,7 @@
     "is_novel": false,
     "pubchem_cid": 57360686,
     "chembl_id": null,
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-2-(ethylamino)butan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1771,6 +1827,7 @@
     "is_novel": false,
     "pubchem_cid": 57252245,
     "chembl_id": null,
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-2-(ethylamino)propan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1802,6 +1859,7 @@
     "is_novel": false,
     "pubchem_cid": 205592,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-1-phenylpentan-1-one;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1835,6 +1893,7 @@
     "is_novel": false,
     "pubchem_cid": 1872,
     "chembl_id": null,
+    "chemical_name": "N,N-diethyl-7-prop-2-enyl-6,6a,8,9-tetrahydro-4H-indolo[4,3-fg]quinoline-9-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1868,6 +1927,7 @@
     "is_novel": false,
     "pubchem_cid": 46856354,
     "chembl_id": null,
+    "chemical_name": "2-(4-chloro-2,5-dimethoxyphenyl)-N-[(2-methoxyphenyl)methyl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1899,6 +1959,7 @@
     "is_novel": false,
     "pubchem_cid": 56843046,
     "chembl_id": null,
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-2-(methylamino)butan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1932,6 +1993,7 @@
     "is_novel": false,
     "pubchem_cid": 44350127,
     "chembl_id": "CHEMBL126803",
+    "chemical_name": "2-[3,5-dimethoxy-4-(2-methylprop-2-enoxy)phenyl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1963,6 +2025,7 @@
     "is_novel": false,
     "pubchem_cid": 75994,
     "chembl_id": "CHEMBL113600",
+    "chemical_name": "1-benzylpiperazine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -1994,6 +2057,7 @@
     "is_novel": false,
     "pubchem_cid": 8367,
     "chembl_id": "CHEMBL1619758",
+    "chemical_name": "1-(1H-indol-3-yl)butan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2025,6 +2089,7 @@
     "is_novel": false,
     "pubchem_cid": 54594211,
     "chembl_id": null,
+    "chemical_name": "1-(3-fluorophenyl)propan-2-amine;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2056,6 +2121,7 @@
     "is_novel": false,
     "pubchem_cid": 31721,
     "chembl_id": "CHEMBL278663",
+    "chemical_name": "1-(4-methoxyphenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2087,6 +2153,7 @@
     "is_novel": false,
     "pubchem_cid": 82100418,
     "chembl_id": null,
+    "chemical_name": "1-(4-chlorophenyl)-2-(methylamino)propan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2118,6 +2185,7 @@
     "is_novel": false,
     "pubchem_cid": 20111961,
     "chembl_id": null,
+    "chemical_name": "1-(1,3-benzodioxol-5-yl)-2-pyrrolidin-1-ylpentan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2149,6 +2217,7 @@
     "is_novel": false,
     "pubchem_cid": 137699916,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-1-phenylhexan-1-one;hydrochloride",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2180,6 +2249,7 @@
     "is_novel": false,
     "pubchem_cid": 621174,
     "chembl_id": "CHEMBL4759342",
+    "chemical_name": "N-phenyl-N-[1-(2-phenylethyl)piperidin-4-yl]butanamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2211,6 +2281,7 @@
     "is_novel": false,
     "pubchem_cid": 162478085,
     "chembl_id": null,
+    "chemical_name": "N,N-diethyl-7-methyl-4-propanoyl-6,6a,8,9-tetrahydroindolo[4,3-fg]quinoline-9-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2242,6 +2313,7 @@
     "is_novel": false,
     "pubchem_cid": 162478085,
     "chembl_id": null,
+    "chemical_name": "N,N-diethyl-7-methyl-4-propanoyl-6,6a,8,9-tetrahydroindolo[4,3-fg]quinoline-9-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2273,6 +2345,7 @@
     "is_novel": false,
     "pubchem_cid": 52988259,
     "chembl_id": null,
+    "chemical_name": "2-(ethylamino)-1-(4-methylphenyl)propan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2304,6 +2377,7 @@
     "is_novel": false,
     "pubchem_cid": 9794343,
     "chembl_id": null,
+    "chemical_name": "1-(1-benzofuran-6-yl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2337,6 +2411,7 @@
     "is_novel": false,
     "pubchem_cid": 50878551,
     "chembl_id": "CHEMBL2391541",
+    "chemical_name": "N-[2-(5-methoxy-1H-indol-3-yl)ethyl]-N-prop-2-enylprop-2-en-1-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2368,6 +2443,7 @@
     "is_novel": false,
     "pubchem_cid": 14113,
     "chembl_id": "CHEMBL315818",
+    "chemical_name": "4-amino-3-phenylbutanoic acid",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2401,6 +2477,7 @@
     "is_novel": false,
     "pubchem_cid": 9977044,
     "chembl_id": "CHEMBL3590188",
+    "chemical_name": "2-(4-bromo-2,5-dimethoxyphenyl)-N-[(2-methoxyphenyl)methyl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2432,6 +2509,7 @@
     "is_novel": false,
     "pubchem_cid": 11148955,
     "chembl_id": "CHEMBL205082",
+    "chemical_name": "1-phenyl-2-pyrrolidin-1-ylpentan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2463,6 +2541,7 @@
     "is_novel": false,
     "pubchem_cid": 9287,
     "chembl_id": "CHEMBL30713",
+    "chemical_name": "1-(1H-indol-3-yl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2494,6 +2573,7 @@
     "is_novel": false,
     "pubchem_cid": 37632,
     "chembl_id": "CHEMBL328250",
+    "chemical_name": "1-(8-chloro-6-phenyl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepin-1-yl)-N,N-dimethylmethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2525,6 +2605,7 @@
     "is_novel": false,
     "pubchem_cid": 1150,
     "chembl_id": "CHEMBL6640",
+    "chemical_name": "2-(1H-indol-3-yl)ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2556,6 +2637,7 @@
     "is_novel": false,
     "pubchem_cid": 53249194,
     "chembl_id": "CHEMBL3298875",
+    "chemical_name": "2-(methylamino)-1-phenylbutan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2587,6 +2669,7 @@
     "is_novel": false,
     "pubchem_cid": 71741532,
     "chembl_id": null,
+    "chemical_name": "2-(methylamino)-1-(3-methylphenyl)propan-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2618,6 +2701,7 @@
     "is_novel": false,
     "pubchem_cid": 9986,
     "chembl_id": "CHEMBL2009392",
+    "chemical_name": "1-(4-fluorophenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2649,6 +2733,7 @@
     "is_novel": false,
     "pubchem_cid": 199116,
     "chembl_id": "CHEMBL166183",
+    "chemical_name": "1-(4-methylphenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2680,6 +2765,7 @@
     "is_novel": false,
     "pubchem_cid": 121501,
     "chembl_id": null,
+    "chemical_name": "1-(3-fluorophenyl)propan-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2711,6 +2797,7 @@
     "is_novel": false,
     "pubchem_cid": 86567357,
     "chembl_id": null,
+    "chemical_name": "N-(1-amino-3-methyl-1-oxobutan-2-yl)-1-[(4-fluorophenyl)methyl]indazole-3-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2742,6 +2829,7 @@
     "is_novel": false,
     "pubchem_cid": 71314223,
     "chembl_id": null,
+    "chemical_name": "8-bromo-3-butyl-1-chloro-5H-imidazo[1,5-b]isoquinolin-10-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2773,6 +2861,7 @@
     "is_novel": false,
     "pubchem_cid": 20741615,
     "chembl_id": null,
+    "chemical_name": "4-methyl-5-(4-methylphenyl)-4,5-dihydro-1,3-oxazol-2-amine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2804,6 +2893,7 @@
     "is_novel": false,
     "pubchem_cid": 3307,
     "chembl_id": "CHEMBL1289779",
+    "chemical_name": "7-(2-chlorophenyl)-4-ethyl-13-methyl-3-thia-1,8,11,12-tetrazatricyclo[8.3.0.02,6]trideca-2(6),4,7,10,12-pentaene",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2837,6 +2927,7 @@
     "is_novel": false,
     "pubchem_cid": 57404063,
     "chembl_id": "CHEMBL4575047",
+    "chemical_name": "N-(1-adamantyl)-1-pentylindazole-3-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2870,6 +2961,7 @@
     "is_novel": false,
     "pubchem_cid": 165210,
     "chembl_id": null,
+    "chemical_name": "1-(2,4-dihydroxyphenyl)-3-(3,4-dimethoxyphenyl)prop-2-en-1-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2903,6 +2995,7 @@
     "is_novel": false,
     "pubchem_cid": 15429212,
     "chembl_id": "CHEMBL6143661",
+    "chemical_name": "[3-[2-(dimethylamino)ethyl]-1H-indol-4-yl] acetate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2934,6 +3027,7 @@
     "is_novel": false,
     "pubchem_cid": 12562546,
     "chembl_id": "CHEMBL3246832",
+    "chemical_name": "8-bromo-1-methyl-6-phenyl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2965,6 +3059,7 @@
     "is_novel": false,
     "pubchem_cid": 12562545,
     "chembl_id": "CHEMBL3246831",
+    "chemical_name": "8-bromo-1-methyl-6-pyridin-2-yl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -2996,6 +3091,7 @@
     "is_novel": false,
     "pubchem_cid": 578953,
     "chembl_id": "CHEMBL55633",
+    "chemical_name": "17-hydroxy-10,13-dimethyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3029,6 +3125,7 @@
     "is_novel": false,
     "pubchem_cid": 53580,
     "chembl_id": null,
+    "chemical_name": "but-2-enedioic acid;1-methyl-16-azatetracyclo[7.6.1.02,7.010,15]hexadeca-2,4,6,10,12,14-hexaene",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3060,6 +3157,7 @@
     "is_novel": false,
     "pubchem_cid": 5277,
     "chembl_id": null,
+    "chemical_name": "2,17,18-trimethyl-6,7-diazapentacyclo[11.7.0.02,10.04,8.014,18]icosa-4(8),5-dien-17-ol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3091,6 +3189,7 @@
     "is_novel": false,
     "pubchem_cid": 522463,
     "chembl_id": null,
+    "chemical_name": "17-hydroxy-10,13,17-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3124,6 +3223,7 @@
     "is_novel": false,
     "pubchem_cid": 20726845,
     "chembl_id": null,
+    "chemical_name": "2-methyl-1-prop-2-enylnaphthalene",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3155,6 +3255,7 @@
     "is_novel": false,
     "pubchem_cid": 4679,
     "chembl_id": "CHEMBL1502",
+    "chemical_name": "6-(difluoromethoxy)-2-[(3,4-dimethoxy-2-pyridinyl)methylsulfinyl]-1H-benzimidazole",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3186,6 +3287,7 @@
     "is_novel": false,
     "pubchem_cid": 3167,
     "chembl_id": null,
+    "chemical_name": "17-hydroxy-2,10,13-trimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3217,6 +3319,7 @@
     "is_novel": false,
     "pubchem_cid": 4092426,
     "chembl_id": null,
+    "chemical_name": "17-hydroxy-13-methyl-2,6,7,8,14,15,16,17-octahydro-1H-cyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3250,6 +3353,7 @@
     "is_novel": false,
     "pubchem_cid": 71711119,
     "chembl_id": null,
+    "chemical_name": "N-(1-adamantyl)-1-(5-fluoropentyl)indazole-3-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3281,6 +3385,7 @@
     "is_novel": false,
     "pubchem_cid": 78068834,
     "chembl_id": null,
+    "chemical_name": "[2-(2,6-dimethylheptyl)piperidin-1-yl]-phenylmethanone",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3314,6 +3419,7 @@
     "is_novel": false,
     "pubchem_cid": 3722940,
     "chembl_id": null,
+    "chemical_name": "4-chloro-17-hydroxy-10,13,17-trimethyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3345,6 +3451,7 @@
     "is_novel": false,
     "pubchem_cid": 249098,
     "chembl_id": null,
+    "chemical_name": "1-hydroxy-1,9a,11a-trimethyl-2,3,3a,3b,4,5,5a,6,9,9b,10,11-dodecahydroindeno[4,5-h]isochromen-7-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3376,6 +3483,7 @@
     "is_novel": false,
     "pubchem_cid": 86770,
     "chembl_id": null,
+    "chemical_name": "2,4-dimethylhexan-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3409,6 +3517,7 @@
     "is_novel": false,
     "pubchem_cid": 101895417,
     "chembl_id": null,
+    "chemical_name": "methyl 2-[[1-(5-fluoropentyl)indazole-3-carbonyl]amino]-3,3-dimethylbutanoate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3443,6 +3552,7 @@
     "is_novel": false,
     "pubchem_cid": 10251906,
     "chembl_id": "CHEMBL1908863",
+    "chemical_name": "2-(4-iodo-2,5-dimethoxyphenyl)-N-[(2-methoxyphenyl)methyl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3476,6 +3586,7 @@
     "is_novel": false,
     "pubchem_cid": 102333975,
     "chembl_id": null,
+    "chemical_name": "methyl 2-[[1-(5-fluoropentyl)indazole-3-carbonyl]amino]-3-methylbutanoate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3509,6 +3620,7 @@
     "is_novel": false,
     "pubchem_cid": 118799019,
     "chembl_id": null,
+    "chemical_name": "4-N-(7-chloroquinolin-4-yl)-1-N,1-N-diethylpentane-1,4-diamine;sulfuric acid;hydrate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3543,6 +3655,7 @@
     "is_novel": false,
     "pubchem_cid": 12317881,
     "chembl_id": null,
+    "chemical_name": "6-(2-chlorophenyl)-1-methyl-8-nitro-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3576,6 +3689,7 @@
     "is_novel": false,
     "pubchem_cid": 44626619,
     "chembl_id": "CHEMBL571773",
+    "chemical_name": "(1-pentylindol-3-yl)-(2,2,3,3-tetramethylcyclopropyl)methanone",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3609,6 +3723,7 @@
     "is_novel": false,
     "pubchem_cid": 8064,
     "chembl_id": "CHEMBL171623",
+    "chemical_name": "butane-1,4-diol",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3642,6 +3757,7 @@
     "is_novel": false,
     "pubchem_cid": 57501498,
     "chembl_id": null,
+    "chemical_name": "[1-(5-fluoropentyl)indol-3-yl]-(2,2,3,3-tetramethylcyclopropyl)methanone",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3676,6 +3792,7 @@
     "is_novel": false,
     "pubchem_cid": 155882955,
     "chembl_id": null,
+    "chemical_name": "methyl 3,3-dimethyl-2-[(1-pent-4-enylindazole-3-carbonyl)amino]butanoate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3707,6 +3824,7 @@
     "is_novel": false,
     "pubchem_cid": 352089,
     "chembl_id": null,
+    "chemical_name": "3-phenyl-2-[[3-phenyl-2-(phenylmethoxycarbonylamino)propanoyl]amino]propanoic acid",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3741,6 +3859,7 @@
     "is_novel": false,
     "pubchem_cid": 53316366,
     "chembl_id": null,
+    "chemical_name": "N,N-diethyl-2-[2-[(4-methoxyphenyl)methyl]-5-nitrobenzimidazol-1-yl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3775,6 +3894,7 @@
     "is_novel": false,
     "pubchem_cid": 10343227,
     "chembl_id": "CHEMBL2136499",
+    "chemical_name": "3-(4-acetamidophenoxy)-2-hydroxy-2-methyl-N-[4-nitro-3-(trifluoromethyl)phenyl]propanamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3811,6 +3931,7 @@
     "is_novel": false,
     "pubchem_cid": 4638,
     "chembl_id": null,
+    "chemical_name": "17-hydroxy-2-(hydroxymethylidene)-10,13,17-trimethyl-1,4,5,6,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3842,6 +3963,7 @@
     "is_novel": false,
     "pubchem_cid": 7302,
     "chembl_id": "CHEMBL95681",
+    "chemical_name": "oxolan-2-one",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3876,6 +3998,7 @@
     "is_novel": false,
     "pubchem_cid": 13493,
     "chembl_id": "CHEMBL312040",
+    "chemical_name": "2-[2-[(4-ethoxyphenyl)methyl]-5-nitrobenzimidazol-1-yl]-N,N-diethylethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3910,6 +4033,7 @@
     "is_novel": false,
     "pubchem_cid": 18835,
     "chembl_id": "CHEMBL349361",
+    "chemical_name": "N-tert-butyl-N-ethylnitrous amide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3944,6 +4068,7 @@
     "is_novel": false,
     "pubchem_cid": 145721979,
     "chembl_id": null,
+    "chemical_name": "N,N-diethyl-2-[5-nitro-2-[(4-propan-2-yloxyphenyl)methyl]benzimidazol-1-yl]ethanamine",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -3975,6 +4100,7 @@
     "is_novel": false,
     "pubchem_cid": 81147,
     "chembl_id": "CHEMBL4784835",
+    "chemical_name": "disodium;4-[(3-carboxylato-2-hydroxynaphthalen-1-yl)methyl]-3-hydroxynaphthalene-2-carboxylate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4009,6 +4135,7 @@
     "is_novel": false,
     "pubchem_cid": 71604304,
     "chembl_id": null,
+    "chemical_name": "quinolin-8-yl 1-pentylindole-3-carboxylate",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4042,6 +4169,7 @@
     "is_novel": false,
     "pubchem_cid": 22573923,
     "chembl_id": null,
+    "chemical_name": "6-amino-2-[[2-[[2-[[2-[(2-amino-2-methylpropanoyl)amino]-3-(1H-imidazol-5-yl)propanoyl]amino]-3-naphthalen-2-ylpropanoyl]amino]-3-phenylpropanoyl]amino]hexanamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4077,6 +4205,7 @@
     "is_novel": false,
     "pubchem_cid": 14560360,
     "chembl_id": null,
+    "chemical_name": "15-(2-acetamidohexanoylamino)-9-benzyl-6-[3-(diaminomethylideneamino)propyl]-12-(1H-imidazol-5-ylmethyl)-3-(1H-indol-3-ylmethyl)-2,5,8,11,14,17-hexaoxo-1,4,7,10,13,18-hexazacyclotricosane-23-carboxamide",
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4108,6 +4237,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 6
   },
@@ -4139,6 +4269,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 9
   },
@@ -4170,6 +4301,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": true,
     "retrosynthesis_n_routes": 5
   },
@@ -4205,6 +4337,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4240,6 +4373,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4275,6 +4409,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4310,6 +4445,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4345,6 +4481,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4380,6 +4517,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4415,6 +4553,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4450,6 +4589,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4485,6 +4625,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4520,6 +4661,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4555,6 +4697,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4590,6 +4733,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4625,6 +4769,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4660,6 +4805,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4695,6 +4841,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4730,6 +4877,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4765,6 +4913,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4800,6 +4949,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4835,6 +4985,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4870,6 +5021,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4905,6 +5057,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4940,6 +5093,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -4975,6 +5129,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5010,6 +5165,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5045,6 +5201,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5080,6 +5237,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5115,6 +5273,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5150,6 +5309,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5185,6 +5345,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5220,6 +5381,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5255,6 +5417,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5290,6 +5453,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5325,6 +5489,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5360,6 +5525,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5395,6 +5561,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5430,6 +5597,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5465,6 +5633,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5500,6 +5669,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5535,6 +5705,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5570,6 +5741,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5605,6 +5777,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5640,6 +5813,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5675,6 +5849,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5710,6 +5885,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5745,6 +5921,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5780,6 +5957,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5815,6 +5993,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5850,6 +6029,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5885,6 +6065,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5920,6 +6101,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5955,6 +6137,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -5990,6 +6173,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6025,6 +6209,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6060,6 +6245,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6095,6 +6281,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6130,6 +6317,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6165,6 +6353,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6200,6 +6389,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6235,6 +6425,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6270,6 +6461,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6305,6 +6497,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6340,6 +6533,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6375,6 +6569,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6410,6 +6605,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6445,6 +6641,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6482,6 +6679,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6519,6 +6717,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6554,6 +6753,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6589,6 +6789,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6624,6 +6825,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6659,6 +6861,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6694,6 +6897,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6729,6 +6933,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6764,6 +6969,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6799,6 +7005,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6834,6 +7041,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6869,6 +7077,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6904,6 +7113,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6939,6 +7149,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -6976,6 +7187,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7011,6 +7223,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7046,6 +7259,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7081,6 +7295,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7116,6 +7331,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7151,6 +7367,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7186,6 +7403,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7221,6 +7439,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7256,6 +7475,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7291,6 +7511,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7326,6 +7547,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7361,6 +7583,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7396,6 +7619,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7431,6 +7655,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7466,6 +7691,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7503,6 +7729,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7538,6 +7765,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7573,6 +7801,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7608,6 +7837,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7643,6 +7873,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7680,6 +7911,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7715,6 +7947,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7750,6 +7983,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7785,6 +8019,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7820,6 +8055,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7855,6 +8091,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7890,6 +8127,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7927,6 +8165,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7962,6 +8201,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -7997,6 +8237,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8032,6 +8273,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8067,6 +8309,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8102,6 +8345,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8139,6 +8383,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8174,6 +8419,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8209,6 +8455,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8246,6 +8493,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8281,6 +8529,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8316,6 +8565,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8351,6 +8601,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8388,6 +8639,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8423,6 +8675,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8458,6 +8711,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8495,6 +8749,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8532,6 +8787,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8567,6 +8823,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8604,6 +8861,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8639,6 +8897,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8674,6 +8933,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8709,6 +8969,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8744,6 +9005,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8779,6 +9041,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8814,6 +9077,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8851,6 +9115,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8886,6 +9151,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8921,6 +9187,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8956,6 +9223,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -8991,6 +9259,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9026,6 +9295,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9063,6 +9333,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9100,6 +9371,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9137,6 +9409,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9174,6 +9447,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9209,6 +9483,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9244,6 +9519,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9279,6 +9555,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9316,6 +9593,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9351,6 +9629,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9388,6 +9667,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9423,6 +9703,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9460,6 +9741,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9497,6 +9779,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9534,6 +9817,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9571,6 +9855,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9608,6 +9893,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9645,6 +9931,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9682,6 +9969,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9719,6 +10007,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9754,6 +10043,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9791,6 +10081,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9828,6 +10119,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9865,6 +10157,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9900,6 +10193,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9937,6 +10231,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -9972,6 +10267,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10007,6 +10303,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10044,6 +10341,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10079,6 +10377,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10116,6 +10415,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10151,6 +10451,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10188,6 +10489,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10223,6 +10525,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10258,6 +10561,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10295,6 +10599,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10330,6 +10635,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10367,6 +10673,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10402,6 +10709,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10439,6 +10747,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10476,6 +10785,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10513,6 +10823,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10548,6 +10859,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10583,6 +10895,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10620,6 +10933,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10657,6 +10971,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10694,6 +11009,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10731,6 +11047,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10768,6 +11085,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10805,6 +11123,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10840,6 +11159,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10875,6 +11195,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10910,6 +11231,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10945,6 +11267,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -10982,6 +11305,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11019,6 +11343,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11054,6 +11379,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11089,6 +11415,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11124,6 +11451,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11159,6 +11487,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11196,6 +11525,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11231,6 +11561,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11268,6 +11599,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11303,6 +11635,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11340,6 +11673,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11375,6 +11709,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11410,6 +11745,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11445,6 +11781,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11482,6 +11819,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11517,6 +11855,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11554,6 +11893,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11589,6 +11929,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11624,6 +11965,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11659,6 +12001,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11696,6 +12039,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11731,6 +12075,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11766,6 +12111,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11803,6 +12149,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11840,6 +12187,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11875,6 +12223,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11912,6 +12261,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11947,6 +12297,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -11982,6 +12333,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12017,6 +12369,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12052,6 +12405,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12087,6 +12441,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12124,6 +12479,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12159,6 +12515,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12194,6 +12551,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12231,6 +12589,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12268,6 +12627,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12303,6 +12663,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12340,6 +12701,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12378,6 +12740,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12415,6 +12778,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12450,6 +12814,7 @@
     "is_novel": true,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12488,6 +12853,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12525,6 +12891,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12560,6 +12927,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12598,6 +12966,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12633,6 +13002,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12668,6 +13038,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12703,6 +13074,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12741,6 +13113,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12779,6 +13152,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12816,6 +13190,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12851,6 +13226,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12886,6 +13262,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12921,6 +13298,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12958,6 +13336,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -12996,6 +13375,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13033,6 +13413,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13070,6 +13451,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13107,6 +13489,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13144,6 +13527,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13181,6 +13565,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13218,6 +13603,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13255,6 +13641,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13292,6 +13679,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13329,6 +13717,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13366,6 +13755,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13403,6 +13793,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13440,6 +13831,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13477,6 +13869,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13514,6 +13907,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   },
@@ -13551,6 +13945,7 @@
     "is_novel": null,
     "pubchem_cid": null,
     "chembl_id": null,
+    "chemical_name": null,
     "retrosynthesis_route_found": null,
     "retrosynthesis_n_routes": null
   }

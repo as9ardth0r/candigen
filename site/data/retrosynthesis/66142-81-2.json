@@ -2,13 +2,13 @@
   "smiles": "COc1cc(CCN)c(OC)cc1Br",
   "stats": {
     "target": "COc1cc(CCN)c(OC)cc1Br",
-    "search_time": 11.173741579055786,
-    "first_solution_time": 0.034420013427734375,
+    "search_time": 11.209238052368164,
+    "first_solution_time": 0.032143354415893555,
     "first_solution_iteration": 1,
-    "number_of_nodes": 271,
+    "number_of_nodes": 273,
     "max_transforms": 6,
     "max_children": 22,
-    "number_of_routes": 97,
+    "number_of_routes": 96,
     "number_of_solved_routes": 19,
     "top_score": 0.9976287063411217,
     "is_solved": true,
@@ -19,11 +19,11 @@
     "precursors_not_in_stock": "",
     "precursors_availability": "zinc;zinc",
     "policy_used_counts": {
-      "uspto": 270
+      "uspto": 272
     },
     "profiling": {
-      "expansion_calls": 224,
-      "reactants_generations": 4358,
+      "expansion_calls": 226,
+      "reactants_generations": 4421,
       "iterations": 100
     }
   },

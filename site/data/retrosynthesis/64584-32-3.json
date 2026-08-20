@@ -2,8 +2,8 @@
   "smiles": "COc1cc(CCN)c(OC)cc1I.Cl",
   "stats": {
     "target": "COc1cc(CCN)c(OC)cc1I.Cl",
-    "search_time": 12.736321449279785,
-    "first_solution_time": 6.042232990264893,
+    "search_time": 13.250833749771118,
+    "first_solution_time": 6.396203994750977,
     "first_solution_iteration": 50,
     "number_of_nodes": 304,
     "max_transforms": 6,
@@ -23,7 +23,7 @@
     },
     "profiling": {
       "expansion_calls": 269,
-      "reactants_generations": 5566,
+      "reactants_generations": 5590,
       "iterations": 100
     }
   },

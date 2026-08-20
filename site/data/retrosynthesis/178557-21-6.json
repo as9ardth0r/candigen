@@ -2,14 +2,14 @@
   "smiles": "NCCc1c2c(c(Br)c3c1OCC3)OCC2",
   "stats": {
     "target": "NCCc1c2c(c(Br)c3c1OCC3)OCC2",
-    "search_time": 10.74448275566101,
-    "first_solution_time": 0.48232269287109375,
+    "search_time": 10.164939403533936,
+    "first_solution_time": 0.4728426933288574,
     "first_solution_iteration": 4,
-    "number_of_nodes": 474,
+    "number_of_nodes": 458,
     "max_transforms": 6,
     "max_children": 20,
-    "number_of_routes": 122,
-    "number_of_solved_routes": 13,
+    "number_of_routes": 119,
+    "number_of_solved_routes": 14,
     "top_score": 0.9976287063411217,
     "is_solved": true,
     "number_of_steps": 1,
@@ -19,11 +19,11 @@
     "precursors_not_in_stock": "",
     "precursors_availability": "zinc;zinc",
     "policy_used_counts": {
-      "uspto": 473
+      "uspto": 457
     },
     "profiling": {
-      "expansion_calls": 361,
-      "reactants_generations": 1790,
+      "expansion_calls": 348,
+      "reactants_generations": 1723,
       "iterations": 100
     }
   },

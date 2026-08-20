@@ -1,0 +1,15 @@
+{
+  "pdb_id": "4DKL",
+  "target_name": "mu-opioid",
+  "center": [
+    -23.396990922844175,
+    7.2772269288956135,
+    -5.966508320726173
+  ],
+  "box_size": [
+    24.0,
+    20.0,
+    24.0
+  ],
+  "receptor_pdbqt": "data/receptor/4DKL/4DKL.pdbqt"
+}

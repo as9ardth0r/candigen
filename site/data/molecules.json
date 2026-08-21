@@ -1,6 +1,6 @@
 {
   "target": "EGFR",
-  "generated_at": "2026-08-21T04:15:24.609006+00:00",
+  "generated_at": "2026-08-21T08:53:17.965794+00:00",
   "count": 592,
   "molecules": [
     {
@@ -60,10 +60,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.799,
-      "docking_score": -5.96,
+      "docking_score": -6.01,
       "docking_scores": {
-        "mu-opioid": -4.93,
-        "5-HT2C": -5.96
+        "mu-opioid": -4.95,
+        "5-HT2C": -6.01
       },
       "is_novel": false,
       "pubchem_cid": 98527,
@@ -101,7 +101,7 @@
       "is_novel": false,
       "pubchem_cid": 187760,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "3,4-dichloro-N-[[1-(dimethylamino)cyclohexyl]methyl]benzamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -129,10 +129,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.7905,
-      "docking_score": -6.25,
+      "docking_score": -6.23,
       "docking_scores": {
-        "mu-opioid": -4.91,
-        "5-HT2C": -6.25
+        "mu-opioid": -5.07,
+        "5-HT2C": -6.23
       },
       "is_novel": false,
       "pubchem_cid": 62065,
@@ -299,10 +299,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.752,
-      "docking_score": -5.93,
+      "docking_score": -5.92,
       "docking_scores": {
-        "mu-opioid": -4.95,
-        "5-HT2C": -5.93
+        "mu-opioid": -4.93,
+        "5-HT2C": -5.92
       },
       "is_novel": false,
       "pubchem_cid": 10267191,
@@ -533,10 +533,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.743,
-      "docking_score": -5.73,
+      "docking_score": -5.9,
       "docking_scores": {
-        "mu-opioid": -5.69,
-        "5-HT2C": -5.73
+        "mu-opioid": -5.54,
+        "5-HT2C": -5.9
       },
       "is_novel": false,
       "pubchem_cid": 17925,
@@ -572,9 +572,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": 26903,
+      "pubchem_cid": null,
       "chembl_id": "CHEMBL4303330",
-      "chemical_name": "N-[2-(1H-indol-3-yl)ethyl]-N-propan-2-ylpropan-2-amine",
+      "chemical_name": null,
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -604,10 +604,10 @@
       "fitness": 0.74,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 527015,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "N-phenyl-N-[1-(2-phenylethyl)piperidin-4-yl]acetamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -635,10 +635,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.739,
-      "docking_score": -5.53,
+      "docking_score": -5.54,
       "docking_scores": {
-        "mu-opioid": -5.53,
-        "5-HT2C": -5.2
+        "mu-opioid": -5.54,
+        "5-HT2C": -5.25
       },
       "is_novel": false,
       "pubchem_cid": 10265873,
@@ -774,13 +774,13 @@
       "fitness": 0.735,
       "docking_score": -7.76,
       "docking_scores": {
-        "mu-opioid": -6.91,
+        "mu-opioid": -6.95,
         "5-HT2C": -7.76
       },
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62278,
       "chembl_id": "CHEMBL3302622",
-      "chemical_name": null,
+      "chemical_name": "N-[1-(2-hydroxy-2-phenylethyl)piperidin-4-yl]-N-phenylpropanamide",
       "retrosynthesis_route_found": true,
       "retrosynthesis_n_routes": 8
     },
@@ -808,10 +808,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.731,
-      "docking_score": -6.95,
+      "docking_score": -6.92,
       "docking_scores": {
-        "mu-opioid": -6.47,
-        "5-HT2C": -6.95
+        "mu-opioid": -6.46,
+        "5-HT2C": -6.92
       },
       "is_novel": false,
       "pubchem_cid": 61120,
@@ -1009,10 +1009,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.718,
-      "docking_score": -5.68,
+      "docking_score": -5.76,
       "docking_scores": {
-        "mu-opioid": -5.26,
-        "5-HT2C": -5.68
+        "mu-opioid": -5.32,
+        "5-HT2C": -5.76
       },
       "is_novel": false,
       "pubchem_cid": 40113,
@@ -1474,10 +1474,10 @@
       "recipe": null,
       "first_seen": null,
       "fitness": 0.703,
-      "docking_score": -7.18,
+      "docking_score": -7.78,
       "docking_scores": {
-        "mu-opioid": -7.18,
-        "5-HT2C": -6.32
+        "mu-opioid": -7.12,
+        "5-HT2C": -7.78
       },
       "is_novel": false,
       "pubchem_cid": 68894304,
@@ -2472,9 +2472,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62709,
       "chembl_id": "CHEMBL159660",
-      "chemical_name": null,
+      "chemical_name": "(3R,6R)-6-(dimethylamino)-4,4-diphenylheptan-3-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -2704,7 +2704,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 9838022,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL1201776",
       "chemical_name": "3-[(2R,3R)-1-(dimethylamino)-2-methylpentan-3-yl]phenol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -2737,7 +2737,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 62300,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL2355317",
       "chemical_name": "N-(4-fluorophenyl)-N-[1-(2-phenylethyl)piperidin-4-yl]propanamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -3002,7 +3002,7 @@
       "is_novel": false,
       "pubchem_cid": 74832745,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "4-[2-(2,2,2-trifluoro-1-hydroxyethyl)pyrrolidin-1-yl]-2-(trifluoromethyl)benzonitrile",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -3968,10 +3968,10 @@
       "fitness": 0.6375,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 431865,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "1-cyclohexyl-4-(1,2-diphenylethyl)piperazine",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -4232,10 +4232,10 @@
       "fitness": 0.628,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
-      "chembl_id": null,
-      "chemical_name": null,
+      "is_novel": false,
+      "pubchem_cid": 5463863,
+      "chembl_id": "CHEMBL3989452",
+      "chemical_name": "(1R,9R,10S,13R)-3,4-dimethoxy-17-methyl-17-azatetracyclo[7.5.3.01,10.02,7]heptadeca-2(7),3,5-triene-10,13-diol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -4532,7 +4532,7 @@
       "is_novel": false,
       "pubchem_cid": 61119,
       "chembl_id": "CHEMBL2104027",
-      "chemical_name": null,
+      "chemical_name": "[(3S,4R)-3-ethyl-1-methyl-4-phenylpiperidin-4-yl] propanoate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -4765,9 +4765,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 120738,
       "chembl_id": "CHEMBL3301934",
-      "chemical_name": null,
+      "chemical_name": "[(3S,4R)-1,3-dimethyl-4-phenylpiperidin-4-yl] propanoate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -4800,7 +4800,7 @@
       "is_novel": false,
       "pubchem_cid": 5284516,
       "chembl_id": "CHEMBL3187964",
-      "chemical_name": null,
+      "chemical_name": "[(3R,4R)-1,3-dimethyl-4-phenylpiperidin-4-yl] propanoate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -5064,9 +5064,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 92943,
       "chembl_id": "CHEMBL2365707",
-      "chemical_name": null,
+      "chemical_name": "(3S)-3-methyl-4-morpholin-4-yl-2,2-diphenyl-1-pyrrolidin-1-ylbutan-1-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -5329,10 +5329,10 @@
       "fitness": 0.606,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
-      "chembl_id": null,
-      "chemical_name": null,
+      "is_novel": false,
+      "pubchem_cid": 46424,
+      "chembl_id": "CHEMBL2106526",
+      "chemical_name": "N-ethyl-N-methyl-4,4-dithiophen-2-ylbut-3-en-2-amine",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -5495,9 +5495,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62370,
       "chembl_id": "CHEMBL2106220",
-      "chemical_name": null,
+      "chemical_name": "N-[2-[methyl(2-phenylethyl)amino]propyl]-N-phenylpropanamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -5764,7 +5764,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 9331,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL559288",
       "chemical_name": "1-(3-cyano-3,3-diphenylpropyl)-4-piperidin-1-ylpiperidine-4-carboxamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -5929,10 +5929,10 @@
       "fitness": 0.5895,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 5362507,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-9-phenylmethoxy-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -6133,7 +6133,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 22031,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL2105389",
       "chemical_name": "2-methyl-3-phenylbutan-2-amine",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -6999,7 +6999,7 @@
       "is_novel": false,
       "pubchem_cid": 57358582,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "2-[[(4R,4aR,7aR,12bS)-9-methoxy-3-methyl-1,2,4,4a,5,6,7a,13-octahydro-4,12-methanobenzofuro[3,2-e]isoquinolin-7-ylidene]amino]oxyacetic acid",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -7099,7 +7099,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 5284569,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL1457",
       "chemical_name": "(4R,4aR,7aR,12bS)-9-methoxy-3-methyl-1,2,4,4a,5,6,7a,13-octahydro-4,12-methanobenzofuro[3,2-e]isoquinolin-7-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -7196,10 +7196,10 @@
       "fitness": 0.5455,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
-      "chembl_id": null,
-      "chemical_name": null,
+      "is_novel": false,
+      "pubchem_cid": 13331,
+      "chembl_id": "CHEMBL2111157",
+      "chemical_name": "4,4-diphenyl-6-piperidin-1-ylheptan-3-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -7332,7 +7332,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 5284570,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL398707",
       "chemical_name": "(4R,4aR,7aR,12bS)-9-hydroxy-3-methyl-1,2,4,4a,5,6,7a,13-octahydro-4,12-methanobenzofuro[3,2-e]isoquinolin-7-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -7364,9 +7364,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 5362456,
       "chembl_id": "CHEMBL2106274",
-      "chemical_name": null,
+      "chemical_name": "(4R,4aR,7aS,12bS)-3-methyl-2,4,4a,5,6,7,7a,13-octahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-9-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -7499,7 +7499,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 443404,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL323503",
       "chemical_name": "(1R,9R,13R)-1,10,13-trimethyl-10-azatricyclo[7.3.1.02,7]trideca-2(7),3,5-trien-4-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -7568,9 +7568,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 8944,
       "chembl_id": "CHEMBL1201347",
-      "chemical_name": null,
+      "chemical_name": "ethyl 1-[2-(4-aminophenyl)ethyl]-4-phenylpiperidine-4-carboxylate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -7937,7 +7937,7 @@
       "is_novel": false,
       "pubchem_cid": 3167,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "17-hydroxy-2,10,13-trimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8003,7 +8003,7 @@
       "is_novel": false,
       "pubchem_cid": 4092426,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "17-hydroxy-13-methyl-2,6,7,8,14,15,16,17-octahydro-1H-cyclopenta[a]phenanthren-3-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8273,7 +8273,7 @@
       "is_novel": false,
       "pubchem_cid": 5359421,
       "chembl_id": "CHEMBL1500",
-      "chemical_name": null,
+      "chemical_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,5,6,7,7a,13-octahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8442,9 +8442,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 10517,
       "chembl_id": "CHEMBL170179",
-      "chemical_name": null,
+      "chemical_name": "[6-(dimethylamino)-4,4-diphenylheptan-3-yl] acetate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8508,9 +8508,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62710,
       "chembl_id": "CHEMBL2105619",
-      "chemical_name": null,
+      "chemical_name": "[(3S,6R)-6-(dimethylamino)-4,4-diphenylheptan-3-yl] acetate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8610,10 +8610,10 @@
       "fitness": 0.4795,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 249098,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "1-hydroxy-1,9a,11a-trimethyl-2,3,3a,3b,4,5,5a,6,9,9b,10,11-dodecahydroindeno[4,5-h]isochromen-7-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8679,7 +8679,7 @@
       "is_novel": false,
       "pubchem_cid": 107765,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "(1S,2S,6R,14R,15R,16R)-16-[(2R)-2-hydroxypentan-2-yl]-15-methoxy-5-methyl-13-oxa-5-azahexacyclo[13.2.2.12,8.01,6.02,14.012,20]icosa-8(20),9,11-trien-11-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8745,9 +8745,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 51263,
       "chembl_id": "CHEMBL634",
-      "chemical_name": null,
+      "chemical_name": "N-[1-[2-(4-ethyl-5-oxotetrazol-1-yl)ethyl]-4-(methoxymethyl)piperidin-4-yl]-N-phenylpropanamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -8816,7 +8816,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 21950,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL2110995",
       "chemical_name": "ethyl 1-(3-anilinopropyl)-4-phenylpiperidine-4-carboxylate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -9024,9 +9024,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 32938,
       "chembl_id": "CHEMBL2103995",
-      "chemical_name": null,
+      "chemical_name": "(1-methyl-4-phenyl-3-prop-2-enylpiperidin-4-yl) propanoate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -9194,7 +9194,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 644209,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL140050",
       "chemical_name": "(1R,2S,6R,14R,15R,19R)-19-[(2R)-2-hydroxypentan-2-yl]-15-methoxy-5-methyl-13-oxa-5-azahexacyclo[13.2.2.12,8.01,6.02,14.012,20]icosa-8(20),9,11,16-tetraen-11-ol",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -9228,9 +9228,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62516,
       "chembl_id": "CHEMBL2104234",
-      "chemical_name": null,
+      "chemical_name": "ethyl 4-phenyl-1-(2-phenylmethoxyethyl)piperidine-4-carboxylate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -9580,7 +9580,7 @@
       "docking_scores": null,
       "is_novel": false,
       "pubchem_cid": 61306,
-      "chembl_id": null,
+      "chembl_id": "CHEMBL2105078",
       "chemical_name": "ethyl 1-[2-(oxolan-2-ylmethoxy)ethyl]-4-phenylpiperidine-4-carboxylate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
@@ -9647,10 +9647,10 @@
       "fitness": 0.3795,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 91460,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "(1R,2R,3S,5S)-3-hydroxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylic acid",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -9963,9 +9963,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 62528,
       "chembl_id": "CHEMBL2104616",
-      "chemical_name": null,
+      "chemical_name": "2-[2-[(4-chlorophenyl)methyl]-5-nitrobenzimidazol-1-yl]-N,N-diethylethanamine",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10035,9 +10035,9 @@
       "docking_score": null,
       "docking_scores": null,
       "is_novel": false,
-      "pubchem_cid": null,
+      "pubchem_cid": 10343227,
       "chembl_id": "CHEMBL2136499",
-      "chemical_name": null,
+      "chemical_name": "3-(4-acetamidophenoxy)-2-hydroxy-2-methyl-N-[4-nitro-3-(trifluoromethyl)phenyl]propanamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10105,10 +10105,10 @@
       "fitness": 0.287,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 4638,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "17-hydroxy-2-(hydroxymethylidene)-10,13,17-trimethyl-1,4,5,6,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-one",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10282,7 +10282,7 @@
       "is_novel": false,
       "pubchem_cid": 61791,
       "chembl_id": "CHEMBL2104149",
-      "chemical_name": null,
+      "chemical_name": "4-[4-(2-oxo-3-propanoylbenzimidazol-1-yl)piperidin-1-yl]-2,2-diphenylbutanenitrile",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10423,7 +10423,7 @@
       "is_novel": false,
       "pubchem_cid": 20055090,
       "chembl_id": "CHEMBL3989451",
-      "chemical_name": null,
+      "chemical_name": "[(1R,2S,6R,14R,15R,19R)-19-[(2R)-2-hydroxypentan-2-yl]-15-methoxy-5-methyl-13-oxa-5-azahexacyclo[13.2.2.12,8.01,6.02,14.012,20]icosa-8(20),9,11,16-tetraen-11-yl] acetate",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10494,7 +10494,7 @@
       "is_novel": false,
       "pubchem_cid": 22573923,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "6-amino-2-[[2-[[2-[[2-[(2-amino-2-methylpropanoyl)amino]-3-(1H-imidazol-5-yl)propanoyl]amino]-3-naphthalen-2-ylpropanoyl]amino]-3-phenylpropanoyl]amino]hexanamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },
@@ -10564,10 +10564,10 @@
       "fitness": -0.2615,
       "docking_score": null,
       "docking_scores": null,
-      "is_novel": null,
-      "pubchem_cid": null,
+      "is_novel": false,
+      "pubchem_cid": 14560360,
       "chembl_id": null,
-      "chemical_name": null,
+      "chemical_name": "15-(2-acetamidohexanoylamino)-9-benzyl-6-[3-(diaminomethylideneamino)propyl]-12-(1H-imidazol-5-ylmethyl)-3-(1H-indol-3-ylmethyl)-2,5,8,11,14,17-hexaoxo-1,4,7,10,13,18-hexazacyclotricosane-23-carboxamide",
       "retrosynthesis_route_found": null,
       "retrosynthesis_n_routes": null
     },

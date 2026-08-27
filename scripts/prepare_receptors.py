@@ -30,7 +30,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-from molgen_egfr.receptor_prep import extract_ligand_pdb, find_cocrystallized_ligand  # noqa: E402
+from candigen.receptor_prep import extract_ligand_pdb, find_cocrystallized_ligand  # noqa: E402
 
 CANDIDATE_STRUCTURES = {
     "EGFR_WT": "1M17",              # domaine kinase EGFR + erlotinib

@@ -4,7 +4,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pytest
-from candigen.receptor_prep import find_cocrystallized_ligand, extract_ligand_pdb
+from candigen.receptor_prep import (
+    find_cocrystallized_ligand,
+    extract_ligand_pdb,
+    find_all_residue_instances,
+    format_delete_residues,
+)
 
 
 # PDB minimal synthétique : eau + un ion (ZN) + un additif de cristallisation
@@ -71,3 +76,32 @@ def test_extract_ligand_pdb_raises_on_no_match(synthetic_pdb, tmp_path):
     out = tmp_path / "ligand.pdb"
     with pytest.raises(ValueError):
         extract_ligand_pdb(synthetic_pdb, "A", "NOPE", "999", out)
+
+
+# PDB synthétique avec le MÊME ligand sur deux chaînes différentes — simule
+# 2JIV, où HKI apparaît à la fois sur la chaîne A et la chaîne B (deux
+# copies de la protéine dans l'unité asymétrique).
+_TWO_CHAIN_PDB = """\
+HETATM  601  N1  LIG A 501      10.000  10.000  10.000  1.00 20.00           N
+HETATM  602  C1  LIG A 501      10.500  10.500  10.500  1.00 20.00           C
+HETATM  603  N1  LIG B 501      50.000  50.000  50.000  1.00 20.00           N
+HETATM  604  C1  LIG B 501      50.500  50.500  50.500  1.00 20.00           C
+"""
+
+
+def test_find_all_residue_instances_across_chains(tmp_path):
+    p = tmp_path / "two_chain.pdb"
+    p.write_text(_TWO_CHAIN_PDB)
+    instances = find_all_residue_instances(p, "LIG")
+    assert set(instances) == {("A", "501"), ("B", "501")}
+
+
+def test_format_delete_residues_groups_by_chain():
+    result = format_delete_residues([("A", "999")])
+    assert result == "A:999"
+
+    result2 = format_delete_residues([("A", "501"), ("B", "501")])
+    assert result2 == "A:501,B:501"
+
+    result3 = format_delete_residues([("A", "15"), ("A", "16"), ("B", "42")])
+    assert result3 == "A:15,16,B:42"

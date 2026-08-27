@@ -30,7 +30,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-from candigen.receptor_prep import extract_ligand_pdb, find_cocrystallized_ligand  # noqa: E402
+from candigen.receptor_prep import (
+    extract_ligand_pdb,
+    find_cocrystallized_ligand,
+    find_all_residue_instances,
+    format_delete_residues,
+)  # noqa: E402
 
 CANDIDATE_STRUCTURES = {
     "EGFR_WT": "1M17",              # domaine kinase EGFR + erlotinib
@@ -83,6 +88,19 @@ def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool
         ligand_path = RECEPTOR_DIR / f"{name.lower()}_ref_ligand.pdb"
         extract_ligand_pdb(raw_path, chain_name, res_name, res_seq, ligand_path)
         cmd += ["--box_enveloping", str(ligand_path)]
+
+        # Le récepteur préparé doit être exempt du ligand co-cristallisé —
+        # sinon il reste "en dur" dans la structure rigide et bloque
+        # physiquement sa propre poche de liaison pour tout futur docking.
+        # On l'exclut systématiquement (pas seulement quand meeko échoue à
+        # lui générer un template, ex. HKI dans 2JIV) et sur TOUTES ses
+        # copies (une structure peut avoir plusieurs chaînes protéiques
+        # dans l'unité asymétrique, chacune avec sa propre copie du ligand).
+        instances = find_all_residue_instances(raw_path, res_name)
+        delete_arg = format_delete_residues(instances)
+        cmd += ["--delete_residues", delete_arg]
+        print(f"[prepare_receptor] exclusion du récepteur : {res_name} "
+              f"({len(instances)} copie(s) : {delete_arg})")
     else:
         print(f"[prepare_receptor] ATTENTION — aucun ligand co-cristallisé trouvé pour {name} : "
               f"la boîte de recherche doit être définie manuellement (--box_center / --box_size), "

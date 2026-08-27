@@ -98,3 +98,34 @@ def extract_ligand_pdb(
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text("\n".join(matching) + "\nEND\n")
+
+
+def find_all_residue_instances(pdb_path: str | Path, res_name: str) -> list[tuple[str, str]]:
+    """Retourne (chain_id, res_seq) pour CHAQUE occurrence de `res_name`
+    dans le fichier — un ligand co-cristallisé peut apparaître plusieurs
+    fois (ex. plusieurs copies de la protéine dans l'unité asymétrique :
+    2JIV a le ligand HKI à la fois sur la chaîne A et la chaîne B). Sert à
+    s'assurer qu'AUCUNE copie ne reste dans le récepteur préparé — voir
+    format_delete_residues.
+    """
+    instances: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for line in _read_hetatm_lines(pdb_path):
+        if line[17:20].strip() != res_name:
+            continue
+        key = (line[21].strip(), line[22:26].strip())
+        if key not in seen:
+            seen.add(key)
+            instances.append(key)
+    return instances
+
+
+def format_delete_residues(instances: list[tuple[str, str]]) -> str:
+    """Formate une liste de (chain_id, res_seq) au format attendu par
+    `mk_prepare_receptor.py --delete_residues` (ex. 'A:350,B:15,16,17' —
+    un groupe chain:res[,res...] par chaîne, groupes séparés par des
+    virgules, voir `mk_prepare_receptor.py --help`)."""
+    by_chain: dict[str, list[str]] = {}
+    for chain_id, res_seq in instances:
+        by_chain.setdefault(chain_id, []).append(res_seq)
+    return ",".join(f"{chain}:{','.join(resnums)}" for chain, resnums in by_chain.items())

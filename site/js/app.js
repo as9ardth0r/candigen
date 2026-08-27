@@ -1,3 +1,43 @@
+// Variable globale pour l'incrémentation des ID canvas
+let retroCounter = 0;
+let globalRetroData = null;
+
+// Rendu RDKit mini-molécule dans un Canvas
+function renderMiniMol(smiles, canvasId) {
+  setTimeout(() => {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    
+    if (window.RDKitModule && smiles) {
+      try {
+        const mol = window.RDKitModule.get_mol(smiles);
+        if (mol) {
+          canvas.width = 70;
+          canvas.height = 50;
+          mol.draw_to_canvas(canvas, 70, 50);
+          mol.delete();
+          return;
+        }
+      } catch (e) {
+        console.warn("Erreur de rendu RDKit pour :", smiles);
+      }
+    }
+
+    // Fallback visuel SVG/Texte si RDKit n'est pas chargé
+    const ctx = canvas.getContext("2d");
+    if (ctx) {
+      canvas.width = 70;
+      canvas.height = 50;
+      ctx.fillStyle = "#1e293b";
+      ctx.fillRect(0, 0, 70, 50);
+      ctx.fillStyle = "#94a3b8";
+      ctx.font = "10px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("Molécule", 35, 28);
+    }
+  }, 50);
+}
+
 function openRetroModal(molecule) {
   const modal = document.getElementById("retro-modal");
   const container = document.getElementById("retro-container");
@@ -7,7 +47,7 @@ function openRetroModal(molecule) {
   const targetName = molecule ? (molecule.name || molecule.smiles) : (data.target_name || "Candidat");
   const targetSmiles = molecule ? molecule.smiles : (data.target_smiles || "COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1");
 
-  // Définition d'étapes par défaut si le JSON est incomplet
+  // Définition d'étapes de repli si le JSON distant est absent ou incomplet
   const defaultSteps = [
     {
       reaction: "Substitution / Amidation",
@@ -88,7 +128,7 @@ function openRetroModal(molecule) {
 
     step.reactants.forEach(r => {
       const rId = `retro-canvas-${retroCounter++}`;
-      const isStock = r.status === "en_stock";
+      const isStock = (r.status === "en_stock" || r.status === "in-stock");
       const row = document.createElement("div");
       row.className = "retro-item";
       row.innerHTML = `
@@ -106,3 +146,26 @@ function openRetroModal(molecule) {
 
   modal.classList.remove("hidden");
 }
+
+function initModalEvents() {
+  const modal = document.getElementById("retro-modal");
+  const closeBtn = document.getElementById("close-retro-modal");
+  if (closeBtn && modal) {
+    closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
+  }
+}
+
+// Initialisation au chargement de la page
+document.addEventListener("DOMContentLoaded", async () => {
+  initModalEvents();
+
+  // Chargement sécurisé du JSON de rétrosynthèse
+  try {
+    const res = await fetch("data/retrosynthesis_erlotinib.json");
+    if (res.ok) {
+      globalRetroData = await res.json();
+    }
+  } catch (e) {
+    console.warn("Fichier rétrosynthèse indisponible, utilisation des données de secours.");
+  }
+});

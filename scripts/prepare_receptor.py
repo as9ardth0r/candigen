@@ -113,13 +113,16 @@ def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--target", choices=list(CANDIDATE_STRUCTURES) + ["all"], default="all")
     parser.add_argument("--padding", type=float, default=4.0,
                          help="marge (Å) ajoutée autour du ligand de référence pour la boîte de recherche")
-    parser.add_argument("--allow-bad-residues", action="store_true",
-                         help="supprime les résidus incomplets au lieu de stopper sur erreur "
-                              "(voir l'option -a de mk_prepare_receptor.py)")
+    parser.add_argument("--allow-bad-residues", action=argparse.BooleanOptionalAction, default=True,
+                         help="supprime les résidus qui ne correspondent à aucun template plutôt que de "
+                              "stopper sur erreur (voir -a de mk_prepare_receptor.py). Activé par défaut : "
+                              "c'est la pratique recommandée par meeko lui-même pour des structures PDB "
+                              "réelles, presque toujours partiellement résolues (--no-allow-bad-residues "
+                              "pour désactiver).")
     parser.add_argument("--default-altloc", type=str, default="A",
                          help="conformation alternative par défaut pour les résidus qui en ont "
                               "plusieurs dans le cristal (voir --default_altloc de mk_prepare_receptor.py)")
@@ -128,9 +131,32 @@ def main() -> None:
     targets = list(CANDIDATE_STRUCTURES) if args.target == "all" else [args.target]
     RECEPTOR_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Chaque cible est préparée à partir d'une vraie structure cristallo-
+    # graphique déposée par des équipes différentes, à des époques
+    # différentes, avec ses propres défauts (boucles manquantes, résidus à
+    # localisation alternative, chaînes multiples...). Il n'existe pas de
+    # combinaison de flags qui absorbe tous les cas par avance — et le
+    # reste du pipeline (dock_top_candidates.py) sait déjà gérer une cible
+    # non préparée. Un échec sur UNE structure ne doit donc plus bloquer
+    # les trois autres : on isole les échecs plutôt que de les empêcher.
+    failures: list[str] = []
     for name in targets:
         pdb_id = CANDIDATE_STRUCTURES[name]
-        prepare_receptor(pdb_id, name, args.padding, args.allow_bad_residues, args.default_altloc)
+        try:
+            prepare_receptor(pdb_id, name, args.padding, args.allow_bad_residues, args.default_altloc)
+        except Exception as exc:
+            print(f"[prepare_receptor] ÉCHEC pour {name} ({pdb_id}) : {exc}")
+            print(f"[prepare_receptor] {name} ignoré — poursuite avec les cibles restantes.")
+            failures.append(name)
+
+    if failures:
+        print(f"\n[prepare_receptor] {len(failures)}/{len(targets)} cible(s) en échec : {', '.join(failures)}")
+        print("[prepare_receptor] Ces structures ont probablement besoin d'une inspection manuelle "
+              "(boucles manquantes créant des liaisons parasites, résidu non standard sans template...) "
+              "— pas d'un nouveau flag générique. dock_top_candidates.py ignore proprement une cible "
+              "sans récepteur préparé.")
+    if len(failures) == len(targets):
+        sys.exit(1)  # tout a échoué : ça, c'est un vrai problème (réseau, RCSB down, etc.)
 
 
 if __name__ == "__main__":

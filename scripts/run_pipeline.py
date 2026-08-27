@@ -1,276 +1,62 @@
 #!/usr/bin/env python3
-"""
-Orchestration du pipeline — boucle de découverte évolutive.
-
-Chaque exécution teste un lot de candidats DIFFÉRENT, jamais testé
-auparavant, et fait persister les meilleurs d'un run à l'autre :
-
-  - Premier run (aucun data/hall_of_fame.json) : "bootstrap" — un
-    échantillon de la bibliothèque combinatoire (scaffolds × anilines ×
-    solubilisants) est testé pour amorcer un hall of fame solide, SANS
-    épuiser tout le catalogue d'un coup (il en faut pour les jours suivants).
-  - Runs suivants (cron quotidien) : candigen.evolve combine
-      1) de l'exploration dans le catalogue de recettes restant,
-      2) des recettes voisines des meilleures molécules connues,
-      3) des MUTATIONS ATOMIQUES (ajout/retrait/permutation d'un halogène
-         ou d'un méthyle) des meilleures molécules connues — un espace non
-         fini qui reste productif même après épuisement complet du
-         catalogue de recettes (1274 combinaisons au total).
-
-Tous les candidats passent par le même criblage 2D (candigen.properties +
-candigen.filters : TPP, SA score, PAINS, BRENK). Ceux qui sont conformes au
-TPP sont fusionnés dans data/hall_of_fame.json (plafonné, classé par
-fitness). Le site consomme : les 5 candidats curés + le hall of fame.
+"""Orchestration du cycle de veille : charge les molécules seed, fait
+évoluer une population, exporte les résultats pour le dashboard.
 
 Usage :
-    python scripts/run_pipeline.py
+    python scripts/run_pipeline.py [--population 40] [--generations 15]
 """
-
 from __future__ import annotations
 
-import json
-import random
-import sys
-from datetime import date
+import argparse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+from molgen_egfr import evolve, export, hall_of_fame
 
-from candigen.properties import load_smiles, compute_batch, compute_descriptors, export_json, export_csv, InvalidSMILESError
-from candigen.filters import TPPProfile, enrich_and_filter
-from candigen.evolve import full_library, generate_daily_batch, build_smiles, fitness as compute_fitness
-from candigen.hall_of_fame import (
-    load_hall_of_fame, save_hall_of_fame, load_explored, save_explored,
-    elite_records, merge_into_hall_of_fame, HALL_OF_FAME_MAX,
-)
-from candigen.docking_prep import embed_3d, mol_to_sdf_block
-from candigen.docking import dock as run_docking, prepare_ligand_pdbqt
-from candigen.novelty import check_novelty
-from candigen.export import build_site_payload, build_conformers_payload, read_target_name, write_json
-from rdkit import Chem
-
-# Lot quotidien (runs après le bootstrap) : n_fresh recettes jamais testées
-# + n_recipe_mutants recettes voisines des meilleures connues + n_atom_mutants
-# mutations atomiques (espace non fini — cf. candigen/evolve.py).
-N_FRESH_PER_RUN = 10
-N_RECIPE_MUTANTS_PER_RUN = 10
-N_ATOM_MUTANTS_PER_RUN = 10
-
-# Le premier run n'échantillonne qu'UNE PARTIE du catalogue de recettes
-# (pas les 1274 combinaisons d'un coup) — pour laisser de la marge aux
-# jours suivants avant de basculer sur la mutation atomique.
-BOOTSTRAP_SAMPLE_SIZE = 300
-
-# L'embedding 3D est réservé à un top-K, pas à toute la bibliothèque
-# (coûteux, et inutile pour les molécules hors du hall of fame).
-MAX_3D_EMBEDDINGS = 150
-
-# Le docking réel (AutoDock Vina) est réservé à un top-K plus restreint —
-# mesuré sur ce projet : ~30s/molécule à exhaustiveness=4 (2 cœurs). Avec
-# MAX_DOCKING=10, ça reste sous les ~5 min pour cette étape. Augmenter si
-# votre budget CI le permet — le coût croît environ linéairement avec les
-# deux paramètres.
-MAX_DOCKING = 10
-DOCKING_EXHAUSTIVENESS = 4
-
-# Délai entre deux appels PubChem, pour respecter leur limite de débit
-# recommandée (5 req/s max — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest).
-NOVELTY_CHECK_DELAY = 0.25
-
-# Plafond du nombre de molécules vérifiées par run (au bootstrap, jusqu'à
-# 300 candidats peuvent être conformes d'un coup — sans plafond, les
-# délais de limite de débit à eux seuls dépasseraient largement la minute).
-# Les runs quotidiens normaux (~30 candidats) restent toujours sous ce plafond.
-MAX_NOVELTY_CHECKS = 50
-
-HALL_OF_FAME_PATH = ROOT / "data" / "hall_of_fame.json"
-EXPLORED_PATH = ROOT / "data" / "explored.json"
-LAST_RUN_PATH = ROOT / "data" / "last_run.json"
-RECEPTOR_ROOT = ROOT / "data" / "receptor"  # une cible par sous-dossier : data/receptor/<pdb_id>/config.json
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
-def discover_receptor_configs(receptor_root: Path) -> list[dict]:
-    """Charge la config de chaque cible préparée (scripts/prepare_receptor.py) — 0, 1 ou plusieurs."""
-    configs = []
-    if receptor_root.is_dir():
-        for config_path in sorted(receptor_root.glob("*/config.json")):
-            configs.append(json.loads(config_path.read_text()))
-    return configs
+def load_seeds(path: Path) -> list[str]:
+    seeds = []
+    with path.open() as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            smiles = line.split("\t")[0]
+            seeds.append(smiles)
+    return seeds
 
 
 def main() -> None:
-    today = date.today().isoformat()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--seeds", type=Path, default=REPO_ROOT / "data" / "seed_molecules.smi")
+    parser.add_argument("--population", type=int, default=40)
+    parser.add_argument("--generations", type=int, default=15)
+    parser.add_argument("--seed", type=int, default=None, help="graine aléatoire (reproductibilité)")
+    parser.add_argument("--out", type=Path, default=REPO_ROOT / "site" / "data" / "molecules.json")
+    parser.add_argument("--hall-of-fame", type=Path, default=REPO_ROOT / "data" / "hall_of_fame.json")
+    args = parser.parse_args()
 
-    # 1) Les 5 candidats curés — toujours recalculés, jamais soumis au
-    #    plafond du hall of fame (on ne veut jamais les perdre).
-    seed_path = ROOT / "data" / "seed_molecules.smi"
-    curated_records = compute_batch(load_smiles(seed_path))
-    for r in curated_records:
-        r.source = "curated"
-    print(f"[1/10] {len(curated_records)} candidats curés chargés")
+    seeds = load_seeds(args.seeds)
+    print(f"[run_pipeline] {len(seeds)} molécules seed chargées depuis {args.seeds}")
 
-    # 2) État persistant (vide au tout premier run)
-    hall = load_hall_of_fame(HALL_OF_FAME_PATH)
-    explored = load_explored(EXPLORED_PATH)
-    is_bootstrap = not hall and not explored
-    print(f"[2/10] État chargé : {len(hall)} molécules dans le hall of fame, "
-          f"{len(explored)} SMILES déjà explorés"
-          f"{' — BOOTSTRAP (premier run)' if is_bootstrap else ''}")
+    result = evolve.run(
+        seed_smiles=seeds,
+        population_size=args.population,
+        generations=args.generations,
+        seed=args.seed,
+    )
 
-    # 3) Lot du jour — au plus UN lot par jour civil. Sans ce garde-fou, un
-    #    déclenchement manuel répété (workflow_dispatch) continuerait à
-    #    ajouter des molécules à chaque appel, puisque la mutation atomique
-    #    n'épuise jamais vraiment l'espace — plus la propriété "idempotent
-    #    si relancé le même jour" qu'on veut garder pour un comportement
-    #    prévisible.
-    last_run = json.loads(LAST_RUN_PATH.read_text())["date"] if LAST_RUN_PATH.exists() else None
-    already_ran_today = (last_run == today) and not is_bootstrap
+    print(f"[run_pipeline] {len(result.history)} générations calculées")
+    if result.history:
+        last = result.history[-1]
+        print(f"[run_pipeline] fitness finale — meilleure: {last.best_fitness} | moyenne: {last.mean_fitness}")
 
-    profile = TPPProfile()
-    curated_records = enrich_and_filter(curated_records, profile)
-    for r in curated_records:
-        r.fitness = compute_fitness(r)
+    export.export_molecules(result, args.out)
+    print(f"[run_pipeline] résultats exportés vers {args.out}")
 
-    if already_ran_today:
-        candidates = []
-        print(f"[3/10] Déjà exécuté aujourd'hui ({today}) — aucun nouveau candidat, "
-              f"le prochain lot sera généré au run suivant")
-    elif is_bootstrap:
-        rng = random.Random("bootstrap")
-        recipes = rng.sample(full_library(), BOOTSTRAP_SAMPLE_SIZE)
-        candidates = [(r.mol_id(), build_smiles(r), r.to_dict()) for r in recipes]
-        candidates = [(i, s, r) for i, s, r in candidates if s is not None and s not in explored]
-        print(f"[3/10] {len(candidates)} nouveaux candidats à tester aujourd'hui (bootstrap)")
-    else:
-        # Les curés + le hall of fame peuvent tous deux servir de parents
-        # aux mutations atomiques (pas seulement les molécules générées).
-        elites = elite_records(curated_records + hall, top_n=30)
-        candidates = generate_daily_batch(
-            explored=explored,
-            elite_records=elites,
-            n_fresh=N_FRESH_PER_RUN,
-            n_recipe_mutants=N_RECIPE_MUTANTS_PER_RUN,
-            n_atom_mutants=N_ATOM_MUTANTS_PER_RUN,
-            seed=today,
-        )
-        print(f"[3/10] {len(candidates)} nouveaux candidats à tester aujourd'hui")
-
-    # 4) Calcul des descripteurs pour le lot du jour
-    batch_records = []
-    for mol_id, smi, recipe in candidates:
-        mol = Chem.MolFromSmiles(smi)
-        if mol is None:
-            continue
-        canon = Chem.MolToSmiles(mol)
-        explored.add(canon)
-        try:
-            r = compute_descriptors(mol_id, smi)
-        except InvalidSMILESError:
-            continue
-        r.source = "generated"
-        r.recipe = recipe
-        batch_records.append(r)
-    print(f"[4/10] {len(batch_records)} candidats valides générés et décrits")
-
-    # 5) Criblage TPP + SA score + PAINS + BRENK sur le lot du jour
-    batch_records = enrich_and_filter(batch_records, profile)
-    n_pass_today = sum(r.tpp_pass for r in batch_records)
-    print(f"[5/10] Filtre TPP appliqué au lot du jour : {n_pass_today}/{len(batch_records)} conformes")
-
-    # 6) Vérification de nouveauté (PubChem/ChEMBL, correspondance exacte
-    #    par InChIKey) — sur les curés (une fois par run, coût négligeable)
-    #    et les nouveaux conformes du jour (ceux qui vont rejoindre le hall
-    #    of fame). Ne bloque jamais le pipeline si le réseau est indisponible
-    #    (is_novel reste à None = indéterminé, pas interprété comme "nouveau").
-    new_passing = [r for r in batch_records if r.tpp_pass]
-    n_checked, n_known = 0, 0
-    # priorité aux meilleures (fitness) si le lot dépasse le plafond
-    to_check = curated_records + sorted(new_passing, key=lambda r: r.fitness or -99, reverse=True)[:MAX_NOVELTY_CHECKS]
-    for r in to_check:
-        result = check_novelty(r.canonical_smiles, delay=NOVELTY_CHECK_DELAY)
-        r.is_novel = result["is_novel"]
-        if result["pubchem"]:
-            r.pubchem_cid = result["pubchem"]["cid"]
-            if result["pubchem"].get("name"):
-                r.chemical_name = result["pubchem"]["name"]
-        if result["chembl"]:
-            r.chembl_id = result["chembl"]["chembl_id"]
-        if result["is_novel"] is not None:
-            n_checked += 1
-        if result["is_novel"] is False:
-            n_known += 1
-    print(f"[6/10] Nouveauté vérifiée (PubChem/ChEMBL) : {n_checked}/{len(to_check)} "
-          f"jointes, {n_known} déjà connues" if n_checked else
-          "[6/10] PubChem/ChEMBL injoignables — nouveauté non vérifiée ce run (indéterminé, pas bloquant)")
-
-    # 7) Fusion dans le hall of fame (déduplication, fitness, plafond)
-    hall = merge_into_hall_of_fame(hall, new_passing, today=today)
-    print(f"[7/10] Hall of fame mis à jour : {len(hall)} molécules (plafond {HALL_OF_FAME_MAX})")
-
-    save_hall_of_fame(hall, HALL_OF_FAME_PATH)
-    save_explored(explored, EXPLORED_PATH)
-    LAST_RUN_PATH.write_text(json.dumps({"date": today}), encoding="utf-8")
-
-    # 8) Export final : curés + hall of fame accumulé
-    records = curated_records + hall
-    records.sort(key=lambda r: (r.source != "curated", -(r.fitness or -99)))
-
-    passing_for_3d = [r for r in records if r.tpp_pass][:MAX_3D_EMBEDDINGS]
-    sdf_blocks = {}
-    mols_3d = {}
-    for r in passing_for_3d:
-        mol3d = embed_3d(r.canonical_smiles, mol_id=r.id)
-        if mol3d is not None:
-            sdf_blocks[r.id] = mol_to_sdf_block(mol3d)
-            mols_3d[r.id] = mol3d
-    print(f"[8/10] Conformères 3D générés pour {len(sdf_blocks)}/{len(passing_for_3d)} molécules")
-
-    # 9) Docking réel (AutoDock Vina) — contre CHAQUE cible préparée
-    #    (scripts/prepare_receptor.py), pour le top-K des molécules déjà
-    #    embedées en 3D à l'étape précédente. Le temps de cette étape est
-    #    ~proportionnel au nombre de cibles configurées.
-    receptor_configs = discover_receptor_configs(RECEPTOR_ROOT)
-    n_docked = 0
-    if receptor_configs:
-        for r in passing_for_3d[:MAX_DOCKING]:
-            mol3d = mols_3d.get(r.id)
-            if mol3d is None:
-                continue
-            ligand_pdbqt = prepare_ligand_pdbqt(mol3d)
-            if ligand_pdbqt is None:
-                continue
-            scores: dict[str, float] = {}
-            for cfg in receptor_configs:
-                receptor_pdbqt = ROOT / cfg["receptor_pdbqt"]
-                center = tuple(cfg["center"])
-                box_size = tuple(cfg.get("box_size", (24.0, 20.0, 24.0)))
-                score = run_docking(receptor_pdbqt, ligand_pdbqt, center, box_size, exhaustiveness=DOCKING_EXHAUSTIVENESS)
-                if score is not None:
-                    scores[cfg["target_name"]] = score
-            if scores:
-                r.docking_scores = scores
-                r.docking_score = min(scores.values())  # le meilleur (le plus négatif) — conservé pour le tri existant du dashboard
-                n_docked += 1
-        target_list = ", ".join(cfg["pdb_id"] for cfg in receptor_configs)
-        print(f"[9/10] Docking (AutoDock Vina, {target_list}) : "
-              f"{n_docked}/{min(len(passing_for_3d), MAX_DOCKING)} molécules dockées contre {len(receptor_configs)} cible(s)")
-    else:
-        print("[9/10] Aucune cible préparée (data/receptor/*/config.json absent) — "
-              "docking ignoré. Lancer scripts/prepare_receptor.py pour l'activer.")
-
-    export_json(records, ROOT / "data" / "molecules.json")
-    export_csv(records, ROOT / "data" / "molecules.csv")
-
-    index_payload = build_site_payload(records, target=read_target_name(ROOT))
-    write_json(index_payload, ROOT / "site" / "data" / "molecules.json")
-
-    conformers_payload = build_conformers_payload(sdf_blocks)
-    write_json(conformers_payload, ROOT / "site" / "data" / "conformers.json")
-
-    print(f"[10/10] Export -> {len(records)} molécules au total "
-          f"({len(curated_records)} curées + {len(hall)} dans le hall of fame), "
-          f"{len(sdf_blocks)} conformères 3D")
+    ranked = hall_of_fame.merge_and_save(args.hall_of_fame, result.final_population)
+    print(f"[run_pipeline] hall of fame mis à jour ({len(ranked)} candidats) -> {args.hall_of_fame}")
 
 
 if __name__ == "__main__":

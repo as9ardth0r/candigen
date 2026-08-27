@@ -12,7 +12,6 @@
 <body>
 
 <header class="hero">
-  <div class="scan-beam"></div>
   <div class="hero-inner">
     <h1>CandiGen <span class="highlight">Dashboard</span></h1>
     <p class="lede">
@@ -30,11 +29,15 @@
   <section class="panel" id="candidates-panel">
     <div id="candidate-grid" class="candidate-grid"></div>
   </section>
-
-  <section class="panel" id="retro-panel">
-    <div id="retro-container"></div>
-  </section>
 </main>
+
+<!-- Modal pour la Rétrosynthèse -->
+<div id="retro-modal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close-btn">&times;</button>
+    <div id="retro-container"></div>
+  </div>
+</div>
 
 <script src="js/app.js" defer></script>
 </body>

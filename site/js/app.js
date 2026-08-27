@@ -35,61 +35,96 @@ function renderMiniMol(smiles, canvasId) {
   }, 50);
 }
 
-// Modale de rétrosynthèse avec recherche dynamique dans site/data/retrosynthesis/
+// Fonction récursive pour extraire les étapes de l'arbre AiZynthFinder
+function parseAiZynthTree(node, steps = []) {
+  if (!node) return steps;
+
+  // Si le nœud contient des enfants (réaction)
+  if (node.children && node.children.length > 0) {
+    const reactionName = node.metadata?.reaction_hash || node.type || "Étape de synthèse";
+    const reactants = [];
+
+    node.children.forEach(child => {
+      reactants.push({
+        name: child.metadata?.mapped_smiles || child.smiles || "Intermédiaire",
+        smiles: child.smiles || "",
+        status: child.is_chemical ? (child.in_stock ? "en_stock" : "a_synthetiser") : "a_synthetiser"
+      });
+      // Exploration plus profonde
+      parseAiZynthTree(child, steps);
+    });
+
+    steps.unshift({
+      reaction: reactionName,
+      reactants: reactants
+    });
+  }
+
+  return steps;
+}
+
+// Ouverture de la modale de rétrosynthèse
 async function openRetroModal(molecule) {
   const modal = document.getElementById("retro-modal");
   const container = document.getElementById("retro-container");
   if (!modal || !container) return;
 
   const targetName = molecule ? (molecule.id || molecule.name || molecule.smiles) : "Candidat";
-  const targetSmiles = molecule ? molecule.smiles : "COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1";
+  const targetSmiles = molecule ? molecule.smiles : "";
   
-  let retroData = null;
+  let stepsToRender = [];
+  let isAiZynthData = false;
 
-  // Tentative 1 : Charger le JSON spécifique à la molécule
+  // Tentative de chargement du fichier JSON de la molécule
   if (molecule && molecule.id) {
     try {
       const res = await fetch(`data/retrosynthesis/${molecule.id}.json`);
-      if (res.ok) retroData = await res.json();
-    } catch (e) {}
+      if (res.ok) {
+        const data = await res.json();
+        // Si structure AiZynthFinder (arbre)
+        if (data.smiles || data.children) {
+          stepsToRender = parseAiZynthTree(data);
+          isAiZynthData = true;
+        } 
+        // Si structure plate classique
+        else if (data.route?.steps) {
+          stepsToRender = data.route.steps;
+        }
+      }
+    } catch (e) {
+      console.warn("Impossible de charger la rétrosynthèse pour :", molecule.id);
+    }
   }
 
-  // Étapes de secours (Fallback 3 étapes)
-  const defaultSteps = [
-    {
-      reaction: "Substitution / Amidation",
-      reactants: [{ label: "Précurseur Aminé", smiles: "COc1cc(CCN)c(OC)cc1Br", status: "a_synthetiser" }]
-    },
-    {
-      reaction: "Couplage & Cyclisation",
-      reactants: [
-        { label: "Isocyanate intermédiaire", smiles: "CN=C=O", status: "en_stock" },
-        { label: "Dibromure d'aryle", smiles: "COc1cc(Br)c(O)cc1Br", status: "a_synthetiser" }
-      ]
-    },
-    {
-      reaction: "Halogénation régiosélective",
-      reactants: [
-        { label: "NBS (N-Bromosuccinimide)", smiles: "O=C1CCC(=O)N1Br", status: "en_stock" },
-        { label: "Réactif de départ commercial", smiles: "COc1cc(Br)c(O)cc1C", status: "en_stock" }
-      ]
-    }
-  ];
-
-  let stepsToRender = defaultSteps;
-  if (retroData) {
-    if (retroData.route && Array.isArray(retroData.route.steps) && retroData.route.steps.length > 0) {
-      stepsToRender = retroData.route.steps;
-    } else if (Array.isArray(retroData.steps) && retroData.steps.length > 0) {
-      stepsToRender = retroData.steps;
-    }
+  // Fallback si aucun fichier trouvé
+  if (stepsToRender.length === 0) {
+    stepsToRender = [
+      {
+        reaction: "Substitution / Amidation",
+        reactants: [{ name: "Précurseur Aminé", smiles: "COc1cc(CCN)c(OC)cc1Br", status: "a_synthetiser" }]
+      },
+      {
+        reaction: "Couplage & Cyclisation",
+        reactants: [
+          { name: "Isocyanate intermédiaire", smiles: "CN=C=O", status: "en_stock" },
+          { name: "Dibromure d'aryle", smiles: "COc1cc(Br)c(O)cc1Br", status: "a_synthetiser" }
+        ]
+      },
+      {
+        reaction: "Halogénation régiosélective",
+        reactants: [
+          { name: "NBS (N-Bromosuccinimide)", smiles: "O=C1CCC(=O)N1Br", status: "en_stock" },
+          { name: "Réactif de départ commercial", smiles: "COc1cc(Br)c(O)cc1C", status: "en_stock" }
+        ]
+      }
+    ];
   }
 
   container.innerHTML = `
     <div class="retro-box">
       <h2 class="retro-header-title">Plan de synthèse : ${targetName}</h2>
       <div class="retro-sub">
-        ${(retroData && retroData.formula) || 'C10H14BrNO2'} — Conforme au TPP | Rétrosynthèse AiZynthFinder
+        Conforme au TPP | Rétrosynthèse AiZynthFinder
       </div>
 
       <div style="font-size:0.85rem; margin-top: 0.4rem; color: var(--ink-dim);">
@@ -101,7 +136,7 @@ async function openRetroModal(molecule) {
       </div>
 
       <div style="font-family: var(--font-mono); font-size:0.75rem; color: var(--ink-dim); margin-bottom: 0.8rem;">
-        ${stepsToRender.length} étape(s) de réaction · Précurseurs de départ identifiés
+        ${stepsToRender.length} étape(s) de réaction · Précurseurs identifiés
       </div>
 
       <div class="retro-tree" id="retro-tree-root"></div>
@@ -129,24 +164,23 @@ async function openRetroModal(molecule) {
   treeRoot.appendChild(targetRow);
   if (targetSmiles) renderMiniMol(targetSmiles, targetId);
 
-  // Arbre des réactions
+  // Rendu des étapes extraites
   stepsToRender.forEach(step => {
     const arrow = document.createElement("div");
     arrow.className = "retro-arrow";
-    arrow.textContent = `↓ Réaction : ${step.reaction || step.type || 'Étape de synthèse'}`;
+    arrow.textContent = `↓ Réaction : ${step.reaction}`;
     treeRoot.appendChild(arrow);
 
-    const reactants = step.reactants || step.children || [];
-    reactants.forEach(r => {
+    step.reactants.forEach(r => {
       const rId = `retro-canvas-${retroCounter++}`;
-      const isStock = (r.status === "en_stock" || r.status === "in-stock" || r.in_stock);
+      const isStock = (r.status === "en_stock" || r.status === "in-stock");
       const row = document.createElement("div");
       row.className = "retro-item";
       row.innerHTML = `
         <canvas id="${rId}"></canvas>
         <div class="retro-details">
-          <span class="precursor-name">${r.label || r.name || 'Précurseur'}</span>
-          <span class="smiles-code">${r.smiles || ''}</span>
+          <span class="precursor-name">${r.name || 'Précurseur'}</span>
+          <span class="smiles-code">${r.smiles}</span>
         </div>
         <span class="stock-tag ${isStock ? 'in-stock' : 'to-synth'}">${isStock ? 'en stock' : 'à synthétiser'}</span>
       `;

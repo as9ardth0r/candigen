@@ -35,11 +35,40 @@ function renderMiniMol(smiles, canvasId) {
   }, 50);
 }
 
-// Fonction récursive pour extraire les étapes de l'arbre AiZynthFinder
+// Fonction d'affichage de la grille de molécules dans le dashboard
+function renderCandidates(molecules) {
+  const container = document.getElementById("grid-container") || document.getElementById("molecules-grid");
+  if (!container) return;
+
+  container.innerHTML = "";
+  molecules.forEach((mol, idx) => {
+    const card = document.createElement("div");
+    card.className = "mol-card";
+    const canvasId = `main-mol-canvas-${idx}`;
+    
+    card.innerHTML = `
+      <h3>${mol.id || mol.name || 'Candidat'}</h3>
+      <div class="canvas-wrapper">
+        <canvas id="${canvasId}"></canvas>
+      </div>
+      <p class="smiles-text">${mol.smiles || ''}</p>
+      <button class="btn-retro" data-idx="${idx}">Plan de rétrosynthèse</button>
+    `;
+
+    container.appendChild(card);
+    if (mol.smiles) renderMiniMol(mol.smiles, canvasId);
+
+    const btn = card.querySelector(".btn-retro");
+    if (btn) {
+      btn.addEventListener("click", () => openRetroModal(mol));
+    }
+  });
+}
+
+// Extraction récursive de l'arbre AiZynthFinder
 function parseAiZynthTree(node, steps = []) {
   if (!node) return steps;
 
-  // Si le nœud contient des enfants (réaction)
   if (node.children && node.children.length > 0) {
     const reactionName = node.metadata?.reaction_hash || node.type || "Étape de synthèse";
     const reactants = [];
@@ -50,7 +79,6 @@ function parseAiZynthTree(node, steps = []) {
         smiles: child.smiles || "",
         status: child.is_chemical ? (child.in_stock ? "en_stock" : "a_synthetiser") : "a_synthetiser"
       });
-      // Exploration plus profonde
       parseAiZynthTree(child, steps);
     });
 
@@ -63,7 +91,7 @@ function parseAiZynthTree(node, steps = []) {
   return steps;
 }
 
-// Ouverture de la modale de rétrosynthèse
+// Modale de rétrosynthèse
 async function openRetroModal(molecule) {
   const modal = document.getElementById("retro-modal");
   const container = document.getElementById("retro-container");
@@ -73,30 +101,24 @@ async function openRetroModal(molecule) {
   const targetSmiles = molecule ? molecule.smiles : "";
   
   let stepsToRender = [];
-  let isAiZynthData = false;
 
-  // Tentative de chargement du fichier JSON de la molécule
   if (molecule && molecule.id) {
     try {
       const res = await fetch(`data/retrosynthesis/${molecule.id}.json`);
       if (res.ok) {
         const data = await res.json();
-        // Si structure AiZynthFinder (arbre)
         if (data.smiles || data.children) {
           stepsToRender = parseAiZynthTree(data);
-          isAiZynthData = true;
-        } 
-        // Si structure plate classique
-        else if (data.route?.steps) {
+        } else if (data.route?.steps) {
           stepsToRender = data.route.steps;
         }
       }
     } catch (e) {
-      console.warn("Impossible de charger la rétrosynthèse pour :", molecule.id);
+      console.warn("Rétrosynthèse non trouvée pour :", molecule.id);
     }
   }
 
-  // Fallback si aucun fichier trouvé
+  // Fallback si pas de fichier de rétrosynthèse disponible
   if (stepsToRender.length === 0) {
     stepsToRender = [
       {
@@ -149,7 +171,6 @@ async function openRetroModal(molecule) {
 
   const treeRoot = document.getElementById("retro-tree-root");
 
-  // Molécule cible
   const targetId = `retro-canvas-${retroCounter++}`;
   const targetRow = document.createElement("div");
   targetRow.className = "retro-item";
@@ -164,7 +185,6 @@ async function openRetroModal(molecule) {
   treeRoot.appendChild(targetRow);
   if (targetSmiles) renderMiniMol(targetSmiles, targetId);
 
-  // Rendu des étapes extraites
   stepsToRender.forEach(step => {
     const arrow = document.createElement("div");
     arrow.className = "retro-arrow";
@@ -200,6 +220,23 @@ function initModalEvents() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// Initialisation globale et chargement de site/data/molecules.json
+document.addEventListener("DOMContentLoaded", async () => {
   initModalEvents();
+
+  try {
+    const res = await fetch("data/molecules.json");
+    if (res.ok) {
+      const data = await res.json();
+      const molecules = data.molecules || data;
+      renderCandidates(molecules);
+
+      const statusEl = document.querySelector(".header-status, #status-text");
+      if (statusEl) {
+        statusEl.textContent = `EGFR · ${molecules.length || 0} molécules chargées`;
+      }
+    }
+  } catch (e) {
+    console.error("Erreur de chargement des molécules :", e);
+  }
 });

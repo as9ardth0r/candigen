@@ -51,7 +51,7 @@ def fetch_pdb(pdb_id: str, out_path: Path) -> None:
     out_path.write_text(response.text)
 
 
-def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool) -> None:
+def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool, default_altloc: str) -> None:
     raw_path = RECEPTOR_DIR / f"{name.lower()}_raw.pdb"
     print(f"[prepare_receptor] téléchargement {pdb_id} -> {raw_path}")
     fetch_pdb(pdb_id, raw_path)
@@ -65,6 +65,13 @@ def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool
         "-p",  # écrit le PDBQT
         "-v",  # écrit la config de boîte Vina
         "--padding", str(padding),
+        # Les structures cristallographiques réelles ont souvent des résidus
+        # à localisation alternative (ex. 1M17 : A:751, A:831) — deux
+        # conformations modélisées pour la même chaîne latérale, ambiguïté
+        # que meeko refuse de trancher seul. 'A' est la convention PDB pour
+        # la conformation principale (occupation la plus élevée), donc un
+        # défaut raisonnable plutôt que de supprimer ces résidus.
+        "--default_altloc", default_altloc,
     ]
     if allow_bad_res:
         cmd.append("-a")
@@ -95,6 +102,9 @@ def main() -> None:
     parser.add_argument("--allow-bad-residues", action="store_true",
                          help="supprime les résidus incomplets au lieu de stopper sur erreur "
                               "(voir l'option -a de mk_prepare_receptor.py)")
+    parser.add_argument("--default-altloc", type=str, default="A",
+                         help="conformation alternative par défaut pour les résidus qui en ont "
+                              "plusieurs dans le cristal (voir --default_altloc de mk_prepare_receptor.py)")
     args = parser.parse_args()
 
     targets = list(CANDIDATE_STRUCTURES) if args.target == "all" else [args.target]
@@ -102,7 +112,7 @@ def main() -> None:
 
     for name in targets:
         pdb_id = CANDIDATE_STRUCTURES[name]
-        prepare_receptor(pdb_id, name, args.padding, args.allow_bad_residues)
+        prepare_receptor(pdb_id, name, args.padding, args.allow_bad_residues, args.default_altloc)
 
 
 if __name__ == "__main__":

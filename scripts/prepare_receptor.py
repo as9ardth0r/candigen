@@ -1,100 +1,108 @@
 #!/usr/bin/env python3
+"""Prépare les structures réceptrices pour le docking (docking.py) :
+télécharge le PDB depuis RCSB, repère le ligand co-cristallisé (pour
+dériver automatiquement la boîte de recherche autour de sa position
+réelle plutôt que de deviner des coordonnées), puis appelle
+`mk_prepare_receptor.py` (meeko) pour produire le PDBQT et la
+configuration de boîte Vina.
+
+Nécessite un accès réseau vers files.rcsb.org, absent de la liste
+blanche du sandbox utilisé pour construire ce dépôt (limitée à
+PyPI/GitHub/npm) — ce script n'a donc pas pu être exécuté de bout en
+bout ici. La logique d'extraction du ligand (receptor_prep.py) est
+testée séparément sans réseau — voir tests/test_receptor_prep.py.
+Fonctionnera normalement en local ou dans explore.yml (les runners
+GitHub Actions ont un accès réseau complet, contrairement à ce sandbox).
+
+Les identifiants PDB ci-dessous sont des points de départ à vérifier
+(résolution, complétude du domaine kinase, présence d'un ligand
+co-cristallisé pertinent) avant tout usage réel — pas un choix validé.
+
+Usage prévu :
+    python scripts/prepare_receptors.py --target EGFR_WT
+    python scripts/prepare_receptors.py --target all
 """
-Prépare une ou plusieurs structures receptrices pour le docking multi-cible.
-Idempotent par cible : relancer ce script ne re-télécharge/reconvertit QUE
-les cibles absentes de data/receptor/<PDB_ID>/config.json — les cibles déjà
-préparées et committées sont sautées automatiquement (pas besoin de logique
-conditionnelle côté CI, contrairement à avant).
-
-Pour ajouter/retirer une cible, éditer TARGETS ci-dessous et relancer.
-Chaque cible est indépendante : data/receptor/<PDB_ID>/{<PDB_ID>.pdb,
-<PDB_ID>.pdbqt, config.json}.
-
-Usage :
-    python scripts/prepare_receptor.py
-"""
-
 from __future__ import annotations
 
-import json
+import argparse
+import subprocess
 import sys
-import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+from molgen_egfr.receptor_prep import extract_ligand_pdb, find_cocrystallized_ligand  # noqa: E402
 
-from candigen.docking import binding_site_center, prepare_receptor_pdbqt
+CANDIDATE_STRUCTURES = {
+    "EGFR_WT": "1M17",              # domaine kinase EGFR + erlotinib
+    "EGFR_T790M": "2JIV",           # mutant de résistance T790M
+    "EGFR_T790M_C797S": "5D41",     # double mutant, cible de l'osimertinib
+    "HER2": "3PP0",                 # domaine kinase HER2/ErbB2
+}
 
-# Une entrée par cible. target_name est la seule source de vérité pour le
-# nom affiché dans le dashboard (candigen.export.read_target_names).
-TARGETS = [
-    {
-        "pdb_id": "6BQG",
-        "target_name": "5-HT2C",
-        # EGFR domaine kinase + erlotinib — Stamos et al., J. Biol. Chem. 2002.
-        # Référence historique pour les inhibiteurs Type I quinazoline/aminopyrimidine.
-    },
-    {
-        "pdb_id": "4DKL",
-        "target_name": "mu-opioid",
-        # Mutant de résistance double (gatekeeper + activateur) — utile pour
-        # repérer les candidats actifs spécifiquement sur la forme résistante.
-    },
-]
-
-RECEPTOR_ROOT = ROOT / "data" / "receptor"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+RECEPTOR_DIR = REPO_ROOT / "data" / "receptors"
 
 
-def prepare_one(pdb_id: str, target_name: str) -> None:
-    target_dir = RECEPTOR_ROOT / pdb_id
-    config_path = target_dir / "config.json"
-
-    if config_path.exists():
-        print(f"[{pdb_id}] déjà préparé ({config_path}) — skip.")
-        return
-
-    target_dir.mkdir(parents=True, exist_ok=True)
-    pdb_path = target_dir / f"{pdb_id}.pdb"
-
-    print(f"[{pdb_id}] [1/4] Téléchargement depuis RCSB...")
+def fetch_pdb(pdb_id: str, out_path: Path) -> None:
+    import requests
     url = f"https://files.rcsb.org/download/{pdb_id}.pdb"
-    urllib.request.urlretrieve(url, pdb_path)
-    pdb_text = pdb_path.read_text()
-    print(f"[{pdb_id}]       {len(pdb_text.splitlines())} lignes téléchargées")
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    out_path.write_text(response.text)
 
-    print(f"[{pdb_id}] [2/4] Calcul du centre de la poche de liaison (records SITE)...")
-    center = binding_site_center(pdb_text)
-    if center is None:
-        print(f"[{pdb_id}]       ERREUR : aucun centre trouvé — vérifier les records SITE du PDB")
-        sys.exit(1)
-    print(f"[{pdb_id}]       Centre : {center}")
 
-    print(f"[{pdb_id}] [3/4] Conversion en PDBQT (Open Babel)...")
-    receptor_pdbqt = target_dir / f"{pdb_id}.pdbqt"
-    ok = prepare_receptor_pdbqt(pdb_path, receptor_pdbqt)
-    if not ok:
-        print(f"[{pdb_id}]       ERREUR : conversion échouée — le paquet 'openbabel' (apt) est-il installé ?")
-        sys.exit(1)
-    print(f"[{pdb_id}]       -> {receptor_pdbqt}")
+def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool) -> None:
+    raw_path = RECEPTOR_DIR / f"{name.lower()}_raw.pdb"
+    print(f"[prepare_receptors] téléchargement {pdb_id} -> {raw_path}")
+    fetch_pdb(pdb_id, raw_path)
 
-    print(f"[{pdb_id}] [4/4] Sauvegarde de la configuration...")
-    config = {
-        "pdb_id": pdb_id,
-        "target_name": target_name,
-        "center": list(center),
-        "box_size": [24.0, 20.0, 24.0],
-        "receptor_pdbqt": str(receptor_pdbqt.relative_to(ROOT)),
-    }
-    config_path.write_text(json.dumps(config, indent=2))
-    print(f"[{pdb_id}]       -> {config_path}")
+    ligand_hit = find_cocrystallized_ligand(raw_path)
+    output_basename = str(RECEPTOR_DIR / name.lower())
+    cmd = [
+        "mk_prepare_receptor.py",
+        "--read_pdb", str(raw_path),
+        "-o", output_basename,
+        "-p",  # écrit le PDBQT
+        "-v",  # écrit la config de boîte Vina
+        "--padding", str(padding),
+    ]
+    if allow_bad_res:
+        cmd.append("-a")
+
+    if ligand_hit is not None:
+        chain_name, res_name, res_seq, n_atoms = ligand_hit
+        print(f"[prepare_receptors] ligand co-cristallisé repéré : "
+              f"{res_name} (chaîne {chain_name}, résidu {res_seq}, {n_atoms} atomes)")
+        ligand_path = RECEPTOR_DIR / f"{name.lower()}_ref_ligand.pdb"
+        extract_ligand_pdb(raw_path, chain_name, res_name, res_seq, ligand_path)
+        cmd += ["--box_enveloping", str(ligand_path)]
+    else:
+        print(f"[prepare_receptors] ATTENTION — aucun ligand co-cristallisé trouvé pour {name} : "
+              f"la boîte de recherche doit être définie manuellement (--box_center / --box_size), "
+              f"pas dérivée automatiquement.")
+
+    print(f"[prepare_receptors] exécution : {' '.join(cmd)}")
+    subprocess.run(cmd, check=True)
+    print(f"[prepare_receptors] {name} prêt : "
+          f"{output_basename}.pdbqt + {output_basename}_box.txt")
 
 
 def main() -> None:
-    for target in TARGETS:
-        prepare_one(target["pdb_id"], target["target_name"])
-    print(f"\nTerminé ({len(TARGETS)} cible(s) configurée(s)). "
-          f"Committez data/receptor/ dans le dépôt pour que le pipeline l'utilise.")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--target", choices=list(CANDIDATE_STRUCTURES) + ["all"], default="all")
+    parser.add_argument("--padding", type=float, default=4.0,
+                         help="marge (Å) ajoutée autour du ligand de référence pour la boîte de recherche")
+    parser.add_argument("--allow-bad-residues", action="store_true",
+                         help="supprime les résidus incomplets au lieu de stopper sur erreur "
+                              "(voir l'option -a de mk_prepare_receptor.py)")
+    args = parser.parse_args()
+
+    targets = list(CANDIDATE_STRUCTURES) if args.target == "all" else [args.target]
+    RECEPTOR_DIR.mkdir(parents=True, exist_ok=True)
+
+    for name in targets:
+        pdb_id = CANDIDATE_STRUCTURES[name]
+        prepare_receptor(pdb_id, name, args.padding, args.allow_bad_residues)
 
 
 if __name__ == "__main__":

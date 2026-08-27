@@ -106,6 +106,50 @@ def test_daily_batch_keeps_producing_after_recipe_catalog_exhausted():
             explored.add(canon)
 
 
+def test_atom_mutant_ids_dont_collide_across_same_day_runs():
+    """Régression : deploy.yml relance run_pipeline.py à chaque push sur
+    main, pas une seule fois par jour — generate_daily_batch peut donc être
+    appelée plusieurs fois avec la même seed (la date) le même jour. L'ID
+    des mutants atomiques était dérivé uniquement du compteur de boucle
+    `attempts`, remis à zéro à chaque appel. Entre deux exécutions du même
+    jour, la composition du hall of fame élite peut changer (le premier run
+    y a fusionné de nouvelles molécules) : rng.choice(elite_records) tire
+    alors un parent différent à la même position d'`attempts`, produisant
+    un ID identique pour deux molécules différentes (observé en
+    production : deux cartes 'mut_2026-08-27_0014' avec des SMILES
+    distincts sur le dashboard)."""
+    lib = full_library()
+    explored = {Chem.MolToSmiles(Chem.MolFromSmiles(build_smiles(r))) for r in lib}
+    rng = random.Random("collision-test")
+    elites = [_record_from_recipe(r) for r in rng.sample(lib, 15)]
+    profile = TPPProfile()
+    elites = enrich_and_filter(elites, profile)
+    for r in elites:
+        r.fitness = fitness(r)
+
+    # Run 1, avec la composition "elites_a" du hall of fame a cet instant.
+    batch_a = generate_daily_batch(explored, elites, n_fresh=0, n_recipe_mutants=0, n_atom_mutants=15, seed="2026-08-27")
+
+    # Run 2, plus tard le meme jour : le hall of fame a change de
+    # composition entre-temps (nouvelles molecules fusionnees par le run 1,
+    # simulees ici par un ordre different de la meme liste — suffisant pour
+    # faire diverger rng.choice(elite_records) a la meme position).
+    elites_shifted = list(reversed(elites))
+    batch_b = generate_daily_batch(explored, elites_shifted, n_fresh=0, n_recipe_mutants=0, n_atom_mutants=15, seed="2026-08-27")
+
+    ids_a = {mol_id: smi for mol_id, smi, _ in batch_a}
+    ids_b = {mol_id: smi for mol_id, smi, _ in batch_b}
+    # un ID partagé entre les deux runs est acceptable SI ET SEULEMENT SI
+    # c'est la même molécule dans les deux cas (rejouée par coïncidence à
+    # la même position) — le vrai bug, c'est un ID partagé pointant vers
+    # des SMILES différents.
+    for shared_id in set(ids_a) & set(ids_b):
+        assert ids_a[shared_id] == ids_b[shared_id], (
+            f"ID {shared_id} pointe vers deux molécules différentes selon le run : "
+            f"{ids_a[shared_id]!r} vs {ids_b[shared_id]!r}"
+        )
+
+
 def test_hall_of_fame_merge_deduplicates_and_caps():
     profile = TPPProfile()
     rng = random.Random("hof-test")

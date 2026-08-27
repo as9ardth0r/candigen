@@ -22,6 +22,7 @@ SMILES canonique du candidat ne doit jamais avoir été testé auparavant
 
 from __future__ import annotations
 
+import hashlib
 import random
 from dataclasses import dataclass, asdict
 from itertools import product
@@ -262,8 +263,19 @@ def generate_daily_batch(
             child_mol = mutate_atoms(parent_mol, rng)
             if child_mol is None:
                 continue
-            mol_id = f"mut_{seed}_{attempts:04d}"
-            if _try_add(mol_id, Chem.MolToSmiles(child_mol), None):
+            child_smiles = Chem.MolToSmiles(child_mol)
+            # Basé sur le contenu (hash du SMILES canonique), pas sur le
+            # compteur de boucle `attempts` seul : deploy.yml relance
+            # run_pipeline.py à chaque push sur main, pas une seule fois par
+            # jour comme le cron le laisserait penser — `seed` (la date) est
+            # donc souvent identique entre plusieurs exécutions du même
+            # jour, et un simple `attempts` remis à zéro à chaque appel peut
+            # retomber sur la même valeur d'une exécution à l'autre. Un ID
+            # dérivé du contenu reste unique par molécule quel que soit le
+            # nombre d'exécutions dans la journée.
+            content_hash = hashlib.sha1(child_smiles.encode()).hexdigest()[:8]
+            mol_id = f"mut_{seed}_{attempts:04d}_{content_hash}"
+            if _try_add(mol_id, child_smiles, None):
                 added += 1
 
     return out

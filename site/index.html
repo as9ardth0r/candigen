@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>molgen-egfr — exploration de candidats EGFR</title>
+<title>CandiGen Dashboard — EGFR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/smiles-drawer@2/dist/smiles-drawer.min.js"></script>
@@ -14,59 +14,27 @@
 <header class="hero">
   <div class="scan-beam"></div>
   <div class="hero-inner">
-    <p class="eyebrow">molgen-egfr</p>
-    <h1>Exploration in silico de candidats ciblant l'EGFR</h1>
+    <h1>CandiGen <span class="highlight">Dashboard</span></h1>
     <p class="lede">
-      Population de molécules faisant évoluer, par algorithme génétique, l'espace
-      chimique autour d'inhibiteurs EGFR connus — sauvage et mutants de
-      résistance (T790M, C797S) — ainsi que HER2.
+      Pipeline CADD open source — génération & criblage d'inhibiteurs de EGFR
     </p>
 
-    <div class="stat-row" id="stat-row">
-      <div class="stat">
-        <span class="stat-value" id="stat-generations">—</span>
-        <span class="stat-label">générations</span>
-      </div>
-      <div class="stat is-signal">
-        <span class="stat-value" id="stat-best">—</span>
-        <span class="stat-label">meilleure fitness</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value" id="stat-population">—</span>
-        <span class="stat-label">population finale</span>
-      </div>
+    <div class="header-meta-box">
+      <div id="footer-meta">EGFR · chargement…</div>
+      <a href="https://github.com" target="_blank" rel="noopener" class="github-btn">Voir sur GitHub</a>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="panel" id="chart-panel">
-    <h2>Progression de la fitness</h2>
-    <p class="panel-sub">Meilleure fitness et fitness moyenne à chaque génération. Couleur : convention thermique (bleu = faible, rouge = élevée) empruntée aux cartes de facteur B des structures cristallographiques.</p>
-    <div id="chart-container"></div>
-  </section>
-
   <section class="panel" id="candidates-panel">
-    <h2>Meilleurs candidats</h2>
-    <p class="panel-sub">Population finale, triée par fitness décroissante.</p>
     <div id="candidate-grid" class="candidate-grid"></div>
   </section>
 
   <section class="panel" id="retro-panel">
-    <h2>Analyse de rétrosynthèse</h2>
-    <p class="panel-sub">Voie de synthèse proposée et évaluation des intermédiaires.</p>
     <div id="retro-container"></div>
   </section>
 </main>
-
-<footer>
-  <p id="footer-meta">Chargement…</p>
-  <p class="footer-note">
-    Pipeline de génération : algorithme génétique (croisement/mutation RDKit) —
-    fitness combinant QED, filtres structuraux PAINS/Brenk et, si disponible,
-    score de docking. Voir le dépôt pour le code complet et ses limites documentées.
-  </p>
-</footer>
 
 <script src="js/app.js" defer></script>
 </body>

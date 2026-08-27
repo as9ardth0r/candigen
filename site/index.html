@@ -3,33 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CandiGen Dashboard — EGFR</title>
+<title>CandiGen — Catalogue de candidats EGFR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/smiles-drawer@2/dist/smiles-drawer.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js"></script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="hero">
   <div class="hero-inner">
-    <h1>CandiGen <span class="highlight">Dashboard</span></h1>
-    <p class="lede">
-      Pipeline CADD open source — génération & criblage d'inhibiteurs de EGFR
-    </p>
+    <p class="eyebrow">Pipeline CADD open source</p>
+    <h1>Candi<em>Gen</em></h1>
+    <p class="lede">Génération et criblage in silico de candidats inhibiteurs de l'EGFR — sauvage et mutants de résistance.</p>
 
-    <div class="header-meta-box">
-      <div id="status-text">EGFR · chargement…</div>
-      <a href="https://github.com" target="_blank" rel="noopener" class="github-btn">Voir sur GitHub</a>
+    <div class="ledger-strip">
+      <span id="status-text">EGFR · chargement…</span>
+      <a href="https://github.com/as9ardth0r/candigen" target="_blank" rel="noopener" class="github-btn">Voir sur GitHub ↗</a>
     </div>
   </div>
 </header>
 
 <main>
+  <section id="featured-wrap"></section>
+
   <section class="panel" id="candidates-panel">
+    <h2 class="section-title">Catalogue</h2>
     <div id="grid-container" class="candidate-grid"></div>
   </section>
 </main>
+
+<footer>
+  <p>Descripteurs calculés (RDKit), filtrés contre un profil produit cible, rétrosynthèse (AiZynthFinder) sur les candidats retenus. Voir le dépôt pour la méthodologie complète et ses limites documentées.</p>
+</footer>
 
 <!-- Modal pour la Rétrosynthèse -->
 <div id="retro-modal" class="modal-overlay hidden">

@@ -1,38 +1,57 @@
 let retroCounter = 0;
 
-// Rendu mini-molécule RDKit / Fallback
-function renderMiniMol(smiles, canvasId) {
-  setTimeout(() => {
-    const canvas = document.getElementById(canvasId);
-    if (!canvas) return;
-    
-    if (window.RDKitModule && smiles) {
-      try {
-        const mol = window.RDKitModule.get_mol(smiles);
-        if (mol) {
-          canvas.width = 70;
-          canvas.height = 50;
-          mol.draw_to_canvas(canvas, 70, 50);
-          mol.delete();
-          return;
-        }
-      } catch (e) {
-        console.warn("Erreur RDKit :", smiles);
-      }
+// --- RDKit.js : chargement paresseux, une seule fois, mis en cache ---
+// window.initRDKitModule() renvoie une Promise (chargement + instanciation
+// du module WASM prend un instant) — il ne faut jamais supposer que
+// window.RDKitModule est déjà prêt de façon synchrone au moment où une
+// vignette essaie de se dessiner.
+let _rdkitPromise = null;
+function getRDKit() {
+  if (!_rdkitPromise) {
+    if (typeof window.initRDKitModule !== "function") {
+      return Promise.reject(new Error("initRDKitModule indisponible (RDKit_minimal.js non chargé ?)"));
     }
+    _rdkitPromise = window.initRDKitModule().then((RDKit) => {
+      window.RDKitModule = RDKit;
+      return RDKit;
+    });
+  }
+  return _rdkitPromise;
+}
+
+// Rendu mini-molécule RDKit / Fallback
+async function renderMiniMol(smiles, canvasId) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (smiles) {
+    try {
+      const RDKit = await getRDKit();
+      const mol = RDKit.get_mol(smiles);
+      if (mol) {
+        canvas.width = 70;
+        canvas.height = 50;
+        mol.draw_to_canvas(canvas, 70, 50);
+        mol.delete();
+        return;
+      }
+    } catch (e) {
+      console.warn("Erreur RDKit :", smiles, e);
+    }
+  }
 
     const ctx = canvas.getContext("2d");
     if (ctx) {
       canvas.width = 70;
       canvas.height = 50;
-      ctx.fillStyle = "#1e293b";
+      ctx.fillStyle = "#EAE6DC";
       ctx.fillRect(0, 0, 70, 50);
-      ctx.fillStyle = "#94a3b8";
-      ctx.font = "10px sans-serif";
+      ctx.fillStyle = "#8a8471";
+      ctx.font = "9px sans-serif";
       ctx.textAlign = "center";
-      ctx.fillText("Molécule", 35, 28);
+      ctx.fillText("structure", 35, 25);
+      ctx.fillText("indisponible", 35, 35);
     }
-  }, 50);
 }
 
 // Fonction d'affichage de la grille de molécules dans le dashboard
@@ -220,6 +239,38 @@ function initModalEvents() {
   }
 }
 
+// Fiche "spécimen du jour" : le candidat de meilleure fitness actuellement
+// dans le catalogue, mis en avant en tête de page — vraies données, pas un
+// exemple statique.
+function renderFeaturedSpecimen(molecules) {
+  const wrap = document.getElementById("featured-wrap");
+  if (!wrap) return;
+  const withFitness = molecules.filter((m) => typeof m.fitness === "number");
+  if (withFitness.length === 0) return;
+  const top = withFitness.reduce((best, m) => (m.fitness > best.fitness ? m : best));
+
+  const canvasId = "featured-canvas";
+  const stat = (label, value) => `
+    <div><span class="stat-label">${label}</span><span class="stat-value">${value ?? "—"}</span></div>`;
+
+  wrap.innerHTML = `
+    <div class="featured-specimen">
+      <div class="canvas-wrapper"><canvas id="${canvasId}"></canvas></div>
+      <div>
+        <p class="featured-label">Meilleur candidat actuel</p>
+        <h3>${top.chemical_name || top.id}</h3>
+        <div class="featured-stats">
+          ${stat("Fitness", top.fitness?.toFixed(3))}
+          ${stat("MW", top.mw)}
+          ${stat("LogP", top.logp)}
+          ${stat("TPSA", top.tpsa)}
+          ${stat("TPP", top.tpp_pass ? "conforme" : "non conforme")}
+        </div>
+      </div>
+    </div>`;
+  if (top.smiles) renderMiniMol(top.smiles, canvasId);
+}
+
 // Initialisation globale et chargement de site/data/molecules.json
 document.addEventListener("DOMContentLoaded", async () => {
   initModalEvents();
@@ -229,6 +280,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (res.ok) {
       const data = await res.json();
       const molecules = data.molecules || data;
+      renderFeaturedSpecimen(molecules);
       renderCandidates(molecules);
 
       const statusEl = document.querySelector(".header-status, #status-text");

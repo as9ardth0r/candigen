@@ -1,177 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
 :root {
-  --void: #0d1117;
-  --panel-bg: #161b22;
-  --card-bg: #11151c;
-  --hairline: #21262d;
-  --hairline-strong: #30363d;
-  --ink: #f0f6fc;
-  --ink-dim: #8b949e;
-  --accent-cyan: #38bdf8;
-  --ok-green: #238636;
-  --ok-green-text: #3fb950;
-  --warn-amber: #d29922;
-  --purple-badge: #8957e5;
-  --font-display: 'Space Grotesk', sans-serif;
+  /* --- carnet de pharmacopée : parchemin, encre botanique, apothicaire --- */
+  --paper: #eae6dc;
+  --panel: #f6f4ec;
+  --panel-deep: #f1ede1;
+  --ink: #1f2a24;
+  --ink-dim: #6b6656;
+  --line: #cfc7ae;
+  --line-strong: #b6ac8c;
+
+  --teal: #1f6f5c;
+  --teal-soft: rgba(31, 111, 92, 0.1);
+  --rust: #b5502d;
+  --rust-soft: rgba(181, 80, 45, 0.1);
+  --ochre: #c08a2e;
+  --ochre-soft: rgba(192, 138, 46, 0.12);
+  --pass: #2f7d4f;
+  --pass-soft: rgba(47, 125, 79, 0.12);
+  --alert: #a23b3b;
+  --alert-soft: rgba(162, 59, 59, 0.1);
+  --violet: #6b4f8f;
+  --violet-soft: rgba(107, 79, 143, 0.1);
+
+  --font-display: 'Source Serif 4', Georgia, serif;
   --font-body: 'IBM Plex Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius: 10px;
+  --wrap: 1320px;
 }
 
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
-  background: var(--void);
+  background: var(--paper);
+  background-image:
+    repeating-linear-gradient(transparent, transparent 34px, var(--line) 35px);
+  background-size: 100% 35px;
   color: var(--ink);
   font-family: var(--font-body);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-main { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+a { color: var(--teal); }
 
-/* Header */
-.hero { padding: 1.5rem 1.5rem 1rem; max-width: 1280px; margin: 0 auto; }
-.hero h1 { font-family: var(--font-display); font-size: 2rem; margin: 0; }
-.hero h1 .highlight { color: var(--accent-cyan); }
-.hero .lede { color: var(--ink-dim); font-size: 0.95rem; margin: 0.3rem 0 1rem; }
+.hero, main, footer {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding-left: clamp(1.25rem, 4vw, 3rem);
+  padding-right: clamp(1.25rem, 4vw, 3rem);
+}
 
-.header-meta-box {
+/* --- masthead --- */
+.hero {
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+  padding-bottom: 1.5rem;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin: 0 0 0.5rem;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--teal);
+}
+.hero .lede {
+  font-size: 1.05rem;
+  color: var(--ink-dim);
+  max-width: 56ch;
+  margin: 0.6rem 0 1.5rem;
+}
+
+.ledger-strip {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  background: #12171f;
-  border: 1px solid var(--hairline-strong);
-  border-radius: 6px;
-  padding: 0.6rem 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+  padding: 0.7rem 0;
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--ink-dim);
 }
 .github-btn {
-  color: var(--accent-cyan);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  border-radius: 4px;
-  padding: 0.3rem 0.7rem;
+  color: var(--teal);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-weight: 500;
   white-space: nowrap;
 }
+.github-btn:hover { text-decoration: underline; }
 
-/* Grille de 3 colonnes pour desktop / adaptatif */
-.candidate-grid {
+/* --- fiche "spécimen du jour" (le meilleur candidat actuel, vraies données) --- */
+#featured-wrap:empty { display: none; }
+.featured-specimen {
+  margin: 2rem 0;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: clamp(1.25rem, 3vw, 2rem);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: 200px 1fr;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
 }
-
-@media (max-width: 1024px) {
-  .candidate-grid { grid-template-columns: repeat(2, 1fr); }
+.featured-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: 0 0 0.6rem;
 }
+.featured-specimen .canvas-wrapper {
+  width: 200px;
+  height: 150px;
+  background: #fff;
+}
+.featured-specimen h3 {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+  word-break: break-word;
+}
+.featured-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.featured-stats .stat-label { color: var(--ink-dim); display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.featured-stats .stat-value { color: var(--ink); font-weight: 600; font-size: 1rem; }
 
 @media (max-width: 640px) {
-  .candidate-grid { grid-template-columns: 1fr; }
+  .featured-specimen { grid-template-columns: 1fr; }
+  .featured-specimen .canvas-wrapper { width: 100%; }
 }
 
-/* Candidate Card */
-.candidate-card {
-  position: relative;
-  background: var(--card-bg);
-  border: 1px solid var(--hairline-strong);
-  border-radius: 8px;
+/* --- section catalogue --- */
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--ink);
+  display: inline-block;
+}
+
+main { padding-top: 0.5rem; padding-bottom: 3rem; }
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+/* --- fiche de spécimen (carte molécule) --- */
+.mol-card {
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0.65rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.mol-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-2px);
 }
 
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.5rem;
-  margin-bottom: 0.2rem;
-}
-.card-title {
+.mol-card h3 {
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--ink);
   margin: 0;
   word-break: break-word;
   line-height: 1.3;
 }
-.card-badges { display: flex; gap: 0.3rem; flex-shrink: 0; }
-.pill-badge {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  padding: 0.1rem 0.35rem;
-  border-radius: 4px;
-  border: 1px solid transparent;
-}
-.pill-badge.curated { color: var(--accent-cyan); border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.05); }
-.pill-badge.tpp { color: var(--ok-green-text); border-color: rgba(63, 185, 80, 0.4); background: rgba(63, 185, 80, 0.1); }
 
-.card-cas {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--ink-dim);
-  margin: 0 0 0.6rem;
-}
-
-.canvas-container {
-  background: #f8f9fa;
+.canvas-wrapper {
+  background: #fff;
+  border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 0.4rem;
-  margin-bottom: 0.75rem;
+  height: 110px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-.canvas-container canvas { width: 100%; height: 140px; display: block; }
+.canvas-wrapper canvas { max-width: 100%; max-height: 100%; }
 
-/* Table Propriétés */
-.props-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.3rem 0.5rem;
+.smiles-text {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-dim);
+  margin: 0;
+  word-break: break-all;
+  line-height: 1.4;
+  max-height: 2.8em;
+  overflow: hidden;
+}
+
+.btn-retro {
+  margin-top: auto;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--ink-dim);
-  margin-bottom: 0.75rem;
-}
-.props-grid strong { color: var(--ink); font-weight: 500; }
-
-/* Boutons d'action */
-.card-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.action-btn {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  border: none;
-}
-.action-btn.docking { background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--accent-cyan); }
-.action-btn.pubchem { background: rgba(210, 153, 34, 0.1); border: 1px solid rgba(210, 153, 34, 0.3); color: var(--warn-amber); }
-.action-btn.retro-clickable { 
-  background: rgba(137, 87, 229, 0.15); 
-  border: 1px solid rgba(137, 87, 229, 0.5); 
-  color: #a371f7; 
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--violet);
+  background: var(--violet-soft);
+  color: var(--violet);
   cursor: pointer;
-  transition: all 0.2s ease;
+  text-align: left;
+  transition: background 0.15s ease;
 }
-.action-btn.retro-clickable:hover {
-  background: rgba(137, 87, 229, 0.3);
-  box-shadow: 0 0 8px rgba(137, 87, 229, 0.4);
+.btn-retro:hover { background: rgba(107, 79, 143, 0.2); }
+
+/* --- pied de page --- */
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--line-strong);
+  margin-top: 1rem;
+}
+footer p {
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+  max-width: 72ch;
 }
 
-/* Modal de Rétrosynthèse */
+/* --- modale de rétrosynthèse --- */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(4px);
+  background: rgba(31, 42, 36, 0.55);
+  backdrop-filter: blur(3px);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -182,78 +267,81 @@ main { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
 
 .modal-content {
   position: relative;
-  background: var(--card-bg);
-  border: 1px solid var(--hairline-strong);
-  border-radius: 10px;
-  max-width: 650px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  max-width: 680px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 88vh;
   overflow-y: auto;
-  padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  padding: 1.75rem;
+  box-shadow: 0 16px 40px rgba(31, 42, 36, 0.25);
 }
 
 .modal-close {
   position: absolute;
-  top: 0.8rem;
+  top: 0.75rem;
   right: 1rem;
   background: transparent;
   border: none;
   color: var(--ink-dim);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   cursor: pointer;
   line-height: 1;
 }
 .modal-close:hover { color: var(--ink); }
 
-/* Contenu Rétrosynthèse dans Modal */
 .retro-box { background: transparent; }
 .retro-header-title {
   font-family: var(--font-display);
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
   color: var(--ink);
 }
-.retro-sub { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-dim); margin: 0 0 1rem; }
-.retro-sub a { color: var(--accent-cyan); text-decoration: none; }
+.retro-sub {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  margin: 0 0 1rem;
+}
 
 .route-dropdown {
-  background: var(--card-bg);
-  border: 1px solid var(--accent-cyan);
+  background: var(--panel-deep);
+  border: 1px solid var(--line-strong);
   color: var(--ink);
   border-radius: 6px;
-  padding: 0.4rem 0.8rem;
+  padding: 0.45rem 0.8rem;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
 }
-.route-dropdown .star { color: var(--warn-amber); }
+.route-dropdown .star { color: var(--ochre); }
 
 .retro-tree {
   position: relative;
-  padding-left: 1.2rem;
+  padding-left: 1.25rem;
   margin-top: 1rem;
 }
 .retro-tree::before {
   content: "";
   position: absolute;
   left: 0.4rem; top: 0.5rem; bottom: 0.5rem;
-  width: 1px;
-  border-left: 1px dashed var(--hairline-strong);
+  border-left: 1px dashed var(--line-strong);
 }
 
 .retro-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 0.8rem;
-  background: var(--void);
+  margin-bottom: 0.7rem;
+  background: var(--panel-deep);
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid var(--hairline);
+  border: 1px solid var(--line);
 }
 .retro-item canvas {
   width: 75px;
@@ -265,44 +353,51 @@ main { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
 .retro-details {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.15rem;
   flex: 1;
+  min-width: 0;
 }
 .precursor-name {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--ink);
 }
 .smiles-code {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--ink-dim);
   word-break: break-all;
 }
 
 .retro-arrow {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--accent-cyan);
+  font-size: 0.72rem;
+  color: var(--teal);
   margin: 0.4rem 0 0.4rem 0.5rem;
   font-weight: 500;
 }
 
 .stock-tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
   white-space: nowrap;
+  border: 1px solid transparent;
+  flex-shrink: 0;
 }
-.stock-tag.in-stock { border: 1px solid rgba(63, 185, 80, 0.4); color: var(--ok-green-text); background: rgba(63, 185, 80, 0.08); }
-.stock-tag.to-synth { border: 1px solid rgba(210, 153, 34, 0.4); color: var(--warn-amber); background: rgba(210, 153, 34, 0.08); }
+.stock-tag.in-stock { border-color: var(--pass); color: var(--pass); background: var(--pass-soft); }
+.stock-tag.to-synth { border-color: var(--ochre); color: var(--ochre); background: var(--ochre-soft); }
 
 .retro-disclaimer-text {
   font-size: 0.75rem;
   color: var(--ink-dim);
-  margin-top: 1rem;
-  border-top: 1px solid var(--hairline);
+  margin-top: 1.1rem;
+  border-top: 1px solid var(--line);
   padding-top: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
 }

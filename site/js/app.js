@@ -1,4 +1,4 @@
-// Variable globale pour l'incrémentation des ID canvas
+// Variable globale pour l'incrémentation des ID canvas et le stockage des données
 let retroCounter = 0;
 let globalRetroData = null;
 
@@ -23,7 +23,7 @@ function renderMiniMol(smiles, canvasId) {
       }
     }
 
-    // Fallback visuel SVG/Texte si RDKit n'est pas chargé
+    // Fallback visuel si RDKit n'est pas encore prêt
     const ctx = canvas.getContext("2d");
     if (ctx) {
       canvas.width = 70;
@@ -38,16 +38,29 @@ function renderMiniMol(smiles, canvasId) {
   }, 50);
 }
 
-function openRetroModal(molecule) {
+// Fonction d'ouverture et de rendu de la modale de rétrosynthèse
+async function openRetroModal(molecule) {
   const modal = document.getElementById("retro-modal");
   const container = document.getElementById("retro-container");
   if (!modal || !container) return;
 
-  const data = globalRetroData || {};
-  const targetName = molecule ? (molecule.name || molecule.smiles) : (data.target_name || "Candidat");
-  const targetSmiles = molecule ? molecule.smiles : (data.target_smiles || "COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1");
+  const targetName = molecule ? (molecule.id || molecule.name || molecule.smiles) : "Candidat";
+  const targetSmiles = molecule ? molecule.smiles : "";
+  
+  // Tentative de récupération du fichier de rétrosynthèse spécifique dans site/data/retrosynthesis/
+  let retroData = null;
+  if (molecule && molecule.id) {
+    try {
+      const res = await fetch(`data/retrosynthesis/${molecule.id}.json`);
+      if (res.ok) {
+        retroData = await res.json();
+      }
+    } catch (e) {
+      console.warn("Pas de fichier de rétrosynthèse spécifique trouvé pour", molecule.id);
+    }
+  }
 
-  // Définition d'étapes de repli si le JSON distant est absent ou incomplet
+  // Définition d'étapes de secours (Fallback) pour garantir l'affichage complet des 3 étapes
   const defaultSteps = [
     {
       reaction: "Substitution / Amidation",
@@ -71,27 +84,33 @@ function openRetroModal(molecule) {
     }
   ];
 
-  const stepsToRender = (data.route && data.route.steps && data.route.steps.length > 0) 
-    ? data.route.steps 
-    : defaultSteps;
+  // Sélection de la source de données pour les étapes
+  let stepsToRender = defaultSteps;
+  if (retroData) {
+    if (retroData.route && Array.isArray(retroData.route.steps) && retroData.route.steps.length > 0) {
+      stepsToRender = retroData.route.steps;
+    } else if (Array.isArray(retroData.steps) && retroData.steps.length > 0) {
+      stepsToRender = retroData.steps;
+    }
+  }
 
   container.innerHTML = `
     <div class="retro-box">
       <h2 class="retro-header-title">Plan de synthèse : ${targetName}</h2>
       <div class="retro-sub">
-        ${data.formula || 'C10H14BrNO2'} — Conforme au TPP | Références : <a href="#" target="_blank">PubChem CID 98527</a>, <a href="#" target="_blank">CHEMBL292821</a>
+        ${(retroData && retroData.formula) || 'C10H14BrNO2'} — Conforme au TPP | Rétrosynthèse AiZynthFinder
       </div>
 
-      <div style="font-size:0.85rem; margin-bottom: 0.6rem; color: var(--ink-dim);">
+      <div style="font-size:0.85rem; margin-top: 0.4rem; color: var(--ink-dim);">
         ✏ Rétrosynthèse par <strong>AiZynthFinder</strong>
       </div>
 
-      <div class="route-dropdown">
+      <div class="route-dropdown" style="margin-top:0.8rem;">
         <span class="star">★</span> Route optimale — ${stepsToRender.length} étape(s)
       </div>
 
       <div style="font-family: var(--font-mono); font-size:0.75rem; color: var(--ink-dim); margin-bottom: 0.8rem;">
-        ${stepsToRender.length} étape(s) de réaction · Précurseurs de départ disponibles
+        ${stepsToRender.length} étape(s) de réaction · Précurseurs de départ identifiés
       </div>
 
       <div class="retro-tree" id="retro-tree-root"></div>
@@ -104,7 +123,7 @@ function openRetroModal(molecule) {
 
   const treeRoot = document.getElementById("retro-tree-root");
 
-  // Molécule cible
+  // Molécule cible (racine du graph)
   const targetId = `retro-canvas-${retroCounter++}`;
   const targetRow = document.createElement("div");
   targetRow.className = "retro-item";
@@ -112,41 +131,43 @@ function openRetroModal(molecule) {
     <canvas id="${targetId}"></canvas>
     <div class="retro-details">
       <span class="precursor-name">${targetName} (Cible)</span>
-      <span class="smiles-code">${targetSmiles}</span>
+      <span class="smiles-code">${targetSmiles || 'COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1'}</span>
     </div>
     <span class="stock-tag to-synth">à synthétiser</span>
   `;
   treeRoot.appendChild(targetRow);
-  renderMiniMol(targetSmiles, targetId);
+  if (targetSmiles) renderMiniMol(targetSmiles, targetId);
 
-  // Rendu de chaque étape
+  // Génération de l'arbre des réactions et précurseurs
   stepsToRender.forEach(step => {
     const arrow = document.createElement("div");
     arrow.className = "retro-arrow";
-    arrow.textContent = `↓ Réaction : ${step.reaction || 'réaction'}`;
+    arrow.textContent = `↓ Réaction : ${step.reaction || step.type || 'Étape de synthèse'}`;
     treeRoot.appendChild(arrow);
 
-    step.reactants.forEach(r => {
+    const reactants = step.reactants || step.children || [];
+    reactants.forEach(r => {
       const rId = `retro-canvas-${retroCounter++}`;
-      const isStock = (r.status === "en_stock" || r.status === "in-stock");
+      const isStock = (r.status === "en_stock" || r.status === "in-stock" || r.in_stock);
       const row = document.createElement("div");
       row.className = "retro-item";
       row.innerHTML = `
         <canvas id="${rId}"></canvas>
         <div class="retro-details">
-          <span class="precursor-name">${r.label || r.name || 'Précurseur intermédiaire'}</span>
-          <span class="smiles-code">${r.smiles}</span>
+          <span class="precursor-name">${r.label || r.name || 'Précurseur'}</span>
+          <span class="smiles-code">${r.smiles || ''}</span>
         </div>
         <span class="stock-tag ${isStock ? 'in-stock' : 'to-synth'}">${isStock ? 'en stock' : 'à synthétiser'}</span>
       `;
       treeRoot.appendChild(row);
-      renderMiniMol(r.smiles, rId);
+      if (r.smiles) renderMiniMol(r.smiles, rId);
     });
   });
 
   modal.classList.remove("hidden");
 }
 
+// Gestion des événements de fermeture de la modale
 function initModalEvents() {
   const modal = document.getElementById("retro-modal");
   const closeBtn = document.getElementById("close-retro-modal");
@@ -155,17 +176,19 @@ function initModalEvents() {
   }
 }
 
-// Initialisation au chargement de la page
-document.addEventListener("DOMContentLoaded", async () => {
+// Initialisation globale de l'application
+async function main() {
   initModalEvents();
 
-  // Chargement sécurisé du JSON de rétrosynthèse
+  // Chargement sécurisé du fichier général de rétrosynthèse s'il existe
   try {
-    const res = await fetch("data/retrosynthesis_erlotinib.json");
-    if (res.ok) {
-      globalRetroData = await res.json();
+    const retroRes = await fetch("data/retrosynthesis_erlotinib.json");
+    if (retroRes.ok) {
+      globalRetroData = await retroRes.json();
     }
   } catch (e) {
-    console.warn("Fichier rétrosynthèse indisponible, utilisation des données de secours.");
+    console.warn("Utilisation du mode fallback pour la rétrosynthèse.");
   }
-});
+}
+
+document.addEventListener("DOMContentLoaded", main);

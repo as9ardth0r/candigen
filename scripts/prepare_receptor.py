@@ -19,8 +19,8 @@ Les identifiants PDB ci-dessous sont des points de départ à vérifier
 co-cristallisé pertinent) avant tout usage réel — pas un choix validé.
 
 Usage prévu :
-    python scripts/prepare_receptors.py --target EGFR_WT
-    python scripts/prepare_receptors.py --target all
+    python scripts/prepare_receptor.py --target EGFR_WT
+    python scripts/prepare_receptor.py --target all
 """
 from __future__ import annotations
 
@@ -53,7 +53,7 @@ def fetch_pdb(pdb_id: str, out_path: Path) -> None:
 
 def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool) -> None:
     raw_path = RECEPTOR_DIR / f"{name.lower()}_raw.pdb"
-    print(f"[prepare_receptors] téléchargement {pdb_id} -> {raw_path}")
+    print(f"[prepare_receptor] téléchargement {pdb_id} -> {raw_path}")
     fetch_pdb(pdb_id, raw_path)
 
     ligand_hit = find_cocrystallized_ligand(raw_path)
@@ -71,19 +71,19 @@ def prepare_receptor(pdb_id: str, name: str, padding: float, allow_bad_res: bool
 
     if ligand_hit is not None:
         chain_name, res_name, res_seq, n_atoms = ligand_hit
-        print(f"[prepare_receptors] ligand co-cristallisé repéré : "
+        print(f"[prepare_receptor] ligand co-cristallisé repéré : "
               f"{res_name} (chaîne {chain_name}, résidu {res_seq}, {n_atoms} atomes)")
         ligand_path = RECEPTOR_DIR / f"{name.lower()}_ref_ligand.pdb"
         extract_ligand_pdb(raw_path, chain_name, res_name, res_seq, ligand_path)
         cmd += ["--box_enveloping", str(ligand_path)]
     else:
-        print(f"[prepare_receptors] ATTENTION — aucun ligand co-cristallisé trouvé pour {name} : "
+        print(f"[prepare_receptor] ATTENTION — aucun ligand co-cristallisé trouvé pour {name} : "
               f"la boîte de recherche doit être définie manuellement (--box_center / --box_size), "
               f"pas dérivée automatiquement.")
 
-    print(f"[prepare_receptors] exécution : {' '.join(cmd)}")
+    print(f"[prepare_receptor] exécution : {' '.join(cmd)}")
     subprocess.run(cmd, check=True)
-    print(f"[prepare_receptors] {name} prêt : "
+    print(f"[prepare_receptor] {name} prêt : "
           f"{output_basename}.pdbqt + {output_basename}_box.txt")
 
 

@@ -4,3 +4,4 @@ vina>=1.2.5
 meeko>=0.7.0
 gemmi>=0.6.0
 scipy>=1.10.0
+requests>=2.31.0  # scripts/prepare_receptor.py (téléchargement RCSB)

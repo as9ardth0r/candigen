@@ -1,10 +1,10 @@
 {
   "target": "EGFR",
-  "generated_at": "2026-08-27T18:21:57.384710+00:00",
+  "generated_at": "2026-08-27T18:39:36.123855+00:00",
   "count": 300,
   "molecules": [
     {
-      "id": "mut_2026-08-27_0017",
+      "id": "mut_2026-08-27_0017_9c7dcfaa",
       "smiles": "COc1c(OC)c(Br)c2c(OC)ncnc2c1O",
       "canonical_smiles": "COc1c(OC)c(Br)c2c(OC)ncnc2c1O",
       "mw": 315.12,
@@ -33,11 +33,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0016",
+      "id": "mut_2026-08-27_0016_a5e0732f",
       "smiles": "COc1c(OC)c(Br)c2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COc1c(OC)c(Br)c2c(OC)nc(C)nc2c1O",
       "mw": 329.15,
@@ -66,11 +66,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_50392c5e",
       "smiles": "COc1cc2nc(C)nc(OC)c2cc1NC1CCOC1",
       "canonical_smiles": "COc1cc2nc(C)nc(OC)c2cc1NC1CCOC1",
       "mw": 289.34,
@@ -99,11 +99,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0025",
+      "id": "mut_2026-08-27_0025_0e96e0d3",
       "smiles": "COc1c(OCF)c(Cl)c2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COc1c(OCF)c(Cl)c2c(OC)nc(C)nc2c1O",
       "mw": 302.69,
@@ -132,11 +132,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 10
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_39fc2c44",
       "smiles": "COc1c(NC2CCOC2)cc2c(OC)nc(C)nc2c1C",
       "canonical_smiles": "COc1c(NC2CCOC2)cc2c(OC)nc(C)nc2c1C",
       "mw": 303.36,
@@ -165,11 +165,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_2de5fc99",
       "smiles": "COc1cc2nc(C)nc(OC)c2c(C)c1NC1CCOC1",
       "canonical_smiles": "COc1cc2nc(C)nc(OC)c2c(C)c1NC1CCOC1",
       "mw": 303.36,
@@ -198,11 +198,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_6482ee04",
       "smiles": "COc1cc2ncnc(OC)c2c(Cl)c1NC1CCOC1",
       "canonical_smiles": "COc1cc2ncnc(OC)c2c(Cl)c1NC1CCOC1",
       "mw": 309.75,
@@ -231,11 +231,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_c273c225",
       "smiles": "COc1c(OCF)c(F)c2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COc1c(OCF)c(F)c2c(OC)nc(C)nc2c1O",
       "mw": 286.23,
@@ -264,11 +264,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_861396ae",
       "smiles": "COc1cc2ncnc(OC)c2cc1NC1CCOC1",
       "canonical_smiles": "COc1cc2ncnc(OC)c2cc1NC1CCOC1",
       "mw": 275.31,
@@ -297,11 +297,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_18f0e1d2",
       "smiles": "COc1c(OCF)cc2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COc1c(OCF)cc2c(OC)nc(C)nc2c1O",
       "mw": 268.24,
@@ -330,11 +330,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_02258c21",
       "smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1Cl",
       "canonical_smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1Cl",
       "mw": 309.75,
@@ -367,7 +367,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_2c008c1d",
       "smiles": "COc1cc2ncnc(OC)c2c(C)c1NC1CCOC1",
       "canonical_smiles": "COc1cc2ncnc(OC)c2c(C)c1NC1CCOC1",
       "mw": 289.34,
@@ -400,7 +400,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_16a0d13e",
       "smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1C",
       "canonical_smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1C",
       "mw": 289.34,
@@ -429,11 +429,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_4969ddfc",
       "smiles": "COc1c(OCF)c(Br)c2c(OC)ncnc2c1O",
       "canonical_smiles": "COc1c(OCF)c(Br)c2c(OC)ncnc2c1O",
       "mw": 333.11,
@@ -466,7 +466,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0004",
+      "id": "mut_2026-08-27_0004_1c39eb72",
       "smiles": "COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1",
       "canonical_smiles": "COc1cc2c(OC)nc(C)nc2c(O)c1C1CCOC1",
       "mw": 290.32,
@@ -499,7 +499,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0015",
+      "id": "mut_2026-08-27_0015_5623717f",
       "smiles": "COc1cc2c(OC)nc(C)nc2c(O)c1OC",
       "canonical_smiles": "COc1cc2c(OC)nc(C)nc2c(O)c1OC",
       "mw": 250.25,
@@ -532,7 +532,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_9f449061",
       "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
       "canonical_smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
       "mw": 293.3,
@@ -565,7 +565,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_2c6a3e49",
       "smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)ncnc2c1C",
       "canonical_smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)ncnc2c1C",
       "mw": 303.36,
@@ -594,11 +594,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_e204451d",
       "smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1F",
       "canonical_smiles": "COc1c(NC2CCOC2)cc2c(OC)ncnc2c1F",
       "mw": 293.3,
@@ -627,11 +627,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0018",
+      "id": "mut_2026-08-27_0018_9818da45",
       "smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1C",
       "canonical_smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1C",
       "mw": 317.39,
@@ -664,7 +664,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_c7e4d407",
       "smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1Cl",
       "mw": 310.74,
@@ -693,11 +693,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_320bbaf2",
       "smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1C",
       "canonical_smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1C",
       "mw": 290.32,
@@ -726,11 +726,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0031",
+      "id": "mut_2026-08-27_0031_37269437",
       "smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1C",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1C",
       "mw": 290.32,
@@ -829,7 +829,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_58388c9b",
       "smiles": "COc1cc2nc(O)nc(OC)c2c(Cl)c1C1CCOC1",
       "canonical_smiles": "COc1cc2nc(O)nc(OC)c2c(Cl)c1C1CCOC1",
       "mw": 310.74,
@@ -858,11 +858,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_f7292d1c",
       "smiles": "COc1cc2c(OC)ncnc2c(O)c1C1CCOC1",
       "canonical_smiles": "COc1cc2c(OC)ncnc2c(O)c1C1CCOC1",
       "mw": 276.29,
@@ -891,11 +891,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0013",
+      "id": "mut_2026-08-27_0013_bb6900e2",
       "smiles": "COc1c(OCF)c(Br)c2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COc1c(OCF)c(Br)c2c(OC)nc(C)nc2c1O",
       "mw": 347.14,
@@ -928,7 +928,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_10576802",
       "smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)ncnc2c1Cl",
       "canonical_smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)ncnc2c1Cl",
       "mw": 323.78,
@@ -961,7 +961,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_06c964b3",
       "smiles": "COc1cc2nc(O)nc(OC)c2c(C)c1C1CCOC1",
       "canonical_smiles": "COc1cc2nc(O)nc(OC)c2c(C)c1C1CCOC1",
       "mw": 290.32,
@@ -994,7 +994,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0028",
+      "id": "mut_2026-08-27_0028_c9ba6508",
       "smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(OC)c2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(OC)c2c1Cl",
       "mw": 324.76,
@@ -1027,7 +1027,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_31b2aed0",
       "smiles": "COc1cc2nc(O)nc(OC)c2c(F)c1C1CCOC1",
       "canonical_smiles": "COc1cc2nc(O)nc(OC)c2c(F)c1C1CCOC1",
       "mw": 294.28,
@@ -1060,7 +1060,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_ff4b9bab",
       "smiles": "COc1nc(C)nc2c(O)c(C3CCOC3)c(OCF)cc12",
       "canonical_smiles": "COc1nc(C)nc2c(O)c(C3CCOC3)c(OCF)cc12",
       "mw": 308.31,
@@ -1093,7 +1093,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_85290e91",
       "smiles": "COc1c(OCF)cc2c(OC)ncnc2c1O",
       "canonical_smiles": "COc1c(OCF)cc2c(OC)ncnc2c1O",
       "mw": 254.22,
@@ -1126,7 +1126,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_a0c2f1d8",
       "smiles": "COc1cc2c(OC)ncnc2c(O)c1OCF",
       "canonical_smiles": "COc1cc2c(OC)ncnc2c(O)c1OCF",
       "mw": 254.22,
@@ -1159,7 +1159,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_80a0db22",
       "smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1F",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1F",
       "mw": 294.28,
@@ -1225,7 +1225,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_b9494d0c",
       "smiles": "COc1cc2c(OC)ncnc2c(O)c1OC1CCOC1",
       "canonical_smiles": "COc1cc2c(OC)ncnc2c(O)c1OC1CCOC1",
       "mw": 292.29,
@@ -1254,11 +1254,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0017",
+      "id": "mut_2026-08-27_0017_bffca1c2",
       "smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1C",
       "canonical_smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1C",
       "mw": 304.35,
@@ -1287,8 +1287,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "legacy_002",
@@ -1324,7 +1324,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_fd6950e2",
       "smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1C",
       "canonical_smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1C",
       "mw": 306.32,
@@ -1353,11 +1353,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0022",
+      "id": "mut_2026-08-27_0022_927f5ff8",
       "smiles": "COc1c(OC2CCOC2)c(O)c2nc(C)nc(OC)c2c1C",
       "canonical_smiles": "COc1c(OC2CCOC2)c(O)c2nc(C)nc(OC)c2c1C",
       "mw": 320.35,
@@ -1423,7 +1423,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_c1d307f3",
       "smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1Cl",
       "canonical_smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1Cl",
       "mw": 337.81,
@@ -1456,7 +1456,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0027",
+      "id": "mut_2026-08-27_0027_4be3a4cf",
       "smiles": "COc1c(NC2CCOC2)c(Cl)c2c(OC)nc(C)nc2c1C",
       "canonical_smiles": "COc1c(NC2CCOC2)c(Cl)c2c(OC)nc(C)nc2c1C",
       "mw": 337.81,
@@ -1489,7 +1489,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_9030bf58",
       "smiles": "COc1cc2c(C3CCOC3)ncnc2c(O)c1C1CCOC1",
       "canonical_smiles": "COc1cc2c(C3CCOC3)ncnc2c(O)c1C1CCOC1",
       "mw": 316.36,
@@ -1522,7 +1522,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_854d1f12",
       "smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 329.4,
@@ -1555,7 +1555,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_cd3fbe5b",
       "smiles": "COc1c(C2CCOC2)cc2ncnc(C3CCOC3)c2c1O",
       "canonical_smiles": "COc1c(C2CCOC2)cc2ncnc(C3CCOC3)c2c1O",
       "mw": 316.36,
@@ -1588,7 +1588,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_55bfa065",
       "smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1Cl",
       "mw": 324.76,
@@ -1617,11 +1617,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0024",
+      "id": "mut_2026-08-27_0024_21ce5b19",
       "smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1F",
       "canonical_smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1F",
       "mw": 308.31,
@@ -1687,7 +1687,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0015",
+      "id": "mut_2026-08-27_0015_59c2c562",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(C3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(C3CCOC3)cc12",
       "mw": 316.36,
@@ -1720,7 +1720,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_b2a54e4f",
       "smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1Cl",
       "canonical_smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1Cl",
       "mw": 326.74,
@@ -1753,7 +1753,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0018",
+      "id": "mut_2026-08-27_0018_4157ca08",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCF)c(F)c12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCF)c(F)c12",
       "mw": 312.27,
@@ -1786,7 +1786,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0013",
+      "id": "mut_2026-08-27_0013_b291c811",
       "smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1F",
       "canonical_smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1F",
       "mw": 312.27,
@@ -1819,7 +1819,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0017",
+      "id": "mut_2026-08-27_0017_2611e977",
       "smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1F",
       "canonical_smiles": "COc1c(OC2CCOC2)c(O)c2ncnc(OC)c2c1F",
       "mw": 310.28,
@@ -1848,11 +1848,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0012",
+      "id": "mut_2026-08-27_0012_e74ac8a5",
       "smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1Cl",
       "mw": 328.73,
@@ -1885,7 +1885,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0022",
+      "id": "mut_2026-08-27_0022_613c63a8",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(C)c12",
       "mw": 329.4,
@@ -1951,7 +1951,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_ea1fa943",
       "smiles": "COc1cc2c(C3CCOC3)nc(C)nc2c(O)c1C1CCOC1",
       "canonical_smiles": "COc1cc2c(C3CCOC3)nc(C)nc2c(O)c1C1CCOC1",
       "mw": 330.38,
@@ -1984,7 +1984,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0013",
+      "id": "mut_2026-08-27_0013_e969a6aa",
       "smiles": "COc1c(NC2CCOC2)c(Cl)c2c(OC)ncnc2c1Cl",
       "canonical_smiles": "COc1c(NC2CCOC2)c(Cl)c2c(OC)ncnc2c1Cl",
       "mw": 344.2,
@@ -2017,7 +2017,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_4139ad56",
       "smiles": "COc1ncnc2cc(OCF)c(NC3CCOC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2cc(OCF)c(NC3CCOC3)c(C)c12",
       "mw": 307.33,
@@ -2050,7 +2050,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_40cd28c1",
       "smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 329.4,
@@ -2116,7 +2116,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_ae2bcd93",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "mw": 333.36,
@@ -2149,7 +2149,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_321886f9",
       "smiles": "COc1ncnc2c(F)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2c(F)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 333.36,
@@ -2182,7 +2182,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_741ac70f",
       "smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1Br",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2ncnc(OC)c2c1Br",
       "mw": 355.19,
@@ -2215,7 +2215,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_4cdba46d",
       "smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NN3CCOCC3)cc12",
       "canonical_smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NN3CCOCC3)cc12",
       "mw": 344.42,
@@ -2244,11 +2244,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_f3d5f0f9",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(C)c12",
       "mw": 344.42,
@@ -2277,11 +2277,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_34c84e72",
       "smiles": "COc1c(C2CCOC2)c(F)c2ncnc(C3CCOC3)c2c1O",
       "canonical_smiles": "COc1c(C2CCOC2)c(F)c2ncnc(C3CCOC3)c2c1O",
       "mw": 334.35,
@@ -2310,11 +2310,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0018",
+      "id": "mut_2026-08-27_0018_99a65968",
       "smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1Br",
       "canonical_smiles": "COc1c(C2CCOC2)cc2c(OC)nc(O)nc2c1Br",
       "mw": 355.19,
@@ -2347,7 +2347,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_f9634168",
       "smiles": "COc1nc(C)nc2c(C)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(C)nc2c(C)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 343.43,
@@ -2380,7 +2380,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_388da36e",
       "smiles": "COc1c(C2CCOC2)c(Cl)c2c(OC)nc(O)nc2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(Cl)c2c(OC)nc(O)nc2c1Cl",
       "mw": 345.18,
@@ -2409,8 +2409,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "legacy_003",
@@ -2446,7 +2446,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_d3bffd8a",
       "smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "canonical_smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "mw": 347.39,
@@ -2479,7 +2479,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0016",
+      "id": "mut_2026-08-27_0016_932fc842",
       "smiles": "COc1nc(C)nc2c(F)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(C)nc2c(F)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 347.39,
@@ -2508,11 +2508,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_5cad3973",
       "smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(C3CCOC3)c2c1C",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(C3CCOC3)c2c1C",
       "mw": 344.41,
@@ -2545,7 +2545,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_d08de88a",
       "smiles": "COc1c(OCF)cc2c(OC)nc(Cl)nc2c1O",
       "canonical_smiles": "COc1c(OCF)cc2c(OC)nc(Cl)nc2c1O",
       "mw": 288.66,
@@ -2578,7 +2578,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_46449dcf",
       "smiles": "COc1ncnc2c(Cl)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2c(Cl)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 349.82,
@@ -2611,7 +2611,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_7f1ec0f8",
       "smiles": "COc1nc(C)nc2c(O)c(C3CCOC3)c(C3CCOC3)c(C)c12",
       "canonical_smiles": "COc1nc(C)nc2c(O)c(C3CCOC3)c(C3CCOC3)c(C)c12",
       "mw": 344.41,
@@ -2644,7 +2644,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_71a8b0fe",
       "smiles": "COc1ncnc2c(F)c(OCF)c(NC3CCOC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2c(F)c(OCF)c(NC3CCOC3)c(C)c12",
       "mw": 325.32,
@@ -2673,11 +2673,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_7b5518e4",
       "smiles": "COc1cc2nc(Cl)nc(OC)c2cc1NC1CCOC1",
       "canonical_smiles": "COc1cc2nc(Cl)nc(OC)c2cc1NC1CCOC1",
       "mw": 309.75,
@@ -2710,7 +2710,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_f09ae99a",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(F)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(F)c12",
       "mw": 348.38,
@@ -2743,7 +2743,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_2d98e800",
       "smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "canonical_smiles": "COc1ncnc2c(C)c(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "mw": 347.39,
@@ -2776,7 +2776,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_4c3a64ad",
       "smiles": "COc1ncnc2c(F)c(C3CCOC3)c(NC3CCOC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2c(F)c(C3CCOC3)c(NC3CCOC3)c(C)c12",
       "mw": 347.39,
@@ -2809,7 +2809,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_1ba07a7b",
       "smiles": "COc1c(C2CCOC2)c(Cl)c2ncnc(C3CCOC3)c2c1O",
       "canonical_smiles": "COc1c(C2CCOC2)c(Cl)c2ncnc(C3CCOC3)c2c1O",
       "mw": 350.8,
@@ -2838,11 +2838,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0004",
+      "id": "mut_2026-08-27_0004_375ca715",
       "smiles": "COc1c(C2CCOC2)c(O)c2ncnc(C3CCOC3)c2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2ncnc(C3CCOC3)c2c1Cl",
       "mw": 350.8,
@@ -2875,7 +2875,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_a0bd1d96",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(C3CCOC3)c(Cl)c12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(C3CCOC3)c(Cl)c12",
       "mw": 350.8,
@@ -2908,7 +2908,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0018",
+      "id": "mut_2026-08-27_0018_57036d53",
       "smiles": "COc1c(OCCl)cc2c(OC)ncnc2c1O",
       "canonical_smiles": "COc1c(OCCl)cc2c(OC)ncnc2c1O",
       "mw": 270.67,
@@ -2943,7 +2943,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0015",
+      "id": "mut_2026-08-27_0015_a6113c36",
       "smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(OC)c2c1Br",
       "canonical_smiles": "COc1c(C2CCOC2)c(O)c2nc(C)nc(OC)c2c1Br",
       "mw": 369.22,
@@ -2976,7 +2976,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_fc04059d",
       "smiles": "COc1ncnc2c(Cl)c(C3CCOC3)c(NN3CCOCC3)cc12",
       "canonical_smiles": "COc1ncnc2c(Cl)c(C3CCOC3)c(NN3CCOCC3)cc12",
       "mw": 364.83,
@@ -3009,7 +3009,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_c194199e",
       "smiles": "COc1c(NC2CCOC2)c(F)c2c(OC)ncnc2c1Br",
       "canonical_smiles": "COc1c(NC2CCOC2)c(F)c2c(OC)ncnc2c1Br",
       "mw": 372.19,
@@ -3038,11 +3038,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_470a9797",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(Cl)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NN3CCOCC3)c(Cl)c12",
       "mw": 364.83,
@@ -3075,7 +3075,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_9a9bd816",
       "smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)c(Cl)c12",
       "canonical_smiles": "COc1nc(C)nc2cc(C3CCOC3)c(NC3CCOC3)c(Cl)c12",
       "mw": 363.85,
@@ -3141,7 +3141,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_7dd95c7c",
       "smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1Br",
       "canonical_smiles": "COc1c(C2CCOC2)c(C)c2c(OC)nc(O)nc2c1Br",
       "mw": 369.22,
@@ -3174,7 +3174,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_e3a3ff62",
       "smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1Br",
       "canonical_smiles": "COc1c(C2CCOC2)c(F)c2c(OC)nc(O)nc2c1Br",
       "mw": 373.18,
@@ -3207,7 +3207,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_47d9d9ad",
       "smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1Br",
       "canonical_smiles": "COc1c(NC2CCOC2)c(C)c2c(OC)nc(C)nc2c1Br",
       "mw": 382.26,
@@ -3240,7 +3240,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_4cb10ad0",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCF)c(Br)c12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCF)c(Br)c12",
       "mw": 373.18,
@@ -3273,7 +3273,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0020",
+      "id": "mut_2026-08-27_0020_a3591d57",
       "smiles": "COc1cc2nc(F)nc(OC)c2c(Cl)c1NC1CCOC1",
       "canonical_smiles": "COc1cc2nc(F)nc(OC)c2c(Cl)c1NC1CCOC1",
       "mw": 327.74,
@@ -3306,7 +3306,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_6cb6b133",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCCl)cc12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCCl)cc12",
       "mw": 310.74,
@@ -3341,7 +3341,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_eff039da",
       "smiles": "COc1ncnc2c(O)c(OCCl)c(OCF)cc12",
       "canonical_smiles": "COc1ncnc2c(O)c(OCCl)c(OCF)cc12",
       "mw": 288.66,
@@ -3409,7 +3409,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0026",
+      "id": "mut_2026-08-27_0026_58785c93",
       "smiles": "COc1c(NC2CCOC2)cc2c(OC)nc(Cl)nc2c1Cl",
       "canonical_smiles": "COc1c(NC2CCOC2)cc2c(OC)nc(Cl)nc2c1Cl",
       "mw": 344.2,
@@ -3442,7 +3442,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0012",
+      "id": "mut_2026-08-27_0012_a5dad638",
       "smiles": "COc1cc2c(OC)nc(F)nc2c(O)c1OC1CCOC1",
       "canonical_smiles": "COc1cc2c(OC)nc(F)nc2c(O)c1OC1CCOC1",
       "mw": 310.28,
@@ -3475,7 +3475,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_6cdd1c15",
       "smiles": "COc1nc(F)nc2c(O)c(OCF)c(OCF)cc12",
       "canonical_smiles": "COc1nc(F)nc2c(O)c(OCF)c(OCF)cc12",
       "mw": 290.2,
@@ -3508,7 +3508,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0016",
+      "id": "mut_2026-08-27_0016_727fd0e8",
       "smiles": "COc1nc(F)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(F)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 333.36,
@@ -3537,11 +3537,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_7de48cc2",
       "smiles": "COc1c(C2CCOC2)c(Br)c2c(OC)nc(O)nc2c1Cl",
       "canonical_smiles": "COc1c(C2CCOC2)c(Br)c2c(OC)nc(O)nc2c1Cl",
       "mw": 389.63,
@@ -3570,11 +3570,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0019",
+      "id": "mut_2026-08-27_0019_133fd631",
       "smiles": "COc1c(OCF)c(Br)c2c(OC)nc(Cl)nc2c1O",
       "canonical_smiles": "COc1c(OCF)c(Br)c2c(OC)nc(Cl)nc2c1O",
       "mw": 367.56,
@@ -3607,7 +3607,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_4425f149",
       "smiles": "Fc1c(C2CCOC2)c(NC2CCOC2)cc2c(N3CCOCC3)ncnc12",
       "canonical_smiles": "Fc1c(C2CCOC2)c(NC2CCOC2)cc2c(N3CCOCC3)ncnc12",
       "mw": 388.44,
@@ -3640,7 +3640,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_bc1a4f48",
       "smiles": "COc1nc(Cl)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(Cl)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 349.82,
@@ -3669,8 +3669,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "legacy_011",
@@ -3706,7 +3706,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_a4489e2f",
       "smiles": "COc1cc2c(C3CCOC3)nc(F)nc2c(O)c1C1CCOC1",
       "canonical_smiles": "COc1cc2c(C3CCOC3)nc(F)nc2c(O)c1C1CCOC1",
       "mw": 334.35,
@@ -3735,11 +3735,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0011",
+      "id": "mut_2026-08-27_0011_9da7113b",
       "smiles": "COc1nc(F)nc2c(O)c(C3CCOC3)c(C3CCOC3)cc12",
       "canonical_smiles": "COc1nc(F)nc2c(O)c(C3CCOC3)c(C3CCOC3)cc12",
       "mw": 334.35,
@@ -3772,7 +3772,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0020",
+      "id": "mut_2026-08-27_0020_7989f6b3",
       "smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(Br)c12",
       "canonical_smiles": "COc1ncnc2cc(C3CCOC3)c(NC3CCOC3)c(Br)c12",
       "mw": 394.27,
@@ -3805,7 +3805,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_78d7a2d9",
       "smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCBr)cc12",
       "canonical_smiles": "COc1ncnc2c(O)c(C3CCOC3)c(OCBr)cc12",
       "mw": 355.19,
@@ -3840,7 +3840,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0020",
+      "id": "mut_2026-08-27_0020_faa7600d",
       "smiles": "COc1ncnc2cc(OCBr)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2cc(OCBr)c(NC3CCOC3)cc12",
       "mw": 354.2,
@@ -3875,7 +3875,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0009",
+      "id": "mut_2026-08-27_0009_c6d399e0",
       "smiles": "COc1c(C2CCOC2)cc2nc(Cl)nc(C3CCOC3)c2c1O",
       "canonical_smiles": "COc1c(C2CCOC2)cc2nc(Cl)nc(C3CCOC3)c2c1O",
       "mw": 350.8,
@@ -3904,11 +3904,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_04087996",
       "smiles": "COc1ncnc2c(Br)c(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1ncnc2c(Br)c(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 394.27,
@@ -4015,7 +4015,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0013",
+      "id": "mut_2026-08-27_0013_7058dd8d",
       "smiles": "COc1nc(Cl)nc2cc(C3CCOC3)c(NN3CCOCC3)cc12",
       "canonical_smiles": "COc1nc(Cl)nc2cc(C3CCOC3)c(NN3CCOCC3)cc12",
       "mw": 364.83,
@@ -4118,7 +4118,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_34c61817",
       "smiles": "COc1nc(F)nc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "canonical_smiles": "COc1nc(F)nc2cc(C3CCOC3)c(NC3CCOC3)c(F)c12",
       "mw": 351.35,
@@ -4147,8 +4147,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "gen_quinolinepyrimidyl_fluorophenyl_oxetanylmethoxy",
@@ -4262,7 +4262,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_b0952ba3",
       "smiles": "Clc1c(C2CCOC2)c(NC2CCOC2)cc2c(N3CCOCC3)ncnc12",
       "canonical_smiles": "Clc1c(C2CCOC2)c(NC2CCOC2)cc2c(N3CCOCC3)ncnc12",
       "mw": 404.9,
@@ -4291,11 +4291,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_0261724a",
       "smiles": "COc1cc2c(OC)nc(Br)nc2c(O)c1OC1CCOC1",
       "canonical_smiles": "COc1cc2c(OC)nc(Br)nc2c(O)c1OC1CCOC1",
       "mw": 371.19,
@@ -4513,7 +4513,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0003",
+      "id": "mut_2026-08-27_0003_1bc1beb0",
       "smiles": "c1nc(C2CCOC2)c2cc(C3CCOC3)c(OC3CCOC3)cc2n1",
       "canonical_smiles": "c1nc(C2CCOC2)c2cc(C3CCOC3)c(OC3CCOC3)cc2n1",
       "mw": 356.42,
@@ -4583,7 +4583,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0004",
+      "id": "mut_2026-08-27_0004_48495f65",
       "smiles": "Clc1ccc(Nc2ncnc3c2ccn3OCC2COC2)cc1",
       "canonical_smiles": "Clc1ccc(Nc2ncnc3c2ccn3OCC2COC2)cc1",
       "mw": 330.78,
@@ -4616,7 +4616,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0012",
+      "id": "mut_2026-08-27_0012_4d7ef5d9",
       "smiles": "COc1ncnc2cc(OCBr)c(NC3CCOC3)c(C)c12",
       "canonical_smiles": "COc1ncnc2cc(OCBr)c(NC3CCOC3)c(C)c12",
       "mw": 368.23,
@@ -4760,7 +4760,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0013",
+      "id": "mut_2026-08-27_0013_1cd7f174",
       "smiles": "c1ccc(Nc2ncnc3c2ccn3OCCN2CCC2)cc1",
       "canonical_smiles": "c1ccc(Nc2ncnc3c2ccn3OCCN2CCC2)cc1",
       "mw": 309.37,
@@ -5163,7 +5163,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0008",
+      "id": "mut_2026-08-27_0008_84e77b5c",
       "smiles": "COc1nc(C)nc2c(O)c(NC3CCOC3)c(OCF)c(F)c12",
       "canonical_smiles": "COc1nc(C)nc2c(O)c(NC3CCOC3)c(OCF)c(F)c12",
       "mw": 341.31,
@@ -5457,7 +5457,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0004",
+      "id": "mut_2026-08-27_0004_9bf19e56",
       "smiles": "COc1nc(Br)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "canonical_smiles": "COc1nc(Br)nc2cc(C3CCOC3)c(NC3CCOC3)cc12",
       "mw": 394.27,
@@ -5490,7 +5490,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0010",
+      "id": "mut_2026-08-27_0010_60438c73",
       "smiles": "Cc1c(C#N)cccc1Nc1ncnc2cccc(OCCN(C)C)c12",
       "canonical_smiles": "Cc1c(C#N)cccc1Nc1ncnc2cccc(OCCN(C)C)c12",
       "mw": 347.42,
@@ -5519,8 +5519,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 5
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "legacy_013",
@@ -5852,7 +5852,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0014",
+      "id": "mut_2026-08-27_0014_7bff4dec",
       "smiles": "COc1c(C2CCOC2)cc2nc(Br)nc(C3CCOC3)c2c1O",
       "canonical_smiles": "COc1c(C2CCOC2)cc2nc(Br)nc(C3CCOC3)c2c1O",
       "mw": 395.25,
@@ -5881,11 +5881,11 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0005",
+      "id": "mut_2026-08-27_0005_43722bf9",
       "smiles": "Clc1nc(N2CCOCC2)c2cc(NC3CCOC3)c(C3CCOC3)cc2n1",
       "canonical_smiles": "Clc1nc(N2CCOCC2)c2cc(NC3CCOC3)c(C3CCOC3)cc2n1",
       "mw": 404.9,
@@ -6288,7 +6288,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0012",
+      "id": "mut_2026-08-27_0012_bfeeb050",
       "smiles": "COc1c(OC2CCOC2)c(O)c2nc(Br)nc(OC)c2c1Cl",
       "canonical_smiles": "COc1c(OC2CCOC2)c(O)c2nc(Br)nc(OC)c2c1Cl",
       "mw": 405.63,
@@ -6508,7 +6508,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_414cfd3e",
       "smiles": "CN(C)CCOc1cccc2ncnc(Nc3cc(Cl)cc(C#N)c3)c12",
       "canonical_smiles": "CN(C)CCOc1cccc2ncnc(Nc3cc(Cl)cc(C#N)c3)c12",
       "mw": 367.84,
@@ -7244,7 +7244,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0002",
+      "id": "mut_2026-08-27_0002_6455d03f",
       "smiles": "Fc1ccc(Nc2ncnc3c2ccn3OCC2COC2)cc1Br",
       "canonical_smiles": "Fc1ccc(Nc2ncnc3c2ccn3OCC2COC2)cc1Br",
       "mw": 393.22,
@@ -7273,8 +7273,8 @@
       "pubchem_cid": null,
       "chembl_id": null,
       "chemical_name": null,
-      "retrosynthesis_route_found": true,
-      "retrosynthesis_n_routes": 6
+      "retrosynthesis_route_found": null,
+      "retrosynthesis_n_routes": null
     },
     {
       "id": "gen_pyridopyrimidine_fluorophenyl_fluoropiperidinylethoxy",
@@ -8662,7 +8662,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_51e9c573",
       "smiles": "Fc1ccc(Nc2ncnc3scc(OCC4COC4)c23)cc1Br",
       "canonical_smiles": "Fc1ccc(Nc2ncnc3scc(OCC4COC4)c23)cc1Br",
       "mw": 410.27,
@@ -9188,7 +9188,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0001",
+      "id": "mut_2026-08-27_0001_575570a8",
       "smiles": "Brc1nc(N2CCOCC2)c2cc(NC3CCOC3)c(C3CCOC3)cc2n1",
       "canonical_smiles": "Brc1nc(N2CCOCC2)c2cc(NC3CCOC3)c(C3CCOC3)cc2n1",
       "mw": 449.35,
@@ -9336,7 +9336,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_47eaa7b2",
       "smiles": "CN(C)CCOc1csc2ncnc(Nc3ccc(F)c(Br)c3)c12",
       "canonical_smiles": "CN(C)CCOc1csc2ncnc(Nc3ccc(F)c(Br)c3)c12",
       "mw": 411.3,
@@ -9447,7 +9447,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0004",
+      "id": "mut_2026-08-27_0004_0d1ec2f9",
       "smiles": "C#Cc1cc(C)cc(Nc2ncnc3c2nnn3OCCN2CCC2)c1",
       "canonical_smiles": "C#Cc1cc(C)cc(Nc2ncnc3c2nnn3OCCN2CCC2)c1",
       "mw": 349.4,
@@ -9714,7 +9714,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0007",
+      "id": "mut_2026-08-27_0007_5db4191f",
       "smiles": "COOc1c(OC)c(C)c2c(OC)nc(C)nc2c1O",
       "canonical_smiles": "COOc1c(OC)c(C)c2c(OC)nc(C)nc2c1O",
       "mw": 280.28,
@@ -10318,7 +10318,7 @@
       "retrosynthesis_n_routes": null
     },
     {
-      "id": "mut_2026-08-27_0006",
+      "id": "mut_2026-08-27_0006_581c53db",
       "smiles": "COOc1c(OC)cc2c(OC)ncnc2c1O",
       "canonical_smiles": "COOc1c(OC)cc2c(OC)ncnc2c1O",
       "mw": 252.23,

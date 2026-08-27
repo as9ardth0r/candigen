@@ -1,0 +1,55 @@
+{
+  "target_name": "erlotinib",
+  "target_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+  "formula": "C22H23N3O4",
+  "molecular_weight": 393.44,
+  "known_compound": {
+    "note": "Inhibiteur EGFR approuvé (référence, pas un candidat généré) — utilisé ici comme exemple illustratif pour la mise en page rétrosynthèse.",
+    "pubchem_cid": "176870"
+  },
+  "route": {
+    "label": "Route illustrative — voie de couplage SNAr classique",
+    "n_steps": 2,
+    "steps": [
+      {
+        "reaction": "Substitution nucléophile aromatique (SNAr)",
+        "product": {
+          "smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+          "label": "erlotinib"
+        },
+        "reactants": [
+          {
+            "smiles": "Clc1ncnc2cc(OCCOC)c(OCCOC)cc12",
+            "label": "4-chloro-6,7-bis(2-méthoxyéthoxy)quinazoline",
+            "status": "a_synthetiser"
+          },
+          {
+            "smiles": "C#Cc1cccc(N)c1",
+            "label": "3-éthynylaniline",
+            "status": "en_stock"
+          }
+        ]
+      },
+      {
+        "reaction": "Chloration (POCl3)",
+        "product": {
+          "smiles": "Clc1ncnc2cc(OCCOC)c(OCCOC)cc12",
+          "label": "4-chloro-6,7-bis(2-méthoxyéthoxy)quinazoline"
+        },
+        "reactants": [
+          {
+            "smiles": "O=c1[nH]cnc2cc(OCCOC)c(OCCOC)cc12",
+            "label": "6,7-bis(2-méthoxyéthoxy)quinazolin-4(3H)-one",
+            "status": "a_synthetiser"
+          },
+          {
+            "smiles": "ClP(Cl)(Cl)=O",
+            "label": "POCl3 (réactif)",
+            "status": "en_stock"
+          }
+        ]
+      }
+    ]
+  },
+  "disclaimer": "Route illustrative basée sur la chimie publiée de l'erlotinib, simplifiée à 2 étapes — pas une sortie AiZynthFinder (voir README : le pipeline réel n'a pas pu tourner dans cet environnement de développement). Sert de gabarit de mise en page pour les vraies routes une fois le pipeline branché."
+}

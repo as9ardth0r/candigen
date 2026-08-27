@@ -1,0 +1,1037 @@
+{
+  "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+  "stats": {
+    "target": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+    "search_time": 17.674230813980103,
+    "first_solution_time": 0,
+    "first_solution_iteration": 0,
+    "number_of_nodes": 598,
+    "max_transforms": 6,
+    "max_children": 14,
+    "number_of_routes": 103,
+    "number_of_solved_routes": 0,
+    "top_score": 0.6698862622648335,
+    "is_solved": false,
+    "number_of_steps": 3,
+    "number_of_precursors": 3,
+    "number_of_precursors_in_stock": 2,
+    "precursors_in_stock": "O=C1CCOC1, c1ccc(CNCc2ccccc2)cc1",
+    "precursors_not_in_stock": "COc1cc2ncnc(OC)c2c(F)c1Br",
+    "precursors_availability": "Not in stock;zinc;zinc",
+    "policy_used_counts": {
+      "uspto": 597
+    },
+    "profiling": {
+      "expansion_calls": 495,
+      "reactants_generations": 2710,
+      "iterations": 100
+    }
+  },
+  "routes": [
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[c:1]([cH2:2])([cH2:3])[N:5][CH3:4]>>Br[c:1]([cH2:2])[cH2:3].[CH3:4][N:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "f2e72935444e3a464591729cefd2147cf5dc68c63c01faae0cc4c1ff943d9606",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 605,
+            "policy_probability": 0.010999999940395355,
+            "policy_probability_rank": 10,
+            "policy_name": "uspto",
+            "template_code": 40331,
+            "template": "[C:4]-[NH;D2;+0:5]-[c;H0;D3;+0:1](:[c:2]):[c:3]>>Br-[c;H0;D3;+0:1](:[c:2]):[c:3].[C:4]-[NH2;D1;+0:5]",
+            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "NC1CCOC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][N:2]>>c1ccc(C[N:2](Cc2ccccc2)[CH3:1])cc1",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "658090596836f56948032c980b52f94c4dfc28cff0ed2c472508b61cca1812ad",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 493,
+                    "policy_probability": 0.04769999906420708,
+                    "policy_probability_rank": 4,
+                    "policy_name": "uspto",
+                    "template_code": 16927,
+                    "template": "[C:1]-[NH2;D1;+0:2]>>[C:1]-[N;H0;D3;+0:2](-C-c1:c:c:c:c:c:1)-C-c1:c:c:c:c:c:1",
+                    "mapped_reaction_smiles": "[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "c1ccc(CN(Cc2ccccc2)C2CCOC2)cc1",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[C:1]([CH3:2])([CH3:3])[N:5]([CH2:4][c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1)[CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1>>O=[C:1]([CH3:2])[CH3:3].[CH2:4]([N:5][CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1)[c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "e9dc08bc6eaf73035b180e021e537ade42beb7b333629074db0711ff5753ec6c",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 55,
+                            "policy_probability": 0.46639999747276306,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 38861,
+                            "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[N;H0;D3;+0:5](-[C:4]-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1)-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1>>O=[C;H0;D3;+0:1](-[C:2])-[C:3].[C:4](-[NH;D2;+0:5]-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1)-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1",
+                            "mapped_reaction_smiles": "[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1>>[C:17]1(=[O:36])[CH2:18][CH2:19][O:20][CH2:21]1.[NH:16]([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=C1CCOC1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "oxolan-3-one"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "c1ccc(CNCc2ccccc2)cc1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "N-benzyl-1-phenylmethanamine"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "N,N-dibenzyloxolan-3-amine"
+                    }
+                  ]
+                }
+              ],
+              "name": "oxolan-3-amine"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "COc1cc2ncnc(OC)c2c(F)c1Br",
+              "is_chemical": true,
+              "in_stock": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[c:1]([cH2:2])([cH2:3])[N:5][CH3:4]>>Br[c:1]([cH2:2])[cH2:3].[CH3:4][N:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "f2e72935444e3a464591729cefd2147cf5dc68c63c01faae0cc4c1ff943d9606",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 605,
+            "policy_probability": 0.010999999940395355,
+            "policy_probability_rank": 10,
+            "policy_name": "uspto",
+            "template_code": 40331,
+            "template": "[C:4]-[NH;D2;+0:5]-[c;H0;D3;+0:1](:[c:2]):[c:3]>>Br-[c;H0;D3;+0:1](:[c:2]):[c:3].[C:4]-[NH2;D1;+0:5]",
+            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "NC1CCOC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][N:2]>>c1ccc(C[N:2](Cc2ccccc2)[CH3:1])cc1",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "658090596836f56948032c980b52f94c4dfc28cff0ed2c472508b61cca1812ad",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 493,
+                    "policy_probability": 0.04769999906420708,
+                    "policy_probability_rank": 4,
+                    "policy_name": "uspto",
+                    "template_code": 16927,
+                    "template": "[C:1]-[NH2;D1;+0:2]>>[C:1]-[N;H0;D3;+0:2](-C-c1:c:c:c:c:c:1)-C-c1:c:c:c:c:c:1",
+                    "mapped_reaction_smiles": "[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "c1ccc(CN(Cc2ccccc2)C2CCOC2)cc1",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[C:1]([CH3:2])([CH3:3])[N:5]([CH2:4][c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1)[CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1>>O=[C:1]([CH3:2])[CH3:3].[CH2:4]([N:5][CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1)[c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "e9dc08bc6eaf73035b180e021e537ade42beb7b333629074db0711ff5753ec6c",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 55,
+                            "policy_probability": 0.46639999747276306,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 38861,
+                            "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[N;H0;D3;+0:5](-[C:4]-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1)-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1>>O=[C;H0;D3;+0:1](-[C:2])-[C:3].[C:4](-[NH;D2;+0:5]-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1)-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1",
+                            "mapped_reaction_smiles": "[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1>>[C:17]1(=[O:36])[CH2:18][CH2:19][O:20][CH2:21]1.[NH:16]([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=C1CCOC1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "oxolan-3-one"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "c1ccc(CNCc2ccccc2)cc1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "N-benzyl-1-phenylmethanamine"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "N,N-dibenzyloxolan-3-amine"
+                    }
+                  ]
+                }
+              ],
+              "name": "oxolan-3-amine"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "COc1cc2ncnc(OC)c2c(F)c1Br",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[c:1](:[NH:2])([cH:3][cH:4]:[NH:5])[O:7][CH3:6]>>Cl[c:1](:[NH:2])[cH:3][cH:4]:[NH:5].[CH3:6][O:7]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "993c65d46774ab905b5b176d169cda1bbc842819cd756ed1d36e2322c93a7a89",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 1680,
+                    "policy_probability": 0.1331000030040741,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 25526,
+                    "template": "[#7;a:5]:[c:4]:[c:3]:[c;H0;D3;+0:1](:[#7;a:2])-[O;H0;D2;+0:7]-[C;D1;H3:6]>>Cl-[c;H0;D3;+0:1](:[#7;a:2]):[c:3]:[c:4]:[#7;a:5].[C;D1;H3:6]-[OH;D1;+0:7]",
+                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[OH:10][CH3:11]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CO",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "name": "methanol"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "COc1cc2ncnc(Cl)c2c(F)c1Br",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[Cl:1][c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1>>O=P(Cl)(Cl)[Cl:1].O=[c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "da993fa50d1ccd03b0f9a3b9058a0d2797566da7702e68dc79fe6de6242c63b5",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 910,
+                            "policy_probability": 0.3163999915122986,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 36350,
+                            "template": "[Cl;H0;D1;+0:1]-[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[n;H0;D2;+0:7]:1>>Cl-P(-Cl)(=O)-[Cl;H0;D1;+0:1].O=[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[nH;D2;+0:7]:1",
+                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][nH:8][c:9](=[O:24])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[Cl:23][P:25]([Cl:26])([Cl:27])=[O:28]"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=P(Cl)(Cl)Cl",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "phosphoryl trichloride"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "COc1cc2nc[nH]c(=O)c2c(F)c1Br",
+                              "is_chemical": true,
+                              "in_stock": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[c:1](:[NH:2])([cH:3][cH:4]:[NH:5])[O:7][CH3:6]>>Cl[c:1](:[NH:2])[cH:3][cH:4]:[NH:5].[CH3:6][O:7]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "993c65d46774ab905b5b176d169cda1bbc842819cd756ed1d36e2322c93a7a89",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 1680,
+            "policy_probability": 0.2904999852180481,
+            "policy_probability_rank": 0,
+            "policy_name": "uspto",
+            "template_code": 25526,
+            "template": "[#7;a:5]:[c:4]:[c:3]:[c;H0;D3;+0:1](:[#7;a:2])-[O;H0;D2;+0:7]-[C;D1;H3:6]>>Cl-[c;H0;D3;+0:1](:[#7;a:2]):[c:3]:[c:4]:[#7;a:5].[C;D1;H3:6]-[OH;D1;+0:7]",
+            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:22])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1.[OH:10][CH3:11]"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "CO",
+              "is_chemical": true,
+              "in_stock": false,
+              "name": "methanol"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "COc1cc2ncnc(Cl)c2c(F)c1NC1CCOC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[Cl:1][c:2]1:[N:3]:[cH:4][n:5][cH:6][cH:7]1>>O=P(Cl)(Cl)[Cl:1].O=[c:2]1:[N:3]:[cH:4][n:5][cH:6][cH:7]1",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "094d7dc494319dead8e1905f04b4f43c862448f0c064d5b3c096533b62c17f98",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 78,
+                    "policy_probability": 0.09960000216960907,
+                    "policy_probability_rank": 1,
+                    "policy_name": "uspto",
+                    "template_code": 1541,
+                    "template": "[Cl;H0;D1;+0:1]-[c;H0;D3;+0:2]1:[#7;a:3]:[c:4]:[n;H0;D2;+0:5]:[c:6]:[c:7]:1>>Cl-P(-Cl)(=O)-[Cl;H0;D1;+0:1].O=[c;H0;D3;+0:2]1:[#7;a:3]:[c:4]:[nH;D2;+0:5]:[c:6]:[c:7]:1",
+                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:22])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[nH:6][cH:7][n:8][c:9](=[O:23])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1.[Cl:22][P:24]([Cl:25])([Cl:26])=[O:27]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "O=P(Cl)(Cl)Cl",
+                      "is_chemical": true,
+                      "in_stock": true,
+                      "name": "phosphoryl trichloride"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "COc1cc2[nH]cnc(=O)c2c(F)c1NC1CCOC1",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[n:1]([cH2:2])[cH:3]:[NH:4]>>CC(C)(C)C(=O)OC[n:1]([cH2:2])[cH:3]:[NH:4]",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "5613307b6949aad0408feeae28ad883cce9a6f69d60cf079f88a3f7f69b04837",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 111,
+                            "policy_probability": 0.05119999870657921,
+                            "policy_probability_rank": 3,
+                            "policy_name": "uspto",
+                            "template_code": 14368,
+                            "template": "[#7;a:4]:[c:3]:[nH;D2;+0:1]:[c:2]>>C-C(-C)(-C)-C(=O)-O-C-[n;H0;D3;+0:1](:[c:2]):[c:3]:[#7;a:4]",
+                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[nH:6][cH:7][n:8][c:9](=[O:23])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6]([CH2:24][O:25][C:26]([C:27]([CH3:28])([CH3:29])[CH3:30])=[O:31])[cH:7][n:8][c:9](=[O:23])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "COc1cc2c(c(F)c1NC1CCOC1)c(=O)ncn2COC(=O)C(C)(C)C",
+                              "is_chemical": true,
+                              "in_stock": false,
+                              "children": [
+                                {
+                                  "type": "reaction",
+                                  "hide": false,
+                                  "smiles": "[F:1][c:3]([cH2:2])[cH2:4]>>ClC[N+]12CC[N+]([F:1])(CC1)CC2.[cH2:2][c:3][cH2:4]",
+                                  "is_reaction": true,
+                                  "metadata": {
+                                    "template_hash": "543385b981563533407497b3bb852529a9c1904f6e5e1c6baa777957c6be5222",
+                                    "classification": "0.0 Unrecognized",
+                                    "library_occurence": 115,
+                                    "policy_probability": 0.009600000455975533,
+                                    "policy_probability_rank": 15,
+                                    "policy_name": "uspto",
+                                    "template_code": 14077,
+                                    "template": "[F;H0;D1;+0:1]-[c;H0;D3;+0:3](:[c:2]):[c:4]>>Cl-C-[N+]12-C-C-[N+](-[F;H0;D1;+0:1])(-C-C-1)-C-C-2.[c:2]:[cH;D2;+0:3]:[c:4]",
+                                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6]([CH2:24][O:25][C:26]([C:27]([CH3:28])([CH3:29])[CH3:30])=[O:31])[cH:7][n:8][c:9](=[O:23])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6]([CH2:24][O:25][C:26]([C:27]([CH3:28])([CH3:29])[CH3:30])=[O:31])[cH:7][n:8][c:9](=[O:23])[c:12]2[cH:13][c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1.[F:14][N+:22]12[CH2:32][CH2:33][N+:34]([CH2:35][Cl:36])([CH2:37][CH2:38]1)[CH2:39][CH2:40]2"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "F[N+]12CC[N+](CCl)(CC1)CC2",
+                                      "is_chemical": true,
+                                      "in_stock": true,
+                                      "name": "1-(chloromethyl)-4-fluoro-1,4-diazoniabicyclo[2.2.2]octane"
+                                    },
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "COc1cc2c(cc1NC1CCOC1)c(=O)ncn2COC(=O)C(C)(C)C",
+                                      "is_chemical": true,
+                                      "in_stock": false,
+                                      "children": [
+                                        {
+                                          "type": "reaction",
+                                          "hide": false,
+                                          "smiles": "[C:1]([O:2][C:3](=[O:4])[C:5]([CH3:6])([CH3:7])[CH3:8])[n:11]([cH:10]:[NH:9])[cH2:12]>>Cl[C:1][O:2][C:3](=[O:4])[C:5]([CH3:6])([CH3:7])[CH3:8].[NH:9]:[cH:10][n:11][cH2:12]",
+                                          "is_reaction": true,
+                                          "metadata": {
+                                            "template_hash": "0787b19924b6745a7b3e3dc6df0b034558eaee3f25ba344db31b1739940761a9",
+                                            "classification": "0.0 Unrecognized",
+                                            "library_occurence": 49,
+                                            "policy_probability": 0.01080000028014183,
+                                            "policy_probability_rank": 10,
+                                            "policy_name": "uspto",
+                                            "template_code": 1263,
+                                            "template": "[#7;a:9]:[c:10]:[n;H0;D3;+0:11](:[c:12])-[CH2;D2;+0:1]-[#8:2]-[C:3](=[O;D1;H0:4])-[C:5](-[C;D1;H3:6])(-[C;D1;H3:7])-[C;D1;H3:8]>>Cl-[CH2;D2;+0:1]-[#8:2]-[C:3](=[O;D1;H0:4])-[C:5](-[C;D1;H3:6])(-[C;D1;H3:7])-[C;D1;H3:8].[#7;a:9]:[c:10]:[nH;D2;+0:11]:[c:12]",
+                                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6]([CH2:24][O:25][C:26]([C:27]([CH3:28])([CH3:29])[CH3:30])=[O:31])[cH:7][n:8][c:9](=[O:23])[c:12]2[cH:13][c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH2:24]([O:25][C:26]([C:27]([CH3:28])([CH3:29])[CH3:30])=[O:31])[Cl:32].[CH3:1][O:2][c:3]1[cH:4][c:5]2[nH:6][cH:7][n:8][c:9](=[O:23])[c:12]2[cH:13][c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "CC(C)(C)C(=O)OCCl",
+                                              "is_chemical": true,
+                                              "in_stock": true,
+                                              "name": "chloromethyl 2,2-dimethylpropanoate"
+                                            },
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "COc1cc2[nH]cnc(=O)c2cc1NC1CCOC1",
+                                              "is_chemical": true,
+                                              "in_stock": false
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[c:1]([cH2:2])([cH2:3])[N:5][CH3:4]>>Br[c:1]([cH2:2])[cH2:3].[CH3:4][N:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "f2e72935444e3a464591729cefd2147cf5dc68c63c01faae0cc4c1ff943d9606",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 605,
+            "policy_probability": 0.010999999940395355,
+            "policy_probability_rank": 10,
+            "policy_name": "uspto",
+            "template_code": 40331,
+            "template": "[C:4]-[NH;D2;+0:5]-[c;H0;D3;+0:1](:[c:2]):[c:3]>>Br-[c;H0;D3;+0:1](:[c:2]):[c:3].[C:4]-[NH2;D1;+0:5]",
+            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "NC1CCOC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][N:2]>>c1ccc(C[N:2](Cc2ccccc2)[CH3:1])cc1",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "658090596836f56948032c980b52f94c4dfc28cff0ed2c472508b61cca1812ad",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 493,
+                    "policy_probability": 0.04769999906420708,
+                    "policy_probability_rank": 4,
+                    "policy_name": "uspto",
+                    "template_code": 16927,
+                    "template": "[C:1]-[NH2;D1;+0:2]>>[C:1]-[N;H0;D3;+0:2](-C-c1:c:c:c:c:c:1)-C-c1:c:c:c:c:c:1",
+                    "mapped_reaction_smiles": "[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "c1ccc(CN(Cc2ccccc2)C2CCOC2)cc1",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[C:1]([CH3:2])([CH3:3])[N:5]([CH2:4][c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1)[CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1>>O=[C:1]([CH3:2])[CH3:3].[CH2:4]([N:5][CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1)[c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "e9dc08bc6eaf73035b180e021e537ade42beb7b333629074db0711ff5753ec6c",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 55,
+                            "policy_probability": 0.46639999747276306,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 38861,
+                            "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[N;H0;D3;+0:5](-[C:4]-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1)-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1>>O=[C;H0;D3;+0:1](-[C:2])-[C:3].[C:4](-[NH;D2;+0:5]-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1)-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1",
+                            "mapped_reaction_smiles": "[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1>>[C:17]1(=[O:36])[CH2:18][CH2:19][O:20][CH2:21]1.[NH:16]([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=C1CCOC1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "oxolan-3-one"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "c1ccc(CNCc2ccccc2)cc1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "N-benzyl-1-phenylmethanamine"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "N,N-dibenzyloxolan-3-amine"
+                    }
+                  ]
+                }
+              ],
+              "name": "oxolan-3-amine"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "COc1cc2ncnc(OC)c2c(F)c1Br",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[c:1](:[NH:2])([cH:3][cH:4]:[NH:5])[O:7][CH3:6]>>Cl[c:1](:[NH:2])[cH:3][cH:4]:[NH:5].[CH3:6][O:7]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "993c65d46774ab905b5b176d169cda1bbc842819cd756ed1d36e2322c93a7a89",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 1680,
+                    "policy_probability": 0.1331000030040741,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 25526,
+                    "template": "[#7;a:5]:[c:4]:[c:3]:[c;H0;D3;+0:1](:[#7;a:2])-[O;H0;D2;+0:7]-[C;D1;H3:6]>>Cl-[c;H0;D3;+0:1](:[#7;a:2]):[c:3]:[c:4]:[#7;a:5].[C;D1;H3:6]-[OH;D1;+0:7]",
+                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[OH:10][CH3:11]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CO",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "name": "methanol"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "COc1cc2ncnc(Cl)c2c(F)c1Br",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[Cl:1][c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1>>O=P(Cl)(Cl)[Cl:1].O=[c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "da993fa50d1ccd03b0f9a3b9058a0d2797566da7702e68dc79fe6de6242c63b5",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 910,
+                            "policy_probability": 0.3163999915122986,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 36350,
+                            "template": "[Cl;H0;D1;+0:1]-[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[n;H0;D2;+0:7]:1>>Cl-P(-Cl)(=O)-[Cl;H0;D1;+0:1].O=[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[nH;D2;+0:7]:1",
+                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][nH:8][c:9](=[O:24])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[Cl:23][P:25]([Cl:26])([Cl:27])=[O:28]"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=P(Cl)(Cl)Cl",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "phosphoryl trichloride"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "COc1cc2nc[nH]c(=O)c2c(F)c1Br",
+                              "is_chemical": true,
+                              "in_stock": false,
+                              "children": [
+                                {
+                                  "type": "reaction",
+                                  "hide": false,
+                                  "smiles": "[c:1]1(=[O:2])[cH:3][cH:4][n:5][c:6][n:7]1>>O=[C:6][N:7].O[C:1](=[O:2])[cH:3][cH:4][N:5]",
+                                  "is_reaction": true,
+                                  "metadata": {
+                                    "template_hash": "7428f0c0659279df595903c084b29e55292ebbde0e7a3054c873aa64d2dc9725",
+                                    "classification": "0.0 Unrecognized",
+                                    "library_occurence": 264,
+                                    "policy_probability": 0.16329999268054962,
+                                    "policy_probability_rank": 0,
+                                    "policy_name": "uspto",
+                                    "template_code": 19371,
+                                    "template": "[O;H0;D1;+0:2]=[c;H0;D3;+0:1]1:[c;H0;D3;+0:3]:[c;H0;D3;+0:4]:[n;H0;D2;+0:5]:[cH;D2;+0:6]:[nH;D2;+0:7]:1>>O-[C;H0;D3;+0:1](=[O;H0;D1;+0:2])-[c;H0;D3;+0:3]:[c;H0;D3;+0:4]-[NH2;D1;+0:5].O=[CH;D2;+0:6]-[NH2;D1;+0:7]",
+                                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][nH:8][c:9](=[O:24])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[c:15]1[Br:22].[CH:7]([NH2:8])=[O:10]"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "NC=O",
+                                      "is_chemical": true,
+                                      "in_stock": false,
+                                      "name": "formamide"
+                                    },
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "COc1cc(N)c(C(=O)O)c(F)c1Br",
+                                      "is_chemical": true,
+                                      "in_stock": false,
+                                      "children": [
+                                        {
+                                          "type": "reaction",
+                                          "hide": false,
+                                          "smiles": "[Br:1][c:3]([cH2:2])[cH2:4]>>O=C1CCC(=O)N1[Br:1].[cH2:2][c:3][cH2:4]",
+                                          "is_reaction": true,
+                                          "metadata": {
+                                            "template_hash": "da9149347fc0ea823d25094d0c1520a983ecd8979cb9b8826e6b2614bc61a1ce",
+                                            "classification": "0.0 Unrecognized",
+                                            "library_occurence": 3248,
+                                            "policy_probability": 0.15039999783039093,
+                                            "policy_probability_rank": 1,
+                                            "policy_name": "uspto",
+                                            "template_code": 36344,
+                                            "template": "[Br;H0;D1;+0:1]-[c;H0;D3;+0:3](:[c:2]):[c:4]>>O=C1-C-C-C(=O)-N-1-[Br;H0;D1;+0:1].[c:2]:[cH;D2;+0:3]:[c:4]",
+                                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[c:15]1[Br:22]>>[Br:22][N:23]1[C:26](=[O:27])[CH2:28][CH2:29][C:30]1=[O:31].[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[cH:15]1"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "O=C1CCC(=O)N1Br",
+                                              "is_chemical": true,
+                                              "in_stock": true,
+                                              "name": "1-bromopyrrolidine-2,5-dione"
+                                            },
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "COc1cc(N)c(C(=O)O)c(F)c1",
+                                              "is_chemical": true,
+                                              "in_stock": false,
+                                              "name": "2-amino-6-fluoro-4-methoxybenzoic acid"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mol",
+      "hide": false,
+      "smiles": "COc1cc2ncnc(OC)c2c(F)c1NC1CCOC1",
+      "is_chemical": true,
+      "in_stock": false,
+      "children": [
+        {
+          "type": "reaction",
+          "hide": false,
+          "smiles": "[c:1]([cH2:2])([cH2:3])[N:5][CH3:4]>>Br[c:1]([cH2:2])[cH2:3].[CH3:4][N:5]",
+          "is_reaction": true,
+          "metadata": {
+            "template_hash": "f2e72935444e3a464591729cefd2147cf5dc68c63c01faae0cc4c1ff943d9606",
+            "classification": "0.0 Unrecognized",
+            "library_occurence": 605,
+            "policy_probability": 0.010999999940395355,
+            "policy_probability_rank": 10,
+            "policy_name": "uspto",
+            "template_code": 40331,
+            "template": "[C:4]-[NH;D2;+0:5]-[c;H0;D3;+0:1](:[c:2]):[c:3]>>Br-[c;H0;D3;+0:1](:[c:2]):[c:3].[C:4]-[NH2;D1;+0:5]",
+            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[NH:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1"
+          },
+          "children": [
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "NC1CCOC1",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[CH3:1][N:2]>>c1ccc(C[N:2](Cc2ccccc2)[CH3:1])cc1",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "658090596836f56948032c980b52f94c4dfc28cff0ed2c472508b61cca1812ad",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 493,
+                    "policy_probability": 0.04769999906420708,
+                    "policy_probability_rank": 4,
+                    "policy_name": "uspto",
+                    "template_code": 16927,
+                    "template": "[C:1]-[NH2;D1;+0:2]>>[C:1]-[N;H0;D3;+0:2](-C-c1:c:c:c:c:c:1)-C-c1:c:c:c:c:c:1",
+                    "mapped_reaction_smiles": "[NH2:16][CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1>>[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "c1ccc(CN(Cc2ccccc2)C2CCOC2)cc1",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[C:1]([CH3:2])([CH3:3])[N:5]([CH2:4][c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1)[CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1>>O=[C:1]([CH3:2])[CH3:3].[CH2:4]([N:5][CH2:6][c:7]1[cH:8][cH:9][cH:10][cH:11][cH:12]1)[c:13]1[cH:14][cH:15][cH:16][cH:17][cH:18]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "e9dc08bc6eaf73035b180e021e537ade42beb7b333629074db0711ff5753ec6c",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 55,
+                            "policy_probability": 0.46639999747276306,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 38861,
+                            "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[N;H0;D3;+0:5](-[C:4]-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1)-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1>>O=[C;H0;D3;+0:1](-[C:2])-[C:3].[C:4](-[NH;D2;+0:5]-[C:6]-[c:7]1:[c:8]:[c:9]:[c:10]:[c:11]:[c:12]:1)-[c:13]1:[c:14]:[c:15]:[c:16]:[c:17]:[c:18]:1",
+                            "mapped_reaction_smiles": "[N:16]([CH:17]1[CH2:18][CH2:19][O:20][CH2:21]1)([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1>>[C:17]1(=[O:36])[CH2:18][CH2:19][O:20][CH2:21]1.[NH:16]([CH2:22][c:23]1[cH:24][cH:25][cH:26][cH:27][cH:28]1)[CH2:29][c:30]1[cH:31][cH:32][cH:33][cH:34][cH:35]1"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=C1CCOC1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "oxolan-3-one"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "c1ccc(CNCc2ccccc2)cc1",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "N-benzyl-1-phenylmethanamine"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "N,N-dibenzyloxolan-3-amine"
+                    }
+                  ]
+                }
+              ],
+              "name": "oxolan-3-amine"
+            },
+            {
+              "type": "mol",
+              "hide": false,
+              "smiles": "COc1cc2ncnc(OC)c2c(F)c1Br",
+              "is_chemical": true,
+              "in_stock": false,
+              "children": [
+                {
+                  "type": "reaction",
+                  "hide": false,
+                  "smiles": "[c:1](:[NH:2])([cH:3][cH:4]:[NH:5])[O:7][CH3:6]>>Cl[c:1](:[NH:2])[cH:3][cH:4]:[NH:5].[CH3:6][O:7]",
+                  "is_reaction": true,
+                  "metadata": {
+                    "template_hash": "993c65d46774ab905b5b176d169cda1bbc842819cd756ed1d36e2322c93a7a89",
+                    "classification": "0.0 Unrecognized",
+                    "library_occurence": 1680,
+                    "policy_probability": 0.1331000030040741,
+                    "policy_probability_rank": 0,
+                    "policy_name": "uspto",
+                    "template_code": 25526,
+                    "template": "[#7;a:5]:[c:4]:[c:3]:[c;H0;D3;+0:1](:[#7;a:2])-[O;H0;D2;+0:7]-[C;D1;H3:6]>>Cl-[c;H0;D3;+0:1](:[#7;a:2]):[c:3]:[c:4]:[#7;a:5].[C;D1;H3:6]-[OH;D1;+0:7]",
+                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([O:10][CH3:11])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[OH:10][CH3:11]"
+                  },
+                  "children": [
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "CO",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "name": "methanol"
+                    },
+                    {
+                      "type": "mol",
+                      "hide": false,
+                      "smiles": "COc1cc2ncnc(Cl)c2c(F)c1Br",
+                      "is_chemical": true,
+                      "in_stock": false,
+                      "children": [
+                        {
+                          "type": "reaction",
+                          "hide": false,
+                          "smiles": "[Cl:1][c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1>>O=P(Cl)(Cl)[Cl:1].O=[c:2]1[cH:3][cH:4]:[N:5]:[cH:6][n:7]1",
+                          "is_reaction": true,
+                          "metadata": {
+                            "template_hash": "da993fa50d1ccd03b0f9a3b9058a0d2797566da7702e68dc79fe6de6242c63b5",
+                            "classification": "0.0 Unrecognized",
+                            "library_occurence": 910,
+                            "policy_probability": 0.3163999915122986,
+                            "policy_probability_rank": 0,
+                            "policy_name": "uspto",
+                            "template_code": 36350,
+                            "template": "[Cl;H0;D1;+0:1]-[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[n;H0;D2;+0:7]:1>>Cl-P(-Cl)(=O)-[Cl;H0;D1;+0:1].O=[c;H0;D3;+0:2]1:[c:3]:[c:4]:[#7;a:5]:[c:6]:[nH;D2;+0:7]:1",
+                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][n:8][c:9]([Cl:23])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][nH:8][c:9](=[O:24])[c:12]2[c:13]([F:14])[c:15]1[Br:22].[Cl:23][P:25]([Cl:26])([Cl:27])=[O:28]"
+                          },
+                          "children": [
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "O=P(Cl)(Cl)Cl",
+                              "is_chemical": true,
+                              "in_stock": true,
+                              "name": "phosphoryl trichloride"
+                            },
+                            {
+                              "type": "mol",
+                              "hide": false,
+                              "smiles": "COc1cc2nc[nH]c(=O)c2c(F)c1Br",
+                              "is_chemical": true,
+                              "in_stock": false,
+                              "children": [
+                                {
+                                  "type": "reaction",
+                                  "hide": false,
+                                  "smiles": "[c:1]1(=[O:2])[cH:3][cH:4][n:5][c:6][n:7]1>>O=[C:6][N:7].O[C:1](=[O:2])[cH:3][cH:4][N:5]",
+                                  "is_reaction": true,
+                                  "metadata": {
+                                    "template_hash": "7428f0c0659279df595903c084b29e55292ebbde0e7a3054c873aa64d2dc9725",
+                                    "classification": "0.0 Unrecognized",
+                                    "library_occurence": 264,
+                                    "policy_probability": 0.16329999268054962,
+                                    "policy_probability_rank": 0,
+                                    "policy_name": "uspto",
+                                    "template_code": 19371,
+                                    "template": "[O;H0;D1;+0:2]=[c;H0;D3;+0:1]1:[c;H0;D3;+0:3]:[c;H0;D3;+0:4]:[n;H0;D2;+0:5]:[cH;D2;+0:6]:[nH;D2;+0:7]:1>>O-[C;H0;D3;+0:1](=[O;H0;D1;+0:2])-[c;H0;D3;+0:3]:[c;H0;D3;+0:4]-[NH2;D1;+0:5].O=[CH;D2;+0:6]-[NH2;D1;+0:7]",
+                                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]2[n:6][cH:7][nH:8][c:9](=[O:24])[c:12]2[c:13]([F:14])[c:15]1[Br:22]>>[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[c:15]1[Br:22].[CH:7]([NH2:8])=[O:10]"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "NC=O",
+                                      "is_chemical": true,
+                                      "in_stock": false,
+                                      "name": "formamide"
+                                    },
+                                    {
+                                      "type": "mol",
+                                      "hide": false,
+                                      "smiles": "COc1cc(N)c(C(=O)O)c(F)c1Br",
+                                      "is_chemical": true,
+                                      "in_stock": false,
+                                      "children": [
+                                        {
+                                          "type": "reaction",
+                                          "hide": false,
+                                          "smiles": "[Br:1][c:3]([cH2:2])[cH2:4]>>O=C1CCC(=O)N1[Br:1].[cH2:2][c:3][cH2:4]",
+                                          "is_reaction": true,
+                                          "metadata": {
+                                            "template_hash": "da9149347fc0ea823d25094d0c1520a983ecd8979cb9b8826e6b2614bc61a1ce",
+                                            "classification": "0.0 Unrecognized",
+                                            "library_occurence": 3248,
+                                            "policy_probability": 0.15039999783039093,
+                                            "policy_probability_rank": 1,
+                                            "policy_name": "uspto",
+                                            "template_code": 36344,
+                                            "template": "[Br;H0;D1;+0:1]-[c;H0;D3;+0:3](:[c:2]):[c:4]>>O=C1-C-C-C(=O)-N-1-[Br;H0;D1;+0:1].[c:2]:[cH;D2;+0:3]:[c:4]",
+                                            "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[c:15]1[Br:22]>>[Br:22][N:23]1[C:26](=[O:27])[CH2:28][CH2:29][C:30]1=[O:31].[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[cH:15]1"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "O=C1CCC(=O)N1Br",
+                                              "is_chemical": true,
+                                              "in_stock": true,
+                                              "name": "1-bromopyrrolidine-2,5-dione"
+                                            },
+                                            {
+                                              "type": "mol",
+                                              "hide": false,
+                                              "smiles": "COc1cc(N)c(C(=O)O)c(F)c1",
+                                              "is_chemical": true,
+                                              "in_stock": false,
+                                              "children": [
+                                                {
+                                                  "type": "reaction",
+                                                  "hide": false,
+                                                  "smiles": "[N:1][cH3:2]>>O=[N:1]([O-])[cH3:2]",
+                                                  "is_reaction": true,
+                                                  "metadata": {
+                                                    "template_hash": "664f7756f7526ad6c07e82dd3b3c15f7aabccbc99837dd22105068a2cfc385b5",
+                                                    "classification": "0.0 Unrecognized",
+                                                    "library_occurence": 33350,
+                                                    "policy_probability": 0.5181999802589417,
+                                                    "policy_probability_rank": 0,
+                                                    "policy_name": "uspto",
+                                                    "template_code": 17064,
+                                                    "template": "[NH2;D1;+0:1]-[c:2]>>O=[N+;H0;D3:1](-[O-])-[c:2]",
+                                                    "mapped_reaction_smiles": "[CH3:1][O:2][c:3]1[cH:4][c:5]([NH2:6])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[cH:15]1>>[CH3:1][O:2][c:3]1[cH:4][c:5]([N+:6](=[O:26])[O-:27])[c:12]([C:9](=[O:24])[OH:25])[c:13]([F:14])[cH:15]1"
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "type": "mol",
+                                                      "hide": false,
+                                                      "smiles": "COc1cc(F)c(C(=O)O)c([N+](=O)[O-])c1",
+                                                      "is_chemical": true,
+                                                      "in_stock": false
+                                                    }
+                                                  ]
+                                                }
+                                              ],
+                                              "name": "2-amino-6-fluoro-4-methoxybenzoic acid"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
